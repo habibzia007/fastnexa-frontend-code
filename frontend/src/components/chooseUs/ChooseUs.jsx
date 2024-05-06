@@ -20,10 +20,7 @@ const ChooseUs = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
-// background: linear-gradient(180deg, rgba(249, 80, 0, 0) 35%, rgba(14, 14, 14, 0.92) 78%);
-// Linear-gradient(180deg, #FF9A58 0%, #FF6500 10%)
-// background: linear-gradient(180deg, #FF9A58 0%, #FF6500 100%);
-// linear-gradient(rgba(0, 0, 0, -0.2) 0%, rgba(249, 80, 0, 0.35) 62%, rgba(0, 0, 0, 0.9) 88%), url("/src/assets/images/link1.png")
+
   return (
     <div
       className="relative h-[804px] w-[1519px] mx-auto mt-[100px]"
@@ -57,16 +54,6 @@ const ChooseUs = () => {
           </div>
         </div>
 
-        {/* <div className="mt-12 flex gap-6">
-          {WhatWeProvideData.map((card, index) => (
-            <WhatWeProvideCard
-              key={index}
-              image={Object.values(card.img)[0]}
-              title={card.title}
-              description={card.description}
-            />
-          ))}
-        </div> */}
         <div className="flex items-center gap-3 justify-center mt-[37px]">
           <h3 className="font-Poppins font-normal text-[16px] leading-[30px] text-center text-[#232F3B]">
             Learn more about{" "}
