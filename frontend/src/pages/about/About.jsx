@@ -10,18 +10,15 @@ import Testimonial from "../../components/testimonial/Testimonial";
 import Blog from "../../components/blog/Blog";
 import ContactUs from "../../components/contactUs/ContactUs";
 import Footer from "../../components/Footer";
+import AboutBanner from "../../components/about/AboutBanner";
+import AboutUs from "../../components/about/aboutUs/AboutUs";
 
-const Home = () => {
+const About = () => {
   return (
     <main className="h-[6700px] w-full bg-[#FFFFFF]">
       <Navbar />
-      <Hero />
-      <WhoWeAre />
-      <WhatWeProvide />
-      <OurClients />
-      <ChooseUs />
-      <TechnologyStack />
-      <Testimonial />
+      <AboutBanner />
+      <AboutUs/>
       <Blog />
       <ContactUs />
       <Footer />
@@ -29,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;
