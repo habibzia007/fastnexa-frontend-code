@@ -10,7 +10,10 @@ export default {
         lato: ["Lato", "sans-serif"],
         Poppins:["Poppins","sans-serif"],
         inter:["Inter", "sans-serif"],
-        barlow:["barlow", "sans-serif"]
+        barlow:["barlow", "sans-serif"],
+        jost:["Jost", "sans-serif"],
+        barlow:["Barlow", "sans-serif"]
+        
       },
     },
   },

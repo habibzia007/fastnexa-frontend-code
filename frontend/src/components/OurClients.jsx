@@ -8,7 +8,7 @@ import group0 from "../assets/images/group0.png";
 
 const OurClients = () => {
   return (
-    <div class="w-[1134px] h-[329.17px] top-[2560px]  mx-auto  mt-[80px] flex flex-col items-center gap-5">
+    <div class="w-[1134px] h-[329.17px]   mx-auto  mt-[80px] flex flex-col items-center gap-5">
       <h2 className="text-[#FF6500] font-Poppins font-semibold text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
         Our Clients
       </h2>

@@ -13,10 +13,10 @@ const WhatWeProvide = () => {
   };
   return (
     <div
-      className="relative h-[700px] w-[1519px] mx-auto mt-8"
+      className="relative h-[663px]  mt-[23px] w-full"
       style={backgroundImageStyle}
     >
-      <div className="w-[1184.44px] h-[517.3px] top-[1847px] ml-[160px]  pt-[67px] ">
+      <div className="w-[1184.44px] h-[517.3px]  mx-auto  pt-[37px] ">
         <h3 className="font-Poppins font-semibold text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
           What we provide
         </h3>
@@ -32,15 +32,20 @@ const WhatWeProvide = () => {
               description={card.description}
             />
           ))}
+         
         </div>
-        <div className="flex items-center gap-3 justify-center mt-16">
+        <div className="flex items-center gap-3 justify-center mt-[50px]">
           <h3 className="font-Poppins font-normal text-[16px] leading-[30px] text-center text-[#232F3B]">
             Learn more about{" "}
-            <span className="font-Poppins font-semibold text-[16px] leading-[30px] text-center text-[#FF6500]">
+            <span className="font-Poppins font-semibold text-[16px] leading-[30px] text-center text-[#FF6500] cursor-pointer">
               More Services
             </span>
           </h3>
-          <img className="object-contain" src={rightArrow} alt="" />
+          <img
+            className="object-contain cursor-pointer"
+            src={rightArrow}
+            alt=""
+          />
         </div>
       </div>
     </div>

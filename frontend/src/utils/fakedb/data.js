@@ -3,6 +3,24 @@ import group from "../../assets/images/group.png";
 import Vector from "../../assets/images/Vector.png";
 import Vector1 from "../../assets/images/Vector1.png";
 import Vector3 from "../../assets/images/Vector3.png";
+// choose us
+import link1 from "../../assets/images/link1.png";
+import link2 from "../../assets/images/link2.png";
+import link3 from "../../assets/images/link3.png";
+export const chooseUsData = [
+  {
+    img: { link1 },
+    title: "Information managemnet system",
+  },
+  {
+    img: { link2 },
+    title: "Information Database Security",
+  },
+  {
+    img: { link3 },
+    title: "Multifunctional Technology",
+  },
+];
 
 export const WhatWeProvideData = [
   {
