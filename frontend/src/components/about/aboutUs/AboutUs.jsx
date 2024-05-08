@@ -24,8 +24,8 @@ const AboutUs = () => {
           </div>
         </div>
         {/* right side  */}
-        <div className="w-[531px] h-[536px] flex-col gap-10">
-          <div className="w-[510px] h-[278px] top-[999px] flex flex-col  ">
+        <div className="w-[531px] h-[536px] flex-col ">
+          <div className="w-[510px] h-[228px] top-[999px] flex flex-col  mb-4">
             <h4 className="font-Poppins font-semibold text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9496284818649292px] text-left">
               ABOUT US
             </h4>
