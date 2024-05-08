@@ -14,8 +14,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-[917px]  " style={backgroundImageStyle}>
-      <div className="w-[1185] mx-auto ">
+    <div className="relative h-[917px]  w-full " style={backgroundImageStyle}>
+      <div className="w-[1185px] mx-auto ">
         <div className="absolute left-1 -top-[90px]">
           <img src={svg0} alt="" />
         </div>
@@ -23,8 +23,8 @@ const Hero = () => {
           <img src={svg1} alt="" />
         </div>
         {/* Content */}
-        <div className=" flex flex-col gap-10 w-[1185] mx-auto  ">
-          <div className="sm:max-w-[636px] sm:h-[228px] pt-[150px]  sm:ml-[121px]">
+        <div className=" flex flex-col gap-10   ">
+          <div className="sm:max-w-[636px] sm:h-[228px] pt-[150px]  ">
             <h1 className="font-inter font-bold sm:text-[68px] sm:leading-[75.5px] text-left text-white">
               We Transform <br />
               Idea into
@@ -32,7 +32,7 @@ const Hero = () => {
               <span className="text-[#FF751A]">Technology</span>
             </h1>
           </div>
-          <div className="sm:max-w-[585.7px] sm:h-[84px] pt-[150px]  sm:ml-[121px]">
+          <div className="sm:max-w-[585.7px] sm:h-[84px] pt-[150px]  ">
             <p className="font-Poppins font-medium sm:text-[16.22px] sm:leading-[27.58px] text-left text-white">
               We are committed to unlocking this potential for you. the future
               is defined by the limitless capabilities of Artificial
@@ -40,7 +40,7 @@ const Hero = () => {
               with your goals.
             </p>
           </div>
-          <div className="flex items-center gap-7 sm:max-w-[585.7px] pt-[90px] sm:ml-[121px]">
+          <div className="flex items-center gap-7 sm:max-w-[585.7px] pt-[90px] ">
             <button className="group flex items-center justify-center w-[209px] h-[52px] font-Poppins font-medium text-[17.85px] text-white leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-700 ease-in-out">
               Contact Now
               <MdOutlineKeyboardArrowRight className="w-6 h-6  transition-transform duration-700 ease-in-out group-hover:ml-1 group-hover:scale-105" />
