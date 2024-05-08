@@ -6,7 +6,7 @@ import Card from "./Card";
 const AboutUs = () => {
   return (
     <div className="w-full h-[536px]  mt-[103px]">
-      <div className="w-[1193px] h-[536px] mx-auto flex gap-2 border border-red-600 ">
+      <div className="w-[1193px] h-[536px] mx-auto flex gap-2  ">
         {/* left side  */}
         <div className="w-[599px] h-[512px] ">
           <div className="relative mt-10 ">

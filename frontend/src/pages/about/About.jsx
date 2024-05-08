@@ -13,15 +13,17 @@ import Footer from "../../components/Footer";
 import AboutBanner from "../../components/about/AboutBanner";
 import AboutUs from "../../components/about/aboutUs/AboutUs";
 import Team from "../../components/about/team/Team";
+import AboutUsServices from "../../components/about/services/AboutUsServices";
 
 const About = () => {
   return (
-    <main className="h-[6700px] w-full bg-[#FFFFFF]">
+    <main className="h-[4784px] w-full bg-[#FFFFFF]">
       <Navbar />
       <AboutBanner />
       <AboutUs />
       <Team />
-      <Blog />
+      <AboutUsServices/>
+      <OurClients />
       <ContactUs />
       <Footer />
     </main>

@@ -8,7 +8,7 @@ import team4 from "../../../assets/images/team4.jpg";
 const Team = () => {
   const backgroundImageStyle = {
     backgroundImage: `url(${testimonialbg})`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
   };
   return (
@@ -23,8 +23,8 @@ const Team = () => {
         <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[42px] leading-[61.08px] text-center">
           We have world expert team
         </h1>
-        <div className="flex  items-center w-[1184px] mx-auto">
-          <div className=" relative ">
+        <div className="flex  items-center w-[1184px] mx-auto mt-10 ">
+          <div className=" relative cursor-pointer opacity-100 hover:opacity-90 ">
             <img src={team1} alt="" />
             <div className="flex items-center gap-3 absolute  bottom-[35px] left-[43px]">
               <div className="w-[15px] h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
@@ -39,7 +39,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className=" relative ">
+          <div className=" relative  cursor-pointer opacity-100 hover:opacity-90 ">
             <img src={team2} alt="" />
             <div className="flex items-center gap-3 absolute  bottom-[35px] left-[43px]">
               <div className="w-[15px] h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
@@ -54,7 +54,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className=" relative ">
+          <div className=" relative  cursor-pointer opacity-100 hover:opacity-90 ">
             <img src={team3} alt="" />
             <div className="flex items-center gap-3 absolute  bottom-[35px] left-[43px]">
               <div className="w-[15px] h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
@@ -69,7 +69,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className=" relative ">
+          <div className=" relative  cursor-pointer opacity-100 hover:opacity-90 ">
             <img src={team4} alt="" />
             <div className="flex items-center gap-3 absolute  bottom-[35px] left-[43px]">
               <div className="w-[15px] h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
