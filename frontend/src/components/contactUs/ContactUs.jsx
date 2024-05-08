@@ -119,7 +119,7 @@ const ContactUs = () => {
             </div>
             <div>
               <button
-                className="w-full bg-[#FF6500] text-white font-poppins font-bold text-[16px] leading-[52.62px] rounded-[10px] hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                className="w-full bg-[#FF6500] text-white font-poppins font-bold text-[16px] leading-[52.62px] rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600"
                 type="submit"
               >
                 Send Message
