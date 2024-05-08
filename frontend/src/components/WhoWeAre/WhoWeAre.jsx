@@ -6,7 +6,7 @@ import WhoWeAreCard from "./Card";
 const WhoWeAre = () => {
   return (
     <div className="w-[1185px] h-[704px]  mx-auto mt-[80px]">
-      <div className="w-[1185px] h-[677.96px]  ml-160  mx-auto flex gap-2 ">
+      <div className="w-[1185px] h-[677.96px]    mx-auto flex gap-2 ">
         {/* left side  */}
         <div className="w-[526px] flex-col gap-10">
           {/* left side top */}
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
             </p>
           </div>
           {/* left side bottom */}
-          <div className="w-[526px] h-[397px] ml-160 ">
+          <div className="w-[526px] h-[397px]  ">
             <div className="w-[516px] ml-160 border-[#ECECEC] border-b-[2px] flex gap-8">
               <WhoWeAreCard
                 title="Soft Kode"

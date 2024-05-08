@@ -41,11 +41,11 @@ const ChooseUs = () => {
         <div className="flex items-center gap-3 justify-center mt-[37px]">
           <h3 className="font-Poppins font-normal text-[16px] leading-[30px] text-center text-[#232F3B]">
             Learn more about{" "}
-            <span className="font-Poppins font-semibold text-[16px] leading-[30px] text-center text-[#FF6500]">
+            <span className="font-Poppins font-semibold text-[16px] leading-[30px] text-center text-[#FF6500] cursor-pointer">
               More reason
             </span>
           </h3>
-          <img className="object-contain" src={rightArrow} alt="" />
+          <img className="object-contain cursor-pointer" src={rightArrow} alt="" />
         </div>
       </div>
     </div>

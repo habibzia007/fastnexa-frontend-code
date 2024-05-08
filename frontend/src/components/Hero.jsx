@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <div className="relative h-[917px]  " style={backgroundImageStyle}>
-      <div className="w-[1185] ">
+      <div className="w-[1185] mx-auto ">
         <div className="absolute left-1 -top-[90px]">
           <img src={svg0} alt="" />
         </div>
@@ -23,7 +23,7 @@ const Hero = () => {
           <img src={svg1} alt="" />
         </div>
         {/* Content */}
-        <div className=" flex flex-col gap-10 w-[1185]">
+        <div className=" flex flex-col gap-10 w-[1185] mx-auto  ">
           <div className="sm:max-w-[636px] sm:h-[228px] pt-[150px]  sm:ml-[121px]">
             <h1 className="font-inter font-bold sm:text-[68px] sm:leading-[75.5px] text-left text-white">
               We Transform <br />
