@@ -32,7 +32,6 @@ const WhatWeProvide = () => {
               description={card.description}
             />
           ))}
-         
         </div>
         <div className="flex items-center gap-3 justify-center mt-[50px]">
           <h3 className="font-Poppins font-normal text-[16px] leading-[30px] text-center text-[#232F3B]">
