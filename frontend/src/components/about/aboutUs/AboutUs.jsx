@@ -54,7 +54,7 @@ const AboutUs = () => {
                 description="Pakistan's oldest business house with 8 flagship companies."
               />
             </div>
-            <div className="w-[516px] ml-160 border-[#ECECEC] border-b-[2px] flex gap-8">
+            <div className="w-[516px] ml-160 border-[#ECECEC]  flex gap-8">
               <Card
                 title="50+ Resources"
                 description="Highly qualified professionals and accredited resources.
