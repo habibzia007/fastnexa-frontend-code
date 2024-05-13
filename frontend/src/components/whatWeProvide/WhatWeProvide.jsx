@@ -1,6 +1,6 @@
 import React from "react";
-import bg from "../../assets/images/whatweprovidebg.jpeg";
-import rightArrow from "../../assets/images/rightArrow.png";
+import bg from "../../assets/images/whatweprovidebg.svg";
+import rightArrow from "../../assets/images/rightArrow.svg";
 import WhatWeProvideCard from "./Card";
 import { WhatWeProvideData } from "../../utils/fakedb/data";
 
@@ -14,7 +14,7 @@ const WhatWeProvide = () => {
     <div className="relative mt-[23px] w-full" style={backgroundImageStyle}>
       <div className="container sm:w-[1220px] mx-auto px-4 sm:px-6 grid grid-cols-12 gap-4 pt-[20px] sm:pt-[37px] ">
         <h3 className="col-span-full font-Poppins font-semibold text-[12px] leading-[28.19px] sm:text-[16px] sm:leading-[28.19px] text-[#FF6500] tracking-[0.9396284818649292px] text-center">
-          What we provide
+          What We Provide
         </h3>
         <h3 className="col-span-full font-Poppins font-semibold text-[23px] leading-[34.19px] sm:text-[42px] sm:leading-[41.08px] text-[#232F3B] text-center">
           We provide truly prominent Software solutions
@@ -37,7 +37,7 @@ const WhatWeProvide = () => {
             </span>
           </h3>
           <img
-            className="object-contain cursor-pointer"
+            className="object-contain cursor-pointer ml-2"
             src={rightArrow}
             alt=""
           />
@@ -52,7 +52,7 @@ export default WhatWeProvide;
 // import React from "react";
 // import bg from "../../assets/images/whatweprovidebg.jpeg";
 // import group from "../../assets/images/group.png";
-// import rightArrow from "../../assets/images/rightArrow.png";
+// import rightArrow from "../../assets/images/rightArrow.svg";
 // import WhatWeProvideCard from "./Card";
 // import { WhatWeProvideData } from "../../utils/fakedb/data";
 

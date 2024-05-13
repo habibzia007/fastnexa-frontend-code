@@ -33,7 +33,7 @@ const AboutUs = () => {
               Introduction
             </h1>
             <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[26px] sm:text-[16px] sm:leading-[26px] text-center sm:text-left ">
-              we introduced FastNexa Tech, a specialized company offering
+              We introduced FastNexa Tech, a specialized company offering
               professional services in various domains including Information
               Systems & Security, Cyber Security, Infrastructure, E-commerce,
               Project Management, Software Design & Development, Social Media

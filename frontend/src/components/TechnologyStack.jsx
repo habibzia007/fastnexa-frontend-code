@@ -1,10 +1,10 @@
 import React from "react";
-import nodejs from "../assets/images/nodejs.png";
-import reactjs from "../assets/images/reactjs.png";
-import angular from "../assets/images/angular.png";
-import python from "../assets/images/python.png";
-import dotnet from "../assets/images/dotnet.png";
-import laravel from "../assets/images/laravel.png";
+import nodejs from "../assets/images/nodejs.svg";
+import reactjs from "../assets/images/react.svg";
+import angular from "../assets/images/angular.svg";
+import python from "../assets/images/python.svg";
+import dotnet from "../assets/images/aspnet.svg";
+import laravel from "../assets/images/laravel.svg";
 import rectangle from "../assets/images/rectangle.png";
 import rectangle1 from "../assets/images/rectangle1.png";
 

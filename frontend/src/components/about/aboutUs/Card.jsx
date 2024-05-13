@@ -1,5 +1,5 @@
 import React from "react";
-import symbol from "../../../assets/images/symbol.png";
+import symbol from "../../../assets/images/symbol.svg";
 
 const Card = ({ title, description, border }) => {
   return (

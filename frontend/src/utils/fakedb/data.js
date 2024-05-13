@@ -1,8 +1,8 @@
 import divabout from "../../assets/images/divabout.png";
-import group from "../../assets/images/group.png";
-import Vector from "../../assets/images/Vector.png";
-import Vector1 from "../../assets/images/Vector1.png";
-import Vector3 from "../../assets/images/Vector3.png";
+import group from "../../assets/images/group.svg";
+import Vector from "../../assets/images/vector1.svg";
+import Vector1 from "../../assets/images/vector2.svg";
+import Vector3 from "../../assets/images/vector3.svg";
 // choose us
 import link1 from "../../assets/images/link1.png";
 import link2 from "../../assets/images/link2.png";

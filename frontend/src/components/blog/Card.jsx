@@ -1,8 +1,8 @@
 // Card.js
 import React from "react";
 import { MdArrowRightAlt } from "react-icons/md";
-import personIcon from "../../assets/images/personIcon.png"; // Import your person icon image
-import msgIcon from "../../assets/images/msgIcon.png"; // Import your message icon image
+import personIcon from "../../assets/images/personIcon.svg"; // Import your person icon image
+import msgIcon from "../../assets/images/msgIcon.svg"; // Import your message icon image
 
 const Card = ({ data }) => {
   return (
@@ -23,12 +23,12 @@ const Card = ({ data }) => {
           <div className="flex gap-2">
             {/* Author */}
             <div className="flex gap-[2px] sm:gap-1 items-center">
-              <img className="w-[4.83px] h-[5.36px] sm:w-[10.51px] sm:h-[11.76px]" src={personIcon} alt="" /> {/* Person icon */}
+              <img className="w-[10.51px] h-[11.67px]" src={personIcon} alt="" /> {/* Person icon */}
               <h2 className="font-Poppins font-medium text-[5.36px] leading-[9.89px] sm:text-[11.67px] sm:leading-[21.55px] text-left text-[#999999]">{data.author}</h2> {/* Author name */}
             </div>
             {/* Number of comments */}
             <div className="flex gap-1 items-center">
-              <img className="w-[4.83px] h-[5.36px] sm:w-[10.51px] sm:h-[11.76px]" src={msgIcon} alt="" /> {/* Message icon */}
+              <img className="w-[13.47px] h-[11.67px]" src={msgIcon} alt="" /> {/* Message icon */}
               <h2 className="font-Poppins font-medium text-[5.36px] leading-[9.89px] sm:text-[11.67px] sm:leading-[21.55px] text-left text-[#999999]">{data.comments} Comments</h2> {/* Number of comments */}
             </div>
           </div>

@@ -5,7 +5,7 @@ import blog1 from "../../assets/images/blog1.png";
 import blog2 from "../../assets/images/blog2.png";
 import personIcon from "../../assets/images/personIcon.png";
 import msgIcon from "../../assets/images/msgIcon.png";
-import rightArrow from "../../assets/images/rightArrow.png";
+import rightArrow from "../../assets/images/rightArrow.svg";
 import { MdArrowRightAlt } from "react-icons/md";
 
 import WhatWeProvideCard from "./Card";
@@ -21,7 +21,7 @@ const Blog = () => {
     <div className="relative h-[323px] sm:h-[604px] w-full mx-auto  ">
       <div className="w-[350px] h-[498.69] sm:w-[1184.44px]  mx-auto pt-[50px]   ">
         <h3 className="font-Poppins font-semibold text-[12px] sm:text-[16px]  text-[#FF6500]  leading-[28.19px] tracking-[0.9396284818649292px] text-center">
-          latest Blog
+          Latest Blog
         </h3>
         <h3 className="font-Poppins font-semibold  text-[22px]  leading-[33.08px]  sm:text-[42px]  sm:leading-[61.08px] pt-[5px] text-[#232F3B]   text-center">
           From the News Room

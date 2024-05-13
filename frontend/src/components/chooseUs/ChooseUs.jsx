@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../../assets/images/chooseusbg.jpeg";
-import rightArrow from "../../assets/images/rightArrow.png";
+import rightArrow from "../../assets/images/rightArrow.svg";
 import Card from "./Card";
 import { chooseUsData } from "../../utils/fakedb/data";
 
@@ -30,12 +30,12 @@ const ChooseUs = () => {
                 key={index}
                 image={Object.values(card.img)[0]}
                 title={card.title}
-              /> 
+              />
             ))}
           </div>
         </div>
         <div className="col-span-12 sm:col-span-12 flex  justify-center py-5 sm:py-[20px]">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <h3 className="font-Poppins font-normal text-[12px] sm:text-[16px] leading-[30px] text-center text-[#232F3B]">
               Learn more about{" "}
               <span className="font-Poppins font-semibold text-[12px] sm:text-[16px] leading-[30px] text-center text-[#FF6500] cursor-pointer">
@@ -43,7 +43,7 @@ const ChooseUs = () => {
               </span>
             </h3>
             <img
-              className="object-contain cursor-pointer"
+              className="object-contain cursor-pointer ml-2"
               src={rightArrow}
               alt=""
             />
@@ -62,7 +62,7 @@ export default ChooseUs;
 // import link2 from "../../assets/images/link2.png";
 // import link3 from "../../assets/images/link3.png";
 // import group from "../../assets/images/group.png";
-// import rightArrow from "../../assets/images/rightArrow.png";
+// import rightArrow from "../../assets/images/rightArrow.svg";
 // import WhatWeProvideCard from "./Card";
 // import { WhatWeProvideData, chooseUsData } from "../../utils/fakedb/data";
 // import Card from "./Card";

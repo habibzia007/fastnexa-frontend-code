@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../../../assets/images/whatweprovidebg.jpeg";
 import group from "../../../assets/images/group.png";
-import rightArrow from "../../../assets/images/rightArrow.png";
+import rightArrow from "../../../assets/images/rightArrow.svg";
 import WhatWeProvideCard from "./Card";
 import { WhatWeProvideData } from "../../../utils/fakedb/data";
 

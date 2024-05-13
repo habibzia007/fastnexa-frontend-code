@@ -1,9 +1,9 @@
 import React from "react";
 import bg from "../../assets/images/contactbg.jpg";
 // import group from "../../assets/images/group.png";
-import phone from "../../assets/images/phone.png";
-import message from "../../assets/images/message.png";
-import location from "../../assets/images/location.png";
+import phone from "../../assets/images/phone.svg";
+import message from "../../assets/images/message.svg";
+import location from "../../assets/images/location.svg";
 // import WhatWeProvideCard from "./Card";
 // import { WhatWeProvideData } from "../../utils/fakedb/data";
 
@@ -83,7 +83,7 @@ const ContactUs = () => {
 
         <div className=" w-[350.53px] h-[353.56px] sm:w-[581.53px] sm:h-[510.56px]  bg-white shadow-sm absolute right-[.25rem] top-[13.25rem] sm:right-[1.25rem] sm:top-[5.25rem] rounded-md">
           <h6 className="font-barlow font-bold text-[7.8px] leading-[16.43px] sm:text-[12.8px] sm:leading-[27.43px] text-center text-[#FF6500] pt-[20px] sm:pt-[40px]">
-            Leave us massage
+            LEAVE US MESSAGE
           </h6>
           <h1 className="font-Poppins font-semibold text-[22.4px] leading-[29.38px] sm:text-[38.4px] sm:leading-[49.38px] text-center text-[#333333]">
             How May We Help You!

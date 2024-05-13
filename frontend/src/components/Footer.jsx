@@ -1,9 +1,9 @@
 import React from "react";
-import footerbg from "../assets/images/footerbg.jpg";
-import logo from "../assets/images/footerlogo.png";
-import phoneicon from "../assets/images/phoneicon.png";
-import messageicon from "../assets/images/messageicon.png";
-import locationicon from "../assets/images/locationicon.png";
+import footerbg from "../assets/images/footerbg.svg";
+import logo from "../assets/images/logo-footer-hd.svg";
+import phoneicon from "../assets/images/phoneicon.svg";
+import messageicon from "../assets/images/messageicon.svg";
+import locationicon from "../assets/images/locationicon.svg";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
@@ -127,7 +127,7 @@ export default Footer;
 
 // import React from "react";
 // import footerbg from "../assets/images/footerbg.jpg";
-// import logo from "../assets/images/logo.png";
+// import logo from "../assets/images/logo-hd.svg";
 // import phoneicon from "../assets/images/phoneicon.png";
 // import messageicon from "../assets/images/messageicon.png";
 // import locationicon from "../assets/images/locationicon.png";
