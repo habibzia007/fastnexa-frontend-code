@@ -13,7 +13,7 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <main className="h-[6700px] w-full bg-[#FFFFFF]">
+    <main className=" w-full bg-[#FFFFFF]">
       <Navbar />
       <Hero />
       <WhoWeAre />

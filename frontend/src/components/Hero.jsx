@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import homeImage from "../assets/images/homeimagecrop.jpeg";
+import homeImage from "../assets/images/homeImage.jpeg";
 import herobg from "../assets/images/herobg2.jpg";
 import svg0 from "../assets/images/svg0.png";
 import svg1 from "../assets/images/svg1.png";
 import svg from "../assets/images/svg.png";
+
 import Vector2 from "../assets/images/Vector2.png";
+
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Hero = () => {
-  const images = [homeImage, herobg];
+  const images = [homeImage,herobg];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -27,52 +29,59 @@ const Hero = () => {
     backgroundPosition: "center",
     transition: "background-image 1s ease-in-out",
   };
-console.log("hello")
+
   return (
     <div
-      className="relative h-[917px]  w-full transition-all  "
+      className="relative h-[430px] sm:h-[917px] transition-all "
       style={backgroundImageStyle}
     >
-      <div className="w-[1185px] mx-auto ">
-        <div className="absolute left-1 -top-[90px]">
-          <img src={svg0} alt="" />
-        </div>
-        <div className="absolute left-[140px] -top-[90px]">
-          <img src={svg1} alt="" />
-        </div>
-        {/* Content */}
-        <div className=" flex flex-col gap-10   ">
-          <div className="sm:max-w-[636px] sm:h-[228px] pt-[150px]  ">
-            <h1 className="font-inter font-bold sm:text-[68px] sm:leading-[75.5px] text-left text-white">
-              We Transform <br />
-              Idea into
-              <br />
-              <span className="text-[#FF751A]">Technology</span>
-            </h1>
-          </div>
-          <div className="sm:max-w-[585.7px] sm:h-[84px] pt-[150px]  ">
-            <p className="font-Poppins font-medium sm:text-[16.22px] sm:leading-[27.58px] text-left text-white">
-              We are committed to unlocking this potential for you. the future
-              is defined by the limitless capabilities of Artificial
-              Intelligence (AI). We dedicated to delivering innovative solutions
-              with your goals.
-            </p>
-          </div>
-          <div className="flex items-center gap-7 sm:max-w-[585.7px] pt-[90px] ">
-            <button className="group flex items-center justify-center w-[209px] h-[52px] font-Poppins font-medium text-[17.85px] text-white leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-700 ease-in-out">
-              Contact Now
-              <MdOutlineKeyboardArrowRight className="w-6 h-6  transition-transform duration-700 ease-in-out group-hover:ml-1 group-hover:scale-105" />
-            </button>
+      {/* wrapper */}
+      <div className="container sm:w-[1184px] mx-auto px-4 sm:px-6 grid grid-cols-12">
+        <div className="col-span-12 sm:col-span-6 lg:col-span-12">
+          <img
+            className="w-[278.43px] h-[231.99px] sm:w-[472.71px] sm:h-[212.45px] absolute -left-[45px] -top-[126px] sm:left-[3px] sm:-top-[65px]"
+            src={svg0}
+            alt=""
+          />
+          <img
+            className="w-[136.77px] h-[117.89px] sm:w-[491px] sm:h-[254px] absolute left-[48px] -top-[9px] sm:left-[130px] sm:-top-[110px]"
+            src={svg1}
+            alt=""
+          />
+          {/* Content */}
+          <div className="flex flex-col gap-4 md:gap-10">
+            <div className="sm:max-w-[636px] sm:h-[228px] pt-[118px] sm:pt-[150px]">
+              <h1 className="font-inter font-bold text-[28.87px] leading-[31.61px] sm:text-[68px] sm:leading-[75.5px] text-left text-white">
+                We Transform <br />
+                Idea into
+                <br />
+                <span className="text-orange-400">Technology</span>
+              </h1>
+            </div>
+            <div className="sm:max-w-[585.7px] sm:h-[84px] sm:pt-[130px] space-y-5 sm:space-y-0">
+              <p className="font-Poppins font-medium text-[11px] sm:text-[16.22px] leading-[18.7px] sm:leading-[27.58px] text-left text-white">
+                We are committed to unlocking this potential for you. the future
+                is defined by the limitless capabilities of Artificial
+                Intelligence (AI). We dedicated to delivering innovative
+                solutions with your goals.
+              </p>
+              <div className="flex items-center gap-3 sm:gap-7 sm:max-w-[585.7px] sm:pt-[30px]">
+                <button className="group flex items-center justify-center w-[125px] h-[31px] sm:w-[209px] sm:h-[52px] font-Poppins font-medium text-[10.57px] sm:text-[17.85px] text-white leading-[13px] sm:leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-md md:rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-700 ease-in-out">
+                  Contact Now
+                  <MdOutlineKeyboardArrowRight className="w-3 h-3 sm:w-6 sm:h-6 transition-transform duration-700 ease-in-out group-hover:ml-1 group-hover:scale-105" />
+                </button>
+                <button className="flex items-center justify-center w-[102px] h-[30px] sm:w-[173px] sm:h-[46px] font-Poppins font-medium text-[10.57px] sm:text-[17.57px] text-white leading-[13.2px] bg-transparent ring-1 hover:ring-0 hover:shadow-md ring-white rounded-[10px] transition duration-500 ease-in-out transform hover:bg-orange-400 ">
+                  Learn More
+                </button>
+              </div>
+            </div>
 
-            <button className="flex items-center justify-center w-[173px] h-[46px] font-Poppins font-medium text-[17.85px] text-white leading-[23.2px] bg-transparent ring-1 hover:ring-0 hover:shadow-md ring-white rounded-[10px] transition duration-500 ease-in-out transform hover:bg-orange-400 ">
-              Learn More
-            </button>
-          </div>
-          <div className="absolute bottom-0 right-0">
-            <img src={svg} alt="" />
-          </div>
-          <div className="absolute bottom-0 right-0">
-            <img src={Vector2} alt="" />
+            {/* <div className="w-[109px] h-[176px] sm:w-[386px] sm:h-[386px] absolute bottom-[-103px] right-0 sm:bottom-[-183px] sm:right-[-86px]">
+              <img src={svg} alt="" />
+            </div>
+            <div className="w-[109px] h-[150px] sm:w-[726px] sm:h-[726px] absolute bottom-[58px] right-[-21px] sm:bottom-[-273px] sm:right-[-504px]">
+              <img src={Vector2} alt="" />
+            </div> */}
           </div>
         </div>
       </div>

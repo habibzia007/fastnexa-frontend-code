@@ -7,6 +7,38 @@ import Vector3 from "../../assets/images/Vector3.png";
 import link1 from "../../assets/images/link1.png";
 import link2 from "../../assets/images/link2.png";
 import link3 from "../../assets/images/link3.png";
+
+// blog
+import blog0 from "../../assets/images/blog0.png";
+import blog1 from "../../assets/images/blog1.png";
+import blog2 from "../../assets/images/blog2.png";
+
+export const BlogCardData = [
+  {
+    image: { blog0 },
+    author: "Andrew Paker",
+    comments: 5,
+    date: "08",
+    month: "Aug",
+    title: "How to become a successful businessman",
+  },
+  {
+    image: { blog1 },
+    author: "Andrew Paker",
+    comments: 3,
+    date: "10",
+    month: "Aug",
+    title: "Who Needs Extract Value From Data?",
+  },
+  {
+    image: { blog2 },
+    author: "Andrew Paker",
+    comments: 8,
+    date: "12",
+    month: "Aug",
+    title: "Easy and Most Powerful Server and Platform.",
+  },
+];
 export const chooseUsData = [
   {
     img: { link1 },

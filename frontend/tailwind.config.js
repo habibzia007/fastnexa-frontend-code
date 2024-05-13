@@ -12,7 +12,8 @@ export default {
         inter:["Inter", "sans-serif"],
         barlow:["barlow", "sans-serif"],
         jost:["Jost", "sans-serif"],
-        barlow:["Barlow", "sans-serif"]
+        jost:["Jost", "sans-serif"],
+        outfit:["Outfit", "sans-serif"],
         
       },
     },

@@ -17,7 +17,7 @@ import AboutUsServices from "../../components/about/services/AboutUsServices";
 
 const About = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <AboutBanner />
       <AboutUs />

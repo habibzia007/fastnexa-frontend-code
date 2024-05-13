@@ -5,27 +5,27 @@ import WhoWeAreCard from "./Card";
 
 const WhoWeAre = () => {
   return (
-    <div className="w-[1185px] h-[704px]  mx-auto mt-[80px]">
-      <div className="w-[1185px] h-[677.96px]    mx-auto flex gap-2 ">
-        {/* left side  */}
-        <div className="w-[526px] flex-col gap-10">
-          {/* left side top */}
-          <div className="w-[510px] h-[278px] top-[999px] flex flex-col gap-[14.3px] ">
-            <h4 className="font-Poppins font-semibold text-[16px] text-[#FF6500] leading-[20.19px] tracking-[0.9396284818649292px] text-left">
+    <div className="w-full sm:h-[704px] mt-[41px] sm:mt-[80px]">
+      <div className="  container sm:w-[1184px] mx-auto px-4 sm:px-6 grid grid-cols-12 gap-2">
+        {/* Left side */}
+        <div className="col-span-12 sm:col-span-6 flex flex-col">
+          {/* Left side top */}
+          <div className="w-full h-[154px] sm:h-[250px] flex flex-col gap-[10.3px] sm:gap-[7px]">
+            <h4 className="font-Poppins font-semibold text-[12px] sm:text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center sm:text-left">
               WHO WE ARE?
             </h4>
-            <h1 className="font-Poppins font-semibold text-[32px] text-[#232F3B] leading-[42.1px] text-left">
-              Boost Business with <br /> Human Resource <br /> Augmentation
+            <h1 className="font-Poppins font-semibold text-[23px] leading-[34.1px] text-center sm:text-[32px] sm:leading-[42.1px] sm:text-left text-[#232F3B]">
+              Boost Business with Human Resource Augmentation
             </h1>
-            <p className="font-Poppins text-[#4C4D56] font-normal text-[16px] leading-[26px] text-left">
+            <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[16px] text-center sm:text-[16px] sm:leading-[26px] sm:text-left">
               Fast Nexa is into Human Resource Augmentation, Software
               Development, and IT Services, catering to diverse industries with
               tailored solutions.
             </p>
           </div>
-          {/* left side bottom */}
-          <div className="w-[526px] h-[397px]  ">
-            <div className="w-[516px] ml-160 border-[#ECECEC] border-b-[2px] flex gap-8">
+          {/* Left side bottom */}
+          <div className="w-full sm:max-w-[526px] sm:h-[397px] mt-7 sm:mt-0 ">
+            <div className="w-full border-[#ECECEC] border-b-[2px] flex  gap-5 sm:gap-8 ">
               <WhoWeAreCard
                 title="Soft Kode"
                 description="A Dept of Software Coding and Development."
@@ -36,7 +36,7 @@ const WhoWeAre = () => {
                 description="A Dept of Gaming Technology."
               />
             </div>
-            <div className="w-[516px] ml-160 border-[#ECECEC] border-b-[2px] flex gap-8">
+            <div className="w-full border-[#ECECEC] border-b-[2px] flex  gap-5 sm:gap-8">
               <WhoWeAreCard
                 title="ISec"
                 description="A Dept of Information and Cybersecurity."
@@ -47,7 +47,7 @@ const WhoWeAre = () => {
                 description="A Dept of Networks and Infrastructure."
               />
             </div>
-            <div className="w-[516px] ml-160 border-[#ECECEC]  flex gap-8">
+            <div className="w-full border-[#ECECEC] flex  gap-5 sm:gap-8">
               <WhoWeAreCard
                 title="BC & HRA"
                 description="A Dept of Business Continuity and  Human Resource Augmentation."
@@ -60,14 +60,16 @@ const WhoWeAre = () => {
             </div>
           </div>
         </div>
-        {/* right side  */}
-        <div className="w-[599px] h-[610.96px] top-[1066px]  mt-[70px] flex ml-[39px]">
-          <div className="relative ml-auto">
-            <div className="w-[397px] h-[503px] bg-[#FF6500] rounded-[18px] "></div>
-
-            <img className="absolute -top-0 -right-3 " src={aboutBig} alt="" />
+        {/* Right side */}
+        <div className="col-span-12 sm:col-span-6 h-[356.96px] md:h-[610.96px] top-[1066px] mt-4 sm:mt-[70px] flex sm:ml-[39px]">
+          <div className="relative sm:ml-auto">
             <img
-              className="absolute bottom-0 -left-[194px] "
+              className="w-[231px] h-[352px] sm:w-[397px] sm:h-[610px] object-cover border-l-8 rounded-md border-l-orange-600 left-[224px] bottom-0 sm:bottom-0 sm:left-2 sm:-top-0 sm:-right-3 ml-[116px] sm:ml-0"
+              src={aboutBig}
+              alt=""
+            />
+            <img
+              className="w-[220px] h-[159px] sm:w-[377px] sm:h-[272px] absolute bottom-0 left-[-2px] sm:bottom-0 sm:left-[-194px] object-contain"
               src={divabout}
               alt=""
             />

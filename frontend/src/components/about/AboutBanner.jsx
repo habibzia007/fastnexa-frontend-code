@@ -1,27 +1,20 @@
 import React from "react";
-import bg from "../../assets/images/vawe.png";
-import about from "../../assets/images/about.png";
+import bg from "../../assets/images/image-top.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const AboutBanner = () => {
-  const backgroundImageStyle = {
-    backgroundImage: ` url(${bg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-
   return (
-    <div className="relative h-[300px] w-full " style={backgroundImageStyle}>
-      <div className="w-[1185px] mx-auto ">
-        <div className=" flex gap-[600px] h-[284px]">
-          <div>
-            <h2 className="font-poppins font-bold text-[42px] leading-[61.08px] text-left pt-[55px]">
+    <div className="relative h-[200px] sm:h-[354px] w-full bg-cover bg-center" style={{backgroundImage: `url(${bg})`}}>
+      <div className="max-w-[1185px] mx-auto ">
+        <div className="flex justify-between sm:h-[284px] sm:justify-start sm:gap-[600px]">
+          <div className="mt-[30px] ml-[38px] sm:mt-[70px] sm:ml-[80px]">
+            <h2 className="font-outfit font-bold text-[28px] leading-[35.08px] sm:text-[50px] sm:leading-[58.08px] text-left pt-[55px] text-white tracking-wide">
               About Us
             </h2>
-            <p className="font-barlow font-normal text-[12.6px] leading-[20.48px] text-left">
-              Home / About
+            <p className="font-outfit font-normal text-[12.6px] leading-[22.48px] sm:text-[14.6px] sm:leading-[22.48px] text-left text-[#FF6500] flex items-center gap-2">
+              Home <span><FaLongArrowAltRight/></span> About Us
             </p>
           </div>
-          <img className=" w-[312.31px] h-[230.08px]" src={about} alt="" />
         </div>
       </div>
     </div>
