@@ -16,6 +16,12 @@ export default {
         outfit:["Outfit", "sans-serif"],
         
       },
+      colors: {
+        orangeColor: '#FF6500', // Replace with your desired hex code
+      },
+      margin: {
+        'center-div': '0 auto',
+      },
     },
   },
   plugins: [],
