@@ -33,7 +33,7 @@ const Team = () => {
                 <h3 className="font-Poppins font-bold text-[11.23px] leading-[16.59px]  sm:text-[20.23px] sm:leading-[27.59px] text-[#FFFFFF]">
                   Arnold
                 </h3>
-                <p className="font-Poppins font-normal text-[7.23px] leading-[11.59px] sm:text-[12.88.23px] sm:leading-[27.59px] text-[#FFFFFF]">
+                <p className="font-Poppins font-normal text-[7.23px] leading-[11.59px] sm:text-[12.88px] sm:leading-[27.59px] text-[#FFFFFF]">
                   {" "}
                   CEO, FastNexa
                 </p>
@@ -48,7 +48,7 @@ const Team = () => {
                 <h3 className="font-Poppins font-bold text-[11.23px] leading-[16.59px]  sm:text-[20.23px] sm:leading-[27.59px] text-[#FFFFFF]">
                   Mike
                 </h3>
-                <p className="font-Poppins font-normal text-[7.23px] leading-[11.59px] sm:text-[12.88.23px] sm:leading-[27.59px] text-[#FFFFFF]">
+                <p className="font-Poppins font-normal text-[7.23px] leading-[11.59px] sm:text-[12.88px] sm:leading-[27.59px] text-[#FFFFFF]">
                   
                   CEO, FastNexa
                 </p>
@@ -63,7 +63,7 @@ const Team = () => {
                 <h3 className="font-Poppins font-bold text-[20.23px] leading-[27.59px] text-[#FFFFFF]">
                   Joakim
                 </h3>
-                <p className="font-Poppins font-normal text-[12.88.23px] leading-[27.59px] text-[#FFFFFF]">
+                <p className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-[#FFFFFF]">
                   {" "}
                   CEO, FastNexa
                 </p>
@@ -78,7 +78,7 @@ const Team = () => {
                 <h3 className="font-Poppins font-bold text-[20.23px] leading-[27.59px] text-[#FFFFFF]">
                   Andrew
                 </h3>
-                <p className="font-Poppins font-normal text-[12.88.23px] leading-[27.59px] text-[#FFFFFF]">
+                <p className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-[#FFFFFF]">
                   {" "}
                   CEO, FastNexa
                 </p>

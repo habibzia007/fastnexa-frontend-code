@@ -8,44 +8,44 @@ import group0 from "../assets/images/group0.png";
 
 const OurClients = () => {
   return (
-    <div className="container  sm:h-[329.17px] mx-auto sm:mt-[80px] sm:w-[1134px]">
-      <h2 className="text-[#FF6500] font-Poppins font-semibold text-[12px] sm:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
+    <div className="container w-[350px] sm:w-[600px] h-[232.17px]  lg:h-[329.17px] mt-[20px] mx-auto lg:mt-[80px] lg:w-[1134px]">
+      <h2 className="text-[#FF6500] font-Poppins font-semibold text-[12px] lg:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
         Our Clients
       </h2>
-      <h1 className="text-[#232F3B] font-Poppins font-semibold text-[22px] leading-[33.08px] sm:text-[42px] sm:leading-[61.08px] text-center">
+      <h1 className="text-[#232F3B] font-Poppins font-semibold text-[22px] leading-[33.08px] lg:text-[42px] lg:leading-[61.08px] text-center">
         We share our confidence and passion with.
       </h1>
-      <div className="grid  grid-cols-12 gap-5 sm:gap-10 mt-5 sm:mt-0">
-        <div className="col-span-12 sm:col-span-12 flex justify-between">
+      <div className="grid  grid-cols-12 gap-5 lg:gap-10 mt-5 lg:mt-0">
+        <div className="col-span-12 lg:col-span-12 flex justify-between">
           <img
-            className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+            className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
             src={honor}
             alt=""
           />
           <img
-            className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+            className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
             src={lakecity}
             alt=""
           />
           <img
-            className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+            className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
             src={people}
             alt=""
           />
           <img
-            className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+            className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
             src={xinhuamall}
             alt=""
           />
           <img
-            className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+            className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
             src={netutils}
             alt=""
           />
         </div>
         <div className="col-span-12 flex justify-center">
           <img
-            className="w-[53px] h-[5.35] sm:w-[110px] sm:h-[11px] text-[#FF6500] text-center"
+            className="w-[53px] h-[5.35] lg:w-[110px] lg:h-[11px] text-[#FF6500] text-center"
             src={group0}
             alt=""
           />
@@ -67,42 +67,42 @@ export default OurClients;
 
 // const OurClients = () => {
 //   return (
-//     <div class="w-[350px] h-[240px] sm:w-[1134px] sm:h-[329.17px] border border-red-500   mx-auto  mt-[80px] flex flex-col items-center gap-2 sm:gap-5">
-//       <h2 className="text-[#FF6500] font-Poppins font-semibold text-[12px] sm:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
+//     <div class="w-[350px] h-[240px] lg:w-[1134px] lg:h-[329.17px] border border-red-500   mx-auto  mt-[80px] flex flex-col items-center gap-2 lg:gap-5">
+//       <h2 className="text-[#FF6500] font-Poppins font-semibold text-[12px] lg:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
 //         Our Clients
 //       </h2>
-//       <h1 className="text-[#232F3B] font-Poppins font-semibold text-[22px] leading-[33.08px]  sm:text-[42px] sm:leading-[61.08px] text-center">
+//       <h1 className="text-[#232F3B] font-Poppins font-semibold text-[22px] leading-[33.08px]  lg:text-[42px] lg:leading-[61.08px] text-center">
 //         We share our confidence and passion with.
 //       </h1>
-//       <div className="h-[64px] w-[434px]  sm:w-[1134px] sm:h-[168px] top-[2691px] left-[189px]   flex items-center justify-between ">
+//       <div className="h-[64px] w-[434px]  lg:w-[1134px] lg:h-[168px] top-[2691px] left-[189px]   flex items-center justify-between ">
 //         <img
-//           className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px]  filter grayscale"
+//           className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px]  filter grayscale"
 //           src={honor}
 //           alt=""
 //         />
 //         <img
-//           className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+//           className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
 //           src={lakecity}
 //           alt=""
 //         />
 //         <img
-//           className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+//           className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
 //           src={people}
 //           alt=""
 //         />
 //         <img
-//           className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+//           className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
 //           src={xinhuamall}
 //           alt=""
 //         />
 //         <img
-//           className="w-[64.54px] h-[64.54px] sm:w-[167.54px] sm:h-[167.54px] filter grayscale"
+//           className="w-[64.54px] h-[64.54px] lg:w-[167.54px] lg:h-[167.54px] filter grayscale"
 //           src={netutils}
 //           alt=""
 //         />
 //       </div>
 //       <img
-//         className=" w-[53px] h-[5.35] sm:w-[110px] sm:h-[11px] text-[#FF6500] text-center"
+//         className=" w-[53px] h-[5.35] lg:w-[110px] lg:h-[11px] text-[#FF6500] text-center"
 //         src={group0}
 //         alt=""
 //       />

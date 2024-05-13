@@ -11,20 +11,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative bg-white shadow-md shadow-[#00000026] z-50">
-      <div className="container sm:w-[1184px] mx-auto px-4 sm:px-6 grid grid-cols-12">
-        <div className="col-span-12 sm:col-span-6 lg:col-span-12">
+    <nav className="relative bg-white shadow-md  shadow-[#00000026] z-50">
+      <div className="container lg:w-[1184px] mx-auto px-4 lg:px-6 grid grid-cols-12">
+        <div className="col-span-12  lg:col-span-12">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/">
               <img
-                className="w-[59px] h-[38px] sm:w-[132.19px] sm:h-[86px]"
+                className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
                 src={logo}
                 alt="Logo"
               />
             </Link>
             {/* Navigation Links */}
-            <div className="hidden sm:flex items-center gap-5">
+            <div className="hidden lg:flex items-center gap-5">
               <Link to="/about">
                 <span className="text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5">
                   About Us
@@ -67,7 +67,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* Mobile Navigation */}
-            <div className="sm:hidden">
+            <div className="lg:hidden">
               {navOpen ? (
                 <FaTimes
                   color="#324558"
@@ -87,7 +87,7 @@ const Navbar = () => {
           </div>
           {/* Mobile Navigation Menu */}
           {navOpen && (
-            <div className="sm:hidden mt-2">
+            <div className="lg:hidden mt-2">
               <Link to="/about">
                 <span className="text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5 block py-2">
                   About Us
@@ -146,14 +146,14 @@ export default Navbar;
 // const Navbar = () => {
 //   const [nav, setNav] = useState(false);
 //   return (
-//     <nav className="relative h-[50px] sm:h-[93px] bg-white shadow-md shadow-[#00000026] z-50">
-//       <div className="container mx-auto px-4 sm:px-6 grid grid-cols-12">
-//         <div className="col-span-12 sm:col-span-6 lg:col-span-12">
-//           <div className="flex justify-between h-[50px] sm:h-[93px] items-center">
+//     <nav className="relative h-[50px] lg:h-[93px] bg-white shadow-md shadow-[#00000026] z-50">
+//       <div className="container mx-auto px-4 lg:px-6 grid grid-cols-12">
+//         <div className="col-span-12 lg:col-span-6 lg:col-span-12">
+//           <div className="flex justify-between h-[50px] lg:h-[93px] items-center">
 //             {/* Logo */}
 //             <Link to="/">
 //               <img
-//                 className="w-[59px] h-[38px] sm:w-[132.19px] sm:h-[86px]"
+//                 className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
 //                 src={logo}
 //                 alt=""
 //               />
@@ -202,7 +202,7 @@ export default Navbar;
 // </Link>
 //             </div>
 //             {/* Mobile Navigation */}
-//             <div className="sm:hidden">
+//             <div className="lg:hidden">
 //               {nav ? (
 //                 <FaTimes
 //                   color="#324558"
@@ -234,23 +234,23 @@ export default Navbar;
 // // // const Navbar = () => {
 // // //   const [nav, setNav] = useState(false);
 // // //   return (
-// // //     <nav className="relative h-[50px] sm:h-[93px] bg-white shadow-md shadow-[#00000026] z-50">
-// // //       <div className="container mx-auto px-4 sm:px-6">
-// // //         <div className="flex justify-between h-[50px] sm:h-[93px] items-center">
+// // //     <nav className="relative h-[50px] lg:h-[93px] bg-white shadow-md shadow-[#00000026] z-50">
+// // //       <div className="container mx-auto px-4 lg:px-6">
+// // //         <div className="flex justify-between h-[50px] lg:h-[93px] items-center">
 // // //           {/* Logo */}
 // // //           <Link to="/">
 // // //             <img
-// // //               className="w-[59px] h-[38px] sm:w-[132.19px] sm:h-[86px]"
+// // //               className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
 // // //               src={logo}
 // // //               alt=""
 // // //             />
 // // //           </Link>
 // // //           {/* Navigation Links */}
-// // //           <div className="hidden sm:flex items-center gap-5">
+// // //           <div className="hidden lg:flex items-center gap-5">
 // // //             {/* Your navigation links */}
 // // //           </div>
 // // //           {/* Mobile Navigation */}
-// // //           <div className="sm:hidden">
+// // //           <div className="lg:hidden">
 // // //             {nav ? (
 // // //               <FaTimes color="#324558" size={25} onClick={() => setNav(!nav)} />
 // // //             ) : (
@@ -273,19 +273,19 @@ export default Navbar;
 // // const Navbar = () => {
 // //   const [nav, setNav] = useState(false);
 // //   return (
-// //     <nav className="relative w-[430px] h-[50px] sm:w-full sm:h-[93px] bg-white shadow-md shadow-[#00000026] z-50">
-// //       <div className="w-[350px] sm:w-[1185px] mx-auto">
-// //         <div className="flex justify-between h-[50px] sm:h-[93px] ">
+// //     <nav className="relative w-[430px] h-[50px] lg:w-full lg:h-[93px] bg-white shadow-md shadow-[#00000026] z-50">
+// //       <div className="w-[350px] lg:w-[1185px] mx-auto">
+// //         <div className="flex justify-between h-[50px] lg:h-[93px] ">
 // //           {/* Logo */}
 // //           <Link to="/">
 // //             <img
-// //               className="w-[59px] h-[38px] pt-[6px] sm:w-[132.19px] sm:h-[86px] sm:pt-[3px]"
+// //               className="w-[59px] h-[38px] pt-[6px] lg:w-[132.19px] lg:h-[86px] lg:pt-[3px]"
 // //               src={logo}
 // //               alt=""
 // //             />
 // //           </Link>
 // //           {/* Navigation Links */}
-// //           <div className="hidden sm:min-w-[869px] md:flex items-center pt-[20px] gap-5">
+// //           <div className="hidden lg:min-w-[869px] md:flex items-center pt-[20px] gap-5">
 // //             <Link to="/about">
 // //               <span className="text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5">
 // //                 About Us
@@ -328,7 +328,7 @@ export default Navbar;
 // //             </Link>
 // //           </div>
 // //           {/* Mobile Navigation */}
-// //           <div className="sm:hidden pt-4 cursor-pointer sm:pt-[20px]">
+// //           <div className="lg:hidden pt-4 cursor-pointer lg:pt-[20px]">
 // //             {nav ? (
 // //               <FaTimes color="#324558" size={25} onClick={() => setNav(!nav)} />
 // //             ) : (

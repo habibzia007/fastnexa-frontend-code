@@ -27,7 +27,6 @@ const Card = ({ image, title }) => {
       </div>
     </div>
   </div>
-  
   );
 };
 
