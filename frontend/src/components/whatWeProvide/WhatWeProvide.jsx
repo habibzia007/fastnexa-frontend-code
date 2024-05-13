@@ -12,15 +12,9 @@ const WhatWeProvide = () => {
   };
   return (
     <div className="relative mt-[23px] w-full" style={backgroundImageStyle}>
-<<<<<<< Updated upstream
       <div className="container sm:w-[1220px] mx-auto px-4 sm:px-6 grid grid-cols-12 gap-4 pt-[20px] sm:pt-[37px] ">
         <h3 className="col-span-full font-Poppins font-semibold text-[12px] leading-[28.19px] sm:text-[16px] sm:leading-[28.19px] text-[#FF6500] tracking-[0.9396284818649292px] text-center">
           What We Provide
-=======
-      <div className="container w-[350px] sm:w-[610px] lg:w-[1184px] xl:w-[1220px] mx-auto px-4 lg:px-6 grid grid-cols-12 gap-4 pt-[20px] lg:pt-[37px] ">
-        <h3 className="col-span-full font-Poppins font-semibold text-[12px] leading-[28.19px] lg:text-[16px] lg:leading-[28.19px] text-[#FF6500] tracking-[0.9396284818649292px] text-center">
-          What we provide
->>>>>>> Stashed changes
         </h3>
         <h3 className="col-span-full  font-Poppins font-semibold text-[21px] leading-[34.19px] lg:text-[42px] lg:leading-[41.08px] text-[#232F3B] text-center">
           We provide truly prominent Software solutions
