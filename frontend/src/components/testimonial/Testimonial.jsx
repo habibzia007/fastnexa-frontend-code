@@ -8,7 +8,7 @@ import Dots from "../../utils/Dots";
 const Testimonial = () => {
   const backgroundImageStyle = {
     backgroundImage: `url(${testimonialbg})`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
   };
   return (
