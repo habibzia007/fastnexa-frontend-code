@@ -48,10 +48,12 @@ const Navbar = () => {
                   Services
                 </span>
               </Link>
-              <Link to="#">
+              <Link to="/technology">
                 <span
-                  className={`text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5 ${
-                    location.pathname === "#" ? "text-black font-bold" : ""
+                  className={`  font-Poppins font-medium text-[14px] leading-5 ${
+                    location.pathname === "/technology"
+                      ? "text-[#FF6500] font-extrabold "
+                      : "text-[#444444]"
                   }`}
                 >
                   Technology
