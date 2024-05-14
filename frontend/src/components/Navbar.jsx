@@ -26,10 +26,10 @@ const Navbar = () => {
             </Link>
             {/* Navigation Links */}
             <div className="hidden lg:flex items-center gap-5">
-              <Link to="/aboutus">
+              <Link to="/about">
                 <span
                   className={`  font-Poppins font-medium text-[14px] leading-5 ${
-                    location.pathname === "/aboutus"
+                    location.pathname === "/about"
                       ? "text-[#FF6500] font-extrabold "
                       : "text-[#444444]"
                   }`}

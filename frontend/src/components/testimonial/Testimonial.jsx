@@ -23,7 +23,7 @@ const Testimonial = () => {
         <h1 className="text-[#FFFFFF] font-Poppins font-semibold text-[22px] leading-[33.08px] lg:text-[42px] lg:leading-[61.08px] text-center">
           Our Clients Worldwide.
         </h1>
-        <div className="flex items-center">
+        <div className="flex items-center justify-between">
           <div className="pt-[40px] lg:pt-[60px] pl-1 lg:pl-6 ml-6">
             <div className="w-[310.86px] mx-auto h-[146.01px]  lg:w-[448.82px] lg:h-[217.72px] bg-white rounded-md shadow-md relative ">
               <img
