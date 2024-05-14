@@ -13,48 +13,75 @@ const Testimonial = () => {
   };
   return (
     <div
-      className="relative h-[388.2px] sm:h-[588.2px] w-full bg-gradient-to-br from-[#E16F1F] to-[rgba(255, 101, 0, 0.5)] mt-5 sm:mt-32"
+      className="relative h-[388.2px] lg:h-[588.2px] w-full bg-gradient-to-br from-[#E16F1F] to-[rgba(255, 101, 0, 0.5)] mt-5 lg:mt-32"
       style={backgroundImageStyle}
     >
-      <div className="w-[350px] h-full sm:w-[1020px] pt-[40px] sm:pt-[80px]   mx-auto ">
-        <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[12px] sm:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
+      <div className="w-[350px] sm:w-[670px] h-full lg:w-[1020px] pt-[40px] lg:pt-[80px]   mx-auto ">
+        <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[12px] lg:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
           Testimonial
         </h2>
-        <h1 className="text-[#FFFFFF] font-Poppins font-semibold text-[22px] leading-[33.08px] sm:text-[42px] sm:leading-[61.08px] text-center">
+        <h1 className="text-[#FFFFFF] font-Poppins font-semibold text-[22px] leading-[33.08px] lg:text-[42px] lg:leading-[61.08px] text-center">
           Our Clients Worldwide.
         </h1>
-        <div className="flex justify-between items-center">
-          <div className="pt-[40px] sm:pt-[60px] pl-1 sm:pl-6">
-            <div className="w-[329.86px]  h-[160.01px]  sm:w-[448.82px] sm:h-[217.72px] bg-white rounded-md shadow-md relative ">
+        <div className="flex items-center">
+          <div className="pt-[40px] lg:pt-[60px] pl-1 lg:pl-6 ml-6">
+            <div className="w-[310.86px] mx-auto h-[146.01px]  lg:w-[448.82px] lg:h-[217.72px] bg-white rounded-md shadow-md relative ">
               <img
-                className="rounded-md w-[78px] h-[77px]  sm:h-[106px] sm:w-[105px] absolute left-[-19px] top-[28px] sm:top-[2.5rem] sm:-left-[2.25rem] "
+                className="rounded-md w-[78px] h-[77px]  lg:h-[106px] lg:w-[105px] absolute left-[-19px] top-[28px] lg:top-[2.5rem] lg:-left-[2.25rem] "
                 src={men}
                 alt=""
               />
-              <p className="font-Poppins text-[17.59px] text-[#FFFFFF]  leading-[41px] font-semibold"></p>
-              <div className="ml-[80px] sm:ml-[130px]  pt-[28.5px] sm:pt-[31.5px] space-y-2 sm:space-y-4">
+              {/* <p className="font-Poppins text-[17.59px] text-[#FFFFFF]  leading-[41px] font-semibold"></p> */}
+              <div className="ml-[80px] lg:ml-[130px]  pt-[28.5px] lg:pt-[31.5px] space-y-2 lg:space-y-4">
                 <img
-                  className="w-[27.01px] h-[23.28px]  sm:w-[37.01px] sm:h-[32.28px]"
+                  className="w-[27.01px] h-[23.28px]  lg:w-[37.01px] lg:h-[32.28px]"
                   src={msg}
                   alt=""
                 />
-                <p className="w-[223.06px] h-[55.59px] sm:w-[304.06px] sm:h-[75.59px] text-[#4C4D56] font-jost font-normal text-[12px] leading-[18.50px] sm:text-[15.75px] sm:leading-[25.2px] text-left">
+                <p className="w-[223.06px] h-[55.59px] lg:w-[304.06px] lg:h-[75.59px] text-[#4C4D56] font-jost font-normal text-[12px] leading-[18.50px] lg:text-[15.75px] lg:leading-[25.2px] text-left">
                   Accelerate innovation with world-class tech teams Beyond more
                   stoic this along goodness hey this this wow manatee
                 </p>
-                <p className="font-jost font-normal text-[9px] leading-[12px] sm:text-[12.6px] sm:leading-[15.75px] text-left text-black">
-                  Mike Holder{" "}
-                  <span className="font-jost font-normal text-[6.94px] leading-[11.57px] sm:text-[9.45px] sm:leading-[15.75px] text-left text-[#47484A]">
+                <p className="font-jost font-normal text-[9px] leading-[12px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-black">
+                  Mike Holder
+                  <span className="font-jost font-normal text-[6.94px] leading-[11.57px] lg:text-[9.45px] lg:leading-[15.75px] text-left text-[#47484A]">
                     / CEO, Harlond inc
-                  </span>{" "}
+                  </span>
                 </p>
               </div>
             </div>
           </div>
-          <div className="hidden sm:block pt-[60px] pl-6">
+          <div className="hidden sm:block pt-[40px] lg:pt-[60px] pl-1 lg:pl-6 ml-6">
+            <div className="w-[310.86px] mx-auto h-[146.01px]  lg:w-[448.82px] lg:h-[217.72px] bg-white rounded-md shadow-md relative ">
+              <img
+                className="rounded-md w-[78px] h-[77px]  lg:h-[106px] lg:w-[105px] absolute left-[-19px] top-[28px] lg:top-[2.5rem] lg:-left-[2.25rem] "
+                src={men}
+                alt=""
+              />
+              {/* <p className="font-Poppins text-[17.59px] text-[#FFFFFF]  leading-[41px] font-semibold"></p> */}
+              <div className="ml-[80px] lg:ml-[130px]  pt-[28.5px] lg:pt-[31.5px] space-y-2 lg:space-y-4">
+                <img
+                  className="w-[27.01px] h-[23.28px]  lg:w-[37.01px] lg:h-[32.28px]"
+                  src={msg}
+                  alt=""
+                />
+                <p className="w-[223.06px] h-[55.59px] lg:w-[304.06px] lg:h-[75.59px] text-[#4C4D56] font-jost font-normal text-[12px] leading-[18.50px] lg:text-[15.75px] lg:leading-[25.2px] text-left">
+                  Accelerate innovation with world-class tech teams Beyond more
+                  stoic this along goodness hey this this wow manatee
+                </p>
+                <p className="font-jost font-normal text-[9px] leading-[12px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-black">
+                  Mike Holder
+                  <span className="font-jost font-normal text-[6.94px] leading-[11.57px] lg:text-[9.45px] lg:leading-[15.75px] text-left text-[#47484A]">
+                    / CEO, Harlond inc
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="hidden md:block pt-[60px] pl-6">
             <div className=" w-[448.82px] h-[217.72px] bg-white rounded-md shadow-md relative ">
               <img
-                className="rounded-md sm:h-[106px] sm:w-[105px] absolute top-[2.5rem] -left-[2.25rem] "
+                className="rounded-md lg:h-[106px] lg:w-[105px] absolute top-[2.5rem] -left-[2.25rem] "
                 src={men1}
                 alt=""
               />
@@ -72,7 +99,7 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         
        <Dots/>

@@ -24,7 +24,7 @@ const Team = () => {
         <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[24px] leading-[28.08px] sm:text-[42px] sm:leading-[61.08px] text-center">
           We have world expert team
         </h1>
-        <div className="flex  items-center w-[350px] sm:w-[1184px] mx-auto mt-2 sm:mt-10 ">
+        <div className="flex  items-center justify-center w-[350px] sm:w-[610px] lg:w-[1184px] mx-auto mt-2 sm:mt-10 ">
           <div className=" relative cursor-pointer opacity-100 hover:opacity-90 ">
             <img className="w-[175px] h-[225px] sm:w-[297px] sm:h-[381px] " src={team1} alt="" />
             <div className="flex items-center gap-1  sm:gap-3 absolute  bottom-[35px] left-[43px]">
@@ -55,7 +55,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className="  hidden sm:block  relative  cursor-pointer opacity-100 hover:opacity-90 ">
+          <div className="  hidden lg:block  relative  cursor-pointer opacity-100 hover:opacity-90 ">
             <img className="w-[175px] h-[225px] sm:w-[297px] sm:h-[381px] " src={team3} alt="" />
             <div className="flex items-center gap-3 absolute  bottom-[35px] left-[43px]">
               <div className="w-[15px] h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
@@ -70,7 +70,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className=" hidden sm:block relative  cursor-pointer opacity-100 hover:opacity-90 ">
+          <div className=" hidden xl:block relative  cursor-pointer opacity-100 hover:opacity-90 ">
             <img className="w-[175px] h-[225px] sm:w-[297px] sm:h-[381px] " src={team4} alt="" />
             <div className="flex items-center gap-3 absolute  bottom-[35px] left-[43px]">
               <div className="w-[15px] h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
