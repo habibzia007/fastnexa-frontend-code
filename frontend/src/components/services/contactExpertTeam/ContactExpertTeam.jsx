@@ -10,27 +10,21 @@ const ContactExpertTeam = () => {
   };
 
   return (
-    <div className=" flex justify-center w-full mb-[150px]">
-      {" "}
-      {/* Orange Container */}
+    <div className=" flex justify-center w-full md:mb-[150px] mb-[50px] p-5 lg:p-0">
       <div
-        className="relative h-[285px] w-[1186px] center-div text-container"
+        className="relative lg:h-[285px] md:h-[250px] w-[1186px] center-div text-container "
         style={backgroundImageStyle}
       >
         <div className="flex items-center justify-between p-4">
-          <div className="w-4/6 start-8 top-7 relative h-[209px] text-container text-center">
-            {" "}
-            {/* Text */}
-            <p className="font-Poppins text-[17.59px] text-[#FFFFFF] font-semibold text-left leading-[75px] tracking-[1px]">
+          <div className="lg:w-4/6 lg:start-8 top-7 relative h-[209px] text-container text-center">
+            <p className="font-Poppins lg:text-[17.59px] md:text-[14.59px] md:leading-[60px] text-[#FFFFFF] font-semibold text-left lg:leading-[75px] tracking-[1px] text-[6.89px] leading-[25px]">
               Contact our Expert Team
             </p>
-            <h2 className="text-[#FFFFFF] font-Poppins font-bold text-[42px] leading-[50px] tracking-[0.9396284818649292px] text-left">
+            <h2 className="text-[#FFFFFF] font-Poppins font-bold lg:text-[42px] lg:leading-[50px] md:text-[28px] md:leading-[40px] md:tracking-[0.9396284818649292px] text-left text-[16.46px]">
               To make requests for further information, contact us,
             </h2>
           </div>
-          <div className="w-1/6 pr-9">
-            {" "}
-            {/* Image */}
+          <div className="lg:pr-9 lg:mr-6 lg:w-1/6 md:w-1/4 md:pr-5 w-1/2">
             <img
               src={contactImage}
               alt="Image description"

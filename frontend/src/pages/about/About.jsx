@@ -10,7 +10,7 @@ import Testimonial from "../../components/testimonial/Testimonial";
 import Blog from "../../components/blog/Blog";
 import ContactUs from "../../components/contactUs/ContactUs";
 import Footer from "../../components/Footer";
-import AboutBanner from "../../components/about/AboutBanner";
+import Banner from "../../components/about/Banner.jsx";
 import AboutUs from "../../components/about/aboutUs/AboutUs";
 import Team from "../../components/about/team/Team";
 import AboutUsServices from "../../components/about/services/AboutUsServices";
@@ -19,7 +19,7 @@ const About = () => {
   return (
     <main className="w-full bg-[#FFFFFF]">
       <Navbar />
-      <AboutBanner />
+      <Banner text={'About Us'} />
       <AboutUs />
       <Team />
       <AboutUsServices/>
