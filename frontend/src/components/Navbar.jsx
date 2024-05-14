@@ -30,12 +30,12 @@ const Navbar = () => {
                   About Us
                 </span>
               </Link>
-              <Link to="#">
+              <Link to="/services">
                 <span className="text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5">
                   Services
                 </span>
               </Link>
-              <Link to="#">
+              <Link to="/technology">
                 <span className="text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5">
                   Technology
                 </span>
