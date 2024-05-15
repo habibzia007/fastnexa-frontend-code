@@ -12,8 +12,8 @@ export default {
         inter:["Inter", "sans-serif"],
         barlow:["barlow", "sans-serif"],
         jost:["Jost", "sans-serif"],
-        outfit:["Outfit", "sans-serif"],
-
+        barlow:["Barlow", "sans-serif"]
+        
       },
       colors: {
         orangeColor: '#FF6500', // Replace with your desired hex code
