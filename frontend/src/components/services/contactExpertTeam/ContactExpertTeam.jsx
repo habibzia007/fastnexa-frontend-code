@@ -16,7 +16,7 @@ const ContactExpertTeam = () => {
         style={backgroundImageStyle}
       >
         <div className="flex items-center justify-between p-4">
-          <div className="lg:w-4/6 lg:start-8 top-7 relative h-[209px] text-container text-center">
+          <div className="lg:w-4/6 lg:start-8 top-7 relative h-[126px] text-container text-center">
             <p className="font-Poppins lg:text-[17.59px] md:text-[14.59px] md:leading-[60px] text-[#FFFFFF] font-semibold text-left lg:leading-[75px] tracking-[1px] text-[6.89px] leading-[25px]">
               Contact our Expert Team
             </p>

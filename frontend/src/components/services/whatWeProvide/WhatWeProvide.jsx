@@ -17,7 +17,7 @@ const WhatWeProvide = () => {
         {/* <h3 className="font-Poppins font-semibold text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
           What we provide
         </h3> */}
-        <div className="text-container ">
+        <div className="text-container w-[340px] sm:w-[650px] mx-auto">
           <h3 className="font-Poppins font-semibold lg:text-[36px] lg:leading-[61.08px] sm:text-[30px] md:leading-[41.08px] text-[#1F1F1F]  text-center ">
             Services that Speed Up Success
           </h3>

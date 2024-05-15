@@ -123,10 +123,10 @@ const Navbar = () => {
           {/* Mobile Navigation Menu */}
           {navOpen && (
             <div className="lg:hidden mt-2">
-              <Link to="/aboutus">
+              <Link to="/about">
                 <span
                   className={`  font-Poppins font-medium text-[14px] leading-5 ${
-                    location.pathname === "/aboutus"
+                    location.pathname === "/about"
                       ? "text-orange-700 font-extrabold"
                       : "text-[#444444]"
                   }`}
@@ -145,10 +145,12 @@ const Navbar = () => {
                   Services
                 </span>
               </Link>
-              <Link to="#">
+              <Link to="/technology">
                 <span
-                  className={`text-[#444444] hover:text-black font-Poppins font-medium text-[14px] leading-5 block py-2 ${
-                    location.pathname === "#" ? "text-black font-extrabold" : ""
+                  className={`  font-Poppins font-medium text-[14px] leading-5 ${
+                    location.pathname === "/technology"
+                      ? "text-[#FF6500] font-extrabold "
+                      : "text-[#444444]"
                   }`}
                 >
                   Technology

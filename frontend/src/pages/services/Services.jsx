@@ -14,7 +14,7 @@ import Banner from "../../components/about/Banner";
 
 const Services = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={'Services'} />
       <OfferedServices />
