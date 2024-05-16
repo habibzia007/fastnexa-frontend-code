@@ -1,3 +1,4 @@
+
 import React from "react";
 import bg from "../../assets/images/whatweprovidebg.svg";
 import rightArrow from "../../assets/images/rightArrow.svg";
@@ -48,4 +49,3 @@ const WhatWeProvide = () => {
 };
 
 export default WhatWeProvide;
-

@@ -14,6 +14,7 @@ import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <main className=" w-full bg-[#FFFFFF]">
+
       <Navbar />
       <Hero />
       <WhoWeAre />

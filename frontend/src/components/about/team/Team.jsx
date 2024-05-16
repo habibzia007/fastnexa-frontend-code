@@ -38,6 +38,7 @@ const Team = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    className: "center",
     responsive: [
       {
         breakpoint: 1024,
@@ -79,8 +80,9 @@ const Team = () => {
         <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[16px] leading-[36.08px] md:text-[42px] md:leading-[61.08px] text-center lg:pb-[50px]">
           We have a world-class expert team
         </h1>
-        <div className="flex justify-center items-center w-full max-w-[1184px] px-2 md:px-4 mx-auto mt-2 sm:mt-10 ">
-          <Slider {...settings}  className=" w-[300px] sm:w-[600.44px] lg:w-[1189.44px] mx-auto slider-container">
+       
+        <div className="flex justify-center items-center w-full max-w-[1184px] px-2 md:px-4 mx-auto mt-2 sm:mt-10 slider-container">
+          <Slider {...settings}  className=" w-[300px] sm:w-[600.44px] lg:w-[1189.44px] mx-auto ">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
