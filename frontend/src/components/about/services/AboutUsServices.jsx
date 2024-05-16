@@ -18,7 +18,6 @@ const AboutUsServices = () => {
       {/* wrapper */}
       <div className=" w-[350px] sm:w-[510px]  lg:w-[1185px]  mx-auto pt-[30px] lg:pt-[66px]  ">
         <div className=" w-full flex flex-col space-y-[120px] sm:space-y-[85px] lg:space-y-[62px]">
-
           {/* first card  */}
           <div className="w-full h-[311px] flex gap-4 lg:gap-0 flex-col lg:flex-row justify-between items-center lg:items-start">
             <div className=" flex flex-col  lg:w-[540px] space-y-4 items-center lg:items-start ">
@@ -45,7 +44,7 @@ const AboutUsServices = () => {
             />
           </div>
           {/* second card */}
-          <div className="w-full h-[311px] flex gap-4 lg:gap-0 flex-col lg:flex-row justify-between items-center lg:items-start">
+          <div className="w-full h-[311px] flex gap-4 lg:gap-0 flex-col lg:flex-row-reverse justify-between items-center lg:items-start">
             <div className=" flex flex-col  lg:w-[540px] space-y-4 items-center lg:items-start ">
               <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-left text-[#232F3B]">
                 IT Staff Augmentation
@@ -70,7 +69,7 @@ const AboutUsServices = () => {
             />
           </div>
           {/* third card */}
-          <div className="w-full h-[311px] flex gap-4 lg:gap-0 flex-col  lg:flex-row-reverse justify-between items-center lg:items-start">
+          <div className="w-full h-[311px] flex gap-4 lg:gap-0 flex-col  lg:flex-row justify-between items-center lg:items-start">
             <div className=" flex flex-col  lg:w-[540px] space-y-4 items-center lg:items-start ">
               <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-left text-[#232F3B]">
                 The IT Imperative

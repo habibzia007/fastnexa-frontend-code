@@ -9,16 +9,13 @@ const WhatWeProvide = () => {
     backgroundPosition: "center",
   };
   return (
-    <div
-      className="relative lg:h-[663px]  mt-[23px] w-full"
-      style={backgroundImageStyle}
-    >
-      <div className="lg:w-[1184.44px] lg:h-[517.3px]  mx-auto  pt-[37px] sm:w-[610px] md:w-[650px]">
+    <div className="relative mt-[23px] w-full" style={backgroundImageStyle}>
+      <div className="lg:w-[1184.44px] mx-auto px-4 sm:px-6  pt-[37px] w-[340px] sm:w-[650px] ">
         {/* <h3 className="font-Poppins font-semibold text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
           What we provide
         </h3> */}
-        <div className="text-container w-[340px] sm:w-[650px] mx-auto">
-          <h3 className="font-Poppins font-semibold lg:text-[36px] lg:leading-[61.08px] sm:text-[30px] md:leading-[41.08px] text-[#1F1F1F]  text-center ">
+        <div className="text-container w-[340px] sm:w-[500px] md:w-[650px] lg:w-[740px] mx-auto">
+          <h3 className="font-Poppins font-semibold lg:text-[36px] lg:leading-[54.08px] sm:text-[30px] md:leading-[41.08px] text-[#1F1F1F]  text-center ">
             Services that Speed Up Success
           </h3>
           <p className="font-Poppins md:text-[16px] md:leading-[21px] text-[7.57px] text-[#747474] text-center pl-2 pr-2">
@@ -27,16 +24,15 @@ const WhatWeProvide = () => {
             dignissim nisl, at efficitur justo
           </p>
         </div>
-        <div className="container sm:w-[1220px] mx-auto px-4 sm:px-6 grid grid-cols-12 gap-4 pt-[20px] sm:pt-[37px] ">
-          <div
-              className="col-span-full mt-6 lg:mt-8 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 sm:gap-x-9 gap-y-2 lg:gap-[3rem] mr-8">
+        <div className="container xl:w-[1230px] mx-auto px-4 sm:px-6 grid grid-cols-12 gap-4 pt-[20px] sm:pt-[37px] ">
+          <div className="col-span-full  mt-6 lg:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  sm:gap-x-12 gap-4 lg:gap-[1rem] xl:gap-[3rem]  mx-auto">
             {WhatWeProvideData.map((card, index) => (
-                <WhatWeProvideCard
-                    key={index}
-                    image={Object.values(card.img)[0]}
-                    title={card.title}
-                    description={card.description}
-                />
+              <WhatWeProvideCard
+                key={index}
+                image={Object.values(card.img)[0]}
+                title={card.title}
+                description={card.description}
+              />
             ))}
           </div>
         </div>

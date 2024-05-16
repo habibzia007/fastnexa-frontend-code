@@ -18,7 +18,7 @@ const Footer = () => {
     <div className=" lg:h-[430.91px] w-full  " style={backgroundImageStyle}>
       {/* wrapper */}
       <div className="mx-auto w-[300px] sm:w-[610px] lg:w-[1084px] ">
-        <div className="flex flex-col lg:flex-row  gap-5  lg:gap-44 mx-auto lg:h-[363px] ">
+        <div className="flex flex-col lg:flex-row  gap-5  lg:gap-[4.25rem] xl:gap-44 mx-auto lg:h-[363px] ">
           <div className="flex flex-col gap-4 w-full lg:h-[261px] items-center lg:items-start  lg:w-1/5 lg:self-center pt-5 lg:pt-0">
             <img
               className="w-[96px] h-[64px] sm:w-[152px] lg:w-[152px] lg:h-[101px] text-white"
@@ -35,13 +35,13 @@ const Footer = () => {
               <TiSocialLinkedin className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px]  cursor-pointer" />
             </div>
           </div>
-          <div className="flex gap-8 w-full sm:w-[70%] sm:ml-[100px] lg:ml-0  lg:w-[65%] lg:gap-10 lg:justify-between lg:items-center">
+          <div className="flex gap-8 w-full sm:w-[70%] sm:ml-[100px] lg:ml-0  lg:w-[64%] xl:w-[67%] lg:gap-10 lg:justify-between lg:items-center">
             <div className=" w-[79px] h-[103px] sm:w-full sm:h-[131px] lg:w-[164px] lg:h-[131px] ">
               <h3 className="font-Poppins font-semibold text-[8.75px] leading-[17.62px] lg:text-[15.75px] lg:leading-[23.62px] text-left text-[#FF6500]">
                 Useful Links
               </h3>
               <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-                <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+                <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
                   Terms & Conditions
                 </li>
                 <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
@@ -60,7 +60,7 @@ const Footer = () => {
                 Our Services
               </h3>
               <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-                <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[9.75px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+                <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.75px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
                   Data Security
                 </li>
                 <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">

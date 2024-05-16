@@ -22,12 +22,13 @@ const IntroCard = () => {
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="border-t-8 border-orange-500 rounded-md overflow-hidden bg-white shadow-lg"
+            className="group relative border-t-8 border-orange-500 rounded-md overflow-hidden bg-white shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
           >
-            <div className="px-6 py-4">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#ccc] opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+            <div className="relative px-6 py-4">
               <div className="flex justify-center">
                 <img
-                  className="w-[200px] h-[130px] mt-5"
+                  className="w-[200px] h-[130px] mt-5 transform transition duration-500 group-hover:scale-110"
                   src={card.imgSrc}
                   alt={card.text}
                 />

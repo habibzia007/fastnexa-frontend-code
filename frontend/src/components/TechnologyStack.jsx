@@ -10,7 +10,7 @@ import rectangle1 from "../assets/images/rectangle1.png";
 
 const TechnologyStack = () => {
   return (
-    <div className="container mx-auto mt-8 lg:mt-0">
+    <div className="container mx-auto mt-8 lg:my-20">
       {/* wrapper */}
       <div className="grid  w-[350px] sm:w-[600px] lg:w-[1184px] grid-cols-12 lg:place-items-center gap-5 bg-white mx-auto p-4 ">
         {/* left side */}
