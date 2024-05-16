@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 const Card = ({ title, description, image }) => {
   return (
     <div className="cursor-pointer relative w-[160px] h-[207.3px] sm:w-[281.44px] sm:h-[363.3px] group">
-      <div className="hover:shadow-[3px_-3px_0_rgba(255,101,0)] sm:hover:shadow-[3px_-3px_0_rgba(255,101,0)]  transition-all duration-300 relative z-10 w-[160px] h-[207.3px] sm:w-[281.44px] sm:h-[363.3px] group bg-[#FFFFFF] rounded-[9.2px] p-3 sm:p-5 ">
+      <div className=" hover:shadow-[3px_-3px_0_rgba(255,101,0)]  transition-all duration-300 relative z-10 w-[160px] h-[207.3px] sm:w-[281.44px] sm:h-[363.3px] group bg-[#FFFFFF] rounded-[9.2px] p-3 sm:p-5 ">
         <img
           className="w-[26px] h-[26px] sm:w-[46px] sm:h-[46px]"
           src={image}

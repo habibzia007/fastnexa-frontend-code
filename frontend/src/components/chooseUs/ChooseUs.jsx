@@ -18,7 +18,7 @@ const ChooseUs = () => {
     >
       <div className="container mx-auto grid grid-cols-12 gap-4">
         <div className="col-span-12 lg:col-span-12 mx-auto">
-          <h3 className="font-Poppins font-semibold text-[12px] lg:text-[16px] pt-4 lg:pt-20 text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
+          <h3 className="font-Poppins font-semibold text-[12px] lg:text-[16px] pt-4 lg:pt-[58px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
             REASON TO CHOOSE US
           </h3>
           <h3 className="font-Poppins font-semibold text-[22px] leading-[33.08px] lg:text-[42px] lg:leading-[61.08px] lg:pt-4 text-[#232F3B] text-center">
@@ -34,7 +34,7 @@ const ChooseUs = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-12 sm:col-span-12 flex  justify-center py-5 sm:py-[20px]">
+        <div className="col-span-12 sm:col-span-12 flex  justify-center py-5 sm:pt-[20px] sm:pb-[57px]">
           <div className="flex items-center gap-3">
             <h3 className="font-Poppins font-normal text-[12px] sm:text-[16px] leading-[30px] text-center text-[#232F3B]">
               Learn more about{" "}

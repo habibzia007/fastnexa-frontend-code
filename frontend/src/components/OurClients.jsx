@@ -24,7 +24,7 @@ const OurClients = () => {
   };
 
   return (
-    <div className=" w-[300px] sm:w-[600.44px] lg:w-[1000px] xl:w-[1189.44px] lg:h-[329px] mx-auto my-[30px] sm:my-[40px] md:my-[50px] xl:my-[120px]">
+    <div className=" w-[300px] sm:w-[600.44px] lg:w-[1000px] xl:w-[1189.44px] lg:h-[329px] mx-auto my-[30px] sm:my-[40px] md:my-[50px] xl:my-[72px]">
       <h2 className="text-[#FF6500] font-Poppins font-semibold text-[12px] md:text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
         Our Clients
       </h2>

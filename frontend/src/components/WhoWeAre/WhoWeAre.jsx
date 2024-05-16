@@ -69,7 +69,7 @@ const WhoWeAre = () => {
               alt=""
             />
             <img
-              className="w-[220px] h-[159px] lg:w-[377px] lg:h-[272px] absolute bottom-0 left-[-2px] lg:bottom-[-29px] lg:left-[-194px] object-contain"
+              className="w-[220px] h-[159px] lg:w-[377px] lg:h-[272px] absolute bottom-0 left-[-2px] lg:bottom-[-12px] lg:left-[-194px] object-contain"
               src={divabout}
               alt=""
             />
