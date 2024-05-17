@@ -24,7 +24,7 @@ const WhatWeProvide = () => {
             dignissim nisl, at efficitur justo
           </p>
         </div>
-        <div className="container  mx-auto px-4 sm:px-6 grid grid-cols-12 gap-4 pt-[20px] sm:pt-[37px] ">
+        <div className="grid grid-cols-12 gap-4 pt-[20px] sm:pt-[37px] ">
           <div className="col-span-full  mt-6 lg:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  sm:gap-x-12 gap-4 lg:gap-[1rem] xl:gap-[3rem]  mx-auto">
             {WhatWeProvideData.map((card, index) => (
               <WhatWeProvideCard
