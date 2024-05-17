@@ -13,7 +13,7 @@ const ContactUs = () => {
     <div className="w-full" style={backgroundImageStyle}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[1185px] py-8 lg:py-16 flex flex-col lg:flex-row items-center">
         <div className=" w-[80%]  lg:w-1/2 lg:flex lg:items-center">
-          <div className="w-full flex flex-col items-start  lg:gap-8">
+          <div className="w-full flex flex-col items-start  lg:gap-16">
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
               <div className="bg-[#FF6500]  w-[6px] h-[80%] lg:w-3.66 lg:h-[148px]"></div>
               <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[37px] lg:leading-[48px] xl:text-[50px] xl:leading-[48px] text-[#0E0E0E]">
@@ -23,7 +23,7 @@ const ContactUs = () => {
             <div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 w-[236px] sm:w-full ">
               <div className="flex gap-2 items-center">
                 <img
-                  className="w-6 h-6 md:w-12 lg:h-12"
+                  className="w-6 h-6 md:w-12 lg:h-11"
                   src={phone}
                   alt="Phone"
                 />
@@ -38,7 +38,7 @@ const ContactUs = () => {
               </div>
               <div className="flex gap-2 items-center">
                 <img
-                  className="w-6 h-6 lg:w-12 lg:h-12"
+                  className="w-6 h-6 lg:w-11 lg:h-11"
                   src={message}
                   alt="Message"
                 />
@@ -53,7 +53,7 @@ const ContactUs = () => {
               </div>
               <div className="flex gap-4=2 items-center">
                 <img
-                  className="w-6 h-6 lg:w-12 lg:h-12"
+                  className="w-6 h-6 lg:w-11 lg:h-11"
                   src={location}
                   alt="Location"
                 />
