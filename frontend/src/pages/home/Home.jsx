@@ -7,7 +7,7 @@ import OurClients from "../../components/OurClients";
 import ChooseUs from "../../components/chooseUs/ChooseUs";
 import TechnologyStack from "../../components/TechnologyStack";
 import Testimonial from "../../components/testimonial/Testimonial";
-import Blog from "../../components/blog/Blog";
+import Blog from "../../components/blog/Blogs";
 import ContactUs from "../../components/contactUs/ContactUs";
 import Footer from "../../components/Footer";
 
@@ -21,11 +21,11 @@ const Home = () => {
       <WhatWeProvide />
       <OurClients />
       <ChooseUs />
-      <TechnologyStack />
+      {/* <TechnologyStack /> */}
       <Testimonial />
       <Blog />
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };
