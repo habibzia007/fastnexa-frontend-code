@@ -16,7 +16,7 @@ const ContactUs = () => {
           <div className="w-full flex flex-col items-start  lg:gap-16">
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
               <div className="bg-[#FF6500]  w-[6px] h-[80%] lg:w-3.66 lg:h-[148px]"></div>
-              <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[37px] lg:leading-[48px] xl:text-[50px] xl:leading-[48px] text-[#0E0E0E]">
+              <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[37px] lg:leading-[48px] xl:text-[43px] xl:leading-[51px] text-[#0E0E0E]">
                 To make requests for further information, contact us
               </div>
             </div>
@@ -42,7 +42,7 @@ const ContactUs = () => {
                   src={message}
                   alt="Message"
                 />
-                <div>
+                <div >
                   <h2 className="font-Poppins font-bold text-[7.94px] lg:text-lg text-[#0E0E0E]">
                     Our Mail
                   </h2>
@@ -51,9 +51,9 @@ const ContactUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-4=2 items-center">
+              <div className="flex gap-2 items-center">
                 <img
-                  className="w-6 h-6 lg:w-11 lg:h-11"
+                  className="w-6 h-6 lg:w-11 lg:h-11 "
                   src={location}
                   alt="Location"
                 />
