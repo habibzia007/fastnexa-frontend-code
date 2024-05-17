@@ -21,7 +21,7 @@ const Home = () => {
       <WhatWeProvide />
       <OurClients />
       <ChooseUs />
-      {/* <TechnologyStack /> */}
+      <TechnologyStack />
       <Testimonial />
       <Blog />
       <ContactUs />

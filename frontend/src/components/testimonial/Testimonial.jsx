@@ -67,7 +67,7 @@ const Testimonial = () => {
 
   return (
     <div
-      className="relative h-[388.2px]   xl:h-[588.2px] w-full  mt-5 xl:mt-32"
+      className="relative h-[388.2px]   xl:h-[588.2px] w-full  mt-5 xl:mt-[4.5rem"
       style={backgroundImageStyle}
     >
       <div className="w-[350px]  mx-auto  md:w-[750px] h-full xl:w-[1180px] pt-[40px] xl:pt-[80px]  ">
@@ -121,31 +121,3 @@ const Testimonial = () => {
 
 export default Testimonial;
 
-// <div
-//   className="relative h-[588.2px] w-full mb-[160px]"
-//   style={backgroundImageStyle}
-// >
-//   <div className="w-[1020px]  h-[517px] pt-[80px]  mx-auto">
-//     <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
-//       Testimonial
-//     </h2>
-//     <h1 className="text-[#FFFFFF] font-Poppins font-semibold text-[42px] leading-[61.08px] text-center">
-//       Our Clients Worldwide.
-//     </h1>
-//     <Slider {...settings}>
-//       {logos.map((logo, index) => (
-//         <div key={index} className="flex items-center justify-center">
-//           <img
-//             src={logo}
-//             alt={`Logo ${index}`}
-//             className="w-[448.82px] h-[217.72px] mt-[60px]"
-//           />
-//         </div>
-//       ))}
-//     </Slider>
-//   </div>
-// </div>
-//   );
-// };
-
-// export default Testimonial;
