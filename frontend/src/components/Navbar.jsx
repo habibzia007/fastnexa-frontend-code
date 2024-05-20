@@ -105,7 +105,7 @@ const Navbar = () => {
                 className="block py-2 px-4"
                 onClick={toggleNav}
               >
-                <button className="w-full h-[37px] rounded-md p-1 font-Poppins font-medium text-[12px] leading-4 text-white bg-[#FF6500] border-[#FF6500] hover:bg-transparent hover:text-orange-600 hover:border hover:border-orange-600 transition-colors duration-700 hover:shadow-md">
+                <button className="w-[163px] h-[37px] rounded-md p-1 font-Poppins font-medium text-[12px] leading-4 text-white bg-[#FF6500] border-[#FF6500] hover:bg-transparent hover:text-orange-600 hover:border hover:border-orange-600 transition-colors duration-700 hover:shadow-md">
                   {buttonLink.label}
                 </button>
               </Link>
