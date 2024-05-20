@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className=" lg:h-[430.91px] w-full  " style={backgroundImageStyle}>
       {/* wrapper */}
-      <div className="mx-auto w-[300px] sm:w-[610px] lg:w-[1084px] ">
+      <div className="mx-auto w-[300px] sm:w-[610px] lg:w-[1084px] px-4 lg:px-6">
         <div className="flex flex-col lg:flex-row  gap-5  lg:gap-[4.25rem] xl:gap-44 mx-auto lg:h-[363px] ">
           <div className="flex flex-col gap-4 w-full lg:h-[261px] items-center lg:items-start  lg:w-1/5 lg:self-center pt-5 lg:pt-0">
             <img
@@ -35,7 +35,7 @@ const Footer = () => {
               <TiSocialLinkedin className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px]  cursor-pointer" />
             </div>
           </div>
-          <div className="flex gap-8 w-full sm:w-[70%] sm:ml-[100px] lg:ml-0  lg:w-[64%] xl:w-[67%] lg:gap-10 lg:justify-between lg:items-center">
+          <div className="flex gap-8 w-full sm:w-[70%] sm:ml-[100px] lg:ml-0  lg:w-[64%] xl:w-[67%] lg:gap-10 lg:justify-between lg:items-center ">
             <div className=" w-[79px] h-[103px] sm:w-full sm:h-[131px] lg:w-[164px] lg:h-[131px] ">
               <h3 className="font-Poppins font-semibold text-[8.75px] leading-[17.62px] lg:text-[15.75px] lg:leading-[23.62px] text-left text-[#FF6500]">
                 Useful Links
