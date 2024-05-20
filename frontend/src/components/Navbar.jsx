@@ -10,7 +10,7 @@ const primaryLinks = [
   { path: "#", label: "Solutions" },
   { path: "#", label: "Hire Developer" },
   { path: "#", label: "Portfolio" },
-  { path: "#", label: "Contact Us" },
+  { path: "/contact", label: "Contact Us" },
 ];
 
 const buttonLink = {

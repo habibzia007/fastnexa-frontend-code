@@ -5,9 +5,9 @@ import ContactExpertTeam from "../../components/services/contactExpertTeam/Conta
 import FullServiceWebsite from "../../components/services/fullServiceWebsite/FullServiceWebsite";
 import Testimonial from "../../components/testimonial/Testimonial";
 import OurClients from "../../components/OurClients";
-import ContactUs from "../../components/contactUs/ContactUs";
+import ContactUs from "../../components/ContactUs";
 import Footer from "../../components/Footer";
-import Banner from "../../components/about/Banner";
+import Banner from "../../components/Banner";
 
 
 

@@ -15,8 +15,14 @@ import blog2 from "../../assets/images/blog2.png";
 
 //aboutusservice
 import aboutservice1 from "../../assets/images/aboutservice1.jpg";
-import aboutservice2 from "../../assets/images/aboutservice2.jpg";
-import aboutservice3 from "../../assets/images/aboutservice3.jpg";
+
+//attention client
+import attentionclient1 from "../../assets/attentionclient1.svg";
+import attentionclient2 from "../../assets/attentionclient2.svg";
+import attentionclient3 from "../../assets/attentionclient3.svg";
+import attentionclient_msg from "../../assets/attentionclient_msg.svg";
+import attentionclient_fb from "../../assets/attentionclient_fb.svg";
+import attentionclient_wp from "../../assets/attentionclient_wp.svg";
 
 export const BlogCardData = [
   {
@@ -140,5 +146,37 @@ export const aboutUsServicesData = [
   top-notch solutions for our customers. Partnering with us means collaborating with security experts.`,
     img: aboutservice1,
     reverse: false,
+  },
+];
+
+export const attentionClientData = [
+  {
+    image: attentionclient1,
+    title: "Office address",
+    description: "74 Highfield Road, Lahore Pakistan",
+  },
+  {
+    image: attentionclient2,
+    title: "Phone Numbers",
+    description: "+44 20 7946 0380 +44 20 7946 0295",
+  },
+  {
+    image: attentionclient3,
+    title: "E-mail & Live Chats",
+    description: "support@fastnexa.com",
+    socialIcons: [
+      {
+        icon: attentionclient_wp,
+        link: "https://www.facebook.com",
+      },
+      {
+        icon: attentionclient_fb,
+        link: "https://www.twitter.com",
+      },
+      {
+        icon: attentionclient_msg,
+        link: "https://www.linkedin.com",
+      },
+    ],
   },
 ];

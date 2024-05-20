@@ -1,8 +1,8 @@
 import React from "react";
-import bg from "../../assets/images/contactbg.jpg";
-import phone from "../../assets/images/phone.svg";
-import message from "../../assets/images/message.svg";
-import location from "../../assets/images/location.svg";
+import bg from "../assets/images/contactbg.jpg";
+import phone from "../assets/images/phone.svg";
+import message from "../assets/images/message.svg";
+import location from "../assets/images/location.svg";
 const ContactUs = () => {
   const backgroundImageStyle = {
     backgroundImage: `url(${bg})`,
@@ -42,7 +42,7 @@ const ContactUs = () => {
                   src={message}
                   alt="Message"
                 />
-                <div >
+                <div>
                   <h2 className="font-Poppins font-bold text-[7.94px] lg:text-lg text-[#0E0E0E]">
                     Our Mail
                   </h2>
@@ -70,19 +70,19 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className=" w-[80%]  lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 mx-auto">
-          <div className="w-full bg-white shadow-sm rounded-md p-6 lg:p-10">
+        <div className=" w-[60%]  lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 mx-auto">
+          <div className="w-full bg-[#FFFFFF] shadow-sm rounded-md p-6 lg:p-10">
             <h6 className="font-barlow font-bold text-xs lg:text-sm text-center text-[#FF6500] mb-4 lg:mb-8">
               LEAVE US MESSAGE
             </h6>
-            <h1 className="font-Poppins font-semibold text-base lg:text-xl text-center text-[#333333] mb-6 lg:mb-10">
+            <h1 className="font-Poppins font-semibold text-base lg:text-[1.9rem] leading-5 text-center text-[#333333] mb-6 lg:mb-14">
               How May We Help You!
             </h1>
             <form>
               <div className="mb-4 flex flex-col sm:flex-row gap-3">
                 <div className="w-full sm:w-1/2 lg:mr-2 mb-4 lg:mb-0">
                   <input
-                    className="w-full px-3 pt-1 pb-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 placeholder-text-[#4C4D56] placeholder-font-poppins placeholder-font-normal placeholder-text-xs placeholder-leading-[19.2px]"
+                    className="w-full px-3 pt-1 pb-2 border-[0.91px] border-[#EBEBEB] rounded-md focus:outline-none focus:border-orange-500 placeholder:text-[#4C4D56] placeholder:font-Poppins placeholder:font-normal placeholder:text-xs placeholder:leading-[19.2px]"
                     type="text"
                     id="name"
                     name="name"
@@ -92,7 +92,7 @@ const ContactUs = () => {
                 </div>
                 <div className="w-full sm:w-1/2 lg:ml-2">
                   <input
-                    className="w-full px-3 pt-1 pb-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 placeholder-text-[#4C4D56] placeholder-font-poppins placeholder-font-normal placeholder-text-xs placeholder-leading-[19.2px]"
+                    className="w-full px-3 pt-1 pb-2 border-[0.91px] border-[#EBEBEB] rounded-md focus:outline-none focus:border-orange-500 placeholder:text-[#4C4D56] placeholder:font-Poppins placeholder:font-normal placeholder:text-xs placeholder:leading-[19.2px]"
                     type="email"
                     id="email"
                     name="email"
@@ -103,7 +103,7 @@ const ContactUs = () => {
               </div>
               <div className="mb-4">
                 <input
-                  className="w-full px-3 pt-1 pb-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 placeholder-text-[#4C4D56] placeholder-font-poppins placeholder-font-normal placeholder-text-xs placeholder-leading-[19.2px]"
+                  className="w-full px-3 pt-1 pb-2 border-[0.91px] border-[#EBEBEB] rounded-md focus:outline-none focus:border-orange-500 placeholder:text-[#4C4D56] placeholder:font-Poppins placeholder:font-normal placeholder:text-xs placeholder:leading-[19.2px]"
                   type="text"
                   id="subject"
                   name="subject"
@@ -111,9 +111,9 @@ const ContactUs = () => {
                   required
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-7">
                 <textarea
-                  className="w-full px-3 pt-1 pb-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 placeholder-text-[#4C4D56] placeholder-font-poppins placeholder-font-normal placeholder-text-xs placeholder-leading-[19.2px]"
+                  className="w-full px-3 pt-1 pb-2 border-[0.91px]  border-[#EBEBEB] rounded-md focus:outline-none focus:border-orange-500 placeholder:text-[#4C4D56] placeholder:font-Poppins placeholder:font-normal placeholder:text-xs placeholder:leading-[19.2px]"
                   id="message"
                   name="message"
                   rows="3"
@@ -123,7 +123,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <button
-                  className="w-full bg-[#FF6500] text-white font-poppins font-bold text-xs lg:text-[16px] leading-9 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600"
+                  className="w-full bg-[#FF6500] text-white font-poppins font-bold text-xs lg:text-[16px] leading-[2.7rem] rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600"
                   type="submit"
                 >
                   Send Message
@@ -138,4 +138,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-

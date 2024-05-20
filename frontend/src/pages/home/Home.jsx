@@ -8,7 +8,7 @@ import ChooseUs from "../../components/chooseUs/ChooseUs";
 import TechnologyStack from "../../components/TechnologyStack";
 import Testimonial from "../../components/testimonial/Testimonial";
 import Blog from "../../components/blog/Blogs";
-import ContactUs from "../../components/contactUs/ContactUs";
+import ContactUs from "../../components/ContactUs";
 import Footer from "../../components/Footer";
 
 const Home = () => {

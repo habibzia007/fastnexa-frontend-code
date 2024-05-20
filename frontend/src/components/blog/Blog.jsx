@@ -23,7 +23,7 @@ const Blog = ({ data }) => {
         </span>
       </div>
       {/* Card content */}
-      <div className="absolute bottom-[-100px] left-3 right-3 bg-white p-4 sm:p-6 md:p-4 lg:p-8  rounded-b-lg transition-shadow duration-300 ease-in-out hover:transition-all group-hover:shadow-[0px_3px_0px_rgba(255,101,0)]">
+      <div className="shadow-md absolute bottom-[-100px] left-3 right-3 bg-white p-4 sm:p-6 md:p-4 lg:p-8  rounded-b-lg transition-shadow duration-300 ease-in-out hover:transition-all group-hover:shadow-[0px_3px_0px_rgba(255,101,0)]">
         <div className="flex items-center mb-2 space-x-4 text-xs sm:text-sm md:text-base lg:text-lg text-[#999999]">
           <div className="flex items-center space-x-1">
             <img src={personIcon} alt="Author" className="w-4 h-4" />

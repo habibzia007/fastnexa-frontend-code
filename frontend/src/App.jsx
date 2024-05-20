@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 import PageNotFound from "./components/PageNotFound";
 import Services from "./pages/services/Services";
 import Technology from "./pages/technology/Technology";
@@ -14,9 +15,10 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* Add more routes for other pages */}
         <Route path="/about" element={<About />} />
-         <Route path="/services" element={<Services />} />
-         <Route path="/technology" element={<Technology />} />
-        <Route component={PageNotFound}/>
+        <Route path="/services" element={<Services />} />
+        <Route path="/technology" element={<Technology />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route component={PageNotFound} />
       </Routes>
     </Router>
   );
