@@ -13,6 +13,11 @@ import blog0 from "../../assets/images/blog0.png";
 import blog1 from "../../assets/images/blog1.png";
 import blog2 from "../../assets/images/blog2.png";
 
+//aboutusservice
+import aboutservice1 from "../../assets/images/aboutservice1.jpg";
+import aboutservice2 from "../../assets/images/aboutservice2.jpg";
+import aboutservice3 from "../../assets/images/aboutservice3.jpg";
+
 export const BlogCardData = [
   {
     image: { blog0 },
@@ -105,5 +110,35 @@ export const whoWeAreData = [
   {
     title: "ERTYTD",
     description: "A Dept of df and Cybersecurity.",
+  },
+];
+
+export const aboutUsServicesData = [
+  {
+    title: "Our Approach",
+    description: `Delivering specialized services worldwide, Lucerna, as part of the ABM Group, 
+  utilizes highly qualified professionals across unlimited geographical boundaries. 
+  Whether you are located in the META region, Europe, or beyond, we provide tailor-made 
+  services that precisely fit your requirements. Building upon ABM IT's four-decade legacy.`,
+    img: aboutservice1,
+    reverse: false,
+  },
+  {
+    title: "IT Staff Augmentation",
+    description: `In addition to our cyber security expertise, we excel in offering IT staff 
+  augmentation services to businesses in the US, UK, and MENA region. Our skilled IT professionals 
+  seamlessly integrate into your existing teams, providing the necessary support to meet your 
+  project requirements effectively.`,
+    img: aboutservice1,
+    reverse: true,
+  },
+  {
+    title: "The IT Imperative",
+    description: `At Lucerna Tech, our sought-after cyber security talents are backed by technical 
+  certifications from various security vendors and industry-leading risk management and information 
+  security certifications. Our services adhere to industry best practices and standards, ensuring 
+  top-notch solutions for our customers. Partnering with us means collaborating with security experts.`,
+    img: aboutservice1,
+    reverse: false,
   },
 ];
