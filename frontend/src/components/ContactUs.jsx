@@ -11,7 +11,7 @@ const ContactUs = () => {
   };
   return (
     <div className="w-full" style={backgroundImageStyle}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[1185px] py-8 lg:py-8 flex flex-col lg:flex-row items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[1185px] py-11 lg:py-12 flex flex-col lg:flex-row items-center">
         <div className=" w-[80%]  lg:w-1/2 lg:flex lg:items-center">
           <div className="w-full flex flex-col items-start  lg:gap-10 lg:mb-[111px]">
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
