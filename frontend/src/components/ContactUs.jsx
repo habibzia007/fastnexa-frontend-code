@@ -11,16 +11,16 @@ const ContactUs = () => {
   };
   return (
     <div className="w-full" style={backgroundImageStyle}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[1185px] py-8 lg:py-16 flex flex-col lg:flex-row items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[1185px] py-8 lg:py-8 flex flex-col lg:flex-row items-center">
         <div className=" w-[80%]  lg:w-1/2 lg:flex lg:items-center">
-          <div className="w-full flex flex-col items-start  lg:gap-16">
+          <div className="w-full flex flex-col items-start  lg:gap-10 lg:mb-[111px]">
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
-              <div className="bg-[#FF6500]  w-[6px] h-[80%] lg:w-3.66 lg:h-[148px]"></div>
-              <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[37px] lg:leading-[48px] xl:text-[43px] xl:leading-[51px] text-[#0E0E0E]">
+              <div className="bg-[#FF6500]  w-[6px] mt-2 h-[67%] lg:w-3.66 lg:h-[123px] lg:mt-[7px]"></div>
+              <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[43px] lg:leading-[44px]  text-[#0E0E0E]">
                 To make requests for further information, contact us
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 w-[236px] sm:w-full ">
+            <div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 lg:gap-6 w-[236px] sm:w-full ">
               <div className="flex gap-2 items-center">
                 <img
                   className="w-6 h-6 md:w-12 lg:h-11"
@@ -70,7 +70,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className=" w-[60%]  lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 mx-auto">
+        <div className=" w-[81%]  lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 mx-auto">
           <div className="w-full bg-[#FFFFFF] shadow-sm rounded-md p-6 lg:p-10">
             <h6 className="font-barlow font-bold text-xs lg:text-sm text-center text-[#FF6500] mb-4 lg:mb-8">
               LEAVE US MESSAGE
