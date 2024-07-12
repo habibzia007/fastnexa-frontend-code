@@ -7,8 +7,8 @@ const primaryLinks = [
   { path: "/about", label: "About Us" },
   { path: "/services", label: "Services" },
   { path: "/technology", label: "Technology" },
-  { path: "#", label: "Solutions" },
-  { path: "#", label: "Hire Developer" },
+  // { path: "#", label: "Solutions" },
+  // { path: "#", label: "Hire Developer" },
   { path: "#", label: "Portfolio" },
   { path: "/contact", label: "Contact Us" },
 ];
