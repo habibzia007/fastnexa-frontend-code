@@ -44,14 +44,13 @@ const AboutUs = () => {
           <div className="w-[126px] sm:w-[513px]  h-[197px] lg:w-[526px] lg:h-[397px]  ">
             <div className="w-[347px] sm:w-[513px]  lg:w-[516px] ml-160 border-[#ECECEC] border-b-[2px] flex gap-3 lg:gap-8">
               <Card
-                title="Part of ABM Info Tech"
-                description="Pakistan's leading provider of technology services and solutions since 1983.
-                "
+                title="Lorem ipsum dolor"
+                description="Pakistan's leading provider of technology services and solutions."
                 border={true}
               />
               <Card
-                title="ABM Group"
-                description="Pakistan's oldest business house with 8 flagship companies."
+                title="Lorem ipsum"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
               />
             </div>
             <div className="w-[347px] sm:w-[513px]  lg:w-[516px]  border-[#ECECEC]  flex gap-3 lg:gap-8 ">

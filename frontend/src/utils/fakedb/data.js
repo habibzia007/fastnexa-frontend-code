@@ -122,28 +122,19 @@ export const whoWeAreData = [
 export const aboutUsServicesData = [
   {
     title: "Our Approach",
-    description: `Delivering specialized services worldwide, Lucerna, as part of the ABM Group, 
-  utilizes highly qualified professionals across unlimited geographical boundaries. 
-  Whether you are located in the META region, Europe, or beyond, we provide tailor-made 
-  services that precisely fit your requirements. Building upon ABM IT's four-decade legacy.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
     img: aboutservice1,
     reverse: false,
   },
   {
     title: "IT Staff Augmentation",
-    description: `In addition to our cyber security expertise, we excel in offering IT staff 
-  augmentation services to businesses in the US, UK, and MENA region. Our skilled IT professionals 
-  seamlessly integrate into your existing teams, providing the necessary support to meet your 
-  project requirements effectively.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     img: aboutservice1,
     reverse: true,
   },
   {
     title: "The IT Imperative",
-    description: `At Lucerna Tech, our sought-after cyber security talents are backed by technical 
-  certifications from various security vendors and industry-leading risk management and information 
-  security certifications. Our services adhere to industry best practices and standards, ensuring 
-  top-notch solutions for our customers. Partnering with us means collaborating with security experts.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
     img: aboutservice1,
     reverse: false,
   },
