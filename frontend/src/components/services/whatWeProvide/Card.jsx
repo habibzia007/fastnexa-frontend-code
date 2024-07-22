@@ -1,5 +1,7 @@
 import React from "react";
 import { FaPlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 const Card = ({ title, link, description, image }) => {
   return (
     <div className="hover:shadow-[3px_-3px_0_rgba(255,101,0)]  transition-all duration-300 shadow-sm relative  w-full max-w-sm mx-auto   rounded-md ">
@@ -19,14 +21,12 @@ const Card = ({ title, link, description, image }) => {
             {/* <span className="font-Poppins font-normal  text-[12.88px] leading-[27.59px] text-left text-[#232F3B]">
               Read More
             </span> */}
-            <a
-              href={`/services/${link}`}
-              // target="_blank"
-              rel="noopener noreferrer"
-              className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-left text-[#232F3B]"
+            <Link
+                to={`/services/${link}`}
+                className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-left text-[#232F3B]"
             >
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
