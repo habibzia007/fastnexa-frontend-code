@@ -43,7 +43,6 @@
 
 // export default WhatWeProvide;
 
-
 import React from "react";
 import WhatWeProvideCard from "./Card";
 import { WhatWeProvideData } from "../../../utils/fakedb/data";
@@ -72,6 +71,7 @@ const WhatWeProvide = () => {
             <WhatWeProvideCard
               key={index}
               image={Object.values(card.img)[0]}
+              link={card.link}
               title={card.title}
               description={card.description}
             />

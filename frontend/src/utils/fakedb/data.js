@@ -68,24 +68,28 @@ export const chooseUsData = [
 export const WhatWeProvideData = [
   {
     img: { group },
+    link: "software-development",
     title: "Software Development Services",
     description:
       "Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent.",
   },
   {
     img: { Vector },
+    link: "dev-ops",
     title: "DevOps Services",
     description:
       "Accelerate innovation with world class tech teams We’ll match you to an entire remote team of incredible freelance talent.",
   },
   {
     img: { Vector1 },
+    link: "cloud-computing",
     title: "Cloud Computing Services",
     description:
       "Accelerate innovation with world class tech teams We’ll match you to an entire remote team of incredible freelance talent.",
   },
   {
     img: { Vector3 },
+    link: "cyber-security",
     title: "Cybersecurity Services",
     description:
       "Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent.",
