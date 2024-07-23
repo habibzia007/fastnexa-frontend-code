@@ -10,6 +10,12 @@ import SoftwareDevelopment from "./pages/services/softwareDevelopment/SoftwareDe
 import DevOps from "./pages/services/devOps/DevOps";
 import CloudComputing from "./pages/services/cloudComputing/CloudComputing";
 import CyberSecurity from "./pages/services/cyberSecurity/CyberSecurity";
+import CustomiseWebDevelopment from "./pages/technology/customise/Customise";
+import Prototyping from "./pages/technology/prototyping/Prototyping";
+import ThirdPartyIntegration from "./pages/technology/thirdPartyIntegration/ThirdPartIntegration";
+import SoftwareProductDevelopment from "./pages/technology/softwareProductDevelopment/SoftwareProductDevelopment";
+import ApiDevelopmentServices from "./pages/technology/apiDevelopmentServices/ApiDevelopmentServices";
+import UpgradationMigration from "./pages/technology/upgradationMigration/UpgradationMigration";
 // Import other pages here
 
 function App() {
@@ -28,6 +34,30 @@ function App() {
         <Route path="/services/cloud-computing" element={<CloudComputing />} />
         <Route path="/services/cyber-security" element={<CyberSecurity />} />
         <Route path="/technology" element={<Technology />} />
+        <Route
+          path="/technology/customise-web-development"
+          element={<CustomiseWebDevelopment />}
+        />
+        <Route
+          path="/technology/prototyping-ux-designing"
+          element={<Prototyping />}
+        />
+        <Route
+          path="/technology/third-party-integration"
+          element={<ThirdPartyIntegration />}
+        />
+        <Route
+          path="/technology/software-product-development"
+          element={<SoftwareProductDevelopment />}
+        />
+        <Route
+          path="/technology/api-development-services"
+          element={<ApiDevelopmentServices />}
+        />
+        <Route
+          path="/technology/upgradation-migration"
+          element={<UpgradationMigration />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route component={PageNotFound} />
       </Routes>

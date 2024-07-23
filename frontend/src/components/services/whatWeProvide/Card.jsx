@@ -22,8 +22,8 @@ const Card = ({ title, link, description, image }) => {
               Read More
             </span> */}
             <Link
-                to={`/services/${link}`}
-                className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-left text-[#232F3B]"
+              to={`/services/${link}`}
+              className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-left text-[#232F3B]"
             >
               Read More
             </Link>
