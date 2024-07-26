@@ -18,7 +18,7 @@ const WhoWeAre = () => {
               Boost Business with Human Resource Augmentation
             </h1>
             <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[16.5px] sm:text-[13px] sm:leading-[17.5px]  lg:text-[16px] lg:leading-[26px] text-center md:text-left lg:text-left">
-              Fast Nexa is into Human Resource Augmentation, Software
+              FAST NEXA specializes in Human Resource Augmentation, Software
               Development, and IT Services, catering to diverse industries with
               tailored solutions.
             </p>
@@ -28,34 +28,34 @@ const WhoWeAre = () => {
             <div className="w-full border-[#ECECEC] border-b-[2px] flex  gap-5 lg:gap-8 ">
               <WhoWeAreCard
                 title="Soft Kode"
-                description="A Dept of Software Coding and Development."
+                description="Department of Software Coding and Development."
                 border={true}
               />
               <WhoWeAreCard
                 title="GT"
-                description="A Dept of Gaming Technology."
+                description="Department of Gaming Technology."
               />
             </div>
             <div className="w-full border-[#ECECEC] border-b-[2px] flex  gap-5 lg:gap-8">
               <WhoWeAreCard
                 title="ISec"
-                description="A Dept of Information and Cybersecurity."
+                description="Department of Information and Cybersecurity."
                 border={true}
               />
               <WhoWeAreCard
                 title="Infra"
-                description="A Dept of Networks and Infrastructure."
+                description="Department of Networks and Infrastructure."
               />
             </div>
             <div className="w-full border-[#ECECEC] flex  gap-5 lg:gap-8">
               <WhoWeAreCard
                 title="BC & HRA"
-                description="A Dept of Business Continuity and  Human Resource Augmentation."
+                description="Department of Business Continuity and Human Resource Augmentation."
                 border={true}
               />
               <WhoWeAreCard
                 title="FA"
-                description="Professional Service for Financial Advisory"
+                description="Professional Service for Financial Advisory."
               />
             </div>
           </div>

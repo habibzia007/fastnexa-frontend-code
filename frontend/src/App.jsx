@@ -16,6 +16,9 @@ import ThirdPartyIntegration from "./pages/technology/thirdPartyIntegration/Thir
 import SoftwareProductDevelopment from "./pages/technology/softwareProductDevelopment/SoftwareProductDevelopment";
 import ApiDevelopmentServices from "./pages/technology/apiDevelopmentServices/ApiDevelopmentServices";
 import UpgradationMigration from "./pages/technology/upgradationMigration/UpgradationMigration";
+import NetworkInfrastructure from "./pages/services/networkInfrastructure/NetworkInfrastructure";
+import InformationSecurity from "./pages/services/informationSecurity/InformationSecurity";
+import BusinessAndDisaster from "./pages/services/businessAndDisaster/BusinessAndDisaster";
 // Import other pages here
 
 function App() {
@@ -33,6 +36,18 @@ function App() {
         <Route path="/services/dev-ops" element={<DevOps />} />
         <Route path="/services/cloud-computing" element={<CloudComputing />} />
         <Route path="/services/cyber-security" element={<CyberSecurity />} />
+        <Route
+          path="/services/network-infrastructure"
+          element={<NetworkInfrastructure />}
+        />
+        <Route
+          path="/services/information-security"
+          element={<InformationSecurity />}
+        />
+        <Route
+          path="/services/business-continuity-disaster-recovery"
+          element={<BusinessAndDisaster />}
+        />
         <Route path="/technology" element={<Technology />} />
         <Route
           path="/technology/customise-web-development"

@@ -30,7 +30,7 @@ const AboutUs = () => {
               ABOUT US
             </h4>
             <h1 className="font-Poppins font-semibold text-[#232F3B] text-[22px]  leading-[28.1px] lg:text-[42px]  lg:leading-[61.1px] text-left">
-              Introduction
+              Why Choose FAST NEXA?
             </h1>
             <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[26px] lg:text-[16px] lg:leading-[26px] text-center lg:text-left ">
               We introduced FastNexa Tech, a specialized company offering
@@ -41,28 +41,27 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="w-[126px] sm:w-[513px]  h-[197px] lg:w-[526px] lg:h-[397px]  ">
+          <div className="w-[126px] mt-[70px] sm:w-[513px]  h-[197px] lg:w-[526px] lg:h-[397px]  ">
             <div className="w-[347px] sm:w-[513px]  lg:w-[516px] ml-160 border-[#ECECEC] border-b-[2px] flex gap-3 lg:gap-8">
               <Card
-                title="Lorem ipsum dolor"
-                description="Pakistan's leading provider of technology services and solutions."
+                title="Expertise"
+                description="We possess expertises to navigate the ever-evolving landscape of technology."
                 border={true}
               />
               <Card
-                title="Lorem ipsum"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                title="Innovation"
+                description="We're constantly exploring new horizons, and pioneering groundbreaking solutions."
               />
             </div>
             <div className="w-[347px] sm:w-[513px]  lg:w-[516px]  border-[#ECECEC]  flex gap-3 lg:gap-8 ">
               <Card
-                title="50+ Resources"
-                description="Highly qualified professionals and accredited resources.
-                "
+                title="Collaboration"
+                description="We believe in the power of collaboration and work closely with you every step."
                 border={true}
               />
               <Card
-                title="100+ Projects "
-                description="Professional Services projects delivered in MENA/META"
+                title="Results-Driven"
+                description="We don't just deliver solutions; we deliver results."
               />
             </div>
           </div>

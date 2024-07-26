@@ -53,15 +53,18 @@ export const BlogCardData = [
 export const chooseUsData = [
   {
     img: { link1 },
-    title: "Information managemnet system",
+    title: "Information Managementt Systems",
+    description: "Harness the power of top-tier tech talent to drive innovation and optimize your information systems with our dedicated remote teams."
   },
   {
     img: { link2 },
     title: "Information Database Security",
+    description: "Protect your critical data with advanced security measures implemented by our skilled professionals, ensuring robust database protection."
   },
   {
     img: { link3 },
     title: "Multifunctional Technology",
+    description: "Benefit from versatile technology solutions tailored to meet diverse business needs, supported by our expert teams to ensure seamless integration and performance."
   },
 ];
 
@@ -71,28 +74,49 @@ export const WhatWeProvideData = [
     link: "software-development",
     title: "Software Development Services",
     description:
-      "Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent.",
+      "Accelerate innovation with world-class tech teams. We match you with an entire remote team of incredible freelance talent to bring your ideas to life.",
   },
   {
     img: { Vector },
     link: "dev-ops",
     title: "DevOps Services",
     description:
-      "Accelerate innovation with world class tech teams We’ll match you to an entire remote team of incredible freelance talent.",
+      "Enhance your development and operations processes with our expert DevOps teams, ensuring seamless integration and delivery.",
   },
   {
     img: { Vector1 },
     link: "cloud-computing",
     title: "Cloud Computing Services",
     description:
-      "Accelerate innovation with world class tech teams We’ll match you to an entire remote team of incredible freelance talent.",
+      "Leverage the power of the cloud to boost efficiency and scalability, with our specialized teams providing tailored cloud solutions.",
   },
   {
     img: { Vector3 },
     link: "cyber-security",
     title: "Cybersecurity Services",
     description:
-      "Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent.",
+      "Protect your digital assets with our advanced cybersecurity measures, safeguarding your business against threats.",
+  },
+  {
+    img: { Vector3 },
+    link: "network-infrastructure",
+    title: "Network and Infrastructure ",
+    description:
+      "Build Services: Develop robust IT infrastructures with our expert teams, ensuring a reliable and efficient network for your business.",
+  },
+  {
+    img: { Vector3 },
+    link: "information-security",
+    title: "Information Security Services",
+    description:
+      "Ensure the confidentiality, integrity, and availability of your data with our comprehensive information security services.",
+  },
+  {
+    img: { Vector3 },
+    link: "business-continuity-disaster-recovery",
+    title: "Business Continuity & Disaster Recovery",
+    description:
+      "Safeguard your business against disruptions with our resilient business continuity and disaster recovery solutions.",
   },
 ];
 
@@ -125,22 +149,23 @@ export const whoWeAreData = [
 
 export const aboutUsServicesData = [
   {
-    title: "Our Approach",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    title: "Our Mission",
+    description: `Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation, and we're dedicated to helping you shape that future by delivering cutting-edge solutions tailored to your unique goals and objectives.`,
     img: aboutservice1,
     reverse: false,
   },
   {
-    title: "IT Staff Augmentation",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    title: "Our Vision",
+    description: `At FAST NEXA, our vision is bold and ambitious: to lead the way in shaping the future of technology. We envision a world where innovation knows no bounds, where the possibilities of artificial intelligence are limitless, and where technology serves as a catalyst for positive change and transformation.`,
     img: aboutservice1,
     reverse: true,
   },
   {
-    title: "The IT Imperative",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    title: "Our Values",
+    description: `At FAST NEXA, our values are the cornerstone of everything we do. They embody who we are, what we stand for, and how we strive to make a difference in the world. With these guiding principles at the heart of our operations, we remain steadfast in our commitment to delivering excellence in all that we undertake.`,
     img: aboutservice1,
     reverse: false,
+    hasAccordion: true,
   },
 ];
 

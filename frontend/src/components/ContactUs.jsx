@@ -47,7 +47,7 @@ const ContactUs = () => {
                     Our Mail
                   </h2>
                   <p className="font-Poppins font-normal text-[6.03px] lg:text-base text-[#0E0E0E]">
-                    infotechmax@ourmail.com
+                    info@fastnexa.com
                   </p>
                 </div>
               </div>
@@ -62,8 +62,7 @@ const ContactUs = () => {
                     Our Location
                   </h2>
                   <p className="font-Poppins font-normal text-[6.03px] lg:text-base text-[#0E0E0E] max-w-[50px">
-                    New ipsum dolor amet, eiusmod adipisicing 147 New Yors, NY
-                    Adipisicing 123
+                    192, Y Block, DHA phase III, Lahore, Pakistan.
                   </p>
                 </div>
               </div>

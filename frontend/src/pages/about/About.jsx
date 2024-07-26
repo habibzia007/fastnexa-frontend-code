@@ -19,10 +19,10 @@ const About = () => {
   return (
     <main className="w-full bg-[#FFFFFF]">
       <Navbar />
-      <Banner text={'About Us'} />
+      <Banner text={"About Us"} />
       <AboutUs />
       <Team />
-      <AboutUsServices/>
+      <AboutUsServices />
       <OurClients />
       <ContactUs />
       <Footer />

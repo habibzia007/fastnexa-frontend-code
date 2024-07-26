@@ -32,12 +32,9 @@
 
 // export default Card;
 
-
-
-
 import React from "react";
 
-const Card = ({ image, title }) => {
+const Card = ({ image, title, description }) => {
   const cardImageStyle = {
     backgroundImage: `linear-gradient(180deg, rgba(249, 80, 0, 0) 35%, rgba(14, 14, 14, 0.92) 78%), url(${image})`,
     backgroundSize: "cover",
@@ -46,7 +43,10 @@ const Card = ({ image, title }) => {
 
   return (
     <div className="w-full max-w-[276.62px] sm:max-w-[300px] md:max-w-[280px] lg:max-w-[382.62px] h-[314.96px] sm:h-[350px] md:h-[320px] lg:h-[435.96px] rounded-[9.2px] relative group  mx-auto overflow-hidden">
-      <div className="w-full h-full rounded-[9.2px] bg-cover bg-center relative" style={cardImageStyle}>
+      <div
+        className="w-full h-full rounded-[9.2px] bg-cover bg-center relative"
+        style={cardImageStyle}
+      >
         <div className="absolute bottom-[-3rem] group-hover:bottom-8 left-4 sm:left-6 md:left-8 flex flex-col gap-2 items-start transition-all duration-500 ">
           <div className="flex gap-1 sm:gap-2 items-center">
             <div className="w-[2px] h-[34px] sm:w-[2px] sm:h-[38px] md:w-[2px] md:h-[40px] lg:w-[3px] lg:h-[46px] bg-[#FF9A58]"></div>
@@ -55,7 +55,7 @@ const Card = ({ image, title }) => {
             </h3>
           </div>
           <p className="text-white font-Poppins leading-[21px] sm:leading-[24px] md:leading-[20px] lg:leading-[28px] text-[10px] sm:text-[11px] md:text-[10px] lg:text-[12px] max-w-[240px] sm:max-w-[260px] md:max-w-[240px] lg:max-w-[300px] transition-transform duration-500 transform -translate-y-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
-            Accelerate innovation with world-class tech teams. We'll match you to an entire remote team of incredible freelance talent.
+            {description}
           </p>
         </div>
       </div>

@@ -9,17 +9,22 @@ import team1 from "../../../assets/images/team1.jpg";
 import team2 from "../../../assets/images/team2.jpg";
 import team3 from "../../../assets/images/team3.jpg";
 import team4 from "../../../assets/images/team4.jpg";
-
+import ctoImg from "./abdullaFaisal.png";
+import ceoImg from "./faisalShehzad.jpg";
+import cooImg from "./fatimahFaisal.jpg";
+import cioImg from "./fizzaAbdulla.png";
 
 const Team = () => {
   const teamMembers = [
-    { imgSrc: team1, name: "Arnold", position: "CEO, FastNexa" },
-    { imgSrc: team2, name: "Mike", position: "CEO, FastNexa" },
-    { imgSrc: team3, name: "Joakim", position: "CEO, FastNexa" },
-    { imgSrc: team4, name: "Andrew", position: "CEO, FastNexa" },
+    {
+      imgSrc: ceoImg,
+      name: "Faisal Shehzad",
+      position: "Fractional CEO & vCISO FastNexa",
+    },
+    { imgSrc: ctoImg, name: "Abdulla Faisal", position: "CTO, FastNexa" },
+    { imgSrc: cooImg, name: "Fatimah Faisal", position: "COO, FastNexa" },
+    { imgSrc: cioImg, name: "Fizza Abdulla", position: "CIO, FastNexa" },
   ];
-
-
 
   const settings = {
     dots: true,
@@ -72,9 +77,12 @@ const Team = () => {
         <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[16px] leading-[36.08px] md:text-[42px] md:leading-[61.08px] text-center lg:pb-[50px]">
           We have a world-class expert team
         </h1>
-       
+
         <div className="flex justify-center items-center w-full max-w-[1184px] px-2 md:px-4 mx-auto mt-2 sm:mt-10 slider-container">
-          <Slider {...settings}  className=" w-[300px] sm:w-[600.44px] lg:w-[800.44px] xl:w-[1189.44px] mx-auto ">
+          <Slider
+            {...settings}
+            className=" w-[300px] sm:w-[600.44px] lg:w-[800.44px] xl:w-[1189.44px] mx-auto "
+          >
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -84,7 +92,6 @@ const Team = () => {
                   index >= 4 && "lg:hidden"
                 } xl:block`}
               >
-
                 <img
                   className="w-[175px] h-[225px] sm:w-[220px] sm:h-[280px] md:w-[260px] md:h-[330px] lg:w-[300px] lg:h-[380px] xl:w-[350px] xl:h-[450px] object-cover rounded-md"
                   src={member.imgSrc}
@@ -116,9 +123,6 @@ const Team = () => {
 };
 
 export default Team;
-
-
-
 
 // import React from "react";
 // import testimonialbg from "../../../assets/images/testimonialbg.jpg";

@@ -35,34 +35,3 @@ const Card = ({ title, link, description, image }) => {
 };
 
 export default Card;
-
-// import React from "react";
-// import { FaPlus } from "react-icons/fa6";
-
-// const Card = ({ title, description, image }) => {
-//   return (
-//     <div className="hover:shadow-lg transition-all duration-300 shadow-sm relative rounded-md w-full max-w-sm mx-auto">
-//       <div className="bg-white rounded-lg p-4 group">
-//         <img className="w-12 h-12 mx-auto" src={image} alt="" />
-//         <div className="mt-5">
-//           <h3 className="font-Poppins font-bold text-lg text-center text-gray-900 mb-2">
-//             {title}
-//           </h3>
-//           <p className="font-Poppins text-sm text-center text-gray-600 mb-4 line-clamp-4">
-//             {description}
-//           </p>
-//           <div className="flex justify-center items-center gap-3">
-//             <div className="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center group-hover:bg-orange-500">
-//               <FaPlus className="text-orange-500 group-hover:text-white" />
-//             </div>
-//             <span className="font-Poppins text-sm text-gray-800">
-//               Read More
-//             </span>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Card;

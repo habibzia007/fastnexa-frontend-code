@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -37,10 +35,10 @@ const TechnologyStack = () => {
             Technology Stack
           </h3>
           <h1 className="font-Poppins font-semibold text-xl lg:text-3xl leading-tight mt-2">
-            Need a talent to work for you directly?
+            Need a Talent to Work for You Directly?
           </h1>
           <p className="hidden sm:block font-Poppins text-base text-gray-700 mt-6">
-            We offer team augmentation services to get your things done right,
+            We offer staff augmentation services to get your things done right,
             from right now. Hire a fully dedicated team, a talent that fits your
             business idea.
           </p>
