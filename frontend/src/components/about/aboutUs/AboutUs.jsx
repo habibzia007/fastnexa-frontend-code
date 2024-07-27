@@ -12,7 +12,7 @@ const AboutUs = () => {
           <div className="relative mt-10 lg:mt-10 sm:w-[513px]  ">
             <div className="w-[207px] h-[276px] lg:w-[211px] lg:h-[402px] bg-[#FF6500] rounded-[18px] z-10 "></div>
             <img
-              className=" w-[207px] h-[276px] lg:w-[303px] lg:h-[402px] rounded-md absolute top-[3rem] left-[133px] lg:top-16 lg:left-[204px] z-50  "
+              className=" w-[207px] h-[276px] lg:w-[303px] lg:h-[402px] rounded-md absolute top-[3rem] left-[133px] lg:top-16 lg:left-[204px] z-40"
               src={aboutus2}
               alt=""
             />

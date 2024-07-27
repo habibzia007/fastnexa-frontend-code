@@ -14,12 +14,14 @@ import Banner from "../../components/Banner.jsx";
 import AboutUs from "../../components/about/aboutUs/AboutUs";
 import Team from "../../components/about/team/Team";
 import AboutUsServices from "../../components/about/services/AboutUsServices";
+import FoundersMessage from "../../components/about/foundersMessage/FoundersMessage.jsx";
 
 const About = () => {
   return (
     <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={"About Us"} />
+      <FoundersMessage />
       <AboutUs />
       <Team />
       <AboutUsServices />
