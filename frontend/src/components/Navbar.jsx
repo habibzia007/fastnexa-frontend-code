@@ -1,12 +1,59 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/FastNexa-logo.svg";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
 
 const primaryLinks = [
   { path: "/about", label: "About Us" },
-  { path: "/services", label: "Services" },
-  { path: "/technology", label: "Technology" },
+  {
+    path: "/services",
+    label: "Services",
+    dropdown: [
+      { path: "/services/software-development", label: "Software Development" },
+      { path: "/services/dev-ops", label: "Dev Ops" },
+      { path: "/services/cloud-computing", label: "Cloud Computing" },
+      { path: "/services/cyber-security", label: "Cyber Security" },
+      {
+        path: "/services/network-infrastructure",
+        label: "Network Infrastructure",
+      },
+      { path: "/services/information-security", label: "Information Security" },
+      {
+        path: "/services/business-continuity-disaster-recovery",
+        label: "Business Continuity & Disaster Recovery",
+      },
+    ],
+  },
+  {
+    path: "/technology",
+    label: "Technology",
+    dropdown: [
+      {
+        path: "/technology/customise-web-development",
+        label: "Customise Web Development",
+      },
+      {
+        path: "/technology/prototyping-ux-designing",
+        label: "Prototyping & UX Designing",
+      },
+      {
+        path: "/technology/third-party-integration",
+        label: "Third Party Integration",
+      },
+      {
+        path: "/technology/software-product-development",
+        label: "Software Product Development",
+      },
+      {
+        path: "/technology/api-development-services",
+        label: "API Development Services",
+      },
+      {
+        path: "/technology/upgradation-migration",
+        label: "Upgradation And Migration",
+      },
+    ],
+  },
   { path: "#", label: "Portfolio" },
   { path: "/contact", label: "Contact Us" },
 ];
@@ -18,111 +65,138 @@ const buttonLink = {
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [opacity, setOpacity] = useState("bg-opacity-100"); // Initialize the opacity state
+  const [opacity, setOpacity] = useState("bg-opacity-100");
+  const [dropdownOpen, setDropdownOpen] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      const newOpacity =
-        window.scrollY > 80 ? "bg-opacity-80" : "bg-opacity-100"; // Change opacity based on scroll
-      setOpacity(newOpacity);
+      setOpacity(window.scrollY > 80 ? "bg-opacity-80" : "bg-opacity-100");
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleNav = () => {
     setNavOpen(!navOpen);
+    // Reset dropdown on mobile nav toggle to prevent open dropdowns from persisting
+    setDropdownOpen(null);
+  };
+
+  const toggleDropdown = (menu, event) => {
+    event.stopPropagation(); // Prevents nav link action and other event bubbling
+    setDropdownOpen(dropdownOpen === menu ? null : menu);
   };
 
   return (
     <nav
-      className={`relative bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}
+      className={`bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}
     >
       <div className="container lg:w-[1184px] mx-auto px-4 lg:px-6 grid grid-cols-12">
         <div className="col-span-12">
           <div className="flex justify-between items-center py-1">
-            {/* Logo */}
             <Link to="/">
               <img
                 className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
                 src={logo}
-                alt="Logo"
+                alt="FastNexa Logo"
               />
             </Link>
-            {/* Navigation Links */}
             <div className="hidden lg:flex items-center gap-5">
-              {primaryLinks.map((link) => (
-                <Link key={link.label} to={link.path}>
-                  <span
-                    className={`font-Poppins font-medium text-[14px] leading-5 ${
-                      location.pathname === link.path
-                        ? "text-[#FF6500] font-extrabold"
-                        : "text-[#444444]"
-                    }`}
-                  >
+              {primaryLinks.map((link) =>
+                link.dropdown ? (
+                  <div key={link.label} className="relative">
+                    <div className="flex items-center cursor-pointer">
+                      <Link to={link.path} className="mr-2">
+                        {link.label}
+                      </Link>
+                      <FaCaretDown
+                        onClick={(e) => toggleDropdown(link.label, e)}
+                      />
+                    </div>
+                    {dropdownOpen === link.label && (
+                      <div className="absolute bg-white shadow-md mt-1 z-10">
+                        {link.dropdown.map((item) => (
+                          <Link
+                            key={item.label}
+                            to={item.path}
+                            // dropdown menu items
+                            className="block w-[15rem] px-4 py-3 text-sm text-gray-700 hover:bg-orange-500 hover:text-white"
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link key={link.label} to={link.path}>
                     {link.label}
-                  </span>
-                </Link>
-              ))}
+                  </Link>
+                )
+              )}
               <Link to={buttonLink.path} className="nav-button">
-                <button className="w-[163px] h-[37px] rounded-md ml-[8px] p-1 font-Poppins font-medium text-[12px] leading-4 text-white bg-[#FF6500] border-[#FF6500] hover:bg-transparent hover:text-orange-600 hover:border hover:border-orange-600 transition-colors duration-700 hover:shadow-md">
+                {/* <button className="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded"> */}
+                <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] leading-[2.7rem] rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600">
                   {buttonLink.label}
                 </button>
               </Link>
             </div>
-            {/* Mobile Navigation */}
             <div className="lg:hidden">
               {navOpen ? (
                 <FaTimes
-                  color="#324558"
-                  size={25}
                   onClick={toggleNav}
+                  size={25}
                   className="cursor-pointer"
                 />
               ) : (
                 <FaBars
-                  color="#324558"
-                  size={25}
                   onClick={toggleNav}
+                  size={25}
                   className="cursor-pointer"
                 />
               )}
             </div>
           </div>
-          {/* Mobile Navigation Menu */}
           {navOpen && (
-            <div className="absolute top-full left-0 w-full bg-white shadow-lg lg:hidden">
-              {primaryLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  to={link.path}
-                  onClick={toggleNav}
-                  className="block py-2 px-4 border-b border-gray-200"
-                >
-                  <span
-                    className={`font-Poppins font-medium text-[14px] leading-5 ${
-                      location.pathname === link.path
-                        ? "text-[#FF6500] font-extrabold"
-                        : "text-[#444444]"
-                    }`}
+            <div className="absolute top-full left-0 w-full bg-white shadow-lg">
+              {primaryLinks.map((link) =>
+                link.dropdown ? (
+                  <div
+                    key={link.label}
+                    onClick={(e) => toggleDropdown(link.label, e)}
+                  >
+                    {/* dropdown nav items */}
+                    <span className="block py-2 px-4 text-gray-700 hover:bg-orange-500">
+                      {link.label} <FaCaretDown className="inline" />
+                    </span>
+                    {dropdownOpen === link.label && (
+                      <div className="bg-white">
+                        {link.dropdown.map((item) => (
+                          <Link
+                            key={item.label}
+                            to={item.path}
+                            // drowpdown menu items
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-500 hover:text-white"
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    key={link.label}
+                    to={link.path}
+                    onClick={() => setNavOpen(false)}
+                    // not dropdown nav items
+                    className="block py-2 px-4 text-gray-700 hover:bg-orange-500"
                   >
                     {link.label}
-                  </span>
-                </Link>
-              ))}
-              <Link
-                to={buttonLink.path}
-                className="block py-2 px-4"
-                onClick={toggleNav}
-              >
-                <button className="w-[163px] h-[37px] rounded-md p-1 font-Poppins font-medium text-[12px] leading-4 text-white bg-[#FF6500] border-[#FF6500] hover:bg-transparent hover:text-orange-600 hover:border hover:border-orange-600 transition-colors duration-700 hover:shadow-md">
-                  {buttonLink.label}
-                </button>
-              </Link>
+                  </Link>
+                )
+              )}
             </div>
           )}
         </div>
@@ -132,128 +206,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-////////////// ORANGE NAVBAR ON SCROLL ///////////////
-//////////////////////////////////////////////////////
-
-// import React, { useState, useEffect } from "react";
-// import { Link, useLocation } from "react-router-dom";
-// import logo from "../assets/FastNexa-logo.svg";
-// import { FaBars, FaTimes } from "react-icons/fa";
-
-// const primaryLinks = [
-//   { path: "/about", label: "About Us" },
-//   { path: "/services", label: "Services" },
-//   { path: "/technology", label: "Technology" },
-//   { path: "#", label: "Portfolio" },
-//   { path: "/contact", label: "Contact Us" },
-// ];
-
-// const buttonLink = {
-//   path: "#",
-//   label: "Request Job Opportunity",
-// };
-
-// const Navbar = () => {
-//   const [navOpen, setNavOpen] = useState(false);
-//   const [background, setBackground] = useState("bg-orange-100 bg-opacity-50"); // Light orange tint initially
-//   const location = useLocation();
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const newBackground =
-//         window.scrollY > 80
-//           ? "bg-orange-500 bg-opacity-90"
-//           : "bg-orange-100 bg-opacity-50";
-//       setBackground(newBackground);
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
-
-//   const toggleNav = () => {
-//     setNavOpen(!navOpen);
-//   };
-
-//   return (
-//     <nav
-//       className={`relative shadow-md z-50 sticky top-0 w-full transition-all duration-300 ease-in-out ${background}`}
-//     >
-//       <div className="container mx-auto px-4 lg:px-6">
-//         <div className="flex justify-between items-center py-1">
-//           <Link to="/">
-//             <img
-//               className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
-//               src={logo}
-//               alt="Logo"
-//             />
-//           </Link>
-//           <div className="hidden lg:flex items-center gap-5">
-//             {primaryLinks.map((link) => (
-//               <Link
-//                 key={link.label}
-//                 to={link.path}
-//                 className={`font-medium text-sm leading-5 ${
-//                   location.pathname === link.path
-//                     ? "text-orange-600 font-bold"
-//                     : "text-gray-800"
-//                 }`}
-//               >
-//                 {link.label}
-//               </Link>
-//             ))}
-//             <Link
-//               to={buttonLink.path}
-//               className="bg-orange-500 text-white px-4 py-1 rounded-md shadow"
-//             >
-//               <button className="text-sm font-medium">
-//                 {buttonLink.label}
-//               </button>
-//             </Link>
-//           </div>
-//           <div className="lg:hidden">
-//             {navOpen ? (
-//               <FaTimes
-//                 size={25}
-//                 onClick={toggleNav}
-//                 className="text-gray-800 cursor-pointer"
-//               />
-//             ) : (
-//               <FaBars
-//                 size={25}
-//                 onClick={toggleNav}
-//                 className="text-gray-800 cursor-pointer"
-//               />
-//             )}
-//           </div>
-//         </div>
-//         {navOpen && (
-//           <div className="absolute w-full bg-white shadow-lg">
-//             {primaryLinks.map((link) => (
-//               <Link
-//                 key={link.label}
-//                 to={link.path}
-//                 onClick={toggleNav}
-//                 className="block px-4 py-2 border-b border-gray-200 text-gray-800"
-//               >
-//                 {link.label}
-//               </Link>
-//             ))}
-//             <Link
-//               to={buttonLink.path}
-//               onClick={toggleNav}
-//               className="block px-4 py-2 bg-orange-500 text-white text-sm font-medium rounded-md"
-//             >
-//               {buttonLink.label}
-//             </Link>
-//           </div>
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

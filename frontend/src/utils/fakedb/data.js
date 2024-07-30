@@ -147,7 +147,7 @@ export const whoWeAreData = [
   },
 ];
 
-export const aboutUsServicesData = [
+export const aboutUsServicesDataMain = [
   {
     title: "Our Mission",
     description: `Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation, and we're dedicated to helping you shape that future by delivering cutting-edge solutions tailored to your unique goals and objectives.`,
@@ -166,6 +166,22 @@ export const aboutUsServicesData = [
     img: aboutservice1,
     reverse: false,
     hasAccordion: true,
+  },
+
+];
+
+export const aboutUsServicesData = [
+  {
+    title: "Our Mission",
+    description: "Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation, and we're dedicated to helping you shape that future by delivering cutting-edge solutions tailored to your unique goals and objectives.",
+    img: aboutservice1,  // Update the path as necessary
+    reverse: false,
+  },
+  {
+    title: "Our Vision",
+    description: "At FAST NEXA, our vision is bold and ambitious: to lead the way in shaping the future of technology. We envision a world where innovation knows no bounds, where the possibilities of artificial intelligence are limitless, and where technology serves as a catalyst for positive change and transformation.",
+    img: aboutservice1, // Update the path as necessary
+    reverse: true,
   },
 ];
 

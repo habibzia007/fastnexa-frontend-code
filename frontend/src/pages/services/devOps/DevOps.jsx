@@ -6,8 +6,8 @@ import OurClients from "../../../components/OurClients";
 import Testimonial from "../../../components/testimonial/Testimonial";
 import ContactUs from "../../../components/ContactUs";
 import Footer from "../../../components/Footer";
-import AboutUsServices from "../../../components/about/services/AboutUsServices";
 import Banner from "../../../components/servicesCards/Banner";
+import AboutUsServices from "../../../components/about/services/AboutUsServices";
 
 const DevOps = () => {
   return (
