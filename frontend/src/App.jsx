@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import FoundersPage from "./pages/about/foundersPage/FoundersPage";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./components/PageNotFound";
 import Services from "./pages/services/Services";
@@ -19,6 +20,7 @@ import UpgradationMigration from "./pages/technology/upgradationMigration/Upgrad
 import NetworkInfrastructure from "./pages/services/networkInfrastructure/NetworkInfrastructure";
 import InformationSecurity from "./pages/services/informationSecurity/InformationSecurity";
 import BusinessAndDisaster from "./pages/services/businessAndDisaster/BusinessAndDisaster";
+
 // Import other pages here
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* Add more routes for other pages */}
         <Route path="/about" element={<About />} />
+        <Route path="/about/founders-message" element={<FoundersPage />} />
         <Route path="/services" element={<Services />} />
         <Route
           path="/services/software-development"
