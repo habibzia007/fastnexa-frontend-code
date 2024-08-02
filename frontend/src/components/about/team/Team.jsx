@@ -90,7 +90,7 @@ const Team = () => {
                 <img
                   // className="w-[175px] h-[225px] sm:w-[220px] sm:h-[280px] md:w-[260px] md:h-[330px] lg:w-[300px] lg:h-[380px] xl:w-[350px] xl:h-[450px] object-cover rounded-[5rem]"
                   // className="w-[15rem] h-[20rem] object-cover rounded-[5rem]"
-                  className="w-[10rem] h-[15rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] lg:rounded-[5rem]"
+                  className="w-[10rem] h-[15rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] lg:rounded-[20px]"
                   src={member.imgSrc}
                   alt={member.name}
                 />
