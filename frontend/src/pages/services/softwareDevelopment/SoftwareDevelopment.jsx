@@ -1,13 +1,16 @@
 import React from "react";
 import Navbar from "../../../components/Navbar";
-import Intro from "../../../components/servicesCards/intro/Intro";
+// import Intro from "../../../components/servicesCards/intro/Intro";
 import TechnologyStack from "../../../components/TechnologyStack";
 import OurClients from "../../../components/OurClients";
 import Testimonial from "../../../components/testimonial/Testimonial";
 import ContactUs from "../../../components/ContactUs";
 import Footer from "../../../components/Footer";
-import AboutUsServices from "../../../components/about/services/AboutUsServices";
+// import AboutUsServices from "../../../components/about/services/AboutUsServices";
 import Banner from "../../../components/servicesCards/Banner";
+import SoftwareDevelopmentServices from "./SoftwareDevelopmentServices.jsx";
+import Intro from "./Intro.jsx";
+
 
 const SoftwareDevelopment = () => {
   return (
@@ -15,7 +18,7 @@ const SoftwareDevelopment = () => {
       <Navbar />
       <Banner text={"Software Development"} />
       <Intro />
-      <AboutUsServices />
+      <SoftwareDevelopmentServices />
       <TechnologyStack />
       <Testimonial />
       <OurClients />
