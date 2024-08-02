@@ -2,25 +2,34 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import honor from "../assets/images/honor.png";
-import lakecity from "../assets/images/lakecity.png";
-import people from "../assets/images/people.png";
-import xinhuamall from "../assets/images/xinhuamall.png";
-import netutils from "../assets/images/netutils.png";
+import allcorlogo from "../assets/images/clients/allcorlogo.png";
+import attock from "../assets/images/clients/attock.jpeg";
+import caroyal from "../assets/images/clients/caroyal.png";
+import dindin from "../assets/images/clients/dindin.png";
+import elogo from "../assets/images/clients/elogo.jpeg";
+import fastCables from "../assets/images/clients/fastCables.jpeg";
+import officeEmpire from "../assets/images/clients/officeEmpire.png";
 
 const OurClients = () => {
-  const logos = [honor, lakecity, people, xinhuamall, netutils];
+  const logos = [
+    allcorlogo,
+    attock,
+    caroyal,
+    dindin,
+    elogo,
+    fastCables,
+    officeEmpire,
+  ];
 
   const settings = {
     dots: true,
     infinite: true,
     arrows: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    
   };
 
   return (
@@ -37,6 +46,7 @@ const OurClients = () => {
             <img
               src={logo}
               alt={`Logo ${index}`}
+              // className="w-[64px] h-[64px] md:w-[100px] md:h-[100px]  lg:w-[167.54px] lg:h-[167.54px]"
               className="w-[64px] h-[64px] md:w-[100px] md:h-[100px]  lg:w-[167.54px] lg:h-[167.54px]"
             />
           </div>

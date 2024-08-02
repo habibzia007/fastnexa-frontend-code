@@ -154,12 +154,12 @@ export const aboutUsServicesDataMain = [
     img: aboutservice1,
     reverse: false,
   },
-  {
-    title: "Our Vision",
-    description: `At FAST NEXA, our vision is bold and ambitious: to lead the way in shaping the future of technology. We envision a world where innovation knows no bounds, where the possibilities of artificial intelligence are limitless, and where technology serves as a catalyst for positive change and transformation.`,
-    img: aboutservice1,
-    reverse: true,
-  },
+  // {
+  //   title: "Our Vision",
+  //   description: `At FAST NEXA, our vision is bold and ambitious: to lead the way in shaping the future of technology. We envision a world where innovation knows no bounds, where the possibilities of artificial intelligence are limitless, and where technology serves as a catalyst for positive change and transformation.`,
+  //   img: aboutservice1,
+  //   reverse: true,
+  // },
   {
     title: "Our Values",
     description: `At FAST NEXA, our values are the cornerstone of everything we do. They embody who we are, what we stand for, and how we strive to make a difference in the world. With these guiding principles at the heart of our operations, we remain steadfast in our commitment to delivering excellence in all that we undertake.`,
@@ -181,6 +181,15 @@ export const aboutUsServicesData = [
     title: "Our Vision",
     description: "At FAST NEXA, our vision is bold and ambitious: to lead the way in shaping the future of technology. We envision a world where innovation knows no bounds, where the possibilities of artificial intelligence are limitless, and where technology serves as a catalyst for positive change and transformation.",
     img: aboutservice1, // Update the path as necessary
+    reverse: true,
+  },
+];
+
+export const ourVisionData = [
+  {
+    // title: "Our Vision",
+    description: `At FAST NEXA, our vision is bold and ambitious: to lead the way in shaping the future of technology. We envision a world where innovation knows no bounds, where the possibilities of artificial intelligence are limitless, and where technology serves as a catalyst for positive change and transformation.`,
+    img: aboutservice1,
     reverse: true,
   },
 ];

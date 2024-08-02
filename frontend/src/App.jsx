@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
-import FoundersPage from "./pages/about/foundersPage/FoundersPage";
+import OurVision from "./pages/about/foundersPage/OurVision";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./components/PageNotFound";
 import Services from "./pages/services/Services";
@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* Add more routes for other pages */}
         <Route path="/about" element={<About />} />
-        <Route path="/about/founders-message" element={<FoundersPage />} />
+        <Route path="/about/our-vision" element={<OurVision />} />
         <Route path="/services" element={<Services />} />
         <Route
           path="/services/software-development"

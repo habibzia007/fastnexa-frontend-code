@@ -13,7 +13,6 @@ import Footer from "../../components/Footer";
 import Banner from "../../components/Banner.jsx";
 import AboutUs from "../../components/about/aboutUs/AboutUs";
 import Team from "../../components/about/team/Team";
-import FoundersMessage from "../../components/about/foundersMessage/FoundersMessage.jsx";
 import AboutUsMainServices from "../../components/about/services/AboutUsMainServices.jsx";
 
 const About = () => {
@@ -24,7 +23,6 @@ const About = () => {
       <AboutUs />
       <Team />
       <AboutUsMainServices />
-      <FoundersMessage />
       <OurClients />
       <ContactUs />
       <Footer />

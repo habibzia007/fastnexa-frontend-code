@@ -20,16 +20,23 @@ const Testimonial = () => {
     {
       image: men,
       quote:
-        "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
-      name: "Mike Holder",
-      position: "CEO, Harlond inc",
+        "Fast Nexa has been incredible for our website project. The team is quick to respond and consistently delivers top-notch work.",
+      name: "Imperial Electric",
+      position: " ",
     },
     {
       image: men1,
       quote:
-        "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
-      name: "John Doe",
-      position: "CTO, Example Company",
+        "Fast Nexa’s professionalism and commitment to our success make them an invaluable partner.",
+      name: "Fast Cable",
+      position: " ",
+    },
+    {
+      image: men1,
+      quote:
+        "Dealing with complex programming and tight deadlines is no easy feat, but Fast Nexa made it look simple.",
+      name: "Caroyal",
+      position: " ",
     },
     // Add more testimonial objects as needed
   ];
@@ -61,7 +68,6 @@ const Testimonial = () => {
           initialSlide: 2,
         },
       },
-     
     ],
   };
 
@@ -84,10 +90,7 @@ const Testimonial = () => {
           className=" min-w-[280px]   xl:w-[1189.44px] mx-auto slider-container"
         >
           {testimonialCards.map((card, index) => (
-            <div
-              key={index}
-              className="pt-[40px] xl:pt-[60px] pl-1 xl:pl-6 "
-            >
+            <div key={index} className="pt-[40px] xl:pt-[60px] pl-1 xl:pl-6 ">
               <div className="w-[300.86px] mx-auto h-[160.01px] xl:w-[448.82px] xl:h-[217.72px] bg-white rounded-md shadow-md relative">
                 <img
                   className="rounded-md w-[78px] h-[77px] xl:w-[106px] xl:h-[106px] absolute left-[-19px] top-[28px] xl:top-[2.5rem] xl:-left-[2.25rem]"
@@ -120,4 +123,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-
