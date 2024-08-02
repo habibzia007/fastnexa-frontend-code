@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import testimonialbg from "../../assets/rectangle-orange.svg";
-import men from "../../assets/images/men.jpg";
-import men1 from "../../assets/images/men1.jpg";
-import msg from "../../assets/images/msg.png";
+import men from "../../assets/images/clients/E.png";
+import men1 from "../../assets/images/clients/fastcables.png";
+import msg from "../../assets/images/clients/caroyal_logo_new.png";
 import Dots from "../../utils/Dots";
 
 const Testimonial = () => {
@@ -20,21 +20,21 @@ const Testimonial = () => {
     {
       image: men,
       quote:
-        "Fast Nexa has been incredible for our website project. The team is quick to respond and consistently delivers top-notch work.",
+        "Fast Nexa has been incredible for our website project. The team is quick to respond and consistently delivers top-notch work. Their ability to handle any issues is a huge plus, and we’re looking forward to working with them long-term.",
       name: "Imperial Electric",
       position: " ",
     },
     {
       image: men1,
       quote:
-        "Fast Nexa’s professionalism and commitment to our success make them an invaluable partner.",
+        "Partnering with Fast Nexa for our app development and ERP needs has been a fantastic experience. They quickly understood our requirements and delivered a custom app that exceeded our expectations.",
       name: "Fast Cable",
       position: " ",
     },
     {
-      image: men1,
+      image: msg,
       quote:
-        "Dealing with complex programming and tight deadlines is no easy feat, but Fast Nexa made it look simple.",
+        "Dealing with complex projects is no easy feat, but Fast Nexa made it look simple. They delivered a ready CRM and an e-commerce site on time. Their ability to manage challenging tasks efficiently makes them a standout choice.",
       name: "Caroyal",
       position: " ",
     },
@@ -97,19 +97,19 @@ const Testimonial = () => {
                   src={card.image}
                   alt=""
                 />
-                <div className="ml-[80px] xl:ml-[130px] pt-[28.5px] xl:pt-[31.5px] space-y-2 xl:space-y-4">
-                  <img
-                    className="w-[27.01px] h-[23.28px] xl:w-[37.01px] xl:h-[32.28px]"
-                    src={msg}
-                    alt=""
-                  />
-                  <p className="w-[200.06px]  xl:w-[304.06px] xl:h-[75.59px] text-[#4C4D56] font-jost font-normal text-[12px] leading-[18.50px] xl:text-[15.75px] xl:leading-[25.2px] text-left">
+                <div className="ml-[80px] xl:ml-[100px] pt-[28.5px] xl:pt-[31.5px] space-y-2 xl:space-y-4">
+                  {/*<img*/}
+                  {/*  className="w-[27.01px] h-[23.28px] xl:w-[37.01px] xl:h-[32.28px]"*/}
+                  {/*  src={msg}*/}
+                  {/*  alt=""*/}
+                  {/*/>*/}
+                  <p className="w-[200.06px]  xl:w-[322.06px] xl:h-[128.59px] text-[#4C4D56] font-jost font-normal text-[12px] leading-[18.50px] xl:text-[15.75px] xl:leading-[25.2px] text-left">
                     {card.quote}
                   </p>
-                  <p className="font-jost font-normal text-[9px] leading-[12px] xl:text-[12.6px] xl:leading-[15.75px] text-left text-black">
+                  <p className="font-jost font-normal text-[9px] leading-[12px] xl:text-[12.6px] xl:leading-[15.75px] text-left text-black "> -
                     {card.name}
                     <span className="font-jost font-normal text-[6.94px] leading-[11.57px] xl:text-[9.45px] xl:leading-[15.75px] text-left text-[#47484A]">
-                      / {card.position}
+                       {card.position}
                     </span>
                   </p>
                 </div>
