@@ -7,6 +7,7 @@ import locationicon from "../assets/images/locationicon.svg";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const backgroundImageStyle = {
     backgroundImage: `linear-gradient(250.49deg, rgba(0, 0, 0, 0) 43.25%, rgba(0, 0, 0, 0.6) 71.49%), url(${footerbg})`,
@@ -43,18 +44,37 @@ const Footer = () => {
                   Useful Links
                 </h3>
                 <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    Terms & Conditions
+                  <li className="text-[#C4C5C7] max-w-max font-Poppins text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/about'}>
+                      About Us
+                    </Link>
                   </li>
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    About Company
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/about/our-vision'}>
+                      Vision
+                    </Link>
                   </li>
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    Payment Gateway
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/technology'}>
+                      Technologies
+                    </Link>
                   </li>
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    Policy
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'#'}>
+                      Portfolio
+                    </Link>
                   </li>
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'#'}>
+                      Jobs
+                    </Link>
+                  </li>
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/contact'}>
+                      Contact Us
+                    </Link>
+                  </li>
+
                 </ul>
               </div>
               <div className="w-full sm:w-1/2 lg:w-1/3">
@@ -62,18 +82,42 @@ const Footer = () => {
                   Our Services
                 </h3>
                 <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.75px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    Data Security
+                  <li className="text-[#C4C5C7] max-w-max font-Poppins text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/software-development'}>
+                      Software Development
+                    </Link>
                   </li>
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    IT Management
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/dev-ops'}>
+                      DevOps
+                    </Link>
                   </li>
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    Outsourcing
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/cloud-computing'}>
+                      Cloud Computing
+                    </Link>
                   </li>
-                  <li className="text-[#C4C5C7] cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                    Networking
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/cyber-security'}>
+                      Cybersecurity
+                    </Link>
                   </li>
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/network-infrastructure'}>
+                      Network and Infrastructure
+                    </Link>
+                  </li>
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/information-security'}>
+                      Information Security
+                    </Link>
+                  </li>
+                  <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                    <Link to={'/services/business-continuity-disaster-recovery'}>
+                      Business Continuity & Disaster Recovery
+                    </Link>
+                  </li>
+
                 </ul>
               </div>
               <div className="w-full sm:w-1/2 lg:w-1/3">
@@ -83,31 +127,31 @@ const Footer = () => {
                 <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[20px]">
                   <li className="flex gap-2">
                     <img
-                      className="w-[8.17px] h-[8.17px] lg:w-[14.17px] lg:h-[14.17px]"
-                      src={phoneicon}
-                      alt="Phone"
+                        className="w-[8.17px] h-[8.17px] lg:w-[14.17px] lg:h-[14.17px]"
+                        src={phoneicon}
+                        alt="Phone"
                     />
-                    <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] cursor-pointer">
+                    <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
                       +92 458 654 528
                     </p>
                   </li>
                   <li className="flex gap-2">
                     <img
-                      className="w-[8.17px] h-[8.17px] lg:w-[14.17px] lg:h-[14.17px]"
-                      src={messageicon}
-                      alt="Message"
+                        className="w-[8.17px] h-[8.17px] lg:w-[14.17px] lg:h-[14.17px]"
+                        src={messageicon}
+                        alt="Message"
                     />
-                    <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] cursor-pointer">
+                    <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
                       info@fastnexa.com
                     </p>
                   </li>
                   <li className="flex gap-2">
                     <img
-                      className="w-[8.17px] h-[8.17px] lg:w-[14.17px] lg:h-[14.17px]"
-                      src={locationicon}
-                      alt="Location"
+                        className="w-[8.17px] h-[8.17px] lg:w-[14.17px] lg:h-[14.17px]"
+                        src={locationicon}
+                        alt="Location"
                     />
-                    <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] cursor-pointer">
+                    <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
                       192, Y Block, DHA phase III, Lahore, Pakistan.
                     </p>
                   </li>
@@ -151,16 +195,16 @@ const Footer = () => {
   //               Useful Links
   //             </h3>
   //             <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 Terms & Conditions
   //               </li>
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 About Company
   //               </li>
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 Payment Gatway
   //               </li>
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left ">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left ">
   //                 Policy
   //               </li>
   //             </ul>
@@ -170,16 +214,16 @@ const Footer = () => {
   //               Our Services
   //             </h3>
   //             <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.75px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.75px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 Data Security
   //               </li>
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 IT Managment
   //               </li>
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 Outsourcing
   //               </li>
-  //               <li className="text-[#C4C5C7] cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
+  //               <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins font-normal text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px] text-left">
   //                 Networking
   //               </li>
   //             </ul>
@@ -195,7 +239,7 @@ const Footer = () => {
   //                   src={phoneicon}
   //                   alt=""
   //                 />
-  //                 <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-[#C4C5C7] cursor-pointer">
+  //                 <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-[#C4C5C7] max-w-max cursor-pointer">
   //                   +91 458 654 528
   //                 </p>
   //               </li>
@@ -205,7 +249,7 @@ const Footer = () => {
   //                   src={messageicon}
   //                   alt=""
   //                 />
-  //                 <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-[#C4C5C7] cursor-pointer">
+  //                 <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-[#C4C5C7] max-w-max cursor-pointer">
   //                   info@example.com
   //                 </p>
   //               </li>
@@ -215,7 +259,7 @@ const Footer = () => {
   //                   src={locationicon}
   //                   alt=""
   //                 />
-  //                 <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-[#C4C5C7] cursor-pointer">
+  //                 <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-left text-[#C4C5C7] max-w-max cursor-pointer">
   //                   60 East 65th Street, NY
   //                 </p>
   //               </li>

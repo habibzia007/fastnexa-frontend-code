@@ -320,16 +320,17 @@ const Navbar = () => {
               {primaryLinks.map((link) =>
                 link.dropdown ? (
                   <div key={link.label} className="relative">
-                    <div className="flex items-center cursor-pointer">
+                    <div
+                        className="flex items-center cursor-pointer"
+                        onMouseEnter={(e) => toggleDropdown(link.label, e)}
+                    >
                       <Link to={link.path} className="mr-2">
                         {link.label}
                       </Link>
-                      <FaCaretDown
-                        onClick={(e) => toggleDropdown(link.label, e)}
-                      />
+                      <FaCaretDown/>
                     </div>
                     {dropdownOpen === link.label && (
-                      <div className="absolute bg-white shadow-md mt-1 z-10">
+                      <div className="absolute bg-white shadow-md mt-1 z-10" onMouseLeave={(e) => toggleDropdown(null, e)}>
                         {link.dropdown.map((item) => (
                           <Link
                             key={item.label}
