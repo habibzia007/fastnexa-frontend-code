@@ -1,6 +1,6 @@
 import React from "react";
 import aboutusservicesbg from "../../../assets/images/aboutusservicebg.jpg";
-import { aboutUsServicesDataDevOps } from "../../../utils/fakedb/data.js";
+import { aboutUsServicesDataDevOps } from "../../../utils/fakedb/data.jsx";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import chevron from "../../../assets/chevron-down.svg";
 

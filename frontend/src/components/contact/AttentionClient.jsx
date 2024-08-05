@@ -1,5 +1,5 @@
 import React from "react";
-import { attentionClientData } from "../../utils/fakedb/data";
+import { attentionClientData } from "../../utils/fakedb/data.jsx";
 
 const AttentionToEveryClient = () => {
   return (

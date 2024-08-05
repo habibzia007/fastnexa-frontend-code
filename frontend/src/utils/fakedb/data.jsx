@@ -23,6 +23,9 @@ import attentionclient3 from "../../assets/attentionclient3.svg";
 import attentionclient_msg from "../../assets/attentionclient_msg.svg";
 import attentionclient_fb from "../../assets/attentionclient_fb.svg";
 import attentionclient_wp from "../../assets/attentionclient_wp.svg";
+import { PiNetworkLight } from "react-icons/pi";
+import { GiCheckedShield } from "react-icons/gi";
+import { SlSupport } from "react-icons/sl";
 
 export const BlogCardData = [
   {
@@ -95,6 +98,7 @@ export const WhatWeProvideData = [
     title: "Software Development Services",
     description:
       "Accelerate innovation with our world-class tech teams, offering a wide range of expert solutions tailored to meet your business needs. Our key services include custom software development, web and mobile app development, software testing and quality assurance, maintenance and support, UI/UX design, and cloud computing services. With our tailored approach, we bring your ideas to life and ensure seamless, reliable, and scalable solutions.",
+    icon: null,
   },
   {
     img: { Vector },
@@ -102,6 +106,7 @@ export const WhatWeProvideData = [
     title: "DevOps Services",
     description:
       "Streamline your development and operations with our expert DevOps services. We offer comprehensive solutions including CI/CD pipelines (Jenkins, GitLab, GitHub Actions), infrastructure as code (Terraform, Ansible), monitoring and observability (Prometheus, Grafana), containerization and orchestration (Docker, Kubernetes), and secure DevSecOps practices. Our collaborative approach enhances efficiency, reliability, and agility, ensuring a secure and stable software delivery lifecycle for your business.",
+    icon: null,
   },
   {
     img: { Vector1 },
@@ -109,6 +114,7 @@ export const WhatWeProvideData = [
     title: "Cloud Computing Services",
     description:
       "Leverage the power of the cloud to boost efficiency and scalability, with our specialized teams providing tailored cloud solutions.",
+    icon: null,
   },
   {
     img: { Vector3 },
@@ -116,6 +122,7 @@ export const WhatWeProvideData = [
     title: "Cybersecurity Services ",
     description:
       "Protect your digital assets with our advanced cybersecurity measures, safeguarding your business against threats. Our comprehensive services include threat detection and response, vulnerability assessments, and robust security protocols to ensure your data remains secure. Trust our expert team to defend your business from cyber attacks, ensuring peace of mind and continuity in an ever-evolving digital landscape.",
+    icon: null,
   },
   {
     img: { Vector3 },
@@ -123,6 +130,7 @@ export const WhatWeProvideData = [
     title: "Network and Infrastructure Services",
     description:
       "Build a robust physical or virtual infrastructure that meets your Tier/Rating standards of Uptime and TIA-942 with our certified Network and Data Center consultancy. Our experts design and implement secure, reliable infrastructures, ensuring seamless and efficient business operations. Partner with us to achieve unparalleled connectivity and performance, tailored to your unique needs.",
+    icon: <PiNetworkLight style={{ width: '100%', height: '100%' }} />,
   },
   {
     img: { Vector3 },
@@ -130,13 +138,15 @@ export const WhatWeProvideData = [
     title: "Information Security Services",
     description:
       "Ensure the confidentiality, integrity, and availability of your data with our comprehensive information security services. We provide robust solutions including data encryption, access controls, and continuous monitoring to protect against breaches and unauthorized access. Our expert team implements proactive measures to safeguard your critical information, ensuring regulatory compliance and reinforcing your trust in our security practices.",
+    icon: <GiCheckedShield style={{ width: '100%', height: '100%' }} />,
   },
   {
     img: { Vector3 },
     link: "business-continuity-disaster-recovery",
-    title: "Business Continuity and Disaster Recovery Solutions and Services",
+    title: "Business Continuity and Disaster Recovery",
     description:
       "Safeguard your business against disruptions with our resilient business continuity and disaster recovery services. We offer solutions from world-leading technology providers, including hot backups, replication, high availability, active-active and active-passive clustering, as well as site failover and fail-back technologies. Our comprehensive approach ensures minimal business impact and keeps your operations running smoothly, even in the face of unexpected challenges.",
+    icon: <SlSupport style={{ width: '100%', height: '100%' }} />,
   },
 ];
 

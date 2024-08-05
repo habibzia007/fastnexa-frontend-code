@@ -1,7 +1,7 @@
 import React from "react";
 import group from "../../../assets/images/group.png";
 import rightArrow from "../../../assets/images/rightArrow.png";
-import { WhatWeProvideData } from "../../../utils/fakedb/data";
+import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
 
 const Intro = () => {
     return (

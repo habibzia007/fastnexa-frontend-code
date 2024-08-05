@@ -2,7 +2,7 @@ import React from "react";
 import bg from "../../assets/images/chooseusbg.jpeg";
 import rightArrow from "../../assets/images/rightArrow.svg";
 import Card from "./Card";
-import { chooseUsData } from "../../utils/fakedb/data";
+import { chooseUsData } from "../../utils/fakedb/data.jsx";
 
 const ChooseUs = () => {
   const backgroundImageStyle = {

@@ -51,10 +51,10 @@ const Hero = () => {
           />
           {/* Content */}
           <div className="flex flex-col gap-4  lg:gap-10">
-            <div className="   lg:max-w-[636px] lg:h-[228px] pt-[118px] lg:pt-[150px]">
+            <div className="   lg:max-w-[636px] lg:h-[128px] pt-[218px] lg:pt-[250px]">
               <h1 className="font-inter font-bold text-[28.87px] leading-[31.61px] sm:text-[36.87px] sm:leading-[40.61px] lg:text-[68px] lg:leading-[75.5px] text-left text-white">
-                Transform Ideas into
-                <br />
+                Transform Ideas into{' '}
+                {/*<br />*/}
                 <span className="text-orange-400">Technology</span>
               </h1>
             </div>

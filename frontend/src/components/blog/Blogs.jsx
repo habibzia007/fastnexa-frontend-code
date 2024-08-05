@@ -1,7 +1,7 @@
 
 import React from "react";
 import Blog from "./Blog";
-import { BlogCardData } from "../../utils/fakedb/data";
+import { BlogCardData } from "../../utils/fakedb/data.jsx";
 
 const Blogs = () => {
   return (

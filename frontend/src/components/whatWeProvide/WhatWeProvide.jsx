@@ -2,7 +2,7 @@ import React from "react";
 import bg from "../../assets/images/whatweprovidebg.svg";
 import rightArrow from "../../assets/images/rightArrow.svg";
 import WhatWeProvideCard from "./Card";
-import { WhatWeProvideData } from "../../utils/fakedb/data";
+import { WhatWeProvideData } from "../../utils/fakedb/data.jsx";
 import { Link } from "react-router-dom";
 
 const WhatWeProvide = () => {
@@ -30,6 +30,7 @@ const WhatWeProvide = () => {
               link={card.link}
               title={card.title}
               description={card.description}
+              icon={card.icon}
             />
           ))}
         </div>

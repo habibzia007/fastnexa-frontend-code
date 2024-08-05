@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import foundersImage from "../../../assets/images/aboutus2.jpg";
 import rightArrow from "../../../assets/images/rightArrow.svg";
-import { ourVisionData } from "../../../utils/fakedb/data";
+import { ourVisionData } from "../../../utils/fakedb/data.jsx";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 

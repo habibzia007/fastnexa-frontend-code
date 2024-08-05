@@ -1,6 +1,6 @@
 import React from "react";
 import WhatWeProvideCard from "./Card";
-import { WhatWeProvideData } from "../../../utils/fakedb/data";
+import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
 
 const WhatWeProvide = () => {
   const backgroundImageStyle = {
