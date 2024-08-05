@@ -31,9 +31,9 @@ const TechnologyStack = () => {
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-12 gap-5 p-4 bg-white">
         {/* Left Side */}
         <div className="sm:col-span-6 px-2 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h3 className="font-Poppins font-semibold text-orange-400 text-sm lg:text-base tracking-wider">
+          <h2 className="font-Poppins font-semibold text-orange-400 text-sm lg:text-base tracking-wider">
             Technology Stack
-          </h3>
+          </h2>
           <h1 className="font-Poppins font-semibold text-xl lg:text-3xl leading-tight mt-2">
             Need a Talent to Work for You Directly?
           </h1>

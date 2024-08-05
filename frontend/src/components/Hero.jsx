@@ -60,10 +60,7 @@ const Hero = () => {
             </div>
             <div className="max-w-[350.7px] sm:max-w-[400.7px] lg:max-w-[585.7px] lg:h-[84px] lg:pt-[130px] space-y-5 lg:space-y-0">
               <p className="font-Poppins font-medium text-[11px]  leading-[18.7px] sm:text-[14px]  sm:leading-[20.7px] lg:text-[16.22px] lg:leading-[27.58px] text-left text-white">
-                At FAST NEXA, we are committed to unlocking the potential of
-                your ideas. The future is defined by the limitless capabilities
-                of Artificial Intelligence (AI), and we are dedicated to
-                delivering innovative solutions aligned with your goals.
+                Redefining your ideas with Next-Gen AI-driven software, cloud, and security solutions, driving innovation and expertise.
               </p>
               <div className="flex items-center gap-3 md:gap-5 lg:gap-7 lg:max-w-[585.7px] lg:pt-[30px]">
                 <Link to="/contact">

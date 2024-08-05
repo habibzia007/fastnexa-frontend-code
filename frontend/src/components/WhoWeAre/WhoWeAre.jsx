@@ -11,16 +11,14 @@ const WhoWeAre = () => {
         <div className="col-span-12 md:col-span-6 lg:col-span-6 flex flex-col ">
           {/* Left side top */}
           <div className="w-[350px] mx-auto sm:w-[610px] md:w-[350px] lg:w-[510px] md:mx-0 lg:mx-0 h-[154px] lg:h-[278px] flex flex-col  gap-[10.3px] lg:gap-[7px]">
-            <h4 className="font-Poppins font-semibold text-[12px] lg:text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center md:text-left lg:text-left">
-              WHO WE ARE?
-            </h4>
+            <h2 className="font-Poppins font-semibold text-[12px] lg:text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center md:text-left lg:text-left">
+              WHO WE ARE
+            </h2>
             <h1 className="font-Poppins font-semibold text-[23px] leading-[34.1px] text-center  lg:text-[32px] lg:leading-[42.1px] md:text-left lg:text-left text-[#232F3B]">
               Boost Business with Human Resource Augmentation
             </h1>
             <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[16.5px] sm:text-[13px] sm:leading-[17.5px]  lg:text-[16px] lg:leading-[26px] text-center md:text-left lg:text-left">
-              FAST NEXA specializes in Human Resource Augmentation, Software
-              Development, and IT Services, catering to diverse industries with
-              tailored solutions.
+              FAST NEXA specializes in Human Resource Augmentation, Software Development, and IT Services, catering to diverse industries with tailored solutions.
             </p>
           </div>
           {/* Left side bottom */}
@@ -44,7 +42,7 @@ const WhoWeAre = () => {
               />
               <WhoWeAreCard
                 title="Infra"
-                description="Department of Networks and Infrastructure."
+                description="Department of Network Infrastructure and Data Center."
               />
             </div>
             <div className="w-full border-[#ECECEC] flex  gap-5 lg:gap-8">

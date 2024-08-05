@@ -15,9 +15,9 @@ const WhatWeProvide = () => {
   return (
     <div className="relative mt-6 lg:mt-10" style={backgroundImageStyle}>
       <div className="container mx-auto px-4 sm:px-6 pt-10 w-full max-w-[1184px]">
-        <h3 className="font-Poppins font-semibold text-sm sm:text-base text-[#FF6500] tracking-wider text-center">
+        <h2 className="font-Poppins font-semibold text-sm sm:text-base text-[#FF6500] tracking-wider text-center">
           What We Provide
-        </h3>
+        </h2>
         <h3 className="font-Poppins font-semibold text-2xl sm:text-3xl lg:text-4xl text-[#232F3B] text-center mt-2">
           We offer truly prominent software solutions designed to meet your
           business needs.

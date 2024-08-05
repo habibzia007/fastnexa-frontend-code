@@ -17,7 +17,7 @@ const ContactUs = () => {
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
               <div className="bg-[#FF6500]  w-[6px] mt-2 h-[67%] lg:w-3.66 lg:h-[123px] lg:mt-[7px]"></div>
               <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[43px] lg:leading-[44px]  text-[#0E0E0E]">
-                To make requests for further information, contact us
+                To make requests for further information, contact us:
               </div>
             </div>
             <div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 lg:gap-6 w-[236px] sm:w-full ">
@@ -32,7 +32,7 @@ const ContactUs = () => {
                     Contact Number
                   </h2>
                   <p className="font-Poppins font-normal text-[6.03px] lg:text-base text-[#0E0E0E]">
-                    +00(1) 123 456 7890
+                    +92 310 4443823
                   </p>
                 </div>
               </div>
