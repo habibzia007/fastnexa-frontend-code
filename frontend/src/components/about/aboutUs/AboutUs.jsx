@@ -35,7 +35,7 @@ const AboutUs = () => {
             <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[26px] lg:text-[16px] lg:leading-[26px] text-center lg:text-left ">
               We introduced FastNexa Tech, a specialized company offering
               professional services in various domains including Information
-              Systems & Security, Cyber Security, Infrastructure, E-commerce,
+              Systems & Security, Cybersecurity, Infrastructure, E-commerce,
               Project Management, Software Design & Development, Social Media
               Management, and Digital Marketing.
             </p>

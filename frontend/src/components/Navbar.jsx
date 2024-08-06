@@ -12,7 +12,7 @@
 //       { path: "/services/software-development", label: "Software Development" },
 //       { path: "/services/dev-ops", label: "Dev Ops" },
 //       { path: "/services/cloud-computing", label: "Cloud Computing" },
-//       { path: "/services/cyber-security", label: "Cyber Security" },
+//       { path: "/services/cyber-security", label: "Cybersecurity" },
 //       {
 //         path: "/services/network-infrastructure",
 //         label: "Network Infrastructure",
@@ -227,7 +227,7 @@ const primaryLinks = [
       { path: "/services/software-development", label: "Software Development" },
       { path: "/services/dev-ops", label: "Dev Ops" },
       { path: "/services/cloud-computing", label: "Cloud Computing" },
-      { path: "/services/cyber-security", label: "Cyber Security" },
+      { path: "/services/cyber-security", label: "Cybersecurity" },
       {
         path: "/services/network-infrastructure",
         label: "Network Infrastructure",

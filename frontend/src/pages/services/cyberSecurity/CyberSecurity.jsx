@@ -15,7 +15,7 @@ const CyberSecurity = () => {
   return (
     <main className="h-[4784px] w-full bg-[#FFFFFF]">
       <Navbar />
-      <Banner text={"Cyber Security"} />
+      <Banner text={"Cybersecurity"} />
       <Intro />
       <CyberSecurityServices />
       <TechnologyStack />

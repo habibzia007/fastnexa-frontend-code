@@ -8,7 +8,7 @@ const Intro = () => {
     <div className="container mx-auto mt-[23px] p-4 max-w-[874px]  border-orange-500">
       <div className="w-full h-auto pt-[37px]">
         <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
-          Outperform your competitors with exceptional Web Development Services
+          Outperform Your Competitors With Exceptional Software Development Services
         </h3>
         <p className="font-Poppins text-[14px] sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
           FastNexa provides comprehensive web-based solutions that include several steps. Our approach involves actively listening to our clients, comprehending their demands and requirements, and crafting a holistic web solution. This is how our clients leverage their online presence, enhance user experience and ultimately achieve their goals in the digital landscape.
@@ -44,7 +44,7 @@ export default Intro;
 //     <div className="container mx-auto relative h-[327px]  mt-[23px] w-[874px]">
 //       <div className="w-[874px] h-[320px]  mx-auto  pt-[37px] ">
 //         <h3 className="font-Poppins font-bold text-[36px] leading-[54.08px]  text-[#1F1F1F]  text-center">
-//           Outperform your competitors with exceptional Web Development Services
+//           Outperform Your Competitors With Exceptional Software Development Services
 //         </h3>
 //         <p className=" font-Poppins text-[16px] leading-[30px] text-[#747474] font-normal  text-center mt-[30px]">
 //           FastNexa provides comprehensive web-based solutions that include

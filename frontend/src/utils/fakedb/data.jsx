@@ -358,7 +358,7 @@ export const aboutUsServicesDataCyberSecurity = [
   },
   {
     title: "Cybersecurity Maturity Analysis",
-    description: "At FAST NEXA, we offer tailored cybersecurity solutions to meet the unique needs of your organization, whether you’re in financial services, healthcare, or technology, and regardless of size or regulatory environment. Our Governance, Risk, and Compliance (GRC) services are customized to your specific industry requirements, organizational size, and risk appetite. Additionally, our Cyber Security Maturity Analysis provides a thorough assessment of your organization's preparedness against cyber threats by evaluating employee awareness, incident response processes, and security technology. We deliver actionable insights and advanced security services to enhance your defenses and ensure robust protection.",
+    description: "At FAST NEXA, we offer tailored cybersecurity solutions to meet the unique needs of your organization, whether you’re in financial services, healthcare, or technology, and regardless of size or regulatory environment. Our Governance, Risk, and Compliance (GRC) services are customized to your specific industry requirements, organizational size, and risk appetite. Additionally, our Cybersecurity Maturity Analysis provides a thorough assessment of your organization's preparedness against cyber threats by evaluating employee awareness, incident response processes, and security technology. We deliver actionable insights and advanced security services to enhance your defenses and ensure robust protection.",
     img: aboutservice1,  // Update the path as necessary
     reverse: false,
   },
