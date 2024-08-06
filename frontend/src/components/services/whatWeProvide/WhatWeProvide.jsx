@@ -29,6 +29,7 @@ const WhatWeProvide = () => {
               link={card.link}
               title={card.title}
               description={card.description}
+              icon={card.icon}
             />
           ))}
         </div>

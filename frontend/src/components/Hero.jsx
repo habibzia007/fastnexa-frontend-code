@@ -55,7 +55,7 @@ const Hero = () => {
               <h1 className="font-inter font-bold text-[28.87px] leading-[31.61px] sm:text-[36.87px] sm:leading-[40.61px] lg:text-[68px] lg:leading-[75.5px] text-left text-white">
                 Transform Ideas into{' '}
                 {/*<br />*/}
-                <span className="text-orange-400">Technology</span>
+                <span className="text-orange-400">Reality</span>
               </h1>
             </div>
             <div className="max-w-[350.7px] sm:max-w-[400.7px] lg:max-w-[585.7px] lg:h-[84px] lg:pt-[130px] space-y-5 lg:space-y-0">
