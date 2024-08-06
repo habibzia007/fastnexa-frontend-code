@@ -1,0 +1,292 @@
+[33mcommit 858f423cd01b064b184e66ad24787696643ad81e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Tue Aug 6 01:28:56 2024 +0500
+
+    services new icons
+
+[33mcommit 4231e4c0713a8f7090ac5aef1ce5b4c973d40ca4[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Mon Aug 5 23:48:56 2024 +0500
+
+    home page content added
+
+[33mcommit 42893bd668d30729149fe13d92667c6185e72847[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Mon Aug 5 19:19:47 2024 +0500
+
+    office empire logo
+
+[33mcommit ab9f07512607739c8fdbbc06bd480e4d70c891d5[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Mon Aug 5 19:17:16 2024 +0500
+
+    client logos, footer items, and navbar hover effect changes
+
+[33mcommit d29cf90f8494b0d3e9b98fb7de51a945499798b0[m
+Author: Alihassan1536 <alihsnjanjua202@gmail.com>
+Date:   Fri Aug 2 20:35:25 2024 +0500
+
+    services and testimonials images and brand logos changes done
+
+[33mcommit 8e457f3402fa97f02aafd49e661d118a0a4e03e1[m
+Author: Alihassan1536 <alihsnjanjua202@gmail.com>
+Date:   Fri Aug 2 18:09:39 2024 +0500
+
+    testimonials changes
+
+[33mcommit d793a1dfcc7ff9908d12dfc37d7750add050e66d[m
+Author: Alihassan1536 <alihsnjanjua202@gmail.com>
+Date:   Fri Aug 2 16:54:35 2024 +0500
+
+    slider changes done
+
+[33mcommit c8b4953caa9985d42f5d5cb32d19f6402a9dd148[m
+Author: Alihassan1536 <alihsnjanjua202@gmail.com>
+Date:   Fri Aug 2 16:22:27 2024 +0500
+
+    team images radius change
+
+[33mcommit dfc80e0ba65e1b19c172571c1f37691efd63105a[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Fri Aug 2 15:29:25 2024 +0500
+
+    testimonials and client logos
+
+[33mcommit 56243b5f5c61760058b4bf40e89d5d314f3f35c4[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Thu Aug 1 16:16:29 2024 +0500
+
+    code
+
+[33mcommit a6eecc3cf1618c56dc408a14565e466a9d909722[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Tue Jul 30 20:25:11 2024 +0500
+
+    code
+
+[33mcommit dfeca00d04e32247d0108ba74fdfa6ba38cb08cd[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Sun Jul 28 00:16:53 2024 +0500
+
+    content in about us, and technology pages
+
+[33mcommit 17ff705ad495027902392117810f8edf6fe67e37[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Fri Jul 26 20:35:12 2024 +0500
+
+    content added on home, about us, and services pages
+
+[33mcommit db63079ef681de8bc6591b750624e15e17741b4f[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Tue Jul 23 20:03:48 2024 +0500
+
+    technology pages
+
+[33mcommit 6ec7de18be531c96a53511e2d007ec6f352d6270[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Mon Jul 22 20:15:31 2024 +0500
+
+    react link
+
+[33mcommit 1eca26b043f12171963c2abc4f03515b16554cfb[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Mon Jul 22 20:01:28 2024 +0500
+
+    services internal pages
+
+[33mcommit 86c1ff41893e64c32596624a64ebe2e2347ff0e3[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Mon Jul 15 17:18:05 2024 +0500
+
+    dummy text added in about us
+
+[33mcommit 0cc0a4fa5c0d576f1e9f116748070593662820ef[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Sat Jul 13 00:52:51 2024 +0500
+
+    navbar change
+
+[33mcommit 3f3e3cdff4d735ffe293d7f52606e6c6a645d33e[m
+Author: usman <usman@gmail.com>
+Date:   Tue May 21 17:41:39 2024 +0500
+
+    contact section alignments
+
+[33mcommit 0fea33168d3f06df9c721c7b5bdf47495635471a[m
+Author: usman <usman@gmail.com>
+Date:   Tue May 21 17:21:09 2024 +0500
+
+    contact section alignments
+
+[33mcommit 5fe20ca87cf8031ed0ce3391a5e4f5737fd36239[m
+Author: usman <usman@gmail.com>
+Date:   Tue May 21 16:06:33 2024 +0500
+
+    technology stack slider added
+
+[33mcommit aec669e5a23bcd8a9351507d2a39112ecb6b13d5[m
+Author: usman <usman@gmail.com>
+Date:   Mon May 20 18:31:40 2024 +0500
+
+    technology stack slider added
+
+[33mcommit ae6ecd5041cbc7f839e5b67445e0548fcba7ff61[m
+Author: usman <usman@gmail.com>
+Date:   Mon May 20 18:02:43 2024 +0500
+
+    footer page aligned
+
+[33mcommit 990e605684178e4e0158f6fa8f209df6eabed413[m
+Author: usman <usman@gmail.com>
+Date:   Mon May 20 16:35:17 2024 +0500
+
+    contact page is completed
+
+[33mcommit dd5f5d26724adb785bf91e97700f2c1bb9e97aba[m
+Author: usman <usman@gmail.com>
+Date:   Mon May 20 11:25:11 2024 +0500
+
+    layout fixes
+
+[33mcommit 62da3a39f0d4f0e52c083e8a9ecb16e19deb4e6b[m
+Author: usman <usman@gmail.com>
+Date:   Mon May 20 10:29:18 2024 +0500
+
+    layout fixes
+
+[33mcommit 0a0aaeaa4f5fafc183074435e5a432fa73278e7a[m
+Author: usman <usman@gmail.com>
+Date:   Mon May 20 10:27:31 2024 +0500
+
+    layout fixes
+
+[33mcommit 35974f27b2604915bc1027e2df123aa9f78afe96[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 17:57:27 2024 +0500
+
+    code refector in some sections
+
+[33mcommit b082e615373856923645f8f79686dc616d345063[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 17:43:02 2024 +0500
+
+    code refector in some sections
+
+[33mcommit ac2c44f6444b51f60a233ed5f09953014ce5bd6c[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 17:14:32 2024 +0500
+
+    code refector in some sections
+
+[33mcommit e249ffb51f26a1b9e11be9f3b6728b16b2b2d0d1[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 16:59:42 2024 +0500
+
+    code refector in some sections
+
+[33mcommit 49c1bce22f70578c0611247b0258360c72a3728d[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 16:50:32 2024 +0500
+
+    code refector in some sections
+
+[33mcommit 269f6f0778adc973a40138006c3813c0c161b3e6[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 16:43:53 2024 +0500
+
+    code refector in some sections
+
+[33mcommit 130ae5508bdd64cfd21825734f3b8139d2521437[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 16:31:08 2024 +0500
+
+    code refector in some sections
+
+[33mcommit c5e7e5586935487515da4139b35fdccc0da99703[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 16:29:26 2024 +0500
+
+    code refector in some sections
+
+[33mcommit baf4f9119af8381027f1a341d25d2a09ac5d13a5[m
+Author: usman <usman@gmail.com>
+Date:   Fri May 17 14:43:16 2024 +0500
+
+    improve blog section
+
+[33mcommit 531fa96f8d532b0978afee6e8efa4f1e29a48f5a[m
+Author: usman <usman@gmail.com>
+Date:   Thu May 16 19:32:08 2024 +0500
+
+    contect us page aligned
+
+[33mcommit 31dbc6e59bf7f2f49bb6e6ab21efd8bbccc70a5f[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Thu May 16 16:29:35 2024 +0500
+
+    redirects file
+
+[33mcommit 36a1220befe746807b1d384b92ee8b5a10f371a5[m[33m ([m[1;31morigin/service-page[m[33m)[m
+Author: usman <usman@gmail.com>
+Date:   Thu May 16 15:52:04 2024 +0500
+
+    some layout fixes
+
+[33mcommit cb0eb95b9c3106c9b3e148e7112692f103cc19be[m
+Author: usman <usman@gmail.com>
+Date:   Thu May 16 10:54:06 2024 +0500
+
+    carosales being responsive
+
+[33mcommit c7314a9cd924fb9e352d85aa5bb9163b1793aa0f[m
+Author: Shaharyar Ahmed <69304334+sherrydot@users.noreply.github.com>
+Date:   Wed May 15 16:17:38 2024 +0500
+
+    Service page (#2)
+    
+    * rebased code
+    
+    * Service and Technology page
+    
+    * Our Clients Carousel sliding feature
+    
+    * OurClients Team Testimonial Carousels
+
+[33mcommit 33df597508efbebd42d1425b661a5b613519b100[m
+Author: usman <usman@gmail.com>
+Date:   Wed May 15 10:52:06 2024 +0500
+
+    service page responsive
+
+[33mcommit 5c3ff99026fd15f12b9789992fc58235d2afc8e8[m
+Author: usman <usman@gmail.com>
+Date:   Tue May 14 18:24:27 2024 +0500
+
+    technology page responsive
+
+[33mcommit befec36b5fac2fd45e60f003c8b25bc38350ffca[m
+Author: usman <usman@gmail.com>
+Date:   Tue May 14 16:28:20 2024 +0500
+
+    testimonial and whatweproved section little fix
+
+[33mcommit e3726f57f6d4e4144f9f0339aa5387d23251cb89[m
+Author: fauzahmadkhan <fauz.ahmad99@gmail.com>
+Date:   Tue May 14 16:20:56 2024 +0500
+
+    serive page responsiveness in progress
+
+[33mcommit 19c0f0a6d08a9f8c2e3672fa1371f02be7a01025[m
+Merge: a4a69ba e811f79
+Author: usman <usman@gmail.com>
+Date:   Tue May 14 14:16:17 2024 +0500
+
+    aboutus page responsive
+
+[33mcommit a4a69ba1bce81088337057699d7ef1382c30b999[m
+Author: usman <usman@gmail.com>
+Date:   Tue May 14 13:56:55 2024 +0500
+
+    about us responsive completed
+
+[33mco
