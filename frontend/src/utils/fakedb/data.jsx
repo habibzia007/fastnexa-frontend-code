@@ -24,6 +24,23 @@ import LinuxSystem from "../../assets/images/LinuxSystem.jpg";
 import Integration from "../../assets/images/intgration.jpg";
 import infraMangement from "../../assets/images/infraMangement.jpg";
 import awsService from "../../assets/images/awsservice.jpg";
+import database from "../../assets/images/database.jpg";
+import deployment from "../../assets/images/deployment.jpg";
+import dockerAndKubenetes from "../../assets/images/docker-and-kubenetes.jpg";
+import iaas from "../../assets/images/iaas.jpg";
+import saas from "../../assets/images/saas.jpg";
+import aws from "../../assets/images/aws.jpg";
+import governance from "../../assets/images/governance-services.jpg";
+import specializedGRC from "../../assets/images/specialized-grc.jpg";
+import networkServices from "../../assets/images/network-services.jpg";
+import supportAndMaintenance from "../../assets/images/support-and-maintenance.jpg";
+import riskManagementAndSecurityPolicy from "../../assets/images/risk-management-and-security-policy.jpg";
+import networkSecurity from "../../assets/images/network-security.jpg";
+import bcp from "../../assets/images/bcp.jpg";
+import dataRecovery from "../../assets/images/data-recovery.jpg";
+import temporaryStaffing from "../../assets/images/temporary-staffing-solutions.jpg";
+import permanentStaffing from "../../assets/images/permanent-staffing-solutions.jpg";
+import cybersecurity from "../../assets/images/cybersecurity.jpg";
 
 
 
@@ -224,31 +241,31 @@ export const aboutUsServicesData = [
   {
     title: "Web Application Development",
     description: "Our comprehensive roadmap covers essential tools and technologies in both front-end and back-end development. Front-end technologies include HTML5 and CSS3 for structuring and styling web content, JavaScript (ES6+) and TypeScript for scripting, and frameworks like React.js, Angular, Vue.js, Svelte, and Next.js for building dynamic user interfaces. We also cover Webpack for module bundling and Tailwind CSS and Bootstrap for efficient UI design. On the back-end, we delve into Node.js and Express.js for scalable server-side applications, Django and Ruby on Rails for rapid web development, Spring Boot for Java-based microservices, Laravel for expressive PHP development, and RESTful APIs for web service interactions.\n",
-    img: aboutservice1,  // Update the path as necessary
+    img: webDevelopement, // Update the path as necessary
     reverse: false,
   },
   {
     title: "Database",
     description: "At FAST NEXA, our database services include MongoDB, a NoSQL database offering flexible, JSON-like data storage for dynamic applications. We use PostgreSQL and MySQL, both robust, open-source relational databases known for their reliability and performance in handling structured data. Additionally, we leverage Firebase, a comprehensive platform by Google designed to build and manage mobile and web applications, providing real-time databases, authentication, and cloud services to streamline development and enhance app functionality.",
-    img: aboutservice1, // Update the path as necessary
+    img: database, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Deployment",
     description: "At FAST NEXA, our deployment services leverage AWS CodePipeline, a CI/CD service that ensures fast and reliable application and infrastructure updates by integrating with various AWS services. We utilize Docker for containerization, providing consistent development environments across different stages. GitHub Actions automates build, test, and deployment pipelines directly from repositories, seamlessly integrating with GitHub. Additionally, we use Azure, Microsoft's comprehensive suite of development tools, including Azure Pipelines for automated CI/CD, supporting the entire application lifecycle from development to deployment. These tools collectively streamline and enhance the deployment process for efficient and reliable software delivery.",
-    img: aboutservice1,  // Update the path as necessary
+    img: deployment,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Mobile Application Development",
     description: "Our mobile application development services include Java, a robust, object-oriented language known for its portability and security, making it a staple for Android development. We also utilize Flutter, an open-source UI toolkit that leverages the Dart language to build high-performance, natively compiled applications for mobile, web, and desktop with a rich set of pre-designed widgets. For native mobile app development, we use React Native that enables creating cross-platform applications with a native look and feel using JavaScript and React, ensuring a smooth, responsive user experience on both iOS and Android.",
-    img: aboutservice1, // Update the path as necessary
+    img: mobileApplication, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Cross-Platform Development",
     description: "At FAST NEXA, we offer comprehensive cross-platform development services using React Native, which utilizes JavaScript and React to create apps with a native appearance and performance on both iOS and Android. Our expertise also extends to Flutter, an open-source UI toolkit by Google that uses Dart for building natively compiled applications from a single codebase, providing a smooth user experience across mobile, web, and desktop platforms. Additionally, we support development with Kotlin for modern Android applications, and our services encompass all major platforms including iOS, Android, and web to ensure a cohesive and high-quality user experience. ",
-    img: aboutservice1,  // Update the path as necessary
+    img: crossPlatform,  // Update the path as necessary
     reverse: false,
   },
 
@@ -264,13 +281,13 @@ export const aboutUsServicesDataSoftwareDevelopment = [
   {
     title: "Database",
     description: "At FAST NEXA, our database services include MongoDB, a NoSQL database offering flexible, JSON-like data storage for dynamic applications. We use PostgreSQL and MySQL, both robust, open-source relational databases known for their reliability and performance in handling structured data. Additionally, we leverage Firebase, a comprehensive platform by Google designed to build and manage mobile and web applications, providing real-time databases, authentication, and cloud services to streamline development and enhance app functionality.",
-    img: aboutservice1, // Update the path as necessary
+    img: database, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Deployment",
     description: "At FAST NEXA, our deployment services leverage AWS CodePipeline, a CI/CD service that ensures fast and reliable application and infrastructure updates by integrating with various AWS services. We utilize Docker for containerization, providing consistent development environments across different stages. GitHub Actions automates build, test, and deployment pipelines directly from repositories, seamlessly integrating with GitHub. Additionally, we use Azure, Microsoft's comprehensive suite of development tools, including Azure Pipelines for automated CI/CD, supporting the entire application lifecycle from development to deployment. These tools collectively streamline and enhance the deployment process for efficient and reliable software delivery.",
-    img: aboutservice1,  // Update the path as necessary
+    img: deployment,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -311,7 +328,7 @@ export const aboutUsServicesDataDevOps = [
   {
     title: "Docker and Kubernetes Expertise",
     description: "Leverage FAST NEXA's deep expertise in Docker and Kubernetes to optimize your containerization and orchestration needs. Our Docker services include implementing best practices for containerization, creating optimized Dockerfiles, managing and securing images, and configuring container networking and orchestration. With our Kubernetes services, we offer comprehensive solutions for cluster setup and management, application deployment and scaling, and utilizing advanced Kubernetes features such as Helm and Custom Resource Definitions. Additionally, we provide robust monitoring and troubleshooting to ensure your containerized applications run efficiently and effectively, giving you flexible, scalable, and efficient workload management.",
-    img: aboutservice1, // Update the path as necessary
+    img: dockerAndKubenetes, // Update the path as necessary
     reverse: true,
   },
   {
@@ -327,7 +344,7 @@ export const aboutUsServicesDataCloudComputing = [
   {
     title: " Infrastructure as a Service (IaaS)",
     description: "Infrastructure as a Service (IaaS) at FAST NEXA provides scalable computing power through virtualized servers that dynamically adapt to your requirements, ensuring optimal performance and resource utilization. Our robust storage solutions offer secure, high-performance options to safeguard your critical data, while our advanced networking capabilities enable seamless connectivity with high-speed, reliable infrastructure. This comprehensive suite of IaaS offerings empowers businesses to efficiently manage and scale their IT resources, reducing costs and enhancing operational flexibility without the need for significant upfront investments in physical hardware.",
-    img: aboutservice1,  // Update the path as necessary
+    img: iaas,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -339,13 +356,13 @@ export const aboutUsServicesDataCloudComputing = [
   {
     title: "Software as a Service (SaaS)",
     description: "Software as a Service (SaaS) from FAST NEXA provides access to powerful web-based applications directly over the internet, eliminating the need for cumbersome installations and ongoing maintenance. Our SaaS solutions ensure you always have the latest features and security updates through automatic updates, allowing your business to stay current and secure without additional effort. Enjoy the ultimate flexibility and convenience as you access your applications from any location and on any device, ensuring seamless productivity and collaboration across your team. Embrace the efficiency and reliability of SaaS with FAST NEXA to streamline your operations and enhance your business capabilities.",
-    img: aboutservice1,  // Update the path as necessary
+    img: saas,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "AWS Cloud Services",
     description: "AWS stands at the forefront of Cloud Computing, offering a comprehensive suite of services to meet diverse needs. With scalable virtual servers (Amazon EC2), serverless computing (AWS Lambda), and managed container orchestration (Amazon ECS and EKS), AWS ensures robust compute capabilities. Its storage solutions include Amazon S3 for durable object storage, Amazon EBS for block storage, Amazon EFS for scalable file storage, and Amazon Glacier for cost-effective archiving. AWS also provides managed database services like Amazon RDS, DynamoDB, DocumentDB, and Neptune. Security is paramount with AWS IAM, CloudWatch, CloudTrail, and KMS. Additional services include Amazon Route 53, CloudFront, and AWS Direct Connect. Explore the AWS Free Tier and choose flexible pricing models to suit your business.",
-    img: aboutservice1, // Update the path as necessary
+    img: aws, // Update the path as necessary
     reverse: true,
   },
 
@@ -361,7 +378,7 @@ export const aboutUsServicesDataCyberSecurity = [
   {
     title: "Governance Services",
     description: "Effective governance is crucial for compliance and operational excellence. FAST NEXA provides comprehensive governance services to establish and maintain robust policies, procedures, and organizational structures. We craft and refine policies that align with industry standards and your organization’s culture, develop organizational charts to enhance decision-making and accountability, and design compliance frameworks tailored to your industry. Additionally, we offer engaging training programs to educate employees on governance, policies, and their roles, ensuring that governance is clear, actionable, and integrated into your organization's daily operations.",
-    img: aboutservice1, // Update the path as necessary
+    img: governance, // Update the path as necessary
     reverse: true,
   },
   {
@@ -373,13 +390,13 @@ export const aboutUsServicesDataCyberSecurity = [
   {
     title: "Specialized GRC Solutions and Consulting",
     description: "We offer specialized GRC solutions and consulting to enhance your organization's governance, risk management, and compliance. Our services include comprehensive Information Security Consulting to develop robust security programs and advise on best practices. We guide clients through data privacy regulations such as GDPR and CCPA, and assist with data protection strategies. Our Third-Party Risk Management framework evaluates vendor risks, while Internal Audit Support improves audit processes. We facilitate GRC Software Implementation, ensuring effective use. Our Sustainability and ESG Consulting integrates environmental and social factors into your strategy, and we also design Fraud Risk Management programs to identify and mitigate fraud risks.",
-    img: aboutservice1, // Update the path as necessary
+    img: specializedGRC, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Cybersecurity Maturity Analysis",
     description: "At FAST NEXA, we offer tailored cybersecurity solutions to meet the unique needs of your organization, whether you’re in financial services, healthcare, or technology, and regardless of size or regulatory environment. Our Governance, Risk, and Compliance (GRC) services are customized to your specific industry requirements, organizational size, and risk appetite. Additionally, our Cybersecurity Maturity Analysis provides a thorough assessment of your organization's preparedness against cyber threats by evaluating employee awareness, incident response processes, and security technology. We deliver actionable insights and advanced security services to enhance your defenses and ensure robust protection.",
-    img: aboutservice1,  // Update the path as necessary
+    img: cybersecurity,  // Update the path as necessary
     reverse: false,
   },
 
@@ -389,7 +406,7 @@ export const aboutUsServicesDataNetworkStructure = [
   {
     title: "Network Services",
     description: "We excel in architecting cutting-edge network topologies, including LANs, WANs, and advanced cloud networks, ensuring optimal performance, scalability, and resilience. Our experts deploy state-of-the-art hardware like routers, switches, and firewalls, meticulously configuring network settings for robust connectivity and stringent security. We provide continuous monitoring and proactive management of network performance, efficiently handling traffic management, bandwidth allocation, and swiftly resolving connectivity issues. Protecting your network is our priority, with advanced security measures such as IDS, IPS, and regular security audits to safeguard against unauthorized access and cyber threats.",
-    img: aboutservice1,  // Update the path as necessary
+    img: networkServices,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -401,7 +418,7 @@ export const aboutUsServicesDataNetworkStructure = [
   {
     title: "Support and Maintenance",
     description: "Our dedicated support team at FAST NEXA ensures seamless operations by swiftly addressing any network and infrastructure issues. We keep your systems secure and performing at their best with timely updates and patches. Our robust backup solutions and disaster recovery plans safeguard your data integrity and availability, protecting your business from potential disruptions. With our proactive approach, you can focus on growth and innovation while we handle the complexities of your IT infrastructure.",
-    img: aboutservice1,  // Update the path as necessary
+    img: supportAndMaintenance,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -416,13 +433,13 @@ export const aboutUsServicesDataITServices = [
   {
     title: "Risk Management & Security Policy and Governance",
     description: "At FAST NEXA, we integrate advanced Risk Management and Security Policy & Governance to safeguard your digital assets. Utilizing cutting-edge analytics and threat modeling, we identify, evaluate, and mitigate potential risks with precision. Our bespoke security policies and procedures ensure your organization adopts a proactive stance on information security, while our continuous monitoring systems enable real-time adjustments to evolving threats. Navigate complex regulatory landscapes such as GDPR, HIPAA, and PCI-DSS effortlessly with our expert compliance management services. Our robust governance framework oversees and manages all security activities, ensuring alignment with industry standards and fortifying your defenses.",
-    img: aboutservice1,  // Update the path as necessary
+    img: riskManagementAndSecurityPolicy,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Network Security",
     description: "Elevate your network defenses with our advanced security solutions. Deploy next-gen firewalls that seamlessly integrate with your infrastructure, providing robust protection against unauthorized access and emerging cyber threats. Harness the power of Intrusion Detection and Prevention Systems (IDPS) to analyze network traffic with precision, proactively detecting and mitigating potential threats in real time. Extend your network securely with state-of-the-art Virtual Private Networks (VPNs), ensuring encrypted, reliable remote access for your team. With FAST NEXA, fortify your network with cutting-edge technologies designed to stay ahead of evolving threats and maintain seamless, secure operations.",
-    img: aboutservice1, // Update the path as necessary
+    img: networkSecurity, // Update the path as necessary
     reverse: true,
   },
   {
@@ -450,7 +467,7 @@ export const aboutUsServicesDataBusinessDisaster = [
   {
     title: "Business Continuity Planning (BCP)",
     description: "Our Business Continuity Planning (BCP) services at FAST NEXA ensure that your organization remains resilient and agile. Through our Business Impact Analysis (BIA), we pinpoint critical functions and assess the impact of disruptions, enabling us to prioritize recovery efforts effectively. We craft robust continuity strategies and detailed plans, covering emergency contacts, roles, and communication protocols. Our expert team then develops comprehensive plans with actionable steps for maintaining operations and conducts regular simulations and drills to test and refine these strategies. This proactive approach ensures your team is prepared, and your business operations remain seamless, even in the face of disruptions.\n",
-    img: aboutservice1,  // Update the path as necessary
+    img: bcp,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -462,7 +479,7 @@ export const aboutUsServicesDataBusinessDisaster = [
   {
     title: "Data Backup & Recovery Solutions",
     description: "Our Data Backup and Recovery Solutions are designed for maximum resilience and efficiency. We employ advanced backup strategies—full, incremental, and differential backups—to ensure comprehensive protection of your critical data. Our secure, scalable storage options include on-premises, cloud, and off-site solutions, guaranteeing your data’s safety and accessibility. Regular backup testing ensures data integrity and reliable recovery processes. For rapid IT system recovery, we leverage cutting-edge virtualization and cloud-based technologies like IaaS and DRaaS. Our failover systems and real-time data replication further minimize disruption, providing seamless continuity and swift recovery.",
-    img: aboutservice1,  // Update the path as necessary
+    img: dataRecovery,  // Update the path as necessary
     reverse: false,
   },
 ];
@@ -471,13 +488,13 @@ export const aboutUsServicesDataHumanResourceAugmentation = [
   {
     title: "Temporary Staffing Solutions",
     description: "Gain access to a pool of highly skilled IT professionals ready to join your team on a temporary basis. Our temporary staffing solutions provide the flexibility to address short-term project needs or fill specific expertise gaps for a limited period. Whether you're facing unexpected project demands, seasonal workload spikes, or require specialized skills for a critical task, we ensure you have the right talent at the right time. With FAST NEXA, you can swiftly scale your workforce to maintain productivity and meet deadlines without the long-term commitment of permanent hires.",
-    img: aboutservice1,  // Update the path as necessary
+    img: temporaryStaffing,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Permanent Staffing Solutions",
     description: "Finding the perfect fit for your team can be challenging. Our permanent staffing solutions focus on identifying and recruiting top-tier IT professionals who align with your company's culture and long-term goals. We manage the entire recruitment process, from sourcing candidates and conducting thorough interviews to handling negotiations and onboarding. By leveraging our industry expertise and extensive network, we ensure you secure the best talent available. This allows you to concentrate on strategic business growth while we build a robust, skilled, and committed workforce tailored to your organizational needs.",
-    img: aboutservice1, // Update the path as necessary
+    img: permanentStaffing, // Update the path as necessary
     reverse: true,
   },
   {
