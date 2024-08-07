@@ -18,6 +18,13 @@ import aboutservice1 from "../../assets/images/aboutservice1.jpg";
 import webDevelopement from "../../assets/images/webdevelopment.jpg";
 import mobileApplication from "../../assets/images/mobile_application.jpg";
 import crossPlatform from "../../assets/images/cross_platform.jpg";
+import physicalSecurity from "../../assets/images/physicalSecurity.jpg";
+import securityTraining from "../../assets/images/securityTraining.jpg";
+import LinuxSystem from "../../assets/images/LinuxSystem.jpg";
+import Integration from "../../assets/images/intgration.jpg";
+import infraMangement from "../../assets/images/infraMangement.jpg";
+import awsService from "../../assets/images/awsservice.jpg";
+
 
 
 //attention client
@@ -286,19 +293,19 @@ export const aboutUsServicesDataDevOps = [
   {
     title: "Linux System Administration",
     description: "At FAST NEXA, our Linux system administration services are designed to turbocharge your IT infrastructure. Our expert sysadmins deploy automation, performance tuning, and robust security practices to ensure peak efficiency. We focus on maximizing system reliability and uptime while minimizing mean time to repair (MTTR) and streamlining deployment and updates. Our tech stack includes configuration management tools like Ansible, Puppet, and Chef; continuous monitoring with Grafana, Prometheus, and ELK Stack; advanced security with SELinux, iptables, and firewalld; and cloud tools such as Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager for seamless orchestration.",
-    img: aboutservice1,  // Update the path as necessary
+    img: LinuxSystem,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Continuous Integration and Continuous Deployment (CI/CD)",
     description: "Accelerate your software delivery pipeline with FAST NEXA's CI/CD solutions, designed to enhance automation, parallelization, and integration throughout the Software Development Lifecycle (SDLC). Our services focus on speeding up release cycles, reducing mean time to repair (MTTR), and simplifying deployment processes. We utilize a comprehensive toolset, including seamless decomposition and parallel execution, automated code review and reporting tools like SonarQube and Codacy, and cloud-agnostic CI/CD tools such as Jenkins and GitLab CI/CD. For cloud-native pipelines, we leverage AWS CodePipeline and Google Cloud Build to ensure efficient and reliable deployments.",
-    img: aboutservice1, // Update the path as necessary
+    img: Integration, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Infrastructure Management",
     description: "Streamline your environment provisioning, monitoring, and autoscaling with FAST NEXA’s Infrastructure Management services. We focus on ensuring consistent performance and rapid scalability through strategic objectives like maintaining environmental consistency, enhancing testability, and reducing SDLC duration. Our methodologies include Infrastructure as Code (IaC), comprehensive alerting and monitoring systems, and strategic capacity planning. Utilizing advanced technologies such as Terraform and AWS CloudFormation for IaC, AWS ECS, EKS, and Fargate for container orchestration, Docker and Ansible for containerization, and Prometheus, ELK, and Grafana for monitoring, we implement sophisticated deployment strategies like AutoScaling and Blue/Green deployments.",
-    img: aboutservice1,  // Update the path as necessary
+    img: infraMangement,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -310,7 +317,7 @@ export const aboutUsServicesDataDevOps = [
   {
     title: "AWS Consulting Services",
     description: "FAST NEXA’s AWS consulting services provide expert guidance to elevate your cloud infrastructure with a focus on automation, performance tuning, and security. Our services aim to enhance cloud reliability and uptime, minimize mean time to repair (MTTR), and streamline deployments and updates. Utilizing AWS’s extensive tech arsenal, including Infrastructure as Code (AWS CloudFormation, Terraform), continuous monitoring and logging (Amazon CloudWatch, AWS X-Ray), and performance optimization tools (AWS Auto Scaling, ELB), we ensure robust security and compliance with AWS IAM and AWS Shield. Additionally, we leverage AWS CodePipeline, AWS CodeDeploy, Amazon S3, and Amazon RDS for advanced data storage and management.",
-    img: aboutservice1,  // Update the path as necessary
+    img: awsService,  // Update the path as necessary
     reverse: false,
   },
 
@@ -427,13 +434,13 @@ export const aboutUsServicesDataITServices = [
   {
     title: "Physical Security Solutions",
     description: "Safeguard your IT assets with our state-of-the-art Physical Security Solutions. We deploy cutting-edge access control systems, including advanced key cards and biometric scanners, to secure your facilities from unauthorized entry. Our environmental controls further enhance protection by integrating sophisticated fire suppression systems and precision climate control, ensuring optimal conditions for your critical infrastructure. With FAST NEXA's comprehensive approach, we fortify your physical security landscape, mitigating risks and enhancing the safety of your technological environment. Trust us to deliver robust security measures tailored to meet the highest standards of protection and operational efficiency.",
-    img: aboutservice1, // Update the path as necessary
+    img: physicalSecurity, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Security Training and Precision Audits",
     description: "Empower your team with our dynamic Security Awareness and Training programs, designed to elevate employee knowledge on the latest security best practices, phishing detection, and policy compliance. Our ongoing awareness campaigns ensure that security remains a top priority for every staff member. Complementing this, our comprehensive Security Audits and Assessments delve deep into your digital infrastructure, conducting precise Vulnerability Assessments and high-fidelity Penetration Testing to identify and address potential weaknesses. We meticulously review your security policies, procedures, and controls, ensuring they are not only effective but also compliant with industry standards, fortifying your defenses against evolving threats.",
-    img: aboutservice1,  // Update the path as necessary
+    img: securityTraining,  // Update the path as necessary
     reverse: false,
   },
 
