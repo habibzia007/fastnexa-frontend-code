@@ -225,7 +225,7 @@ const primaryLinks = [
     label: "Services",
     dropdown: [
       { path: "/services/software-development", label: "Software Development" },
-      { path: "/services/dev-ops", label: "Dev Ops" },
+      { path: "/services/dev-ops", label: "DevOps" },
       { path: "/services/cloud-computing", label: "Cloud Computing" },
       { path: "/services/cyber-security", label: "Cybersecurity" },
       {
@@ -236,6 +236,10 @@ const primaryLinks = [
       {
         path: "/services/business-continuity-disaster-recovery",
         label: "Business Continuity & Disaster Recovery",
+      },
+      {
+        path: "/services/human-resource",
+        label: "Human Resource Augmentation",
       },
     ],
   },

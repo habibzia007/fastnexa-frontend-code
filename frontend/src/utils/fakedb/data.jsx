@@ -15,6 +15,10 @@ import blog2 from "../../assets/images/blog2.png";
 
 //aboutusservice
 import aboutservice1 from "../../assets/images/aboutservice1.jpg";
+import webDevelopement from "../../assets/images/webdevelopment.jpg";
+import mobileApplication from "../../assets/images/mobile_application.jpg";
+import crossPlatform from "../../assets/images/cross_platform.jpg";
+
 
 //attention client
 import attentionclient1 from "../../assets/attentionclient1.svg";
@@ -26,6 +30,7 @@ import attentionclient_wp from "../../assets/attentionclient_wp.svg";
 import { PiNetworkLight } from "react-icons/pi";
 import { GiCheckedShield } from "react-icons/gi";
 import { SlSupport } from "react-icons/sl";
+import { GiHumanPyramid } from "react-icons/gi";
 
 export const BlogCardData = [
   {
@@ -148,6 +153,14 @@ export const WhatWeProvideData = [
       "Safeguard your business against disruptions with our resilient business continuity and disaster recovery services. We offer solutions from world-leading technology providers, including hot backups, replication, high availability, active-active and active-passive clustering, as well as site failover and fail-back technologies. Our comprehensive approach ensures minimal business impact and keeps your operations running smoothly, even in the face of unexpected challenges.",
     icon: <SlSupport style={{ width: '100%', height: '100%' }} />,
   },
+  {
+    img: { Vector3 },
+    link: "business-continuity-disaster-recovery",
+    title: "Human Resource Augmentation",
+    description:
+        "At FAST NEXA, we understand that having the right talent is crucial for driving innovation and achieving business objectives",
+    icon: <GiHumanPyramid style={{ width: '100%', height: '100%' }} />,
+  },
 ];
 
 export const whoWeAreData = [
@@ -238,7 +251,7 @@ export const aboutUsServicesDataSoftwareDevelopment = [
   {
     title: "Web Application Development",
     description: "Our comprehensive roadmap covers essential tools and technologies in both front-end and back-end development. Front-end technologies include HTML5 and CSS3 for structuring and styling web content, JavaScript (ES6+) and TypeScript for scripting, and frameworks like React.js, Angular, Vue.js, Svelte, and Next.js for building dynamic user interfaces. We also cover Webpack for module bundling and Tailwind CSS and Bootstrap for efficient UI design. On the back-end, we delve into Node.js and Express.js for scalable server-side applications, Django and Ruby on Rails for rapid web development, Spring Boot for Java-based microservices, Laravel for expressive PHP development, and RESTful APIs for web service interactions.\n",
-    img: aboutservice1,  // Update the path as necessary
+    img: webDevelopement,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -256,13 +269,13 @@ export const aboutUsServicesDataSoftwareDevelopment = [
   {
     title: "Mobile Application Development",
     description: "Our mobile application development services include Java, a robust, object-oriented language known for its portability and security, making it a staple for Android development. We also utilize Flutter, an open-source UI toolkit that leverages the Dart language to build high-performance, natively compiled applications for mobile, web, and desktop with a rich set of pre-designed widgets. For native mobile app development, we use React Native that enables creating cross-platform applications with a native look and feel using JavaScript and React, ensuring a smooth, responsive user experience on both iOS and Android.",
-    img: aboutservice1, // Update the path as necessary
+    img: mobileApplication, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Cross-Platform Development",
     description: "At FAST NEXA, we offer comprehensive cross-platform development services using React Native, which utilizes JavaScript and React to create apps with a native appearance and performance on both iOS and Android. Our expertise also extends to Flutter, an open-source UI toolkit by Google that uses Dart for building natively compiled applications from a single codebase, providing a smooth user experience across mobile, web, and desktop platforms. Additionally, we support development with Kotlin for modern Android applications, and our services encompass all major platforms including iOS, Android, and web to ensure a cohesive and high-quality user experience. ",
-    img: aboutservice1,  // Update the path as necessary
+    img: crossPlatform,  // Update the path as necessary
     reverse: false,
   },
 
@@ -444,6 +457,33 @@ export const aboutUsServicesDataBusinessDisaster = [
     description: "Our Data Backup and Recovery Solutions are designed for maximum resilience and efficiency. We employ advanced backup strategies—full, incremental, and differential backups—to ensure comprehensive protection of your critical data. Our secure, scalable storage options include on-premises, cloud, and off-site solutions, guaranteeing your data’s safety and accessibility. Regular backup testing ensures data integrity and reliable recovery processes. For rapid IT system recovery, we leverage cutting-edge virtualization and cloud-based technologies like IaaS and DRaaS. Our failover systems and real-time data replication further minimize disruption, providing seamless continuity and swift recovery.",
     img: aboutservice1,  // Update the path as necessary
     reverse: false,
+  },
+];
+
+export const aboutUsServicesDataHumanResourceAugmentation = [
+  {
+    title: "Temporary Staffing Solutions",
+    description: "Gain access to a pool of highly skilled IT professionals ready to join your team on a temporary basis. Our temporary staffing solutions provide the flexibility to address short-term project needs or fill specific expertise gaps for a limited period. Whether you're facing unexpected project demands, seasonal workload spikes, or require specialized skills for a critical task, we ensure you have the right talent at the right time. With FAST NEXA, you can swiftly scale your workforce to maintain productivity and meet deadlines without the long-term commitment of permanent hires.",
+    img: aboutservice1,  // Update the path as necessary
+    reverse: false,
+  },
+  {
+    title: "Permanent Staffing Solutions",
+    description: "Finding the perfect fit for your team can be challenging. Our permanent staffing solutions focus on identifying and recruiting top-tier IT professionals who align with your company's culture and long-term goals. We manage the entire recruitment process, from sourcing candidates and conducting thorough interviews to handling negotiations and onboarding. By leveraging our industry expertise and extensive network, we ensure you secure the best talent available. This allows you to concentrate on strategic business growth while we build a robust, skilled, and committed workforce tailored to your organizational needs.",
+    img: aboutservice1, // Update the path as necessary
+    reverse: true,
+  },
+  {
+    title: "Project-Based Augmentation",
+    description: "For projects that require specialized skills or additional manpower, our project-based augmentation services offer the ideal solution. We provide the flexibility to scale your team according to the specific demands of each project, ensuring you have the right expertise exactly when needed. Our IT professionals integrate seamlessly with your existing workforce, maintaining continuity and enhancing efficiency throughout the project lifecycle. Whether it's a complex development task, a critical IT infrastructure upgrade, or a large-scale implementation, our augmentation services enable you to achieve your project goals with precision and agility.",
+    img: aboutservice1,  // Update the path as necessary
+    reverse: false,
+  },
+  {
+    title: "On-Demand Skill Enhancement",
+    description: "In today's fast-paced IT landscape, keeping up with emerging technologies and industry trends is essential for maintaining a competitive edge. Our on-demand skill enhancement services offer customized training and development programs designed to elevate your team's capabilities. From mastering the latest programming languages to becoming proficient in new software tools, we tailor our training solutions to meet your specific needs. By investing in continuous learning and professional development, we ensure your team remains at the forefront of innovation, ready to tackle current challenges and leverage future opportunities with confidence.",
+    img: aboutservice1, // Update the path as necessary
+    reverse: true,
   },
 ];
 

@@ -43,11 +43,13 @@ const Card = ({image, title, description}) => {
 
     return (
         <div
-            className="w-full max-w-[276.62px] sm:max-w-[300px] md:max-w-[280px] lg:max-w-[382.62px] h-[314.96px] sm:h-[350px] md:h-[320px] lg:h-[435.96px] rounded-[9.2px] relative group  mx-auto overflow-hidden">
+            className="w-full max-w-[276.62px] sm:max-w-[300px] md:max-w-[280px] lg:max-w-[382.62px] h-[314.96px] sm:h-[350px] md:h-[320px] lg:h-[435.96px] rounded-[9.2px] relative group mx-auto overflow-hidden">
             <div
-                className="w-full h-full rounded-[9.2px] bg-cover bg-center relative"
+                className="w-full h-full rounded-[9.2px] bg-cover bg-center relative hover:transition-opacity duration-500"
                 style={cardImageStyle}
             >
+                <div
+                    className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 hover:transition-opacity duration-500"></div>
                 <div
                     className="absolute -bottom-2 group-hover:bottom-8 left-4 sm:left-6 md:left-8 flex flex-col gap-2 items-start transition-all duration-500">
                     <div className="flex gap-1 sm:gap-2 items-center">
@@ -63,6 +65,7 @@ const Card = ({image, title, description}) => {
                 </div>
             </div>
         </div>
+
     );
 };
 

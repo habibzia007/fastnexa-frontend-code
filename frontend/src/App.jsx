@@ -20,12 +20,15 @@ import UpgradationMigration from "./pages/technology/upgradationMigration/Upgrad
 import NetworkInfrastructure from "./pages/services/networkInfrastructure/NetworkInfrastructure";
 import InformationSecurity from "./pages/services/informationSecurity/InformationSecurity";
 import BusinessAndDisaster from "./pages/services/businessAndDisaster/BusinessAndDisaster";
+import HumanResource from "./pages/services/humanResource/HumanResource.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 // Import other pages here
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Add more routes for other pages */}
@@ -50,6 +53,10 @@ function App() {
         <Route
           path="/services/business-continuity-disaster-recovery"
           element={<BusinessAndDisaster />}
+        />
+        <Route
+            path="/services/human-resource"
+            element={<HumanResource />}
         />
         <Route path="/technology" element={<Technology />} />
         <Route
