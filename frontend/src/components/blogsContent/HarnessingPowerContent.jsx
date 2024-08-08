@@ -30,13 +30,13 @@ function HarnessingPowerContent() {
                         <div className={`mb-7`}>
                             <h2 className={`font-Poppins font-semibold text-base  lg:text-2xl leading-tight mt-2 mb-2`}>2.
                                 Cost-Efficiency</h2>
-                            <p className={`font-Poppins text-base text-gray-700  leading-8`}>One of the most compelling
+                            <p className={`font-Poppins text-base text-gray-700  leading-8 mb-2`}>One of the most compelling
                                 advantages of cloud computing is its cost-efficiency. By shifting to a cloud-based
                                 model, businesses can avoid the hefty upfront costs associated with purchasing and
-                                maintaining physical hardware.<br/><br/>
-                                Instead, you pay for what you use, transforming IT expenditures from capital expenses
-                                (CapEx) to operational expenses (OpEx).
+                                maintaining physical hardware.
                             </p>
+                            <p className={`font-Poppins text-base text-gray-700  leading-8`}>Instead, you pay for what you use, transforming IT expenditures from capital expenses
+                                (CapEx) to operational expenses (OpEx).</p>
                         </div>
                         <div className={`mb-7`}>
                             <h2 className={`font-Poppins font-semibold text-base  lg:text-2xl leading-tight mt-2 mb-2`}>3.
@@ -52,11 +52,11 @@ function HarnessingPowerContent() {
                     <div className={`mb-10`}>
                         <h1 className={`font-Poppins font-bold text-xl lg:text-3xl leading-tight mt-2 mb-2`}>Best
                             Practices for Migrating to the Cloud</h1>
-                        <p className={`font-Poppins text-base text-gray-700  leading-8 mb-5`}>Transitioning to the cloud
+                        <p className={`font-Poppins text-base text-gray-700  leading-8  mb-2`}>Transitioning to the cloud
                             can be a complex process, but with the right strategy and guidance from FAST NEXA, it can be
-                            smooth and efficient.<br/><br/>
-                            Here are some best practices to ensure a seamless cloud migration:
+                            smooth and efficient.
                         </p>
+                        <p className={`font-Poppins text-base text-gray-700  leading-8`}> Here are some best practices to ensure a seamless cloud migration:</p>
                         <div className={`mb-8`}>
                             <div className={`mb-7`}>
                                 <h2 className={`font-Poppins font-semibold text-base  lg:text-2xl leading-tight mt-2 mb-2`}>1.

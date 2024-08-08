@@ -10,6 +10,7 @@ import Footer from "../Footer.jsx";
 import Banner from "../blog/Banner.jsx";
 import TechnologyStack from "../TechnologyStack.jsx";
 import ContactUs from "../ContactUs.jsx";
+import CyberDigitalContent from "../blogsContent/CyberDigitalContent.jsx";
 // import SoftwareDevelopmentServices from "../../pages/services/softwareDevelopment/SoftwareDevelopmentServices.jsx";
 // import Intro from "../../pages/services/softwareDevelopment/Intro.jsx";
 
@@ -19,6 +20,7 @@ const CyberSecurityDigital = () => {
         <main className=" w-full bg-[#FFFFFF]">
             <Navbar />
             <Banner text={"Cybersecurity in the Digital Age: Strategies for Protecting Your Business from Cyber Threats"} />
+            <CyberDigitalContent />
             <TechnologyStack />
             <ContactUs />
             <Footer />
