@@ -4,16 +4,16 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ctoImg from "./abdullaFaisal.png";
+import ctoImg from "../../../assets/images/abdulla.jpg";
 import ceoImg from "./faisalShehzad.jpg";
-import cooImg from "./fatimahFaisal.jpg";
+import cooImg from "../../../assets/images/fatima.jpg";
 import cioImg from "./fizzaAbdulla.png";
 
 const Team = () => {
   const teamMembers = [
     {
       imgSrc: ceoImg,
-      name: "Faisal Shehzad",
+      name: "Faisal Shahzad",
       position: "Fractional CEO & vCISO FastNexa",
     },
     { imgSrc: ctoImg, name: "Abdulla Faisal", position: "CTO, FastNexa" },

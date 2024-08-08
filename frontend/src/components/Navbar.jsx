@@ -216,6 +216,10 @@ import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
 
 const primaryLinks = [
   {
+    path: "/",
+    label: "Home",
+  },
+  {
     path: "/about",
     label: "About Us",
     dropdown: [{ path: "/about/our-vision", label: "Our Vision" }],
@@ -273,7 +277,7 @@ const primaryLinks = [
       },
     ],
   },
-  { path: "#", label: "Portfolio" },
+  { path: "/portfolio", label: "Portfolio" },
   { path: "/contact", label: "Contact Us" },
 ];
 

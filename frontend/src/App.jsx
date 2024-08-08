@@ -22,6 +22,15 @@ import InformationSecurity from "./pages/services/informationSecurity/Informatio
 import BusinessAndDisaster from "./pages/services/businessAndDisaster/BusinessAndDisaster";
 import HumanResource from "./pages/services/humanResource/HumanResource.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import Portfolio from "./pages/portfolio/Portfolio.jsx";
+import SucessfullBusinessMan from "./components/blogs/SoftwareKeyTrends.jsx";
+import SucessfullBussinesman from "./components/blogs/SoftwareKeyTrends.jsx";
+import SucessfullBussinesMan from "./components/blogs/SoftwareKeyTrends.jsx";
+import ExtractValue from "./components/blogs/HarnessingPower.jsx";
+import PowerfulServer from "./components/blogs/CyberSecurityDigital.jsx";
+import SoftwareKeyTrends from "./components/blogs/SoftwareKeyTrends.jsx";
+import HarnessingPower from "./components/blogs/HarnessingPower.jsx";
+import CyberSecurityDigital from "./components/blogs/CyberSecurityDigital.jsx";
 
 // Import other pages here
 
@@ -83,7 +92,11 @@ function App() {
           path="/technology/upgradation-migration"
           element={<UpgradationMigration />}
         />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs/future-software-development-trends" element={<SoftwareKeyTrends />} />
+        <Route path="/blogs/harnessing-power-cloud-computing-best-practices-seamless-transition" element={<HarnessingPower />} />
+        <Route path="/blogs/cybersecurity-strategies-for-business-protection" element={<CyberSecurityDigital />} />
         <Route component={PageNotFound} />
       </Routes>
     </Router>

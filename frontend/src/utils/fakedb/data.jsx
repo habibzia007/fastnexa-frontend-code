@@ -6,7 +6,11 @@ import Vector3 from "../../assets/images/vector3.svg";
 // choose us
 import link1 from "../../assets/images/link1.png";
 import link2 from "../../assets/images/link2.png";
-import link3 from "../../assets/images/link3.png";
+import link3 from "../../assets/images/choose1.jpg";
+import link4 from "../../assets/images/choose4.jpg";
+import link5 from "../../assets/images/choose5.jpg";
+import link6 from "../../assets/images/choose6.jpg";
+import link7 from "../../assets/images/choose7.jpg";
 
 // blog
 import blog0 from "../../assets/images/blog0.png";
@@ -41,6 +45,15 @@ import dataRecovery from "../../assets/images/data-recovery.jpg";
 import temporaryStaffing from "../../assets/images/temporary-staffing-solutions.jpg";
 import permanentStaffing from "../../assets/images/permanent-staffing-solutions.jpg";
 import cybersecurity from "../../assets/images/cybersecurity.jpg";
+import PaaS from "../../assets/images/PaaS.jpg";
+import pentastingSolution from "../../assets/images/pentastingSolution.jpg";
+import riskmanagement from "../../assets/images/riskmanagement.jpg";
+import infrastructureService from "../../assets/images/infrastructureService.jpg";
+import performanceOptimization from "../../assets/images/performanceOptimization.png"
+import endpoint from "../../assets/images/endpoint.png"
+import DRP from  "../../assets/images/DRP.jpg";
+import projectBasedAugmentation from "../../assets/images/projectBasedAugmentation.jpg"
+import onDemandSkill from "../../assets/images/onDemandSkill.jpg";
 
 
 
@@ -63,7 +76,8 @@ export const BlogCardData = [
     comments: 5,
     date: "08",
     month: "Aug",
-    title: "How to become a successful businessman",
+    title: "Navigating the Future of Software Development: Key Trends and Technologies",
+    path: "future-software-development-trends"
   },
   {
     image: { blog1 },
@@ -71,7 +85,8 @@ export const BlogCardData = [
     comments: 3,
     date: "10",
     month: "Aug",
-    title: "Who Needs Extract Value From Data?",
+    title: "Harnessing the Power of Cloud Computing: Best Practices for a Seamless Transition",
+    path: "harnessing-power-cloud-computing-best-practices-seamless-transition"
   },
   {
     image: { blog2 },
@@ -79,9 +94,11 @@ export const BlogCardData = [
     comments: 8,
     date: "12",
     month: "Aug",
-    title: "Easy and Most Powerful Server and Platform.",
+    title: "Cybersecurity in the Digital Age: Strategies for Protecting Your Business from Cyber Threats",
+    path: "cybersecurity-strategies-for-business-protection"
   },
 ];
+
 export const chooseUsData = [
   {
     img: { link1 },
@@ -99,22 +116,22 @@ export const chooseUsData = [
     description: "One of our core strengths at Fast Nexa is our ability to provide end-to-end IT solutions, encompassing every aspect of your technology needs. From basic infrastructure to advanced software development. Our solutions are designed to be seamless and integrated, ensuring that all components work together harmoniously to deliver optimal performance and efficiency."
   },
   {
-    img: { link3 },
+    img: { link4 },
     title: "Customization and Scalability",
     description: "We understand that every business is unique, which is why we tailor our solutions to meet your specific needs. Whether you're a small startup or a large enterprise, our solutions are scalable to grow with your business. With our flexible approach, we ensure that your technology evolves alongside your business goals and industry trends."
   },
   {
-    img: { link3 },
+    img: { link5 },
     title: "Proactive Support",
     description: "Our dedicated support team is committed to providing proactive and responsive assistance. We anticipate potential issues and address them before they become problems, ensuring your operations run smoothly. Our 24/7 support ensures that you always have access to the help you need."
   },
   {
-    img: { link3 },
+    img: { link6 },
     title: "Innovative Approach",
     description: "We stay ahead of the curve by continuously adopting the latest technologies and industry best practices. Our innovative mindset drives us to develop forward-thinking solutions that give your business a competitive edge. We foster a culture of creativity and continuous improvement."
   },
   {
-    img: { link3 },
+    img: { link7 },
     title: "Client-Centric Philosophy",
     description: "At FAST NEXA, our clients are at the heart of everything we do. We prioritize your needs and work closely with you to understand your goals and challenges. Our client-centric approach ensures that we deliver solutions that not only meet but exceed your expectations, building long-term partnerships based on trust and satisfaction."
   },
@@ -179,10 +196,10 @@ export const WhatWeProvideData = [
   },
   {
     img: { Vector3 },
-    link: "business-continuity-disaster-recovery",
+    link: "human-resource",
     title: "Human Resource Augmentation",
     description:
-        "At FAST NEXA, we understand that having the right talent is crucial for driving innovation and achieving business objectives",
+        "Enhance your workforce flexibility and efficiency with FAST NEXA’s temporary and permanent staffing solutions, project-based augmentation, and on-demand skill enhancement. Access top-tier IT professionals and customized training to drive innovation and achieve your business objectives.",
     icon: <GiHumanPyramid style={{ width: '100%', height: '100%' }} />,
   },
 ];
@@ -350,7 +367,7 @@ export const aboutUsServicesDataCloudComputing = [
   {
     title: "Platform as a Service (PaaS)",
     description: "Our Platform as a Service (PaaS) offering provides a comprehensive solution for developing, testing, and deploying applications with unparalleled ease. It includes an integrated development environment that streamlines the entire process, allowing developers to focus on coding without worrying about the underlying infrastructure. With a wide array of pre-built tools and libraries, our PaaS accelerates development timelines, enabling rapid innovation and deployment. The managed infrastructure ensures seamless maintenance and scalability, so your applications remain robust and efficient. This holistic approach empowers your team to deliver high-quality software faster, while we handle the complexities of infrastructure management.",
-    img: aboutservice1, // Update the path as necessary
+    img: PaaS, // Update the path as necessary
     reverse: true,
   },
   {
@@ -372,7 +389,7 @@ export const aboutUsServicesDataCyberSecurity = [
   {
     title: "Pentesting Solutions for Application, Network, and Wireless Security",
     description: "Ensure your organization's security with FAST NEXA’s expert pentesting services. Our holistic approach covers Application Security Pentesting to protect mobile apps and web services from vulnerabilities, Network Infrastructure Security Pentesting to fortify your network against attacks, and Wireless Security Pentesting to secure your Wi-Fi networks from unauthorized access. We provide thorough assessments, targeted attack simulations, and actionable recommendations to address potential weaknesses and enhance your security posture across all layers. Trust FAST NEXA to safeguard your digital assets with our comprehensive and proactive security solutions.",
-    img: aboutservice1,  // Update the path as necessary
+    img: pentastingSolution,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -384,7 +401,7 @@ export const aboutUsServicesDataCyberSecurity = [
   {
     title: "Risk Management and Compliance Services",
     description: "Our Risk Management and Compliance Services are designed to protect your organization from potential threats and ensure regulatory adherence. We provide thorough risk assessments and quantification, develop tailored mitigation strategies, and create robust business continuity and incident response plans. Our compliance services include regulatory audits, gap analysis, program implementation, and ongoing monitoring. We also offer specialized compliance training to keep your team informed and prepared. Together, these services ensure your organization not only manages risks effectively but also meets all relevant regulatory standards with confidence.",
-    img: aboutservice1,  // Update the path as necessary
+    img: riskmanagement,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -412,7 +429,7 @@ export const aboutUsServicesDataNetworkStructure = [
   {
     title: "Infrastructure Services",
     description: "Our Infrastructure Services encompass comprehensive server management, ensuring both physical servers and virtual machines operate at peak efficiency. We deliver sophisticated storage solutions, from traditional SANs and NAS to cutting-edge cloud storage, guaranteeing secure and accessible data. Our expert data center management covers everything from power and cooling to physical security, maintaining both physical and virtual components for optimal performance. Additionally, we seamlessly integrate and manage cloud-based infrastructure services from industry leaders like AWS, Azure, and Google Cloud, providing customized computing resources, storage, and application hosting tailored to your unique needs. \n",
-    img: aboutservice1, // Update the path as necessary
+    img: infrastructureService, // Update the path as necessary
     reverse: true,
   },
   {
@@ -424,7 +441,7 @@ export const aboutUsServicesDataNetworkStructure = [
   {
     title: "Performance Optimization",
     description: "Our performance optimization services at FAST NEXA ensure your network and infrastructure operate at peak efficiency. We continuously monitor systems to swiftly identify and resolve bottlenecks, maintaining seamless performance. Our proactive capacity planning anticipates growth and increased demand, providing scalable solutions tailored to your business's needs. Through meticulous optimization of configurations and resources, we enhance performance and reduce costs, maximizing the value of your IT investments. Trust FAST NEXA to deliver a streamlined, high-performing infrastructure that supports your business's success.",
-    img: aboutservice1, // Update the path as necessary
+    img: performanceOptimization, // Update the path as necessary
     reverse: true,
   },
 
@@ -445,7 +462,7 @@ export const aboutUsServicesDataITServices = [
   {
     title: "Endpoint and Data Security",
     description: "Maximize your security posture with our advanced Endpoint and Data Security solutions. Deploy cutting-edge antivirus and antimalware software to thwart malicious threats, while leveraging sophisticated Endpoint Detection and Response (EDR) technologies for real-time monitoring and incident response across all devices. Ensure seamless Device Management with rigorous security configurations and timely updates. Safeguard your critical data with top-tier Encryption for data at rest, in transit, and during processing. Minimize exposure risks with Data Masking techniques and fortify your defenses with robust Backup and Recovery solutions, guaranteeing data integrity and availability even in the face of breaches or losses.",
-    img: aboutservice1,  // Update the path as necessary
+    img: endpoint,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -473,7 +490,7 @@ export const aboutUsServicesDataBusinessDisaster = [
   {
     title: "Disaster Recovery Planning (DRP)",
     description: "Our Disaster Recovery Planning (DRP) services are designed to safeguard your IT infrastructure from potential threats and vulnerabilities. We start with a comprehensive risk assessment to identify and evaluate risks to your systems and data, forming the foundation for bespoke recovery strategies. Our recovery solutions include advanced backup and recovery technologies to maintain data integrity and ensure seamless operational continuity. We meticulously document and refine recovery procedures, setting clear recovery time objectives (RTOs) and recovery point objectives (RPOs) tailored to your business needs. Ongoing testing and validation ensure that your disaster recovery plans remain effective and responsive to evolving conditions.",
-    img: aboutservice1, // Update the path as necessary
+    img: DRP, // Update the path as necessary
     reverse: true,
   },
   {
@@ -500,13 +517,13 @@ export const aboutUsServicesDataHumanResourceAugmentation = [
   {
     title: "Project-Based Augmentation",
     description: "For projects that require specialized skills or additional manpower, our project-based augmentation services offer the ideal solution. We provide the flexibility to scale your team according to the specific demands of each project, ensuring you have the right expertise exactly when needed. Our IT professionals integrate seamlessly with your existing workforce, maintaining continuity and enhancing efficiency throughout the project lifecycle. Whether it's a complex development task, a critical IT infrastructure upgrade, or a large-scale implementation, our augmentation services enable you to achieve your project goals with precision and agility.",
-    img: aboutservice1,  // Update the path as necessary
+    img: projectBasedAugmentation,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "On-Demand Skill Enhancement",
     description: "In today's fast-paced IT landscape, keeping up with emerging technologies and industry trends is essential for maintaining a competitive edge. Our on-demand skill enhancement services offer customized training and development programs designed to elevate your team's capabilities. From mastering the latest programming languages to becoming proficient in new software tools, we tailor our training solutions to meet your specific needs. By investing in continuous learning and professional development, we ensure your team remains at the forefront of innovation, ready to tackle current challenges and leverage future opportunities with confidence.",
-    img: aboutservice1, // Update the path as necessary
+    img: onDemandSkill, // Update the path as necessary
     reverse: true,
   },
 ];
