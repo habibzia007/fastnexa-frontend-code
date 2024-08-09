@@ -21,7 +21,7 @@ const ContactExpertTeam = () => {
               Contact our Expert Team
             </p>
             <h2 className="text-[#FFFFFF] font-Poppins font-bold text-[12px] md:text-[28px] lg:text-[42px] leading-[19px] md:leading-[40px] lg:leading-[50px] tracking-[0.9px]">
-              To make requests for further information, contact us,
+              To make requests for further information, contact us.
             </h2>
           </div>
           <div className="w-[20%] sm:w-1/6 mt-4 lg:mt-0 lg:pr-9 lg:mr-6">
