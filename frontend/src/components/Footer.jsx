@@ -17,7 +17,7 @@ const Footer = () => {
     };
     return (
         <div
-            className="lg:h-[430.91px] w-full bg-cover bg-center bg-no-repeat"
+            className=" w-full bg-cover bg-center bg-no-repeat"
             style={backgroundImageStyle}
         >
             <div className="mx-auto w-full max-w-[1184px] px-4 lg:px-6 py-10">
