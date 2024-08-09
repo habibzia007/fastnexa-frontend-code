@@ -132,6 +132,9 @@ function SoftwareTrendsContent() {
                         navigate the future of software development.
                     </p>
                 </div>
+                <div className={`text-end md:pt-5 pt-3`}>
+                    <p className={`font-Poppins text-base text-gray-700  leading-8`}><span className={`font-semibold`}>Author:</span> Abdullah Faisal</p>
+                </div>
             </div>
         </div>
     );
