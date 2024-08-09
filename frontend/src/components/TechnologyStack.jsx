@@ -10,6 +10,7 @@ import dotnet from "../assets/images/aspnet.svg";
 import laravel from "../assets/images/laravel.svg";
 import rectangle from "../assets/images/rectangle.png";
 import rectangle1 from "../assets/images/rectangle1.png";
+import {Link} from "react-router-dom";
 
 const TechnologyStack = () => {
     const logos = [nodejs, reactjs, angular, python, dotnet, laravel];
@@ -79,10 +80,10 @@ const TechnologyStack = () => {
                             ))}
                         </Slider>
                     </div>
-                    <button
+                    <Link to="/services/human-resource"
                         className="mt-6 lg:mt-12 py-3 px-6 lg:py-4 lg:px-8 font-lato text-xs lg:text-base text-white bg-orange-600 rounded-md hover:bg-transparent hover:text-orange-600 hover:ring-1 hover:ring-orange-600 transition-colors duration-300">
                         Discover More
-                    </button>
+                    </Link>
                 </div>
                 {/* Right Side */}
                 <div className="sm:col-span-6 flex justify-center sm:justify-end items-center relative mt-8 sm:mt-0">

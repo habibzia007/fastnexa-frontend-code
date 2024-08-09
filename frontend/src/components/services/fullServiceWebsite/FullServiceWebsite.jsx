@@ -3,6 +3,7 @@ import serviceImage from "../../../assets/images/service.png";
 import bg from "../../../assets/images/contactbg.jpg";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import chevron from "../../../assets/chevron-down.svg";
+import {Link} from "react-router-dom";
 
 /**
  * @type {React.ExoticComponent<import('@szhsin/react-accordion').AccordionItemProps>}
@@ -73,8 +74,8 @@ const FullServiceWebsite = () => {
           <div className="mx-2 my-4 border-t text-[20.23px] lg:w-[537] lg:h-[500p] leading-[27.59px] h-auto">
             <Accordion transition transitionTimeout={200}>
               <AccordionItem
-                header="Domain names. Data Safety and Added Security Services"
-                initialEntered
+                  header="Domain names. Data Safety and Added Security Services"
+                  initialEntered
               >
                 <span className="font-Poppins text-[16px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -105,10 +106,11 @@ const FullServiceWebsite = () => {
               </AccordionItem>
             </Accordion>
           </div>
-          <div className="flex items-center justify-center lg:justify-start ">
-            <button className="font-Poppins text-[16px] w-[271px] h-[54px] my-[10px]  ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500 ">
+          <div className="flex items-center justify-center lg:justify-start">
+            <Link to="/technology"
+                  className="font-Poppins text-[16px] w-[271px] h-[54px] my-[10px] flex items-center justify-center ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500">
               Explore Solutions and Prices
-            </button>
+            </Link>
           </div>
         </div>
       </div>

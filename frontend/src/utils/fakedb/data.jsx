@@ -541,17 +541,17 @@ export const attentionClientData = [
   {
     image: attentionclient1,
     title: "Office address",
-    description: "74 Highfield Road, Lahore Pakistan",
+    description: " 192, Y Block, DHA phase III, Lahore, Pakistan.",
   },
   {
     image: attentionclient2,
     title: "Phone Numbers",
-    description: "+44 20 7946 0380 +44 20 7946 0295",
+    description: "+92 458 654 528",
   },
   {
     image: attentionclient3,
     title: "E-mail & Live Chats",
-    description: "support@fastnexa.com",
+    description: "info@fastnexa.com",
     socialIcons: [
       {
         icon: attentionclient_wp,

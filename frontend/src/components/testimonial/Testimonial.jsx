@@ -78,7 +78,7 @@ const Testimonial = () => {
     >
       <div className="w-[350px]  mx-auto  md:w-[750px] h-full xl:w-[1180px] pt-[40px] xl:pt-[80px]  ">
         <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
-          Testimonial
+          Testimonials
         </h2>
 
         <h1 className="text-[#FFFFFF] font-Poppins font-semibold text-[22px] leading-[33.08px] xl:text-[42px] xl:leading-[61.08px] text-center">

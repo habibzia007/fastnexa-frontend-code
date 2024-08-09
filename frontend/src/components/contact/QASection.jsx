@@ -61,8 +61,8 @@ const ContactFormSection = () => {
             required
           ></textarea>
         </div>
-        <div className="w-full px-3 mb-3 text-center">
-          <p className="text-[#232F3B] text-sm mb-4"> <span className="text-red-600">* </span>Aenean rhoncus ultricies semper. Mauris et cursus est. Maecenas cursus nibh vel ex faucibus consequat</p>
+        <div className="w-full px-3 mb-3 text-center pt-2">
+          {/*<p className="text-[#232F3B] text-sm mb-4"> <span className="text-red-600">* </span>Aenean rhoncus ultricies semper. Mauris et cursus est. Maecenas cursus nibh vel ex faucibus consequat</p>*/}
           <button
             className="bg-[#FF6500]  text-white font-bold py-2 px-20 rounded focus:outline-none focus:shadow-outline"
             type="submit"
