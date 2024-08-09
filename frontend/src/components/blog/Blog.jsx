@@ -31,9 +31,9 @@ const Blog = ({ data }) => {
                         <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] lg:leading-5 font-Poppins">{data.author}</span>
                     </div>
                     <div className="flex items-center space-x-1">
-                        <img src={msgIcon} alt="Comments" className="w-4 h-4" />
+                        {/*<img src={msgIcon} alt="Comments" className="w-4 h-4" />*/}
                         <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] leading-5 font-Poppins">
-                            {data.comments} Comments
+                            {/*{data.comments} Comments*/}
                         </span>
                     </div>
                 </div>

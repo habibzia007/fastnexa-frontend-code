@@ -72,7 +72,7 @@ import { GiHumanPyramid } from "react-icons/gi";
 export const BlogCardData = [
   {
     image: { blog0 },
-    author: "Andrew Paker",
+    author: "Abdullah Faisal",
     comments: 5,
     date: "08",
     month: "Aug",
@@ -81,7 +81,7 @@ export const BlogCardData = [
   },
   {
     image: { blog1 },
-    author: "Andrew Paker",
+    author: "Abdullah Faisal",
     comments: 3,
     date: "10",
     month: "Aug",
@@ -90,7 +90,7 @@ export const BlogCardData = [
   },
   {
     image: { blog2 },
-    author: "Andrew Paker",
+    author: "Abdullah Faisal",
     comments: 8,
     date: "12",
     month: "Aug",
