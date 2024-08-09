@@ -12,7 +12,7 @@ const ContactUs = () => {
   return (
     <div className="w-full" style={backgroundImageStyle}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[1185px] py-11 lg:py-12 flex flex-col lg:flex-row items-center">
-        <div className=" w-[80%]  lg:w-1/2 lg:flex lg:items-center">
+        <div className=" w-[100%]  lg:w-1/2 lg:flex lg:items-center">
           <div className="w-full flex flex-col items-start  lg:gap-10 lg:mb-[111px]">
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
               <div className="bg-[#FF6500]  w-[6px] mt-2 h-[67%] lg:w-3.66 lg:h-[123px] lg:mt-[7px]"></div>
@@ -69,7 +69,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className=" w-[81%]  lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 mx-auto">
+        <div className=" w-[100%]  lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 mx-auto">
           <div className="w-full bg-[#FFFFFF] shadow-sm rounded-md p-6 lg:p-10">
             <h6 className="font-barlow font-bold text-xs lg:text-sm text-center text-[#FF6500] mb-4 lg:mb-8">
               LEAVE US MESSAGE

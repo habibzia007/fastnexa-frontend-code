@@ -48,7 +48,7 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -91,13 +91,13 @@ const Testimonial = () => {
         >
           {testimonialCards.map((card, index) => (
             <div key={index} className="pt-[40px] xl:pt-[60px] pl-1 xl:pl-6 ">
-              <div className="w-[300.86px] mx-auto h-[160.01px] xl:w-[448.82px] xl:h-[217.72px] bg-white rounded-md shadow-md relative">
+              <div className="w-[300.86px] mx-auto md:h-[160.01px] h-[180px] xl:w-[448.82px] xl:h-[217.72px] bg-white rounded-md shadow-md relative">
                 <img
                   className="rounded-md w-[78px] h-[77px] xl:w-[106px] xl:h-[106px] absolute left-[-19px] top-[28px] xl:top-[2.5rem] xl:-left-[2.25rem]"
                   src={card.image}
                   alt=""
                 />
-                <div className="ml-[80px] xl:ml-[100px] pt-[28.5px] xl:pt-[31.5px] space-y-2 xl:space-y-4">
+                <div className="ml-[80px] xl:ml-[100px] md:pt-[28.5px] pt-[14px] xl:pt-[31.5px] space-y-2 xl:space-y-4">
                   {/*<img*/}
                   {/*  className="w-[27.01px] h-[23.28px] xl:w-[37.01px] xl:h-[32.28px]"*/}
                   {/*  src={msg}*/}

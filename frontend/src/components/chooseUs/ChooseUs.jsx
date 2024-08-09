@@ -17,14 +17,14 @@ const ChooseUs = () => {
       style={backgroundImageStyle}
     >
       <div className="container mx-auto lg:max-w-[1184px] px-4 ">
-        <div className="text-center">
+        <div className="text-center md:mb-0 mb-2">
           <h3 className="font-Poppins font-semibold text-[12px] sm:text-[14px] lg:text-[16px] pt-4 lg:pt-[58px] text-[#FF6500] leading-[28.19px] tracking-wide">
             REASON TO CHOOSE US
           </h3>
           <h3 className="font-Poppins font-semibold text-[22px] sm:text-[32px] lg:text-[42px] leading-[33.08px] sm:leading-[43.08px] lg:leading-[61.08px] lg:pt-4 text-[#232F3B] mt-2">
             We Provide Truly Prominent IT Solutions
           </h3>
-          <p className="font-Poppins text-[22px] sm:text-[16px] lg:text-[24px] leading-[20.08px] sm:leading-[20.08px] lg:leading-[30.08px] lg:pt-4 text-[#232F3B] mt-2">
+          <p className="font-Poppins text-sm md:text-2xl leading-[20.08px] sm:leading-[20.08px] lg:leading-[30.08px] lg:pt-4 text-[#232F3B] mt-2">
             At FAST NEXA, we deliver truly outstanding IT solutions designed to
             elevate your business. Our expertise includes:
           </p>

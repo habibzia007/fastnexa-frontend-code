@@ -332,7 +332,7 @@ const Navbar = () => {
                         className="flex items-center cursor-pointer"
                         onMouseEnter={(e) => toggleDropdown(link.label, e)}
                     >
-                      <Link to={link.path} className="mr-2">
+                      <Link to={link.path} className="mr-2 p-2">
                         {link.label}
                       </Link>
                       <FaCaretDown/>

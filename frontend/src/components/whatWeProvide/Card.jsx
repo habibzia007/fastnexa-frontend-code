@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ title, link, description, image, icon = null }) => {
   return (
-    <div className="cursor-pointer relative w-[160px] h-[207.3px] lg:w-[281.44px] lg:h-[363.3px] group">
+    <div className="cursor-pointer relative sm:w-[160px] sm:h-[207.3px] lg:w-[281.44px] lg:h-[363.3px] group">
       <div className="hover:shadow-[3px_-3px_0_rgba(255,101,0)] transition-all duration-300 relative z-10 w-full h-full bg-[#FFFFFF] rounded-[9.2px] p-3 lg:p-5">
         {!icon ? (
             <img

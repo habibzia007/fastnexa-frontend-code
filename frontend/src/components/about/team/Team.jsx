@@ -28,7 +28,7 @@ const Team = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     className: "center",
     responsive: [
@@ -44,17 +44,19 @@ const Team = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
           dots: true,
+          // centerMode: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
+          // centerMode: true,
         },
       },
     ],
@@ -81,21 +83,24 @@ const Team = () => {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className={`relative px-2 cursor-pointer opacity-100 hover:opacity-90 group transition-transform duration-500 transform hover:scale-105 overflow-visible ${
+                className={`relative px-2 cursor-pointer !flex !justify-center !items-center  opacity-100 hover:opacity-90  group transition-transform duration-500 transform hover:scale-105 overflow-visible ${
                   index >= 2 && "hidden"
                 } sm:block ${index >= 3 && "sm:hidden"} lg:block ${
                   index >= 4 && "lg:hidden"
                 } xl:block`}
               >
-                <img
-                  // className="w-[175px] h-[225px] sm:w-[220px] sm:h-[280px] md:w-[260px] md:h-[330px] lg:w-[300px] lg:h-[380px] xl:w-[350px] xl:h-[450px] object-cover rounded-[5rem]"
-                  // className="w-[15rem] h-[20rem] object-cover rounded-[5rem]"
-                  className="w-[10rem] h-[15rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] lg:rounded-[20px]"
-                  src={member.imgSrc}
-                  alt={member.name}
-                />
-                <div className="flex items-center gap-1 sm:gap-3 absolute bottom-[35px] left-[43px]">
-                  <div className="w-[8px] h-[23px] sm:w-[15px] sm:h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500]"></div>
+                <div>
+                  <img
+                      // className="w-[175px] h-[225px] sm:w-[220px] sm:h-[280px] md:w-[260px] md:h-[330px] lg:w-[300px] lg:h-[380px] xl:w-[350px] xl:h-[450px] object-cover rounded-[5rem]"
+                      // className="w-[15rem] h-[20rem] object-cover rounded-[5rem]"
+                      className="w-[15rem] h-[17rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] lg:rounded-[20px]"
+                      src={member.imgSrc}
+                      alt={member.name}
+                  />
+                </div>
+                <div className="flex justify-center md:items-center items-start gap-1 sm:gap-3 absolute lg:bottom-9 md:bottom-5 bottom-3 lg:left-[43px] md:left-[37px] left-24">
+                  <div
+                      className="w-[8px] h-[23px] sm:w-[15px] sm:h-[40px] bg-gradient-to-b from-[#FF9A58] to-[#FF6500] md:mt-0 mt-1"></div>
                   <div>
                     <h3 className="font-Poppins font-bold text-[11.23px] leading-[16.59px] sm:text-[20.23px] sm:leading-[27.59px] text-[#FFFFFF]">
                       {member.name}

@@ -37,7 +37,7 @@ const Hero = () => {
       style={backgroundImageStyle}
     >
       {/* wrapper */}
-      <div className="container lg:w-[1184px] mx-auto px-4 lg:px-6 grid grid-cols-12">
+      <div className="container lg:w-[1184px] mx-auto !px-4 lg:px-6 grid grid-cols-12">
         <div className="col-span-12  lg:col-span-12">
           <img
             className="w-[278.43px] h-[231.99px] lg:w-[472.71px] lg:h-[212.45px] absolute -left-[45px] -top-[126px] lg:left-[3px] lg:-top-[65px]"
@@ -50,7 +50,7 @@ const Hero = () => {
             alt=""
           />
           {/* Content */}
-          <div className="flex flex-col gap-4  lg:gap-10">
+          <div className="flex flex-col gap-4  lg:gap-10 ">
             <div className="   lg:max-w-[636px] lg:h-[128px] pt-[218px] lg:pt-[250px]">
               <h1 className="font-inter font-bold text-[28.87px] leading-[31.61px] sm:text-[36.87px] sm:leading-[40.61px] lg:text-[68px] lg:leading-[75.5px] text-left text-white">
                 Transform Ideas into{' '}
