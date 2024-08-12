@@ -31,6 +31,7 @@ import PowerfulServer from "./components/blogs/CyberSecurityDigital.jsx";
 import SoftwareKeyTrends from "./components/blogs/SoftwareKeyTrends.jsx";
 import HarnessingPower from "./components/blogs/HarnessingPower.jsx";
 import CyberSecurityDigital from "./components/blogs/CyberSecurityDigital.jsx";
+import Timeline from "./components/about/services/Timeline.jsx";
 
 // Import other pages here
 
@@ -43,6 +44,7 @@ function App() {
         {/* Add more routes for other pages */}
         <Route path="/about" element={<About />} />
         <Route path="/about/our-vision" element={<OurVision />} />
+        <Route path="/about/team" element={<Timeline />} />
         <Route path="/services" element={<Services />} />
         <Route
           path="/services/software-development"

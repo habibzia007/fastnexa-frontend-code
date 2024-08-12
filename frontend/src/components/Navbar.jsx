@@ -222,7 +222,11 @@ const primaryLinks = [
   {
     path: "/about",
     label: "About Us",
-    dropdown: [{ path: "/about/our-vision", label: "Our Vision" }],
+    dropdown: [
+        { path: "/about/our-vision", label: "Our Vision" },
+        { path: "/about/team", label: "Team" },
+
+    ],
   },
   {
     path: "/services",
