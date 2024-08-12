@@ -11,11 +11,11 @@ const Timeline = () => {
                     Team
                 </h3>
                 <div className="relative mt-16">
-                    <div className="flex items-center md:flex-row flex-col justify-center gap-x-4 gap-y-7 mb-6">
+                    <div className="flex items-center md:flex-row-reverse flex-col justify-center gap-x-4 gap-y-7 mb-6">
                         <div className="flex items-center max-w-md mx-auto">
                             <div
                                 className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CEO</h2>
+                                <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CM</h2>
                                 <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet profound:
                                     to
                                     harness the limitless
@@ -40,15 +40,15 @@ const Timeline = () => {
                         </div>
                     </div>
 
-                    <div className="md:block flex justify-center">
-                        <div className="w-[2px] h-20 bg-gray-300 md:ml-56"/>
+                    <div className="md:flex flex md:justify-end justify-center">
+                        <div className="w-[2px] h-20 bg-gray-300 md:mr-56"/>
                     </div>
 
-                    <div className="flex items-center md:flex-row flex-col justify-center gap-x-4 gap-y-7 mt-6">
+                    <div className="flex items-center md:flex-row-reverse flex-col justify-center gap-x-4 gap-y-7 mt-6">
                         <div className="flex items-center max-w-md mx-auto">
                             <div
                                 className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CEO</h2>
+                                <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">BD/CEO</h2>
                                 <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet profound:
                                     to
                                     harness the limitless
@@ -73,15 +73,17 @@ const Timeline = () => {
                         </div>
                     </div>
                 </div>
-                <ol className="relative border-s-2 border-gray-300 lg:ml-72 md:ml-36 ml-[6%]">
+                <ol className="relative border-e-2 border-gray-300 md:mr-0 mr-[10%]">
                     <li className="mb-10 ms-4 mt-20">
-                        <div
-                            className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <div className="flex items-center md:flex-row flex-col justify-start gap-x-6 gap-y-6 mt-20">
+                        <div className="w-full flex justify-end">
+                            <div
+                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        </div>
+                        <div className="flex items-center md:flex-row-reverse flex-col justify-start gap-x-6 gap-y-6 mt-0 mr-6">
                             <div className="flex items-center md:max-w-xs max-w-full w-full">
                                 <div
                                     className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CEO</h2>
+                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CIO</h2>
                                     <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
                                         profound:
                                         to harness the
@@ -106,13 +108,48 @@ const Timeline = () => {
                         </div>
                     </li>
                     <li className="mb-10 ms-4">
-                        <div
-                            className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <div className="flex items-center justify-start md:flex-row flex-col gap-x-6 gap-y-6 mt-20">
+                        <div className="w-full flex justify-end">
+                            <div
+                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        </div>
+                        <div className="flex items-center justify-start md:flex-row-reverse flex-col gap-x-6 gap-y-6 mr-6">
                             <div className="flex items-center md:max-w-xs w-full max-w-full">
                                 <div
                                     className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CEO</h2>
+                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CTO</h2>
+                                    <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
+                                        profound:
+                                        to harness the
+                                        limitless
+                                        capabilities of Artificial Intelligence (AI) and apply them to solve real-world
+                                        challenges.
+                                        We believe that the future is defined by innovation, and dedicated to helping
+                                        you
+                                        shape.</p>
+                                </div>
+                            </div>
+                            <div className="w-20 border-b-2 border-gray-300 md:block hidden"/>
+                            <div className="md:w-auto w-full">
+                                <img
+                                    src={ctoImg}
+                                    alt="Person Image"
+                                    width={200}
+                                    height={200}
+                                    className="h-[205px] object-cover rounded-lg shadow-lg w-full"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                    <li className="ms-4 mb-10">
+                        <div className="w-full flex justify-end">
+                            <div
+                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        </div>
+                        <div className="flex items-center justify-start md:flex-row-reverse flex-col gap-x-6 gap-y-6 mr-6">
+                            <div className="flex items-center md:max-w-xs max-w-full w-full">
+                                <div
+                                    className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
+                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">COO</h2>
                                     <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
                                         profound:
                                         to harness the
@@ -137,13 +174,15 @@ const Timeline = () => {
                         </div>
                     </li>
                     <li className="ms-4">
-                        <div
-                            className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <div className="flex items-center justify-start md:flex-row flex-col gap-x-6 gap-y-6 mt-20">
+                        <div className="w-full flex justify-end">
+                            <div
+                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        </div>
+                        <div className="flex items-center justify-start md:flex-row-reverse flex-col gap-x-6 gap-y-6 mr-6">
                             <div className="flex items-center md:max-w-xs max-w-full w-full">
                                 <div
                                     className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CEO</h2>
+                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CSO</h2>
                                     <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
                                         profound:
                                         to harness the
