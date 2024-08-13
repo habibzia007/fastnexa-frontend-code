@@ -1,14 +1,14 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import nodejs from "../assets/images/nodejs.svg";
-import reactjs from "../assets/images/react.svg";
-import angular from "../assets/images/angular.svg";
-import python from "../assets/images/python.svg";
-import dotnet from "../assets/images/aspnet.svg";
-import laravel from "../assets/images/laravel.svg";
-import rectangle from "../assets/images/rectangle.png";
-import rectangle1 from "../assets/images/rectangle1.png";
+import nodejs from "../../../assets/images/nodejs.svg";
+import reactjs from "../../../assets/images/react.svg";
+import angular from "../../../assets/images/angular.svg";
+import python from "../../../assets/images/python.svg";
+import dotnet from "../../../assets/images/aspnet.svg";
+import laravel from "../../../assets/images/laravel.svg";
+import rectangle from "../../../assets/images/rectangle.png";
+import rectangle1 from "../../../assets/images/rectangle1.png";
 import {Link} from "react-router-dom";
 
 const TechnologyStack = () => {

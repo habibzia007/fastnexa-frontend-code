@@ -2,210 +2,122 @@ import ctoImg from "../../../assets/images/abdulla.jpg";
 import Navbar from "../../Navbar.jsx";
 import Footer from "../../Footer.jsx";
 
+const teamMembers = [
+    {
+        name: "Hank Schrader",
+        position: "CIO, Company Name",
+        description: "Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation."
+    },
+    {
+        name: "Walter White Jr.",
+        position: "CTO, Company Name",
+        description: "Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation."
+    },
+    {
+        name: "Saul Goodman",
+        position: "COO, Company Name",
+        description: "Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation."
+    },
+    {
+        name: "Gus Fring",
+        position: "CSO, Company Name",
+        description: "Our mission is simple yet profound: to harness the limitless capabilities of Artificial Intelligence (AI) and apply them to solve real-world challenges. We believe that the future is defined by innovation."
+    }
+];
+
 const Timeline = () => {
     return (
         <>
             <Navbar/>
             <div className="flex flex-col items-center max-w-5xl mx-auto px-3 pb-28 pt-2">
                 <h3 className="font-Poppins text-[20px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] lg:mt-[50px] text-center">
-                    Team
+                    Our Team
                 </h3>
                 <div className="relative mt-16">
-                    <div className="flex items-center md:flex-row-reverse flex-col justify-center gap-x-4 gap-y-7 mb-6">
-                        <div className="flex items-center max-w-md mx-auto">
-                            <div
-                                className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CM</h2>
-                                <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet profound:
-                                    to
-                                    harness the limitless
-                                    capabilities of Artificial Intelligence (AI) and apply them to solve real-world
-                                    challenges.
-                                    We believe that the future is defined by innovation, and dedicated to helping you
-                                    shape
-                                    that
-                                    future by delivering cutting-edge solutions tailored to your unique goals and
-                                    objectives.</p>
-                            </div>
+                    <figure className="md:flex bg-slate-100 rounded-lg max-w-2xl mx-auto p-8 md:p-0 shadow-xl">
+                        <img
+                            className="w-48 h-48 md:w-48 md:h-auto md:rounded-l-lg object-cover md:rounded-none rounded-full mx-auto"
+                            src={ctoImg} alt="Jesse Pinkman" width="384" height="512"/>
+                        <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <blockquote>
+                                <p className="font-Poppins text-[#4C4D56] text-base">
+                                    Our mission is simple yet profound: to harness the limitless capabilities of
+                                    Artificial Intelligence (AI) and apply them to solve real-world challenges. We
+                                    believe that the future is defined by innovation.
+                                </p>
+                            </blockquote>
+                            <figcaption className="font-medium">
+                                <div className="text-[#FF6500]/70 font-Poppins font-semibold text-lg">
+                                    Jesse Pinkman
+                                </div>
+                                <div className="text-[#232F3B] font-Poppins font-semibold text-base">
+                                    CM, Company Name
+                                </div>
+                            </figcaption>
                         </div>
-                        <div className="w-40 border-b-2 border-gray-300 md:block hidden"/>
-                        <div className="md:w-auto w-full">
-                            <img
-                                src={ctoImg}
-                                alt="Person Image"
-                                width={200}
-                                height={200}
-                                className="md:h-[205px] h-[280px] object-cover rounded-lg shadow-lg w-full"
-                            />
-                        </div>
+                    </figure>
+
+                    <div className="flex justify-center pt-3 relative">
+                        <div className="w-[2px] h-28 bg-gray-300"/>
+                        <div
+                            className="absolute !left-auto bottom-0 w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-0.5px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     </div>
 
-                    <div className="md:flex flex md:justify-end justify-center">
-                        <div className="w-[2px] h-20 bg-gray-300 md:mr-56"/>
-                    </div>
-
-                    <div className="flex items-center md:flex-row-reverse flex-col justify-center gap-x-4 gap-y-7 mt-6">
-                        <div className="flex items-center max-w-md mx-auto">
-                            <div
-                                className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">BD/CEO</h2>
-                                <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet profound:
-                                    to
-                                    harness the limitless
-                                    capabilities of Artificial Intelligence (AI) and apply them to solve real-world
-                                    challenges.
-                                    We believe that the future is defined by innovation, and dedicated to helping you
-                                    shape
-                                    that
-                                    future by delivering cutting-edge solutions tailored to your unique goals and
-                                    objectives.</p>
-                            </div>
+                    <figure className="md:flex bg-slate-100 rounded-lg max-w-2xl mx-auto p-8 md:p-0 shadow-xl mt-3">
+                        <img
+                            className="w-48 h-48 md:w-48 md:h-auto md:rounded-l-lg object-cover md:rounded-none rounded-full mx-auto"
+                            src={ctoImg} alt="Walter White" width="384" height="512"/>
+                        <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <blockquote>
+                                <p className="font-Poppins text-[#4C4D56] text-base">
+                                    Our mission is simple yet profound: to harness the limitless capabilities of
+                                    Artificial Intelligence (AI) and apply them to solve real-world challenges. We
+                                    believe that the future is defined by innovation.
+                                </p>
+                            </blockquote>
+                            <figcaption className="font-medium">
+                                <div className="text-[#FF6500]/70 font-Poppins font-semibold text-lg">
+                                    Walter White
+                                </div>
+                                <div className="text-[#232F3B] font-Poppins font-semibold text-base">
+                                    BD/CEO, Company Name
+                                </div>
+                            </figcaption>
                         </div>
-                        <div className="w-40 border-b-2 border-gray-300 md:block hidden"/>
-                        <div className="md:w-auto w-full">
-                            <img
-                                src={ctoImg}
-                                alt="Person Image"
-                                width={200}
-                                height={200}
-                                className="md:h-[205px] h-[280px] object-cover rounded-lg shadow-lg w-full"
-                            />
-                        </div>
-                    </div>
+                    </figure>
                 </div>
-                <ol className="relative border-e-2 border-gray-300 md:mr-0 mr-[10%]">
-                    <li className="mb-10 ms-4 mt-20">
-                        <div className="w-full flex justify-end">
-                            <div
-                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        </div>
-                        <div className="flex items-center md:flex-row-reverse flex-col justify-start gap-x-6 gap-y-6 mt-0 mr-6">
-                            <div className="flex items-center md:max-w-xs max-w-full w-full">
-                                <div
-                                    className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CIO</h2>
-                                    <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
-                                        profound:
-                                        to harness the
-                                        limitless
-                                        capabilities of Artificial Intelligence (AI) and apply them to solve real-world
-                                        challenges.
-                                        We believe that the future is defined by innovation, and dedicated to helping
-                                        you
-                                        shape.</p>
+                <ol className="relative border-s-2 border-gray-300 md:ml-[15%] ml-[5%]">
+                    {teamMembers.map((member, index) => (
+                        <li key={index} className="mb-10 mt-20">
+                            <div className="flex items-center -ml-[6.5px]">
+                                <div className="flex justify-start pt-3 relative">
+                                    <div className="md:w-20 w-14 border-b-2 border-gray-300"/>
+                                    <div
+                                        className="absolute !left-0 bottom-0 w-3 h-3 bg-gray-200 rounded-full top-[6.5px] mr-[-0.5px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                                 </div>
+                                <figure className="md:flex bg-slate-100 rounded-lg max-w-2xl mx-auto px-4 py-8 md:p-0 shadow-xl">
+                                    <img
+                                        className="w-48 h-48 md:w-48 md:h-auto md:rounded-l-lg object-cover md:rounded-none rounded-full mx-auto"
+                                        src={ctoImg} alt={member.name} width="384" height="512"/>
+                                    <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+                                        <blockquote>
+                                            <p className="font-Poppins text-[#4C4D56] text-base">
+                                                {member.description}
+                                            </p>
+                                        </blockquote>
+                                        <figcaption className="font-medium">
+                                            <div className="text-[#FF6500]/70 font-Poppins font-semibold text-lg">
+                                                {member.name}
+                                            </div>
+                                            <div className="text-[#232F3B] font-Poppins font-semibold text-base">
+                                                {member.position}
+                                            </div>
+                                        </figcaption>
+                                    </div>
+                                </figure>
                             </div>
-                            <div className="w-20 border-b-2 border-gray-300 md:block hidden"/>
-                            <div className="md:w-auto w-full">
-                                <img
-                                    src={ctoImg}
-                                    alt="Person Image"
-                                    width={200}
-                                    height={200}
-                                    className="h-[205px] object-cover rounded-lg shadow-lg w-full"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                    <li className="mb-10 ms-4">
-                        <div className="w-full flex justify-end">
-                            <div
-                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        </div>
-                        <div className="flex items-center justify-start md:flex-row-reverse flex-col gap-x-6 gap-y-6 mr-6">
-                            <div className="flex items-center md:max-w-xs w-full max-w-full">
-                                <div
-                                    className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CTO</h2>
-                                    <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
-                                        profound:
-                                        to harness the
-                                        limitless
-                                        capabilities of Artificial Intelligence (AI) and apply them to solve real-world
-                                        challenges.
-                                        We believe that the future is defined by innovation, and dedicated to helping
-                                        you
-                                        shape.</p>
-                                </div>
-                            </div>
-                            <div className="w-20 border-b-2 border-gray-300 md:block hidden"/>
-                            <div className="md:w-auto w-full">
-                                <img
-                                    src={ctoImg}
-                                    alt="Person Image"
-                                    width={200}
-                                    height={200}
-                                    className="h-[205px] object-cover rounded-lg shadow-lg w-full"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                    <li className="ms-4 mb-10">
-                        <div className="w-full flex justify-end">
-                            <div
-                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        </div>
-                        <div className="flex items-center justify-start md:flex-row-reverse flex-col gap-x-6 gap-y-6 mr-6">
-                            <div className="flex items-center md:max-w-xs max-w-full w-full">
-                                <div
-                                    className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">COO</h2>
-                                    <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
-                                        profound:
-                                        to harness the
-                                        limitless
-                                        capabilities of Artificial Intelligence (AI) and apply them to solve real-world
-                                        challenges.
-                                        We believe that the future is defined by innovation, and dedicated to helping
-                                        you
-                                        shape.</p>
-                                </div>
-                            </div>
-                            <div className="w-20 border-b-2 border-gray-300 md:block hidden"/>
-                            <div className="md:w-auto w-full">
-                                <img
-                                    src={ctoImg}
-                                    alt="Person Image"
-                                    width={200}
-                                    height={200}
-                                    className="h-[205px] object-cover rounded-lg shadow-lg w-full"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                    <li className="ms-4">
-                        <div className="w-full flex justify-end">
-                            <div
-                                className="absolute !left-auto w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-[-7px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        </div>
-                        <div className="flex items-center justify-start md:flex-row-reverse flex-col gap-x-6 gap-y-6 mr-6">
-                            <div className="flex items-center md:max-w-xs max-w-full w-full">
-                                <div
-                                    className="bg-white border p-4 rounded-lg shadow-lg hover:border-gray-300 transition-all duration-400">
-                                    <h2 className="font-Poppins font-semibold text-[#232F3B] text-[22px]">CSO</h2>
-                                    <p className="font-Poppins text-[#4C4D56] text-base">Our mission is simple yet
-                                        profound:
-                                        to harness the
-                                        limitless
-                                        capabilities of Artificial Intelligence (AI) and apply them to solve real-world
-                                        challenges.
-                                        We believe that the future is defined by innovation, and dedicated to helping
-                                        you
-                                        shape.</p>
-                                </div>
-                            </div>
-                            <div className="w-20 border-b-2 border-gray-300 md:block hidden"/>
-                            <div className="md:w-auto w-full">
-                                <img
-                                    src={ctoImg}
-                                    alt="Person Image"
-                                    width={200}
-                                    height={200}
-                                    className="h-[205px] object-cover rounded-lg shadow-lg w-full"
-                                />
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    ))}
                 </ol>
             </div>
             <Footer/>
@@ -213,4 +125,4 @@ const Timeline = () => {
     )
 }
 
-export default Timeline
+export default Timeline;

@@ -28,7 +28,7 @@ const Footer = () => {
                             src={logo}
                             alt="Logo"
                         />
-                        <p className="w-full sm:w-[70%] lg:w-[190px] font-Poppins text-[10.02px] leading-[15px] sm:text-[11.02px] sm:leading-[23.62px] lg:text-[11.02px] lg:leading-[23.62px] text-center lg:text-left text-[#FFFFFF]">
+                        <p className="w-full sm:w-[70%] lg:w-[190px] font-Poppins md:text-[10.02px] text-xs leading-[15px] sm:text-[11.02px] sm:leading-[23.62px] lg:text-[11.02px] lg:leading-[23.62px] text-center lg:text-left text-[#FFFFFF]">
                             Accelerate innovation with world-class tech teams. We’ll match you
                             to an entire remote team of incredible freelance talent.
                         </p>
@@ -49,32 +49,32 @@ const Footer = () => {
                                     Useful Links
                                 </h3>
                                 <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-                                    <li className="text-[#C4C5C7] max-w-max font-Poppins text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/about'}>
                                             About Us
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/about/our-vision'}>
                                             Vision
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/technology'}>
                                             Technologies
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/portfolio'}>
                                             Portfolio
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'#'}>
                                             Jobs
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/contact'}>
                                             Contact Us
                                         </Link>
@@ -87,42 +87,42 @@ const Footer = () => {
                                     Our Services
                                 </h3>
                                 <ul className="mt-2 lg:mt-4 space-y-[4px] lg:space-y-[12px]">
-                                    <li className="text-[#C4C5C7] max-w-max font-Poppins text-[7.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/software-development'}>
                                             Software Development
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/dev-ops'}>
                                             DevOps
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/cloud-computing'}>
                                             Cloud Computing
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/cyber-security'}>
                                             Cybersecurity
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/network-infrastructure'}>
                                             Network and Infrastructure
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/information-security'}>
                                             Information Security
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/business-continuity-disaster-recovery'}>
                                             Business Continuity & Disaster Recovery
                                         </Link>
                                     </li>
-                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins text-[8.02px] leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
+                                    <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
                                         <Link to={'/services/human-resource'}>
                                             Human Resource Augmentation
                                         </Link>
@@ -140,7 +140,7 @@ const Footer = () => {
                                             src={phoneicon}
                                             alt="Phone"
                                         />
-                                        <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
+                                        <p className="font-barlow font-semibold md:text-[7.6px] text-xs leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
                                             +92 458 654 528
                                         </p>
                                     </li>
@@ -150,7 +150,7 @@ const Footer = () => {
                                             src={messageicon}
                                             alt="Message"
                                         />
-                                        <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
+                                        <p className="font-barlow font-semibold md:text-[7.6px] text-xs leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
                                             info@fastnexa.com
                                         </p>
                                     </li>
@@ -160,7 +160,7 @@ const Footer = () => {
                                             src={locationicon}
                                             alt="Location"
                                         />
-                                        <p className="font-barlow font-semibold text-[7.6px] leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
+                                        <p className="font-barlow font-semibold md:text-[7.6px] text-xs leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
                                             192, Y Block, DHA phase III, Lahore, Pakistan.
                                         </p>
                                     </li>
@@ -171,7 +171,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full border-t border-[#1B202F] mt-3">
-                <p className="font-Poppins text-[9.02px] leading-[19.29px] lg:text-[11.02px] lg:leading-[19.29px] text-center text-[#C4C5C7] py-3 lg:mt-6">
+                <p className="font-Poppins md:text-[9.02px] text-xs leading-[19.29px] lg:text-[11.02px] lg:leading-[19.29px] text-center text-[#C4C5C7] py-3 lg:mt-6">
                     © Copyrights 2024, FastNexa All rights reserved.
                 </p>
             </div>

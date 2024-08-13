@@ -1,6 +1,6 @@
 import React from "react";
 import aboutusservicesbg from "../../../assets/images/aboutusservicebg.jpg";
-import { aboutUsServicesDataBusinessDisaster } from "../../../utils/fakedb/data.jsx";
+import {aboutUsServicesThirdParty} from "../../../utils/fakedb/data.jsx";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import chevron from "../../../assets/chevron-down.svg";
 
@@ -52,7 +52,7 @@ const AboutUsServices = () => {
     >
       <div className="max-w-[1184px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-[50px] lg:space-y-[62px]">
-          {aboutUsServicesDataBusinessDisaster.map((card, index) => (
+          {aboutUsServicesThirdParty.map((card, index) => (
             <div
               key={index}
               className={`flex flex-col lg:flex-row ${

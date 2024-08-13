@@ -267,10 +267,10 @@ const primaryLinks = [
         path: "/technology/third-party-integration",
         label: "Third Party Integration",
       },
-      {
-        path: "/technology/software-product-development",
-        label: "Software Product Development",
-      },
+      // {
+      //   path: "/technology/software-product-development",
+      //   label: "Software Product Development",
+      // },
       {
         path: "/technology/api-development-services",
         label: "API Development Services",
