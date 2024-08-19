@@ -141,7 +141,7 @@ const Footer = () => {
                                             alt="Phone"
                                         />
                                         <p className="font-barlow font-semibold md:text-[7.6px] text-xs leading-[9.75px] lg:text-[12.6px] lg:leading-[15.75px] text-[#C4C5C7] max-w-max cursor-pointer">
-                                            +92 458 654 528
+                                            +92 310 4443823
                                         </p>
                                     </li>
                                     <li className="flex gap-2">
