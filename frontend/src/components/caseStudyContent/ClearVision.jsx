@@ -8,7 +8,7 @@ function ClearVision() {
                 <div className="max-w-[1110px] mx-auto p-4 mt-8">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-x-6 max-w-2xl items-start">
                         <div>
-                            <img src={img} alt="Sajid Jamil" width={300} height={300} className="rounded-lg shadow-lg"/>
+                            <img src={img} alt="Sajid Jamil" width={300} height={300} className="xl:w-[300px] xl:h-[270px] object-contain rounded-lg shadow-lg"/>
                         </div>
                         <div>
                             <p className={`font-Poppins md:text-base text-xs text-gray-700  md:leading-8 leading-6 font-semibold md:mt-0 mt-5`}>

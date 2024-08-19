@@ -12,7 +12,7 @@ const Banner = ({text}) => {
                 <div className="flex justify-between sm:h-[284px] sm:justify-start sm:gap-[600px]">
                     <div className="mt-[30px] ml-[38px] sm:mt-[70px] sm:ml-[80px] space-y-0">
                         <div>
-                            <h2 className="font-outfit font-bold md:text-[36px] text-sm leading-[22.08px] sm:text-[50px] sm:leading-[58.08px] text-left md:pt-[55px] pt-5 text-white tracking-wide">
+                            <h2 className="font-outfit font-bold xl:text-[36px]  text-sm xl:leading-[58.08px] sm:text-[28px] sm:leading-[40.08px] text-left md:pt-[55px] pt-5 text-white tracking-wide">
                                 {text}
                             </h2>
                         </div>

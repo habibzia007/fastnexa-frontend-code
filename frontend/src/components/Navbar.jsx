@@ -320,17 +320,17 @@ const Navbar = () => {
       <nav
           className={`bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}
       >
-        <div className="container lg:w-[1184px] mx-auto px-4 lg:px-6 grid grid-cols-12">
+        <div className="container xl:w-[1184px] mx-auto xl:px-4 px-3 px-3 grid grid-cols-12 ">
           <div className="col-span-12">
             <div className="flex justify-between items-center py-1">
               <Link to="/">
                 <img
-                    className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
+                    className="w-[59px] h-[38px] xl:w-[132.19px] xl:h-[86px] lg:w-[100.19px] lg:h-[65px]"
                     src={logo}
                     alt="FastNexa Logo"
                 />
               </Link>
-              <div className="hidden lg:flex items-center gap-5">
+              <div className="hidden lg:flex items-center xl:gap-5 gap-3">
                 {primaryLinks.map((link) =>
                     link.dropdown ? (
                         <div key={link.label} className="relative">
@@ -364,7 +364,7 @@ const Navbar = () => {
                     )
                 )}
                 <Link to={buttonLink.path} className="nav-button">
-                  <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] leading-[2.7rem] rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600">
+                  <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading-[2.7rem] leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
                     {buttonLink.label}
                   </button>
                 </Link>
