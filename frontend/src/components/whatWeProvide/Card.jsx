@@ -17,10 +17,10 @@ const Card = ({ title, link, description, image, icon = null }) => {
             </div>
         )}
         <div className="space-y-2 lg:space-y-4 mt-2 lg:mt-5">
-          <h3 className="font-Poppins font-bold text-[10.58px] lg:text-[20.23px] text-left text-[#0E0E0E] h-[31px] lg:h-[55px] leading-tight lg:leading-[27.59px]">
+          <h3 className="font-Poppins font-bold text-sm lg:text-[20.23px] text-left text-[#0E0E0E] h-[31px] lg:h-[55px] leading-tight lg:leading-[27.59px]">
             {title}
           </h3>
-          <p className="font-Poppins font-normal text-[7.37px] lg:text-[12.88px] text-left text-[#444444] line-clamp-4 leading-[15.59px] lg:leading-[27.59px]">
+          <p className="font-Poppins font-normal text-xs lg:text-[12.88px] text-left text-[#444444] line-clamp-4 leading-[15.59px] lg:leading-[27.59px]">
             {description}
           </p>
           <div className="flex gap-1 lg:gap-3 items-center">

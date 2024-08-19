@@ -16,8 +16,9 @@ const WhoWeAre = () => {
             </h2>
             <h1 className="font-Poppins font-semibold text-[23px] leading-[34.1px] text-center  lg:text-[32px] lg:leading-[42.1px] md:text-left lg:text-left text-[#232F3B]">
               Boost Business with Human Resource Augmentation
+
             </h1>
-            <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[16.5px] sm:text-[13px] sm:leading-[17.5px]  lg:text-[16px] lg:leading-[26px] text-center md:text-left lg:text-left">
+            <p className="font-Poppins text-[#4C4D56] font-normal text-xs leading-[16.5px] sm:text-[13px] sm:leading-[17.5px]  lg:text-[16px] lg:leading-[26px] text-center md:text-left lg:text-left">
               FAST NEXA specializes in Human Resource Augmentation, Software Development, and IT Services, catering to diverse industries with tailored solutions.
             </p>
           </div>

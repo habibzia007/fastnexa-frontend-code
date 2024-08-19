@@ -70,6 +70,54 @@ import { GiHumanPyramid } from "react-icons/gi";
 
 
 
+export const CaseStudyCardData = [
+  {
+    image: { blog0 },
+    author: "Ben Opara",
+    comments: 5,
+    date: "08",
+    month: "Aug",
+    title: "CRM solutions to Caroyal",
+    path: "CRM-solutions-to-caroyal"
+  },
+  {
+    image: { blog1 },
+    author: "Abdullah Faisal",
+    comments: 3,
+    date: "10",
+    month: "Aug",
+    title: "A Clear Vision for a Dusty Environment: FAST NEXA's Surveillance Solution for Commander stone",
+    path: "clear-vision-for-a-dusty-environment"
+  },
+  {
+    image: { blog2 },
+    author: "Abdullah Faisal",
+    comments: 8,
+    date: "12",
+    month: "Aug",
+    title: "CRM solutions to OMNITECH",
+    path: "CRM-solutions-to-OMNITECH"
+  },
+  {
+    image: { blog1 },
+    author: "Abdullah Faisal",
+    comments: 8,
+    date: "13",
+    month: "Aug",
+    title: "The Imperial Electric Company (Pvt) Limited (IEC)",
+    path: "the-imperial-electric-company"
+  },
+  {
+    image: { blog2 },
+    author: "Abdullah Faisal",
+    comments: 8,
+    date: "15",
+    month: "Aug",
+    title: "Streamlining Operations and Empowering Growth: FAST NEXA's HRMS Solution for Replaste",
+    path: "streamlining-operations-and-empowering-growth"
+  },
+];
+
 
 
 export const BlogCardData = [
@@ -728,18 +776,25 @@ export const ourVisionData = [
 export const attentionClientData = [
   {
     image: attentionclient1,
-    title: "Office address",
-    description: " 192, Y Block, DHA phase III, Lahore, Pakistan.",
+    title: "Headquarters",
+    description: "FAST NEXA Pvt. Ltd. 192, Block Y, DHA III, Lahore, Pakistan",
   },
   {
     image: attentionclient2,
-    title: "Phone Numbers",
-    description: "+92 458 654 528",
+    title: "Phone",
+    description: <div className="flex flex-col gap-2">
+      <a href="tel:+923104443823" className="text-blue-400 hover:text-blue-500">+92 310 4443823</a>
+      <p>Available Monday to Friday, 9:00 AM - 8:00 PM PKT.</p>
+    </div>,
   },
   {
     image: attentionclient3,
     title: "E-mail & Live Chats",
-    description: "info@fastnexa.com",
+    description: <div className="flex flex-col gap-2">
+      <p>For general inquiries: <a href="mailto:info@fastnexa.com" className="text-blue-400 hover:text-blue-500">info@fastnexa.com</a></p>
+      <p>For support: <a href="mailto:support@fastnexa.com" className="text-blue-400 hover:text-blue-500">support@fastnexa.com</a></p>
+      <p>For business inquiries: <a href="mailto:sales@fastnexa.com" className="text-blue-400 hover:text-blue-500">sales@fastnexa.com</a></p>
+    </div>,
     socialIcons: [
       {
         icon: attentionclient_wp,

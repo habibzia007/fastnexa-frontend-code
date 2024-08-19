@@ -28,10 +28,10 @@ const ContactUs = () => {
                   alt="Phone"
                 />
                 <div>
-                  <h2 className="font-Poppins font-bold text-[7.94px] lg:text-lg text-[#0E0E0E]">
+                  <h2 className="font-Poppins font-bold text-sm lg:text-lg text-[#0E0E0E]">
                     Contact Number
                   </h2>
-                  <p className="font-Poppins font-normal text-[6.03px] lg:text-base text-[#0E0E0E]">
+                  <p className="font-Poppins font-normal text-xs lg:text-base text-[#0E0E0E]">
                     +92 310 4443823
                   </p>
                 </div>
@@ -43,10 +43,10 @@ const ContactUs = () => {
                   alt="Message"
                 />
                 <div>
-                  <h2 className="font-Poppins font-bold text-[7.94px] lg:text-lg text-[#0E0E0E]">
+                  <h2 className="font-Poppins font-bold text-sm lg:text-lg text-[#0E0E0E]">
                     Our Mail
                   </h2>
-                  <p className="font-Poppins font-normal text-[6.03px] lg:text-base text-[#0E0E0E]">
+                  <p className="font-Poppins font-normal text-xs lg:text-base text-[#0E0E0E]">
                     info@fastnexa.com
                   </p>
                 </div>
@@ -58,10 +58,10 @@ const ContactUs = () => {
                   alt="Location"
                 />
                 <div>
-                  <h2 className="font-Poppins font-bold text-[7.94px] lg:text-lg text-[#0E0E0E]">
+                  <h2 className="font-Poppins font-bold text-sm lg:text-lg text-[#0E0E0E]">
                     Our Location
                   </h2>
-                  <p className="font-Poppins font-normal text-[6.03px] lg:text-base text-[#0E0E0E] max-w-[50px">
+                  <p className="font-Poppins font-normal text-xs lg:text-base text-[#0E0E0E] max-w-[50px">
                     192, Y Block, DHA phase III, Lahore, Pakistan.
                   </p>
                 </div>

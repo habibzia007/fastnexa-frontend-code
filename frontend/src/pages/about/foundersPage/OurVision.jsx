@@ -25,7 +25,7 @@ const OurVision = () => {
                         {/* <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-[#232F3B]">
                             {card.title}
                         </h2> */}
-                        <p className="font-Poppins font-normal md:w-[30rem] text-[11px] leading-[16px] lg:text-[16px] lg:leading-[26px] text-[#444444] text-justify">
+                        <p className="font-Poppins font-normal md:w-[30rem] text-xs leading-[26px] lg:text-[16px] lg:leading-[26px] text-[#4c4d56] text-justify">
                             {card.description}
                         </p>
                     </div>
@@ -60,7 +60,7 @@ const OurVision = () => {
                                     </h1>
                                 </div>
                                 <div>
-                                    <p className="font-Poppins text-[#4C4D56] mb-4 text-sm leading-7 lg:text-base lg:leading-7 text-justify">
+                                    <p className="font-Poppins text-[#4C4D56] mb-4 md:text-sm text-xs leading-7 lg:text-base lg:leading-7 text-justify">
                                         At FAST NEXA, our journey began with a simple yet powerful vision: to harness
                                         the transformative power of technology to solve real-world challenges and drive
                                         positive change. This vision was born out of the passion, determination, and
@@ -74,7 +74,7 @@ const OurVision = () => {
                 </div>
             </div>
             <div className=" max-w-[1130px] mx-auto flex justify-center lg:justify-start md:px-5 px-4  mb-16">
-                <p className="font-Poppins text-[#4C4D56] text-sm leading-7 lg:text-base lg:leading-7  text-justify">
+                <p className="font-Poppins text-[#4C4D56] md:text-sm text-xs leading-7 lg:text-base lg:leading-7  text-justify">
                     Maj Gen Ghulam Mustafa Kausar (R) embarked on the path of entrepreneurship with a
                     deep-seated belief in the potential of technology to reshape industries and improve lives. Inspired
                     by the rapid

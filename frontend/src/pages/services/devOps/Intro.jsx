@@ -10,7 +10,7 @@ const Intro = () => {
                 <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
                     Achieve Unmatched Efficiency with FAST NEXA’s DevOps Mastery
                 </h3>
-                <p className="font-Poppins text-[14px] sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
+                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
                     At FAST NEXA, we are committed to transforming your IT infrastructure with cutting-edge DevOps solutions. Our suite of services is designed to enhance efficiency, reliability, and scalability across your IT operations.
                 </p>
             </div>

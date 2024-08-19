@@ -32,7 +32,7 @@ const AboutUs = () => {
             <h1 className="font-Poppins font-semibold text-[#232F3B] text-[22px]  leading-[28.1px] lg:text-[42px]  lg:leading-[61.1px] text-left">
               Why Choose FAST NEXA?
             </h1>
-            <p className="font-Poppins text-[#4C4D56] font-normal text-[11px] leading-[26px] lg:text-[16px] lg:leading-[26px] text-center lg:text-left ">
+            <p className="font-Poppins text-[#4C4D56] font-normal text-xs leading-[26px] lg:text-[16px] lg:leading-[26px] text-center lg:text-left ">
               We introduced FastNexa Tech, a specialized company offering
               professional services in various domains including Information
               Systems & Security, Cybersecurity, Infrastructure, E-commerce,

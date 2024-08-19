@@ -5,12 +5,10 @@ const ContactFormSection = () => {
     <div className="max-w-[1100px] mx-auto py-10 lg:pt-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-8 lg:mb-12">
         <h2 className="font-Poppins font-bold text-2xl lg:text-4xl text-[#1F1F1F] mb-4">
-          Do you have any Question?
+          Get in Touch
         </h2>
-        <p className="font-Poppins text-sm lg:text-base text-[#747474] max-w-3xl mx-auto">
-          Vivamus ultrices bibendum magna, ac volutpat nisi hendrerit eget.
-          Aenean rhoncus ultricies semper. Mauris et cursus est. Maecenas cursus
-          nibh vel ex faucibus consequat
+        <p className="font-Poppins md:text-sm text-xs lg:text-base text-[#747474] max-w-3xl mx-auto">
+          We are always eager to connect with you. Please feel free to reach out through any of the following channels:
         </p>
       </div>
       <form className="mt-6">

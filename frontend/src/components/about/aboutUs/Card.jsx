@@ -18,7 +18,7 @@ const Card = ({ title, description, border }) => {
           {title}
         </h3>
       </div>
-      <p className="font-Poppins font-normal text-[10px] leading-[23px] lg:text-[16px] lg:leading-[26px] text-left text-[#4C4D56] mt-1 lg:mt-3">
+      <p className="font-Poppins font-normal md:text-[10px] text-xs leading-[23px] lg:text-[16px] lg:leading-[26px] text-left text-[#4C4D56] mt-1 lg:mt-3">
         {description}
       </p>
     </div>

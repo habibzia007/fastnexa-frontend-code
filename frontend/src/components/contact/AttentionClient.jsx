@@ -6,19 +6,17 @@ const AttentionToEveryClient = () => {
     <div className="max-w-[1184px] lg:h-[581px] mx-auto py-10 lg:py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-8 lg:mb-12">
         <h2 className="font-Poppins font-bold text-2xl lg:text-4xl text-[#1F1F1F] mb-4">
-          Attention to every client
+            Attention to Every Client
         </h2>
-        <p className="font-Poppins text-sm lg:text-base text-[#747474] max-w-3xl mx-auto">
-          Integer mauris ipsum, consequat tincidunt orci eu, consectetur tempus
-          est. Sed posuere sem a convallis maximus. Curabitur consequat
-          dignissim nisl, at efficitur justo
+        <p className="font-Poppins md:text-sm text-xs lg:text-base text-[#747474] max-w-3xl mx-auto">
+            We value your feedback, inquiries, and business opportunities. Whether you’re looking to learn more about our services, explore partnership opportunities, or need support, our team is here to assist you.
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-8 justify-center">
         {attentionClientData.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 p-6"
+            className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 py-6 px-4"
           >
             <img
               src={card.image}
@@ -26,10 +24,10 @@ const AttentionToEveryClient = () => {
               className="lg:h-[4.188rem] object-cover"
             />
             <div className="p-6 text-center">
-              <h3 className="font-Poppins font-bold text-xl text-[#1F1F1F] mb-2">
+              <h3 className="font-Poppins font-bold md:text-xl text-lg text-[#1F1F1F] mb-2">
                 {card.title}
               </h3>
-              <p className="font-Poppins text-sm text-[#747474]">
+              <p className="font-Poppins md:text-sm text-xs text-[#747474]">
                 {card.description}
               </p>
               {card.socialIcons && (

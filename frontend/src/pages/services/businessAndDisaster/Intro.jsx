@@ -10,7 +10,7 @@ const Intro = () => {
                 <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
                     Future-Proof Your Business: Cutting-Edge Continuity & Disaster Recovery Solutions
                 </h3>
-                <p className="font-Poppins text-[14px] sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
+                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
                     At FAST NEXA, we understand that in today’s volatile environment, ensuring uninterrupted business operations and rapid recovery from disruptions is paramount. Our Business Continuity and Disaster Recovery (BC/DR) Solutions and Services are designed to safeguard your organization against a spectrum of disruptions—from natural calamities and cyberattacks to system failures and other emergencies. Explore our comprehensive BC/DR framework to enhance your operational resilience and minimize downtime.
                 </p>
             </div>

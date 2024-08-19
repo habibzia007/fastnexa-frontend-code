@@ -28,30 +28,30 @@ const Customise = () => {
         </div>
         {/* right side (TEXT) */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start mt-8 lg:mt-0 px-4">
-          <div className="mx-2 my-4 lg:h-[466px] border-b text-[14px] sm:text-[16px] leading-[24px] sm:leading-[27.59px] text-center lg:text-start max-w-[600px] lg:max-w-full">
-            <p>
+          <div className="mx-2 my-4 lg:h-[466px] border-b text-xs sm:text-[16px] leading-[24px] sm:leading-[27.59px] text-center lg:text-start max-w-[600px] lg:max-w-full">
+            <p className="text-[#747474]">
               Is Your Business Vision Reflected in Your Website? We understand
               the importance of a website that aligns perfectly with your unique
               business vision.
             </p>
-            <p className="mt-4 font-semibold">
+            <p className="mt-4 font-semibold text-[#747474]">
               Our Custom Web Development Services:
             </p>
             <ul className="list-disc list-inside ml-4">
-              <li className="mt-2">
+              <li className="mt-2 text-[#747474]">
                 <span className="font-semibold">Thorough Consultation:</span> We
                 initiate the process with a detailed consultation, where we
                 actively listen to your goals and ideas to ensure a deep
                 understanding of your vision.
               </li>
-              <li className="mt-2">
+              <li className="mt-2 text-[#747474]">
                 <span className="font-semibold">Tailor-Made Solutions:</span>{" "}
                 Expect nothing less than a perfect and tailor-made website that
                 is uniquely yours, reflecting your brand identity and
                 captivating your visitors.
               </li>
             </ul>
-            <p className="mt-4">
+            <p className="mt-4 text-[#747474]">
               Contact us today to discuss your web development needs, and let
               our well-versed developers craft a captivating and customized
               website that brings your business vision to life. Elevate your

@@ -63,7 +63,7 @@ const AboutUsServices = () => {
                 <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-[#232F3B]">
                   {card.title}
                 </h2>
-                <p className="font-Poppins font-normal text-[11px] leading-[16px] lg:text-[16px] lg:leading-[26px] text-[#747474]">
+                <p className="font-Poppins font-normal md:text-[11px] text-xs leading-[22px] lg:text-[16px] lg:leading-[30px] text-[#747474]">
                   {card.description}
                 </p>
               </div>

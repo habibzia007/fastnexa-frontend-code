@@ -223,9 +223,9 @@ const primaryLinks = [
     path: "/about",
     label: "About Us",
     dropdown: [
-        { path: "/about/our-vision", label: "Our Vision" },
-        { path: "/about/team", label: "Team" },
-
+      { path: "/about/our-vision", label: "Our Vision" },
+      { path: "/about/team", label: "Team" },
+      { path: "/about/alliances", label: "Alliances" },
     ],
   },
   {
@@ -267,10 +267,6 @@ const primaryLinks = [
         path: "/technology/third-party-integration",
         label: "Third Party Integration",
       },
-      // {
-      //   path: "/technology/software-product-development",
-      //   label: "Software Product Development",
-      // },
       {
         path: "/technology/api-development-services",
         label: "API Development Services",
@@ -281,7 +277,13 @@ const primaryLinks = [
       },
     ],
   },
-  { path: "/portfolio", label: "Portfolio" },
+  {
+    path: "/portfolio",
+    label: "Portfolio",
+    dropdown: [
+      { path: "/portfolio/casestudies", label: "Case Studies" },
+    ],
+  },
   { path: "/contact", label: "Contact Us" },
 ];
 
@@ -315,117 +317,117 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}
-    >
-      <div className="container lg:w-[1184px] mx-auto px-4 lg:px-6 grid grid-cols-12">
-        <div className="col-span-12">
-          <div className="flex justify-between items-center py-1">
-            <Link to="/">
-              <img
-                className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
-                src={logo}
-                alt="FastNexa Logo"
-              />
-            </Link>
-            <div className="hidden lg:flex items-center gap-5">
-              {primaryLinks.map((link) =>
-                link.dropdown ? (
-                  <div key={link.label} className="relative">
-                    <div
-                        className="flex items-center cursor-pointer"
-                        onMouseEnter={(e) => toggleDropdown(link.label, e)}
-                    >
-                      <Link to={link.path} className="mr-2 p-2">
-                        {link.label}
-                      </Link>
-                      <FaCaretDown/>
-                    </div>
-                    {dropdownOpen === link.label && (
-                      <div className="absolute bg-white shadow-md mt-1 z-10" onMouseLeave={(e) => toggleDropdown(null, e)}>
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.label}
-                            to={item.path}
-                            className="block w-[15rem] px-4 py-3 text-sm text-gray-700 hover:bg-orange-500 hover:text-white"
-                          >
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link key={link.label} to={link.path}>
-                    {link.label}
-                  </Link>
-                )
-              )}
-              <Link to={buttonLink.path} className="nav-button">
-                <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] leading-[2.7rem] rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600">
-                  {buttonLink.label}
-                </button>
+      <nav
+          className={`bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}
+      >
+        <div className="container lg:w-[1184px] mx-auto px-4 lg:px-6 grid grid-cols-12">
+          <div className="col-span-12">
+            <div className="flex justify-between items-center py-1">
+              <Link to="/">
+                <img
+                    className="w-[59px] h-[38px] lg:w-[132.19px] lg:h-[86px]"
+                    src={logo}
+                    alt="FastNexa Logo"
+                />
               </Link>
-            </div>
-            <div className="lg:hidden">
-              {navOpen ? (
-                <FaTimes
-                  onClick={toggleNav}
-                  size={25}
-                  className="cursor-pointer"
-                />
-              ) : (
-                <FaBars
-                  onClick={toggleNav}
-                  size={25}
-                  className="cursor-pointer"
-                />
-              )}
-            </div>
-          </div>
-          {navOpen && (
-            <div className="absolute top-full left-0 w-full bg-white shadow-lg">
-              {primaryLinks.map((link) =>
-                link.dropdown ? (
-                  <div
-                    key={link.label}
-                    className="block py-2 px-4 text-gray-700"
-                  >
-                    <Link to={link.path}>{link.label} </Link>
-                    <FaCaretDown
-                      onClick={(e) => toggleDropdown(link.label, e)}
-                      className="inline"
-                    />
-                    {dropdownOpen === link.label && (
-                      <div className="bg-white">
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.label}
-                            to={item.path}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-500 hover:text-white"
+              <div className="hidden lg:flex items-center gap-5">
+                {primaryLinks.map((link) =>
+                    link.dropdown ? (
+                        <div key={link.label} className="relative">
+                          <div
+                              className="flex items-center cursor-pointer"
+                              onMouseEnter={(e) => toggleDropdown(link.label, e)}
                           >
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
+                            <Link to={link.path} className="mr-2 p-2">
+                              {link.label}
+                            </Link>
+                            <FaCaretDown/>
+                          </div>
+                          {dropdownOpen === link.label && (
+                              <div className="absolute bg-white shadow-md mt-1 z-10" onMouseLeave={(e) => toggleDropdown(null, e)}>
+                                {link.dropdown.map((item) => (
+                                    <Link
+                                        key={item.label}
+                                        to={item.path}
+                                        className="block w-[15rem] px-4 py-3 text-sm text-gray-700 hover:bg-orange-500 hover:text-white"
+                                    >
+                                      {item.label}
+                                    </Link>
+                                ))}
+                              </div>
+                          )}
+                        </div>
+                    ) : (
+                        <Link key={link.label} to={link.path}>
+                          {link.label}
+                        </Link>
+                    )
+                )}
+                <Link to={buttonLink.path} className="nav-button">
+                  <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] leading-[2.7rem] rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600">
+                    {buttonLink.label}
+                  </button>
+                </Link>
+              </div>
+              <div className="lg:hidden">
+                {navOpen ? (
+                    <FaTimes
+                        onClick={toggleNav}
+                        size={25}
+                        className="cursor-pointer"
+                    />
                 ) : (
-                  <Link
-                    key={link.label}
-                    to={link.path}
-                    onClick={() => setNavOpen(false)}
-                    className="block py-2 px-4 text-gray-700 hover:bg-orange-500"
-                  >
-                    {link.label}
-                  </Link>
-                )
-              )}
+                    <FaBars
+                        onClick={toggleNav}
+                        size={25}
+                        className="cursor-pointer"
+                    />
+                )}
+              </div>
             </div>
-          )}
+            {navOpen && (
+                <div className="absolute top-full left-0 w-full bg-white shadow-lg">
+                  {primaryLinks.map((link) =>
+                      link.dropdown ? (
+                          <div
+                              key={link.label}
+                              className="block py-2 px-4 text-gray-700"
+                          >
+                            <Link to={link.path}>{link.label} </Link>
+                            <FaCaretDown
+                                onClick={(e) => toggleDropdown(link.label, e)}
+                                className="inline"
+                            />
+                            {dropdownOpen === link.label && (
+                                <div className="bg-white">
+                                  {link.dropdown.map((item) => (
+                                      <Link
+                                          key={item.label}
+                                          to={item.path}
+                                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-500 hover:text-white"
+                                      >
+                                        {item.label}
+                                      </Link>
+                                  ))}
+                                </div>
+                            )}
+                          </div>
+                      ) : (
+                          <Link
+                              key={link.label}
+                              to={link.path}
+                              onClick={() => setNavOpen(false)}
+                              className="block py-2 px-4 text-gray-700 hover:bg-orange-500"
+                          >
+                            {link.label}
+                          </Link>
+                      )
+                  )}
+                </div>
+            )}
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
   );
 };
 
