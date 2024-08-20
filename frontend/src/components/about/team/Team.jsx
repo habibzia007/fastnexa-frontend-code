@@ -64,26 +64,26 @@ const Team = () => {
 
   return (
     <div
-      className="relative h-[388px] sm:h-[730px] w-full mt-[60px] sm:mt-[120px] bg-cover bg-left sm:bg-center"
+      className="relative bg-cover bg-left sm:bg-center px-3"
       style={{ backgroundImage: `url(${testimonialbg})` }}
     >
-      <div className="lg:h-[517px] pt-[20px] sm:pt-[59px] mx-auto">
+      <div className="py-20 mx-auto">
         <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[9.44px] sm:text-[16px] leading-[16.19px] tracking-[0.9396284818649292px] text-center">
           Our Expert Team
         </h2>
-        <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[16px] leading-[36.08px] md:text-[42px] md:leading-[61.08px] text-center lg:pb-[50px]">
+        <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[16px] leading-[36.08px] md:text-[42px] md:leading-[61.08px] text-center">
           We have a world-class expert team
         </h1>
 
-        <div className="flex justify-center items-center w-full max-w-[1184px] px-2 md:px-4 mx-auto mt-2 sm:mt-10 slider-container">
+        <div className="flex justify-center items-center w-full max-w-[1184px] px-2 md:px-4 mx-auto mt-2 sm:mt-5 slider-container">
           <Slider
             {...settings}
-            className=" w-[300px] sm:w-[600.44px] lg:w-[800.44px] xl:w-[1189.44px] mx-auto "
+            className=" w-[300px] sm:w-[700.44px] lg:w-[950.44px] xl:w-[1189.44px] mx-auto "
           >
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className={`relative px-2 cursor-pointer !flex !justify-center !items-center  opacity-100 hover:opacity-90  group transition-transform duration-500 transform hover:scale-105 overflow-visible ${
+                className={`py-[12px] relative px-2 cursor-pointer !flex !justify-center !items-center  opacity-100 hover:opacity-90  group transition-transform duration-500 transform hover:scale-105 overflow-visible ${
                   index >= 2 && "hidden"
                 } sm:block ${index >= 3 && "sm:hidden"} lg:block ${
                   index >= 4 && "lg:hidden"
@@ -93,7 +93,7 @@ const Team = () => {
                   <img
                       // className="w-[175px] h-[225px] sm:w-[220px] sm:h-[280px] md:w-[260px] md:h-[330px] lg:w-[300px] lg:h-[380px] xl:w-[350px] xl:h-[450px] object-cover rounded-[5rem]"
                       // className="w-[15rem] h-[20rem] object-cover rounded-[5rem]"
-                      className="w-[15rem] h-[17rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] lg:rounded-[20px]"
+                      className="w-[15rem] h-[17rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] lg:rounded-[20px]"
                       src={member.imgSrc}
                       alt={member.name}
                   />

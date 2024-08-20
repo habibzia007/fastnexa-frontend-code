@@ -73,10 +73,10 @@ const Testimonial = () => {
 
   return (
     <div
-      className="relative h-[388.2px]   xl:h-[588.2px] w-full  mt-5 xl:mt-[4.5rem"
+      className="relative py-14 w-full mt-5"
       style={backgroundImageStyle}
     >
-      <div className="w-[350px]  mx-auto  md:w-[750px] h-full xl:w-[1180px] pt-[40px] xl:pt-[80px]  ">
+      <div className="w-[350px] mx-auto md:w-[750px] h-full xl:w-[1180px]">
         <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[16px] leading-[28.19px] tracking-[0.9396284818649292px] text-center">
           Testimonials
         </h2>
@@ -90,10 +90,10 @@ const Testimonial = () => {
           className=" min-w-[280px]   xl:w-[1189.44px] mx-auto slider-container"
         >
           {testimonialCards.map((card, index) => (
-            <div key={index} className="pt-[40px] xl:pt-[60px] pl-1 xl:pl-6 ">
-              <div className="w-[300.86px] mx-auto md:h-[160.01px] h-[180px] xl:w-[448.82px] xl:h-[217.72px] bg-white rounded-md shadow-md relative">
+            <div key={index} className="pt-[40px] xl:pt-[60px] pl-1 xl:pl-6 mb-5">
+              <div className="w-[300.86px] mx-auto pb-5 xl:min-h-[220px] md:min-h-[200px] min-h-[180px] xl:w-[448.82px] bg-white rounded-md shadow-md relative">
                 <img
-                  className="rounded-md w-[78px] h-[77px] xl:w-[106px] xl:h-[106px] absolute left-[-19px] top-[28px] xl:top-[2.5rem] xl:-left-[2.25rem]"
+                  className="rounded-md w-[78px] xl:w-[106px] xl:h-[106px] left-[-19px] xl:-left-[2.25rem] absolute top-0 bottom-0 my-auto h-full object-contain"
                   src={card.image}
                   alt=""
                 />

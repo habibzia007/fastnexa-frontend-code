@@ -5,12 +5,12 @@ import WhoWeAreCard from "./Card";
 
 const WhoWeAre = () => {
   return (
-    <div className="w-full lg:h-[704px] mt-[41px] lg:mt-[80px]">
-      <div className="container lg:w-[1184px] mx-auto md:px-4 lg:px-6 grid grid-cols-12 gap-2 md:gap-10">
+    <div className="w-full md:py-14 py-8">
+      <div className="container lg:w-[1184px] mx-auto md:px-4 lg:px-6 grid grid-cols-12 md:gap-2 gap-y-10">
         {/* Left side */}
-        <div className="col-span-12 md:col-span-6 lg:col-span-6 flex !justify-center !items-center flex-col ">
+        <div className="col-span-12 md:col-span-5 lg:col-span-6 flex !justify-center !items-start flex-col ">
           {/* Left side top */}
-          <div className="w-[350px] mx-auto sm:w-[610px] md:w-[350px] lg:w-[510px] md:mx-0 lg:mx-0 h-[154px] lg:h-[278px] flex flex-col  gap-[10.3px] lg:gap-[7px]">
+          <div className="w-[350px] mx-auto sm:w-[610px] md:w-[350px] lg:w-[510px] md:mx-0 lg:mx-0 flex flex-col  gap-[10.3px] lg:gap-[7px]">
             <h2 className="font-Poppins font-semibold text-[12px] lg:text-[16px] text-[#FF6500] leading-[28.19px] tracking-[0.9396284818649292px] text-center md:text-left lg:text-left">
               WHO WE ARE
             </h2>
@@ -60,7 +60,7 @@ const WhoWeAre = () => {
           </div>
         </div>
         {/* Right side */}
-        <div className="col-span-12 md:col-span-6 lg:col-span-6 h-[356.96px] md:mt-[14.5rem] lg:h-[610.96px] top-[1066px] mt-4 lg:mt-[70px] flex justify-center items-center lg:ml-[39px]">
+        <div className="col-span-12 md:col-span-7 lg:col-span-6 h-[356.96px] md:mt-[14.5rem] lg:h-[610.96px] top-[1066px] mt-4 lg:mt-[70px] flex justify-center items-center lg:ml-[39px]">
           <div className="relative w-[350px]  sm:w-[610px]  md:w-[70%]  sm:ml-[27px]  lg:ml-auto">
             <img
               className="w-[231px] h-[352px] lg:w-[397px] lg:h-[610px] object-cover border-l-8 rounded-md border-l-orange-600 left-[224px] bottom-0 lg:bottom-0 lg:left-2 lg:-top-0 lg:-right-3 ml-[116px] lg:ml-0"

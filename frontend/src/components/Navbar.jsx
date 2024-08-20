@@ -223,6 +223,7 @@ const primaryLinks = [
     path: "/about",
     label: "About Us",
     dropdown: [
+      { path: "/about", label: "Company" },
       { path: "/about/our-vision", label: "Our Vision" },
       { path: "/about/team", label: "Our Team" },
       { path: "/about/alliances", label: "Our Alliances" },
@@ -289,7 +290,7 @@ const primaryLinks = [
 
 const buttonLink = {
   path: "#",
-  label: "Request Job Opportunity",
+  label: "Job Request",
 };
 
 const Navbar = () => {

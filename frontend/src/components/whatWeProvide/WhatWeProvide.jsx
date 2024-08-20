@@ -13,7 +13,7 @@ const WhatWeProvide = () => {
   };
 
   return (
-    <div className="relative mt-6 lg:mt-10" style={backgroundImageStyle}>
+    <div className="relative pt-0 lg:pt-10" style={backgroundImageStyle}>
       <div className="container mx-auto px-4 sm:px-6 pt-10 w-full max-w-[1184px]">
         <h2 className="font-Poppins font-semibold text-sm sm:text-base text-[#FF6500] tracking-wider text-center">
           What We Provide
@@ -22,7 +22,7 @@ const WhatWeProvide = () => {
           We offer truly prominent software solutions designed to meet your
           business needs.
         </h3>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4 lg:gap-8">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4 lg:gap-8">
           {WhatWeProvideData.map((card, index) => (
             <WhatWeProvideCard
               key={index}

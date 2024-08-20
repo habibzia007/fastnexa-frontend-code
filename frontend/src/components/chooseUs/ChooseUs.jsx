@@ -13,7 +13,7 @@ const ChooseUs = () => {
 
   return (
     <div
-      className="relative w-full mt-10 lg:mt-20"
+      className="relative w-full py-8 lg:py-16"
       style={backgroundImageStyle}
     >
       <div className="container mx-auto lg:max-w-[1184px] px-4 ">
@@ -29,7 +29,7 @@ const ChooseUs = () => {
             elevate your business. Our expertise includes:
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4 lg:pt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
           {chooseUsData.map((card, index) => (
             <Card
               key={index}

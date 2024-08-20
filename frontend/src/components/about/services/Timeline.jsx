@@ -3,6 +3,7 @@ import foundersImage from "../../../assets/images/ghulam-kusar.jpeg.jpg";
 import abdullah from "../../../assets/images/abdulla.jpg";
 import shahzad from "./faisalShehzad.jpg";
 import fatima from "../../../assets/images/fatima.jpg";
+import Murtaza from "../../../assets/images/Murtaza.jpg";
 import fizzaAbdulla from "./fizzaAbdulla.png";
 import Navbar from "../../Navbar.jsx";
 import Footer from "../../Footer.jsx";
@@ -27,7 +28,7 @@ const teamMembers = [
         description: "Fatima Abdullah plays a critical role in overseeing FAST NEXA's day-to-day operations, ensuring that all departments work in harmony to achieve the company's objectives. As COO, she brings a strategic approach to operational management, focusing on efficiency, quality, and customer satisfaction. Fatima's leadership is instrumental in maintaining the company's high standards of excellence."
     },
     {
-        url: ctoImg,
+        url: Murtaza,
         name: "Murtaza",
         position: "Chief Strategy Officer (CSO), FastNexa",
         description: "Murtaza is responsible for shaping FAST NEXA's strategic direction, ensuring that the company remains competitive and responsive to market trends. As CSO, he oversees the development and implementation of key initiatives that drive growth and innovation. Murtaza's ability to anticipate market changes and his commitment to strategic excellence make him a vital part of the leadership team."
@@ -107,7 +108,7 @@ const Timeline = () => {
                                     className="md:flex bg-slate-100 rounded-lg max-w-3xl mx-auto px-4 py-8 md:p-0 shadow-xl">
                                     <img
                                         className="w-48 h-48 md:w-48 md:h-auto md:rounded-l-lg object-cover md:rounded-none rounded-full mx-auto"
-                                        src={member.url || ctoImg} alt={member.name} width="384" height="512"/>
+                                        src={member.url || null} alt={member.name} width="384" height="512"/>
                                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                                         <blockquote>
                                             <p className="font-Poppins text-[#4C4D56] md:text-base text-sm">

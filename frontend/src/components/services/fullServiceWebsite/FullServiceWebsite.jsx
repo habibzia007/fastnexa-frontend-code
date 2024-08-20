@@ -26,7 +26,7 @@ const AccordionItem = ({ header, ...rest }) => (
     className="border-b"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full px-4 py-[5px] sm:py-5 md:py-8 text-left hover:text-[#FF6500] ${
+        `flex w-full px-4 py-[5px] sm:py-5 md:py-8 text-left hover:text-[#FF6500] items-baseline gap-x-3 ${
           isEnter && "text-orange-600"
         }`,
     }}

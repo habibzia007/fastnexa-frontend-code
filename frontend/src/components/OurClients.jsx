@@ -26,11 +26,26 @@ const OurClients = () => {
         infinite: true,
         arrows: false,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 7, // Default setting
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024, // Max width of 1024px
+                settings: {
+                    slidesToShow: 7,
+                },
+            },
+            {
+                breakpoint: 768, // Max width of 768px (typically considered medium screens)
+                settings: {
+                    slidesToShow: 5,
+                },
+            },
+        ],
     };
+
 
     const settingsMobile = {
         dots: true,
@@ -57,7 +72,7 @@ const OurClients = () => {
                         <img
                             src={logo}
                             alt={`Logo ${index}`}
-                            className="w-[64px] h-[64px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px]"
+                            className="w-[64px] h-[64px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] object-contain"
                         />
                     </div>
                 ))}

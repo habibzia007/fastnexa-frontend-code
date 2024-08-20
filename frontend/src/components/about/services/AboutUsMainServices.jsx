@@ -69,7 +69,7 @@ const AboutUsServices = () => {
                 </p>
               </div>
               {card.hasAccordion ? (
-                <div className="w-[350px] h-[200px] sm:w-[510px] lg:w-[540px] lg:h-full rounded-md">
+                <div className="w-[350px] sm:w-[510px] lg:w-[540px] h-full rounded-md">
                   <Accordion transition transitionTimeout={200}>
                     <AccordionItem header="Innovation">
                       <span className="font-Poppins text-[16px]">

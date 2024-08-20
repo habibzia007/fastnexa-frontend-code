@@ -4,7 +4,7 @@ import symbol from "../../assets/images/symbol.svg";
 const Card = ({ title, description, border }) => {
   return (
     <div
-      className={`w-[183px] h-[100px] sm:w-[258px] sm:h-[130px] border-[#ECECEC] ${
+      className={`w-[183px] sm:w-[258px] py-3 px-1 border-[#ECECEC] ${
         border ? "border-r-[2px]" : ""
       }`}
     >
