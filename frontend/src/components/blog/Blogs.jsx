@@ -5,7 +5,7 @@ import { BlogCardData } from "../../utils/fakedb/data.jsx";
 
 const Blogs = () => {
   return (
-    <div className="relative w-full  h-[1000px] sm:h-[750px] md:h-[500px] lg:h-[570px] mx-auto py-12">
+    <div className="relative w-full pb-40 mx-auto py-12">
       <div className="max-w-[1184.44px] mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="font-Poppins font-semibold text-[12px] lg:text-[16px] text-[#FF6500] leading-[28.19px] tracking-wider text-center">
           Latest Blogs

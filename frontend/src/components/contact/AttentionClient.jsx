@@ -3,7 +3,7 @@ import { attentionClientData } from "../../utils/fakedb/data.jsx";
 
 const AttentionToEveryClient = () => {
   return (
-    <div className="max-w-[1184px] lg:h-[581px] mx-auto py-10 lg:py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[1184px] mx-auto py-10 lg:py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-8 lg:mb-12">
         <h2 className="font-Poppins font-bold text-2xl lg:text-4xl text-[#1F1F1F] mb-4">
             Attention to Every Client
@@ -16,7 +16,7 @@ const AttentionToEveryClient = () => {
         {attentionClientData.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 py-6 px-4"
+            className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 py-6 px-4"
           >
             <img
               src={card.image}

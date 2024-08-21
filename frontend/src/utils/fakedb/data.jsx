@@ -148,6 +148,15 @@ export const BlogCardData = [
     title: "Cybersecurity in the Digital Age: Strategies for Protecting Your Business from Cyber Threats",
     path: "cybersecurity-strategies-for-business-protection"
   },
+  {
+    image: { blog2 },
+    author: "Abdullah Faisal",
+    comments: 8,
+    date: "12",
+    month: "Aug",
+    title: "Cybersecurity in the Digital Age: Strategies for Protecting Your Business from Cyber Threats",
+    path: "cybersecurity-strategies-for-business-protection"
+  },
 ];
 
 export const chooseUsData = [

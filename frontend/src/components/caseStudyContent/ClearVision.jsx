@@ -89,7 +89,7 @@ function ClearVision() {
                             </div>
                             <div className={`mb-7`}>
                                 <h2 className={`font-Poppins font-bold text-xl lg:text-3xl leading-tight mt-2 mb-2`}>Conclusion</h2>
-                                <p className={`font-Poppins md:text-base text-xs text-gray-700  md:leading-8 leading-6 text-justify`}>2.
+                                <p className={`font-Poppins md:text-base text-xs text-gray-700  md:leading-8 leading-6 text-justify`}>
                                     FAST NEXA's surveillance solution has enabled Commander stone to overcome the
                                     visibility challenges posed by their dusty environment. This case study illustrates
                                     the impact of a well-designed surveillance system on improving security, efficiency,

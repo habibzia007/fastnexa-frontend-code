@@ -43,7 +43,7 @@ const Timeline = () => {
                 <h3 className="font-Poppins text-[20px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] lg:mt-[50px] text-center">
                     Meet Our Leadership
                 </h3>
-                <p className="font-Poppins text-[#4C4D56] font-normal text-xs leading-[22px] lg:text-[16px] lg:leading-[26px] text-center lg:text-left mt-4">
+                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[20px]">
                     At FAST NEXA, our leadership team brings a wealth of experience, dedication, and expertise, driving our mission to deliver innovative solutions and exceptional service. With a strong commitment to excellence, each member of our team plays a pivotal role in shaping the future of our company and ensuring that we remain at the forefront of our industry.
                 </p>
                 <div className="relative mt-16">
@@ -53,7 +53,7 @@ const Timeline = () => {
                             src={foundersImage || null} alt="Jesse Pinkman" width="384" height="512"/>
                         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <blockquote>
-                                <p className="font-Poppins text-[#4C4D56] md:text-base text-sm">
+                                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center">
                                     As the visionary founder of FAST NEXA, Maj Gen Ghulam Mustafa Kausar brings decades of leadership and strategic insight to the company. With a distinguished military career and a deep understanding of technology and security, he has laid the foundation for FAST NEXA&apos;s commitment to innovation and excellence. His leadership continues to inspire the team to push boundaries and achieve new heights.
                                 </p>
                             </blockquote>
@@ -80,7 +80,7 @@ const Timeline = () => {
                             src={shahzad || null} alt="Walter White" width="384" height="512"/>
                         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <blockquote>
-                                <p className="font-Poppins text-[#4C4D56] md:text-base text-sm">
+                                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center">
                                     Faisal Shahzad is the driving force behind FAST NEXA&apos;s operational and cybersecurity strategies. As the vCEO and vCISO, Faisal combines his extensive experience in executive leadership with a deep expertise in cybersecurity. His dual role ensures that FAST NEXA not only meets its business goals but also maintains the highest standards of security and risk management.
                                 </p>
                             </blockquote>
@@ -111,7 +111,7 @@ const Timeline = () => {
                                         src={member.url || null} alt={member.name} width="384" height="512"/>
                                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                                         <blockquote>
-                                            <p className="font-Poppins text-[#4C4D56] md:text-base text-sm">
+                                            <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center">
                                                 {member.description}
                                             </p>
                                         </blockquote>

@@ -13,7 +13,7 @@ import BusinessDisasterServics from "./BusinessDisasterServics.jsx";
 
 const BusinessAndDisaster = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={"Business Continuity & Disaster Recovery"} />
       <Intro />

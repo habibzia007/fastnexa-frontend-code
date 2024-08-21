@@ -27,13 +27,13 @@ const Hero = () => {
   const backgroundImageStyle = {
     backgroundImage: `linear-gradient(250.49deg, rgba(0, 0, 0, 0) 43.25%, rgba(0, 0, 0, 0.6) 71.49%), url(${images[currentImageIndex]})`,
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundPosition: "center top",
     transition: "background-image 1s ease-in-out",
   };
 
   return (
     <div
-      className="relative h-[430px] lg:h-[917px] transition-all "
+      className="relative transition-all lg:pb-60 lg:pt-64 py-40"
       style={backgroundImageStyle}
     >
       {/* wrapper */}
@@ -50,19 +50,19 @@ const Hero = () => {
             alt=""
           />
           {/* Content */}
-          <div className="flex flex-col gap-4  lg:gap-10 ">
-            <div className="   lg:max-w-[636px] lg:h-[128px] pt-[218px] lg:pt-[250px]">
+          <div className="flex flex-col gap-4 lg:gap-x-7">
+            <div className="lg:max-w-[636px]">
               <h1 className="font-inter font-bold text-[28.87px] leading-[31.61px] sm:text-[36.87px] sm:leading-[40.61px] lg:text-[68px] lg:leading-[75.5px] text-left text-white">
                 Transform Ideas into{' '}
                 {/*<br />*/}
                 <span className="text-orange-400">Reality</span>
               </h1>
             </div>
-            <div className="max-w-[350.7px] sm:max-w-[400.7px] lg:max-w-[585.7px] lg:h-[84px] lg:pt-[130px] space-y-5 lg:space-y-0">
-              <p className="font-Poppins font-medium text-[11px]  leading-[18.7px] sm:text-[14px]  sm:leading-[20.7px] lg:text-[16.22px] lg:leading-[27.58px] text-left text-white">
+            <div className="max-w-[350.7px] sm:max-w-[400.7px] lg:max-w-[585.7px] space-y-5 lg:space-y-0">
+              <p className="font-Poppins font-medium text-[11px]  leading-[18.7px] sm:text-[14px]  sm:leading-[20.7px] lg:text-[16.22px] lg:leading-[27.58px] text-left text-white mb-[30px]">
                 Redefining your ideas with Next-Gen AI-driven software, cloud, and security solutions, driving innovation and expertise.
               </p>
-              <div className="flex items-center gap-3 md:gap-5 lg:gap-7 lg:max-w-[585.7px] lg:pt-[30px]">
+              <div className="flex items-center gap-3 md:gap-5 lg:gap-7 lg:max-w-[585.7px]">
                 <Link to="/contact">
                   <button className="group flex items-center justify-center w-[125px] h-[31px] md:w-[150px] md:h-[37px] lg:w-[209px] lg:h-[52px] font-Poppins font-medium text-xs lg:text-sm text-white leading-[13px] lg:leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-md md:rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-700 ease-in-out">
                     Contact Now
