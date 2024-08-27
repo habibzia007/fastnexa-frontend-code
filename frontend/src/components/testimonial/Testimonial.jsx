@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import testimonialbg from "../../assets/rectangle-orange.svg";
-import men from "../../assets/images/clients/E.png";
+import men from "../../assets/images/E.png";
 import men1 from "../../assets/images/clients/fastcables.png";
-import msg from "../../assets/images/clients/caroyal_logo_new.png";
+import msg from "../../assets/images/caroyal.png";
 import Dots from "../../utils/Dots";
 
 const Testimonial = () => {
@@ -73,7 +73,7 @@ const Testimonial = () => {
 
   return (
     <div
-      className="relative py-14 w-full mt-5"
+      className="relative pt-10 pb-16 w-full"
       style={backgroundImageStyle}
     >
       <div className="w-[350px] mx-auto md:w-[750px] h-full xl:w-[1180px]">

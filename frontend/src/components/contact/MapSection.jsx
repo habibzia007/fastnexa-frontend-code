@@ -2,7 +2,7 @@ import React from 'react';
 
 const MapSection = () => {
   return (
-    <div className="max-w-[1184px] mx-auto py-10 lg:pb-32 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[1184px] mx-auto py-10 lg:pb-16 px-4 sm:px-6 lg:px-8">
     
       <div className="relative w-full h-0 pb-[56.25%] lg:pb-0 lg:h-[435px]">
         <iframe

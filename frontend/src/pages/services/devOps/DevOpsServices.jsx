@@ -47,7 +47,7 @@ const AboutUsServices = () => {
 
     return (
         <div
-            className="relative w-full h-auto py-10 lg:py-[121px] mb-[2rem] sm:mb-0"
+            className="relative w-full h-auto py-10 lg:py-[45px] mb-[2rem] sm:mb-0"
             style={backgroundImageStyle}
         >
             <div className="max-w-[1184px] mx-auto px-4 sm:px-6 lg:px-8">

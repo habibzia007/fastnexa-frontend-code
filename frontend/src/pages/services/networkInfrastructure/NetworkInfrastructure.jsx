@@ -13,7 +13,7 @@ import NetworkInfraStructureServices from "./NetworkInfraStructureServices.jsx";
 
 const NetworkInfrastructure = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={"Network Infrastructure"} />
       <Intro />

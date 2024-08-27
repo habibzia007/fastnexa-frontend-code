@@ -1,12 +1,12 @@
 
 const Intro = () => {
   return (
-    <div className="container mx-auto mt-[23px] p-4 max-w-[874px]  border-orange-500">
+    <div className="container mx-auto p-4 max-w-[874px]  border-orange-500">
       <div className="w-full h-auto pt-[37px] pb-[37px]">
         <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
           Powering Your Digital Connectivity with FAST NEXA’s API Development Services
         </h3>
-        <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
+        <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
           In an increasingly interconnected digital world, Application Programming Interfaces (APIs) are the backbone of seamless communication between different software systems. At FAST NEXA, we specialize in developing robust, scalable, and secure APIs that enable your applications to interact effortlessly with other services, platforms, and devices. Our API development services are designed to enhance functionality, streamline operations, and provide your business with the flexibility to innovate and grow.
         </p>
       </div>

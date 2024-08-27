@@ -43,7 +43,7 @@ const Card = ({image, title, description}) => {
 
     return (
         <div
-            className="w-full max-w-[276.62px] sm:max-w-[300px] md:max-w-[280px] lg:max-w-[382.62px] h-[314.96px] sm:h-[350px] md:h-[320px] lg:h-[435.96px] rounded-[9.2px] relative group mx-auto overflow-hidden">
+            className="w-full max-w-[276.62px] sm:max-w-[300px] md:max-w-[280px] lg:max-w-[370.62px] h-[314.96px] sm:h-[350px] md:h-[320px] lg:h-[435.96px] rounded-[9.2px] relative group mx-auto overflow-hidden">
             <div
                 className="w-full h-full rounded-[9.2px] bg-cover bg-center relative hover:transition-opacity duration-500"
                 style={cardImageStyle}

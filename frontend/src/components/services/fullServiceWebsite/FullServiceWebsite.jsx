@@ -51,10 +51,10 @@ const backgroundImageStyle = {
 const FullServiceWebsite = () => {
   return (
     <div
-      className="outer-div flex flex-col items-center lg:gap-12 pb-8 lg:pb-40  "
+      className="outer-div flex flex-col items-center lg:gap-12 pb-8 lg:pb-12"
       style={backgroundImageStyle}
     >
-      <h3 className="font-Poppins text-[20px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] mt-[40px] lg:mt-[50px] text-center">
+      <h3 className="font-Poppins text-[20px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] mt-[25px] lg:mt-[35px] text-center">
         Full-Service Website
       </h3>
 

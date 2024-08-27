@@ -13,7 +13,7 @@ import Intro from "./Intro.jsx";
 
 const DevOps = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={"DevOps"} />
       <Intro />

@@ -5,18 +5,18 @@ import Testimonial from "../../../components/testimonial/Testimonial";
 import ContactUs from "../../../components/ContactUs";
 import Footer from "../../../components/Footer";
 import Banner from "../../../components/technologyCards/Banner";
-import TechnologyStackMigration from "./TechnologyStackMigration.jsx";
+import TechnologyStack from "../../../components/TechnologyStack";
 import IntroMigration from "./IntroMigration.jsx";
 import AboutUsServicesMigration from "./AboutUsServicesMigration.jsx";
 
 const UpgradationMigration = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={"Upgradation & Migration"} />
       <IntroMigration />
       <AboutUsServicesMigration />
-      <TechnologyStackMigration />
+      <TechnologyStack />
       <Testimonial />
       <OurClients />
       <ContactUs />

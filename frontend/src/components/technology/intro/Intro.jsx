@@ -5,7 +5,7 @@ import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
 
 const Intro = () => {
   return (
-    <div className="container mx-auto mt-[23px] p-4 max-w-[874px]  border-orange-500">
+    <div className="container mx-auto p-4 max-w-[874px]  border-orange-500">
       <div className="w-full h-auto pt-[37px]">
         <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
           Outperform Your Competitors With Exceptional Software Development Services

@@ -80,7 +80,7 @@ import Card from "./Card";
 
 const AboutUs = () => {
     return (
-        <div className="w-full md:pt-20 md:pb-32 pb-20 pt-14 xl:px-0 px-4">
+        <div className="w-full md:py-16 pt-14 xl:px-0 px-4">
             <div
                 className="xl:grid xl:grid-cols-2 flex flex-col-reverse gap-8 lg:gap-4 xl:max-w-6xl max-w-4xl mx-auto justify-center items-start lg:gap-y-20 gap-y-16">
                 {/* Left Side */}

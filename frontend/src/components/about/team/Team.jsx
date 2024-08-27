@@ -1,4 +1,3 @@
-import React from "react";
 import testimonialbg from "../../../assets/images/testimonialbg.jpg";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import Slider from "react-slick";
@@ -8,17 +7,19 @@ import ctoImg from "../../../assets/images/abdulla.jpg";
 import ceoImg from "./faisalShehzad.jpg";
 import cooImg from "../../../assets/images/fatima.jpg";
 import cioImg from "./fizzaAbdulla.png";
+import csoImg from "../../../assets/images/Murtaza.jpg"
 
 const Team = () => {
   const teamMembers = [
     {
       imgSrc: ceoImg,
       name: "Faisal Shahzad",
-      position: "Fractional CEO & vCISO FastNexa",
+      position: "Fractional CEO & vCISO FAST NEXA",
     },
-    { imgSrc: ctoImg, name: "Abdulla Faisal", position: "CTO, FastNexa" },
-    { imgSrc: cooImg, name: "Fatimah Faisal", position: "COO, FastNexa" },
-    { imgSrc: cioImg, name: "Fizza Abdulla", position: "CIO, FastNexa" },
+    { imgSrc: ctoImg, name: "Abdullah Faisal", position: "CTO, FAST NEXA" },
+    { imgSrc: cooImg, name: "Fatimah Faisal", position: "COO, FAST NEXA" },
+    { imgSrc: cioImg, name: "Fizzah Abdullah", position: "CIO, FAST NEXA" },
+    { imgSrc: csoImg, name: "Mujtaba Bukhari", position: "CSO, FAST NEXA" },
   ];
 
   const settings = {
@@ -28,7 +29,7 @@ const Team = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     className: "center",
     responsive: [
@@ -67,7 +68,7 @@ const Team = () => {
       className="relative bg-cover bg-left sm:bg-center px-3"
       style={{ backgroundImage: `url(${testimonialbg})` }}
     >
-      <div className="py-20 mx-auto">
+      <div className="pt-10 pb-16 mx-auto">
         <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[9.44px] sm:text-[16px] leading-[16.19px] tracking-[0.9396284818649292px] text-center">
           Our Expert Team
         </h2>

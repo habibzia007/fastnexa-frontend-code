@@ -5,7 +5,7 @@ import WhoWeAreCard from "./Card";
 
 const WhoWeAre = () => {
   return (
-    <div className="w-full md:py-14 py-8">
+    <div className="w-full md:pb-14 md:pt-3 pt-3 pb-8">
       <div className="container lg:w-[1184px] mx-auto md:px-4 lg:px-6 grid grid-cols-12 md:gap-2 gap-y-10">
         {/* Left side */}
         <div className="col-span-12 md:col-span-5 lg:col-span-6 flex !justify-center !items-start flex-col ">

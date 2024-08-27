@@ -1,16 +1,14 @@
 import React from "react";
-import group from "../../../assets/images/group.png";
-import rightArrow from "../../../assets/images/rightArrow.png";
-import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
+
 
 const Intro = () => {
   return (
-    <div className="container mx-auto mt-[23px] p-4 max-w-[874px]  border-orange-500">
+    <div className="container mx-auto p-4 max-w-[874px]">
       <div className="w-full h-auto pt-[37px] pb-[37px]">
         <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
           Transform and Thrive with FAST NEXA’s Cutting-Edge Upgradation & Migration Services
         </h3>
-        <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
+        <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
           In the fast-paced digital world, staying ahead of the curve means continuously upgrading and modernizing your technology infrastructure. At FAST NEXA, we specialize in providing seamless upgradation and migration services that help your business evolve, stay competitive, and embrace new opportunities. Whether you need to upgrade existing systems, migrate to new platforms, or move to the cloud, our expert team ensures a smooth transition with minimal disruption, so your business can continue to thrive.
         </p>
       </div>

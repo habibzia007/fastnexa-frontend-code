@@ -10,7 +10,7 @@ const About = () => {
   return (
     <main className="w-full bg-[#FFFFFF]">
       <Navbar />
-      <Banner text={"Contact"} />
+      <Banner text={"Contact Us"} />
       <AttentionToEveryClient/>
       <QASection/>
       <MapSection/>

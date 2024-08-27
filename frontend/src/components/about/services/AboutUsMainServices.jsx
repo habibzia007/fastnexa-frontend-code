@@ -30,7 +30,7 @@ const AboutUsServices = () => {
       className="border-b"
       buttonProps={{
         className: ({ isEnter }) =>
-          `flex w-full px-4 py-[5px] sm:py-5 md:py-8 text-left hover:text-[#FF6500] ${
+          `flex w-full px-4 py-[5px] sm:py-5 md:py-5 text-left hover:text-[#FF6500] ${
             isEnter ? "text-orange-600" : ""
           }`,
       }}
@@ -42,13 +42,13 @@ const AboutUsServices = () => {
         className:
           "transition-height duration-200 ease-out font-Poppins text-normal text-[9px] sm:text-[16px] leading-[28px]",
       }}
-      panelProps={{ className: "p-4" }}
+      panelProps={{ className: "px-4" }}
     />
   );
 
   return (
     <div
-      className="relative w-full h-auto py-10 lg:py-[121px] mb-[2rem] sm:mb-0"
+      className="relative w-full h-auto py-10 lg:py-[60px] mb-[2rem] sm:mb-0"
       style={backgroundImageStyle}
     >
       <div className="max-w-[1184px] mx-auto px-4 sm:px-6 lg:px-8">

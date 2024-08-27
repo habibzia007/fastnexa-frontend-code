@@ -14,7 +14,7 @@ import Intro from "./Intro.jsx";
 
 const SoftwareDevelopment = () => {
   return (
-    <main className="h-[4784px] w-full bg-[#FFFFFF]">
+    <main className="w-full bg-[#FFFFFF]">
       <Navbar />
       <Banner text={"Software Development"} />
       <Intro />

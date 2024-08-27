@@ -74,7 +74,7 @@ function App() {
         />
         <Route path="/technology" element={<Technology />} />
         <Route
-          path="/technology/customise-web-development"
+          path="/technology/customise-software-development"
           element={<CustomiseWebDevelopment />}
         />
         <Route
@@ -99,7 +99,7 @@ function App() {
         />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/casestudies" element={<CaseStudyPage /> } />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-us" element={<Contact />} />
         <Route path="/blogs/future-software-development-trends" element={<SoftwareKeyTrends />} />
         <Route path="/blogs/harnessing-power-cloud-computing-best-practices-seamless-transition" element={<HarnessingPower />} />
         <Route path="/blogs/cybersecurity-strategies-for-business-protection" element={<CyberSecurityDigital />} />

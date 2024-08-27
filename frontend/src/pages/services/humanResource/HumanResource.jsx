@@ -14,7 +14,7 @@ import HumanResourceServices from "./HumanResourceServices.jsx";
 
 const HumanResource = () => {
     return (
-        <main className="h-[4784px] w-full bg-[#FFFFFF]">
+        <main className="w-full bg-[#FFFFFF]">
             <Navbar />
             <Banner text={"Human Resource Augmentation"} />
             <Intro />

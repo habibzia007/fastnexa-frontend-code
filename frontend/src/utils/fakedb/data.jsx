@@ -20,6 +20,35 @@ import blog2 from "../../assets/images/blog2.png";
 //aboutusservice
 import aboutservice1 from "../../assets/images/aboutservice1.jpg";
 import webDevelopement from "../../assets/images/webdevelopment.jpg";
+import userCenter from "../../assets/images/technology/1020411_OJLYUQ0.jpg";
+import innovation from "../../assets/images/innovation.jpg";
+import IntegrationPrototype from "../../assets/images/technology/person-front-computer-person-office.jpg";
+import testing from "../../assets/images/prototyping.jpg";
+import resposive from "../../assets/images/responsiveDesign.jpg";
+import CustomeAPi from "../../assets/images/technology/man-holding-smartphone-api-application-programming-interface-software-development-technology.jpg";
+import Scaleable  from "../../assets/images/technology/api-application-programming-interface-software-development-technology.jpg";
+import secure  from "../../assets/images/technology/secure.jpg";
+import Seamless  from "../../assets/images/SeamlessIntegration.jpg";
+import Comprehensive  from "../../assets/images/technology/api-application-programming-interface-software-development-technology (1).jpg";
+import Tailored  from "../../assets/images/img9.jpg";
+import ScalableArchitecture  from "../../assets/images/ScalableArchitecture.jpg";
+import CuttingEdge  from "../../assets/images/Cutting-Edge.png";
+import Agile  from "../../assets/images/img8.jpg";
+import IntegratioExpertise  from "../../assets/images/img7.jpg";
+import EnhancedFunctionality  from "../../assets/images/EnhancedFunctionality.jpg";
+import ReliableConnections  from "../../assets/images/img6.jpg";
+import CustomizedSolutions  from "../../assets/images/img5.jpg";
+import OngoingSupport  from "../../assets/images/img4.jpg";
+import StrategicPlanning  from "../../assets/images/StrategicPlanning.jpg";
+import DataMigration  from "../../assets/images/DataMigration.png";
+import MinimizedDowntime  from "../../assets/images/img3.jpg";
+import FutureProof  from "../../assets/images/img2.jpg";
+import Training  from "../../assets/images/img1.jpg";
+
+
+
+
+
 import mobileApplication from "../../assets/images/mobile_application.jpg";
 import crossPlatform from "../../assets/images/cross_platform.jpg";
 import physicalSecurity from "../../assets/images/physicalSecurity.jpg";
@@ -63,6 +92,7 @@ import attentionclient3 from "../../assets/attentionclient3.svg";
 import attentionclient_msg from "../../assets/attentionclient_msg.svg";
 import attentionclient_fb from "../../assets/attentionclient_fb.svg";
 import attentionclient_wp from "../../assets/attentionclient_wp.svg";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { PiNetworkLight } from "react-icons/pi";
 import { GiCheckedShield } from "react-icons/gi";
 import { SlSupport } from "react-icons/sl";
@@ -138,15 +168,6 @@ export const BlogCardData = [
     month: "Aug",
     title: "Harnessing the Power of Cloud Computing: Best Practices for a Seamless Transition",
     path: "harnessing-power-cloud-computing-best-practices-seamless-transition"
-  },
-  {
-    image: { blog2 },
-    author: "Abdullah Faisal",
-    comments: 8,
-    date: "12",
-    month: "Aug",
-    title: "Cybersecurity in the Digital Age: Strategies for Protecting Your Business from Cyber Threats",
-    path: "cybersecurity-strategies-for-business-protection"
   },
   {
     image: { blog2 },
@@ -337,31 +358,31 @@ export const aboutUsServicesData = [
   {
     title: "Custom API Solutions",
     description: "At FAST NEXA, we recognize that every business is unique, which is why we offer custom API development services tailored specifically to your needs. Whether you require APIs for internal use to streamline operations, to connect with third-party services for enhanced functionality, or to create new revenue streams through innovative digital offerings, our team designs solutions that align perfectly with your objectives. We take the time to understand your business requirements and goals, ensuring that the APIs we develop provide the flexibility and scalability needed to support your growth and success in an increasingly connected world.\n",
-    img: webDevelopement, // Update the path as necessary
+    img: CustomeAPi, // Update the path as necessary
     reverse: false,
   },
   {
     title: "Scalable and Future-Proof Design",
     description: "Growth and change are integral parts of any successful business, and your APIs should be capable of evolving alongside your operations. At FAST NEXA, our APIs are designed with scalability and future-proofing in mind. This means that as your business expands, your APIs can easily be adapted to accommodate new features, increased traffic, and the latest technologies. We build APIs that not only meet your current needs but are also ready to grow and evolve with your business, providing a solution that stands the test of time and ensures long-term digital success.",
-    img: database, // Update the path as necessary
+    img: Scaleable, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Secure and Reliable Performance",
     description: "Security and reliability are critical components of API development at FAST NEXA. We implement industry-leading security protocols to protect your data and ensure that your APIs operate smoothly and securely under all conditions. Our comprehensive development process includes rigorous testing and ongoing monitoring to guarantee that your APIs deliver high performance with minimal downtime. By prioritizing security and reliability, we help you maintain the trust of your users and ensure that your APIs continue to function effectively, even as demands on your systems increase over time.",
-    img: deployment,  // Update the path as necessary
+    img: secure,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Comprehensive Documentation and Support",
     description: "Effective API usage requires thorough documentation, and at FAST NEXA, we provide detailed, easy-to-understand documentation for every API we develop. This ensures that your development team has all the resources they need to implement, manage, and optimize the API efficiently. Beyond the initial deployment, we offer ongoing support services to keep your APIs running smoothly. Whether you need help with troubleshooting, updates, or scaling, our team is always available to provide expert assistance, ensuring that your APIs maintain peak performance and continue to meet your business needs.",
-    img: mobileApplication, // Update the path as necessary
+    img: Comprehensive, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Seamless Integration with Existing Systems",
     description: "Integrating new APIs with your existing systems can be a complex process, but at FAST NEXA, we ensure that it’s as seamless and efficient as possible. Our API development services prioritize compatibility with your current software infrastructure, reducing the risk of disruptions and ensuring that everything works together harmoniously. We focus on creating APIs that enhance your digital ecosystem, improving functionality and efficiency without compromising the integrity of your existing systems. With our expertise, you can be confident that your new APIs will integrate smoothly and effectively, providing immediate and long-term benefits.",
-    img: crossPlatform,  // Update the path as necessary
+    img: Seamless,  // Update the path as necessary
     reverse: false,
   },
 
@@ -373,19 +394,19 @@ export const aboutUsServicesCustomize = [
   {
     title: "Tailored Solutions",
     description: "At FAST NEXA, we prioritize understanding your unique business goals, target audience, and industry specifics to create Software solutions that are perfectly aligned with your vision. We don’t believe in generic templates; instead, we invest the time to dive deep into your brand’s identity, ensuring that every aspect of the Software solution reflects your objectives. Our tailored approach guarantees that your Software not only meets your business needs but also delivers a seamless user experience that sets you apart from the competition, helping you achieve lasting success in your market.\n",
-    img: webDevelopement, // Update the path as necessary
+    img: Tailored, // Update the path as necessary
     reverse: false,
   },
   {
     title: "Scalable Architecture",
     description: "Growth and change are inevitable for any successful business, and your Software should be ready to evolve along with you. FAST NEXA's Software development process emphasizes scalability from the ground up. Whether you're looking to add new features, manage increased traffic, or expand into new markets, our solutions are built with the future in mind. We design flexible, robust architectures that can easily adapt to your business's growing needs, ensuring that your Software remains effective and efficient as your business continues to flourish.",
-    img: database, // Update the path as necessary
+    img: ScalableArchitecture, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Cutting-Edge Technologies",
     description: "In a fast-paced digital landscape, staying ahead requires the use of the latest technologies and frameworks. FAST NEXA leverages cutting-edge tools and methodologies to develop high-performance Software that excel in speed, security, and functionality. From implementing responsive designs that work seamlessly across devices to developing robust backend systems that handle complex operations, we ensure your Software is optimized for both users and search engines. Our commitment to innovation guarantees that your digital presence is always at the forefront, providing you with a competitive advantage.",
-    img: deployment,  // Update the path as necessary
+    img: CuttingEdge,  // Update the path as necessary
     reverse: false,
   },
   {
@@ -397,7 +418,7 @@ export const aboutUsServicesCustomize = [
   {
     title: "Agile Development Process",
     description: "The digital landscape is constantly changing, and your Software needs to be adaptable. FAST NEXA follows an agile development methodology that allows for flexibility and rapid iteration. This approach ensures that we can respond quickly to changes, whether it's a shift in market trends, new business requirements, or feedback from users. Our agile process involves continuous collaboration, testing, and refinement, ensuring that your project is delivered on time, within budget, and to the highest standards. With FAST NEXA, you can be confident that your Software will evolve in sync with your business needs.",
-    img: crossPlatform,  // Update the path as necessary
+    img: Agile,  // Update the path as necessary
     reverse: false,
   },
 
@@ -409,31 +430,31 @@ export const aboutUsServicesThirdParty = [
   {
     title: "Comprehensive Integration Expertise",
     description: "At FAST NEXA, our team brings a wealth of experience in integrating a diverse range of third-party tools and services. Whether you require the integration of complex APIs, seamless plug-ins, or sophisticated enterprise systems, we have the expertise to manage the entire process with precision. We meticulously handle every aspect of integration, from initial assessment and planning to execution and testing. Our goal is to ensure that all systems work together harmoniously, providing a cohesive digital ecosystem that enhances your business operations and improves overall efficiency, making the most out of your existing and new technologies.\n",
-    img: webDevelopement, // Update the path as necessary
+    img: IntegratioExpertise, // Update the path as necessary
     reverse: false,
   },
   {
     title: "Enhanced Functionality",
     description: "Integrating third-party services into your website or application can significantly extend its functionality without the need for costly custom development. At FAST NEXA, we specialize in enhancing your digital platforms by integrating tools and services that add value, whether it’s through new features, improved performance, or greater user engagement. Our integrations are designed to complement and elevate your existing systems, providing you with a more powerful, efficient, and versatile platform that meets your business needs and drives growth. With our expertise, you can unlock the full potential of your digital solutions.",
-    img: database, // Update the path as necessary
+    img: EnhancedFunctionality, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Secure and Reliable Connections",
     description: "Security is paramount when it comes to third-party integrations, and at FAST NEXA, we prioritize safeguarding your data and user information. We ensure that all integrations are implemented with the highest security standards, protecting your digital assets from potential vulnerabilities. Our team conducts rigorous testing to guarantee that each connection is reliable and performs seamlessly under various conditions. With FAST NEXA, you can be confident that your third-party integrations are not only enhancing functionality but also maintaining the integrity and security of your digital ecosystem.",
-    img: deployment,  // Update the path as necessary
+    img: ReliableConnections,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Customized Solutions",
     description: "Every business is unique, and so are its integration needs. FAST NEXA offers customized third-party integration solutions that are tailored to your specific requirements. Whether you need a one-time integration or a complex, ongoing connection with multiple services, we develop solutions that perfectly align with your business objectives. Our tailored approach ensures that the integrations fit seamlessly into your existing systems, enhancing functionality without disrupting your operations. With FAST NEXA, you get integration solutions that are as unique as your business, providing the exact tools and services you need to succeed.",
-    img: mobileApplication, // Update the path as necessary
+    img: CustomizedSolutions, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Ongoing Support and Maintenance",
     description: "Our relationship with you doesn’t end once the integration is complete. FAST NEXA offers comprehensive ongoing support and maintenance to ensure that your third-party integrations continue to function smoothly over time. We monitor the performance of your integrations, address any issues that may arise, and provide timely updates to keep everything running efficiently. Our dedicated support team is always ready to assist, ensuring that your digital ecosystem remains optimized and effective, long after the initial integration. With FAST NEXA, you can rest assured that your business is always supported.",
-    img: crossPlatform,  // Update the path as necessary
+    img: OngoingSupport,  // Update the path as necessary
     reverse: false,
   },
 
@@ -445,31 +466,31 @@ export const aboutUsServicesMigration = [
   {
     title: "Strategic Planning and Execution",
     description: "At FAST NEXA, successful upgradation and migration start with strategic planning. We begin by conducting a thorough assessment of your current systems to understand your specific needs, challenges, and goals. Based on this analysis, we develop a customized strategy that outlines every step of the upgradation or migration process. Our meticulous planning ensures that all potential risks are identified and mitigated, downtime is minimized, and the transition is as smooth as possible. By carefully executing this strategy, we help you maximize the benefits of your new technology, ensuring that your business is well-positioned for future success.\n",
-    img: webDevelopement, // Update the path as necessary
+    img: StrategicPlanning, // Update the path as necessary
     reverse: false,
   },
   {
     title: "Seamless Data Migration",
     description: "Data is the lifeblood of your business, and ensuring its security and accuracy during migration is our top priority. At FAST NEXA, we employ a rigorous approach to data migration, including thorough testing and validation processes. Our experts take every precaution to ensure that your data is transferred securely, intact, and consistent across all systems. We validate the data in its new environment to ensure it functions as expected, eliminating the risk of data loss or corruption. With our seamless data migration services, you can trust that your most valuable assets are protected throughout the transition.",
-    img: database, // Update the path as necessary
+    img: DataMigration, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Minimized Downtime and Disruption",
     description: "Business continuity is crucial during any upgradation or migration process, and at FAST NEXA, we prioritize minimizing downtime and disruption. Our experienced team works efficiently to ensure that your operations continue to run smoothly while we implement the necessary changes. We plan every step of the process with precision, coordinating closely with your team to reduce any impact on your day-to-day activities. By focusing on minimizing disruptions, we help your business maintain productivity and avoid costly interruptions, ensuring a seamless transition to your new systems with minimal impact on your operations.",
-    img: deployment,  // Update the path as necessary
+    img: MinimizedDowntime,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Future-Proof Solutions",
     description: "Upgrading or migrating your systems is not just about adopting the latest technology; it’s about preparing your business for the future. At FAST NEXA, we ensure that the solutions we implement are scalable, adaptable, and ready to integrate with emerging technologies. Our future-proof designs allow your systems to grow and evolve alongside your business, enabling you to stay ahead of the curve and take advantage of new opportunities as they arise. With our forward-thinking approach, you can be confident that your technology infrastructure will continue to support your business's growth and innovation for years to come.",
-    img: mobileApplication, // Update the path as necessary
+    img: FutureProof, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Comprehensive Support and Training",
     description: "The successful adoption of new technology requires more than just a smooth transition; it requires ongoing support and training. After the upgradation or migration is complete, FAST NEXA provides comprehensive support to ensure that your team is fully equipped to use and manage the new systems. We offer tailored training sessions to help your employees get up to speed quickly, along with continuous support to address any issues or questions that may arise. Our commitment to post-migration support ensures that your business can fully leverage the benefits of your upgraded systems, leading to sustained success and efficiency.",
-    img: crossPlatform,  // Update the path as necessary
+    img: Training,  // Update the path as necessary
     reverse: false,
   },
 
@@ -481,31 +502,31 @@ export const aboutUsServicesPrototype = [
   {
     title: "User-Centered Approach",
     description: "At FAST NEXA, our design philosophy revolves around the user. We begin every project by deeply understanding your target audience’s needs, preferences, and behaviors. This insight allows us to create interfaces that resonate with users on a personal level. By placing the user at the heart of our design process, we ensure that every interaction is intuitive and enjoyable. Our goal is to design experiences that are not only functional but also emotionally engaging, leading to higher satisfaction and stronger connections with your brand. This user-centric approach is the key to creating impactful and meaningful digital experiences.\n",
-    img: webDevelopement, // Update the path as necessary
+    img: userCenter, // Update the path as necessary
     reverse: false,
   },
   {
     title: "Innovative Design Solutions",
     description: "Innovation is at the core of what we do at FAST NEXA. Our team of experienced designers stays ahead of the curve by leveraging the latest design trends, tools, and methodologies. We are committed to creating UI/UX solutions that are not only modern but also forward-thinking. Whether you need a mobile app, website, or software interface, we ensure that your design stands out in the crowded digital landscape. Our innovative approach allows us to craft unique and memorable user experiences that set your brand apart, driving engagement and making a lasting impression on your audience.",
-    img: database, // Update the path as necessary
+    img: innovation, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Seamless Integration of Aesthetics and Functionality",
     description: "At FAST NEXA, we believe that great design is a perfect blend of aesthetics and functionality. Our approach ensures that your digital products are not only visually stunning but also optimized for performance. We create designs that are both beautiful and practical, ensuring that users enjoy a seamless experience from start to finish. By focusing on the harmony between form and function, we deliver interfaces that are not just pleasing to the eye but also enhance usability, drive engagement, and contribute to the overall success of your digital presence.",
-    img: deployment,  // Update the path as necessary
+    img: IntegrationPrototype,  // Update the path as necessary
     reverse: false,
   },
   {
     title: "Prototyping and Testing",
     description: "We understand that the best designs are the result of continuous refinement. That’s why at FAST NEXA, we prioritize user feedback through iterative prototyping and testing. By involving real users early and often in the design process, we gather valuable insights that guide our decisions and improvements. This approach ensures that the final product is intuitive, effective, and perfectly aligned with your business goals. Our commitment to prototyping and testing minimizes risks and maximizes the success of your UI/UX design, delivering a product that meets and exceeds user expectations.",
-    img: mobileApplication, // Update the path as necessary
+    img: testing, // Update the path as necessary
     reverse: true,
   },
   {
     title: "Responsive and Adaptive Design",
     description: "In today’s multi-device world, ensuring a consistent user experience across all platforms is crucial. FAST NEXA’s UI/UX designs are fully responsive and adaptive, providing a seamless and enjoyable experience on any device, from desktop computers to mobile phones and tablets. Our designs automatically adjust to different screen sizes and resolutions, ensuring that your users always have an optimal experience. By focusing on responsiveness and adaptability, we help you reach a broader audience and drive higher engagement and conversions, no matter where or how your users interact with your digital products.",
-    img: crossPlatform,  // Update the path as necessary
+    img: resposive,  // Update the path as necessary
     reverse: false,
   },
 
@@ -806,16 +827,16 @@ export const attentionClientData = [
     </div>,
     socialIcons: [
       {
-        icon: attentionclient_wp,
-        link: "https://www.facebook.com",
+        icon: <IoLogoLinkedin />,
+        link: "https://www.linkedin.com/company/fast-nexa/posts/?feedView=all",
       },
       {
         icon: attentionclient_fb,
-        link: "https://www.twitter.com",
+        link: "https://www.facebook.com/fastnexa",
       },
       {
         icon: attentionclient_msg,
-        link: "https://www.linkedin.com",
+        link: "https://www.instagram.com/fast_nexa?igsh=cHk3ZDZmbmZvZHdq",
       },
     ],
   },

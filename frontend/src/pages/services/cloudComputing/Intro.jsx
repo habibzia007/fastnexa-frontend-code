@@ -1,16 +1,14 @@
 import React from "react";
-import group from "../../../assets/images/group.png";
-import rightArrow from "../../../assets/images/rightArrow.png";
-import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
+
 
 const Intro = () => {
     return (
-        <div className="container mx-auto mt-[23px] p-4 max-w-[874px]  border-orange-500">
+        <div className="container mx-auto p-4 max-w-[874px]">
             <div className="w-full h-auto pt-[37px] pb-[37px]">
                 <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
                     Transform Your Business with FAST NEXA's Cutting-Edge Cloud Computing Solutions
                 </h3>
-                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
+                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
                     At FAST NEXA, we deliver top-tier Cloud Computing services that offer unparalleled on-demand access to a comprehensive suite of virtualized computing resources. Embrace the future of IT with our scalable, flexible, and cost-effective cloud solutions designed to drive innovation and operational efficiency.
                 </p>
             </div>

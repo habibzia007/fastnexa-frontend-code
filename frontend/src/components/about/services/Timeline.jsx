@@ -12,25 +12,25 @@ const teamMembers = [
     {
         url: abdullah,
         name: "Abdullah Faisal",
-        position: "Chief Technology Officer (CTO), FastNexa",
+        position: "Chief Technology Officer (CTO), FAST NEXA",
         description: "As the CTO, Abdullah Faisal leads FAST NEXA's technological innovation, guiding the development of cutting-edge solutions that meet the evolving needs of our clients. With a passion for technology and a forward-thinking approach, Abdullah is dedicated to ensuring that FAST NEXA remains a leader in technological advancements."
     },
     {
         url: fizzaAbdulla,
         name: "Fizzah Abdullah",
-        position: "Chief Information Officer (CIO), FastNexa",
+        position: "Chief Information Officer (CIO), FAST NEXA",
         description: "Fizzah Abdullah oversees the company's information systems and data management strategies. As CIO, she ensures that FAST NEXA's IT infrastructure is robust, secure, and scalable, supporting the company's growth and delivering seamless service to our clients. Her expertise in information management is key to driving efficiency and innovation across the organization."
     },
     {
         url: fatima,
-        name: "Fatima Abdullah",
-        position: "Chief Operating Officer (COO), FastNexa",
+        name: "Fatimah Faisal",
+        position: "Chief Operating Officer (COO), FAST NEXA",
         description: "Fatima Abdullah plays a critical role in overseeing FAST NEXA's day-to-day operations, ensuring that all departments work in harmony to achieve the company's objectives. As COO, she brings a strategic approach to operational management, focusing on efficiency, quality, and customer satisfaction. Fatima's leadership is instrumental in maintaining the company's high standards of excellence."
     },
     {
         url: Murtaza,
-        name: "Murtaza",
-        position: "Chief Strategy Officer (CSO), FastNexa",
+        name: "Mujtaba Bukhari",
+        position: "Chief Strategy Officer (CSO), FAST NEXA",
         description: "Murtaza is responsible for shaping FAST NEXA's strategic direction, ensuring that the company remains competitive and responsive to market trends. As CSO, he oversees the development and implementation of key initiatives that drive growth and innovation. Murtaza's ability to anticipate market changes and his commitment to strategic excellence make him a vital part of the leadership team."
     }
 ];
@@ -39,7 +39,7 @@ const Timeline = () => {
     return (
         <>
             <Navbar/>
-            <div className="flex flex-col items-center max-w-5xl mx-auto px-3 pb-28 pt-2">
+            <div className="flex flex-col items-center max-w-5xl mx-auto px-3 pb-20 pt-2">
                 <h3 className="font-Poppins text-[20px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] lg:mt-[50px] text-center">
                     Meet Our Leadership
                 </h3>
@@ -62,7 +62,7 @@ const Timeline = () => {
                                     Maj Gen Ghulam Mustafa Kausar (R) Hilal-i-Imtiaz (M)
                                 </div>
                                 <div className="text-[#232F3B] font-Poppins font-semibold text-base">
-                                    Founder, FastNexa
+                                    Founder, FAST NEXA
                                 </div>
                             </figcaption>
                         </div>
@@ -89,7 +89,7 @@ const Timeline = () => {
                                     Faisal Shahzad
                                 </div>
                                 <div className="text-[#232F3B] font-Poppins font-semibold text-base">
-                                    Fractional CEO / vCISO, FastNexa
+                                    Fractional CEO / vCISO, FAST NEXA
                                 </div>
                             </figcaption>
                         </div>

@@ -36,7 +36,7 @@ const TechnologyStack = () => {
     };
 
     return (
-        <div className="container mx-auto xl:max-w-[1110px] my-8 lg:my-16">
+        <div className="container mx-auto xl:max-w-[1110px] py-8">
             {/* Wrapper */}
             <div className="mx-auto grid grid-cols-1 sm:grid-cols-12 gap-5 p-4 bg-white">
                 {/* Left Side */}

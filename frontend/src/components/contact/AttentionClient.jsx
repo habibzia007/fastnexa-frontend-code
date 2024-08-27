@@ -1,5 +1,8 @@
 import React from "react";
 import { attentionClientData } from "../../utils/fakedb/data.jsx";
+import {IoLogoLinkedin} from "react-icons/io5";
+import {MdOutlineFacebook} from "react-icons/md";
+import {TiSocialInstagram} from "react-icons/ti";
 
 const AttentionToEveryClient = () => {
   return (
@@ -32,20 +35,33 @@ const AttentionToEveryClient = () => {
               </p>
               {card.socialIcons && (
                 <div className="flex justify-center space-x-4 mt-4">
-                  {card.socialIcons.map((icon, iconIndex) => (
                     <a
-                      key={iconIndex}
-                      href={icon.link}
+                      href="https://www.linkedin.com/company/fast-nexa/posts/?feedView=all"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
-                        src={icon.icon}
-                        alt="social icon"
-                        className="w-6 h-6 transition transform hover:scale-110"
+                      <IoLogoLinkedin
+                        className="w-7 h-7 transition transform hover:scale-110 text-[#FF6500]"
                       />
                     </a>
-                  ))}
+                    <a
+                      href="https://www.facebook.com/fastnexa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MdOutlineFacebook
+                        className="w-7 h-7 transition transform hover:scale-110 text-[#FF6500]"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/fast_nexa?igsh=cHk3ZDZmbmZvZHdq"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <TiSocialInstagram
+                        className="w-7 h-7 transition transform hover:scale-110 text-[#FF6500]"
+                      />
+                    </a>
                 </div>
               )}
             </div>

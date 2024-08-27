@@ -11,10 +11,10 @@ const backgroundImageStyle = {
 const Customise = () => {
   return (
     <div
-      className="outer-div flex flex-col items-center gap-3 h-auto min-h-[516px] w-full mb-[150px] lg:py-8 px-4"
+      className="outer-div flex flex-col items-center gap-3 h-auto w-full lg:pt-8 lg:pb-16 py-10 px-4"
       style={backgroundImageStyle}
     >
-      <h3 className="font-Poppins text-[32px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] mt-[55px] text-center">
+      <h3 className="font-Poppins text-[32px] sm:text-[42px] font-bold leading-[41px] sm:leading-[61.08px] tracking-[1px] mt-[10px] text-center">
         Customise Web Development
       </h3>
       <div className="w-full  sm:max-w-[700px] lg:max-w-[1184px] flex  flex-col-reverse  lg:flex-row justify-center items-center lg:mt-8 ">

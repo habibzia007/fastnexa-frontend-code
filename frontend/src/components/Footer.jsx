@@ -4,7 +4,7 @@ import logo from "../assets/images/logo-footer-hd.svg";
 import phoneicon from "../assets/images/phoneicon.svg";
 import messageicon from "../assets/images/messageicon.svg";
 import locationicon from "../assets/images/locationicon.svg";
-import {TiSocialFacebook} from "react-icons/ti";
+import {TiSocialFacebook, TiSocialInstagram} from "react-icons/ti";
 import {TiSocialTwitter} from "react-icons/ti";
 import {TiSocialLinkedin} from "react-icons/ti";
 import {Link} from "react-router-dom";
@@ -33,12 +33,18 @@ const Footer = () => {
                             to an entire remote team of incredible freelance talent.
                         </p>
                         <div className="flex space-x-2 lg:space-x-4">
-                            <TiSocialFacebook
-                                className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px] cursor-pointer"/>
-                            <TiSocialTwitter
-                                className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px] cursor-pointer"/>
-                            <TiSocialLinkedin
-                                className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px] cursor-pointer"/>
+                            <Link to="https://www.linkedin.com/company/fast-nexa/posts/?feedView=all">
+                                <TiSocialLinkedin
+                                    className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px] cursor-pointer"/>
+                            </Link>
+                            <Link to="https://www.facebook.com/fastnexa">
+                                <TiSocialFacebook
+                                    className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px] cursor-pointer"/>
+                            </Link>
+                            <Link to="https://www.instagram.com/fast_nexa?igsh=cHk3ZDZmbmZvZHdq">
+                                <TiSocialInstagram
+                                    className="text-orange-700 bg-white w-[15.56px] h-[15.56px] lg:w-[27.56px] lg:h-[27.56px] rounded-full p-[2px] cursor-pointer"/>
+                            </Link>
                         </div>
                     </div>
                     <div className="w-full flex justify-center ">
@@ -70,12 +76,12 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                                        <Link to={'#'}>
-                                            Jobs
+                                        <Link to={'/services'}>
+                                            Services
                                         </Link>
                                     </li>
                                     <li className="text-[#C4C5C7] max-w-max cursor-pointer font-Poppins md:text-[7.02px] text-xs leading-[14.29px] lg:text-[11.02px] lg:leading-[19.29px]">
-                                        <Link to={'/contact'}>
+                                        <Link to={'/contact-us'}>
                                             Contact Us
                                         </Link>
                                     </li>
@@ -172,7 +178,7 @@ const Footer = () => {
             </div>
             <div className="w-full border-t border-[#1B202F] mt-3">
                 <p className="font-Poppins md:text-[9.02px] text-xs leading-[19.29px] lg:text-[11.02px] lg:leading-[19.29px] text-center text-[#C4C5C7] py-3 lg:mt-6">
-                    © Copyrights 2024, FastNexa All rights reserved.
+                    © Copyrights 2024, FAST NEXA All rights reserved.
                 </p>
             </div>
         </div>

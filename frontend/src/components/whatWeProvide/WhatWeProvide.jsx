@@ -13,7 +13,7 @@ const WhatWeProvide = () => {
   };
 
   return (
-    <div className="relative pt-0 lg:pt-10" style={backgroundImageStyle}>
+    <div className="relative pt-0 lg:pt-0" style={backgroundImageStyle}>
       <div className="container mx-auto px-4 sm:px-6 pt-10 w-full max-w-[1184px]">
         <h2 className="font-Poppins font-semibold text-sm sm:text-base text-[#FF6500] tracking-wider text-center">
           What We Provide

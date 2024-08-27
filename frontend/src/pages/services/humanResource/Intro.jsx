@@ -5,12 +5,12 @@ import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
 
 const Intro = () => {
     return (
-        <div className="container mx-auto mt-[23px] p-4 max-w-[874px]  border-orange-500">
+        <div className="container mx-auto p-4 max-w-[874px]">
             <div className="w-full h-auto pt-[37px] pb-[37px]">
                 <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
                     Empower Your Team with FAST NEXA's Elite IT Talent and Training Solutions
                 </h3>
-                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] mb-[20px] sm:mt-[30px] sm:mb-[30px]">
+                <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
                     At FAST NEXA, we understand that having the right talent is crucial for driving innovation and achieving business objectives. Our Human Resource Augmentation Services are designed to provide you with the skilled professionals you need to enhance your workforce flexibility, scale your operations efficiently, and meet your project deadlines.
                 </p>
             </div>

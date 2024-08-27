@@ -91,7 +91,7 @@ const cardsData = [
 
 const IntroCard = () => {
   return (
-    <div className="w-full mt-[110px] mb-[90px] flex justify-center">
+    <div className="w-full mt-[70px] mb-[90px] flex justify-center">
       <div className="max-w-[930px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
         {cardsData.map((card, index) => (
           <Link
