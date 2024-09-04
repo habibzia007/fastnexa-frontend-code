@@ -89,15 +89,16 @@ import onDemandSkill from "../../assets/images/onDemandSkill.jpg";
 import attentionclient1 from "../../assets/attentionclient1.svg";
 import attentionclient2 from "../../assets/attentionclient2.svg";
 import attentionclient3 from "../../assets/attentionclient3.svg";
-import attentionclient_msg from "../../assets/attentionclient_msg.svg";
-import attentionclient_fb from "../../assets/attentionclient_fb.svg";
+import attentionclient_msg from "../../assets/images/insta.png";
+import attentionclient_fb from "../../assets/images/fb.png";
+import attentionclient_Linkedin from "../../assets/images/linkedin.png";
 import attentionclient_wp from "../../assets/attentionclient_wp.svg";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { PiNetworkLight } from "react-icons/pi";
 import { GiCheckedShield } from "react-icons/gi";
 import { SlSupport } from "react-icons/sl";
 import { GiHumanPyramid } from "react-icons/gi";
-
+import { FaLinkedin } from "react-icons/fa6";
 
 
 export const CaseStudyCardData = [
@@ -821,13 +822,14 @@ export const attentionClientData = [
     image: attentionclient3,
     title: "E-mail & Live Chats",
     description: <div className="flex flex-col gap-2">
+      <p>info@fastnexa.com</p>
       <p>For general inquiries: <a href="mailto:info@fastnexa.com" className="text-blue-400 hover:text-blue-500">info@fastnexa.com</a></p>
       <p>For support: <a href="mailto:support@fastnexa.com" className="text-blue-400 hover:text-blue-500">support@fastnexa.com</a></p>
       <p>For business inquiries: <a href="mailto:sales@fastnexa.com" className="text-blue-400 hover:text-blue-500">sales@fastnexa.com</a></p>
     </div>,
     socialIcons: [
       {
-        icon: <IoLogoLinkedin />,
+        icon: attentionclient_Linkedin,
         link: "https://www.linkedin.com/company/fast-nexa/posts/?feedView=all",
       },
       {

@@ -11,7 +11,7 @@ const Intro = () => {
           Outperform Your Competitors With Exceptional Software Development Services
         </h3>
         <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
-          FastNexa provides comprehensive web-based solutions that include several steps. Our approach involves actively listening to our clients, comprehending their demands and requirements, and crafting a holistic web solution. This is how our clients leverage their online presence, enhance user experience and ultimately achieve their goals in the digital landscape.
+          Fast Nexa provides comprehensive web-based solutions that include several steps. Our approach involves actively listening to our clients, comprehending their demands and requirements, and crafting a holistic web solution. This is how our clients leverage their online presence, enhance user experience and ultimately achieve their goals in the digital landscape.
         </p>
         <div className="flex justify-center">
           <button className="font-Poppins text-[14px] sm:text-[16px] w-full max-w-[271px] h-[50px] sm:h-[54px] mt-[20px] sm:mt-[30px] ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500">

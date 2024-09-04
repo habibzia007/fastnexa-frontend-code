@@ -1,12 +1,26 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import  {useEffect, useState} from "react";
 import foundersImage from "../../../assets/images/ghulam-kusar.jpeg.jpg";
-import rightArrow from "../../../assets/images/rightArrow.svg";
 import {ourVisionData} from "../../../utils/fakedb/data.jsx";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import config from '../../../config';
+import http from '../../../http';
 
 const OurVision = () => {
+
+    const [ourVision, setOurVisionData] = useState([]);
+    const { baseURL } = config;
+
+    // useEffect(() => {
+    //     http.get('/mission-vission-api')
+    //         .then((res) => {
+    //             setAboutFeatures(res.data); // Set API response data to state
+    //         })
+    //         .catch((err) => {
+    //             console.error('Error fetching services data:', err);
+    //         });
+    // }, []);
+
     return (
         <>
             <Navbar/>

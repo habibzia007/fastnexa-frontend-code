@@ -34,6 +34,7 @@ import ImperialElectricCompany from "./components/casestudies/ImperialElectricCo
 import StreamliningOperationsEmpoweringGrowth
   from "./components/casestudies/StreamliningOperationsEmpoweringGrowth.jsx";
 import Alliances from "./pages/about/alliances/Alliances.jsx";
+import JobRequest from "./pages/jobrequest/JobRequest.jsx";
 
 // Import other pages here
 
@@ -97,12 +98,16 @@ function App() {
           path="/technology/upgradation-migration"
           element={<UpgradationMigration />}
         />
+        <Route
+          path="/job-request"
+          element={<JobRequest />}
+        />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/casestudies" element={<CaseStudyPage /> } />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/blogs/future-software-development-trends" element={<SoftwareKeyTrends />} />
-        <Route path="/blogs/harnessing-power-cloud-computing-best-practices-seamless-transition" element={<HarnessingPower />} />
-        <Route path="/blogs/cybersecurity-strategies-for-business-protection" element={<CyberSecurityDigital />} />
+        <Route path="/blogs/navigating-the-future-of-software-development:-key-trends-and-technologies" element={<SoftwareKeyTrends />} />
+        <Route path="/blogs/harnessing-the-power-of-cloud-computing:-best-practices-for-a-seamless-transition" element={<HarnessingPower />} />
+        <Route path="/blogs/cybersecurity-in-the-digital-age:-strategies-for-protecting-your-business-from-cyber-threats" element={<CyberSecurityDigital />} />
 
         <Route path="/casestudies/CRM-solutions-to-caroyal" element={<CRMSolutionsCaroyal />} />
         <Route path="/casestudies/clear-vision-for-a-dusty-environment" element={<ClearVisionDustyEnvironment />} />

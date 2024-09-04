@@ -8,6 +8,7 @@ import Banner from "../../../components/technologyCards/Banner";
 import TechnologyStack from "../../../components/TechnologyStack";
 import IntroPrototype from "./IntroPrototype.jsx";
 import AboutUsServicesPrototype from "./AboutUsServicesPrototype.jsx";
+import AboutUsServices from "../../../components/about/services/AboutUsServices.jsx";
 
 const Prototyping = () => {
   return (
@@ -16,6 +17,7 @@ const Prototyping = () => {
       <Banner text={"Prototyping & UX Designing"} />
       <IntroPrototype />
       <AboutUsServicesPrototype />
+        {/*<AboutUsServices />*/}
       <TechnologyStack />
       <Testimonial />
       <OurClients />

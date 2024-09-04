@@ -8,6 +8,7 @@ import Banner from "../../../components/technologyCards/Banner";
 import TechnologyStack from "../../../components/TechnologyStack";
 import IntroMigration from "./IntroMigration.jsx";
 import AboutUsServicesMigration from "./AboutUsServicesMigration.jsx";
+import AboutUsServices from "../../../components/about/services/AboutUsServices.jsx";
 
 const UpgradationMigration = () => {
   return (
@@ -16,6 +17,7 @@ const UpgradationMigration = () => {
       <Banner text={"Upgradation & Migration"} />
       <IntroMigration />
       <AboutUsServicesMigration />
+        {/*<AboutUsServices />*/}
       <TechnologyStack />
       <Testimonial />
       <OurClients />

@@ -1,9 +1,26 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import bg from "../assets/images/contactbg.jpg";
 import phone from "../assets/images/phone.svg";
 import message from "../assets/images/message.svg";
 import location from "../assets/images/location.svg";
+import http from '../http';
+
+
 const ContactUs = () => {
+
+  const [contactData, setContactData] = useState({});
+
+  useEffect(() => {
+    http.get('/contact-us-header-api')
+        .then((res) => {
+          setContactData(res.data);
+        })
+        .catch((err) => {
+          console.error('Error fetching data:', err); // Log any errors
+        });
+  }, []);
+
+
   const backgroundImageStyle = {
     backgroundImage: `url(${bg})`,
     backgroundSize: "cover",
@@ -17,7 +34,7 @@ const ContactUs = () => {
             <div className="flex  gap-2 md:gap-4 w-[236px] lg:w-full h-32">
               <div className="bg-[#FF6500]  w-[6px] mt-2 h-[67%] lg:w-3.66 lg:h-[123px] lg:mt-[7px]"></div>
               <div className="font-poppins  font-semibold text-[22px] leading-[33px] lg:text-[43px] lg:leading-[44px]  text-[#0E0E0E]">
-                To make requests for further information, contact us:
+                {contactData.contactus_headerapi && contactData.contactus_headerapi.length > 0 && contactData.contactus_headerapi[0].section_heading}
               </div>
             </div>
             <div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 lg:gap-6 w-[236px] sm:w-full ">

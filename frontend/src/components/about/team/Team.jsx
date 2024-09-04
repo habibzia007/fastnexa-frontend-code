@@ -8,8 +8,41 @@ import ceoImg from "./faisalShehzad.jpg";
 import cooImg from "../../../assets/images/fatima.jpg";
 import cioImg from "./fizzaAbdulla.png";
 import csoImg from "../../../assets/images/Murtaza.jpg"
+import config from '../../../config';
+import http from '../../../http';
+import {useEffect, useState} from "react";
 
 const Team = () => {
+
+  const [teams, setTeams] = useState([]);
+  const [ourexperts, setOurexperts] = useState([]);
+  const { baseURL } = config;
+
+  useEffect(() => {
+    ourTeams();
+    ourExperts();
+  }, []);
+
+  const ourTeams = () => {
+    http.get('/team-api')
+        .then((res) => {
+          setTeams(res.data.data); // Set API response data to state
+        })
+        .catch((err) => {
+          console.error('Error fetching services data:', err);
+        });
+  };
+
+  const ourExperts = () => {
+    http.get('/expert-team-api')
+        .then((res) => {
+          setOurexperts(res.data); // Set API response data to state
+        })
+        .catch((err) => {
+          console.error('Error fetching services data:', err);
+        });
+  };
+
   const teamMembers = [
     {
       imgSrc: ceoImg,
@@ -70,10 +103,10 @@ const Team = () => {
     >
       <div className="pt-10 pb-16 mx-auto">
         <h2 className="text-[#FFFFFF] font-Poppins font-semibold text-[9.44px] sm:text-[16px] leading-[16.19px] tracking-[0.9396284818649292px] text-center">
-          Our Expert Team
+          {ourexperts.data && ourexperts.data.length > 0 && ourexperts.data[0].section_title}
         </h2>
         <h1 className="text-[#FFFFFF] font-Poppins font-bold text-[16px] leading-[36.08px] md:text-[42px] md:leading-[61.08px] text-center">
-          We have a world-class expert team
+          {ourexperts.data && ourexperts.data.length > 0 && ourexperts.data[0].section_heading}
         </h1>
 
         <div className="flex justify-center items-center w-full max-w-[1184px] px-2 md:px-4 mx-auto mt-2 sm:mt-5 slider-container">
@@ -81,13 +114,13 @@ const Team = () => {
             {...settings}
             className=" w-[300px] sm:w-[700.44px] lg:w-[950.44px] xl:w-[1189.44px] mx-auto "
           >
-            {teamMembers.map((member, index) => (
+            {teams.map((member) => (
               <div
-                key={index}
+                  key={member.id}
                 className={`py-[12px] relative px-2 cursor-pointer !flex !justify-center !items-center  opacity-100 hover:opacity-90  group transition-transform duration-500 transform hover:scale-105 overflow-visible ${
-                  index >= 2 && "hidden"
-                } sm:block ${index >= 3 && "sm:hidden"} lg:block ${
-                  index >= 4 && "lg:hidden"
+                    member.id >= 2 && "hidden"
+                } sm:block ${member.id >= 3 && "sm:hidden"} lg:block ${
+                    member.id >= 4 && "lg:hidden"
                 } xl:block`}
               >
                 <div>
@@ -95,7 +128,7 @@ const Team = () => {
                       // className="w-[175px] h-[225px] sm:w-[220px] sm:h-[280px] md:w-[260px] md:h-[330px] lg:w-[300px] lg:h-[380px] xl:w-[350px] xl:h-[450px] object-cover rounded-[5rem]"
                       // className="w-[15rem] h-[20rem] object-cover rounded-[5rem]"
                       className="w-[15rem] h-[17rem] sm:w-[12rem] sm:h-[18rem] md:w-[15rem] md:h-[20rem] lg:w-[18rem] lg:h-[24rem] xl:w-[20rem] xl:h-[26rem] object-cover rounded-[2rem] lg:rounded-[20px]"
-                      src={member.imgSrc}
+                      src={baseURL + member.image}
                       alt={member.name}
                   />
                 </div>
@@ -107,7 +140,7 @@ const Team = () => {
                       {member.name}
                     </h3>
                     <p className="font-Poppins font-normal text-[7.23px] leading-[11.59px] sm:text-[12.88px] sm:leading-[27.59px] text-[#FFFFFF]">
-                      {member.position}
+                      {member.postion}
                     </p>
                     <div className="flex space-x-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <FaFacebookF className="text-white hover:text-orange-500" />

@@ -3,15 +3,17 @@ import { MdArrowRightAlt } from "react-icons/md";
 import personIcon from "../../assets/images/personIcon.svg";
 import msgIcon from "../../assets/images/msgIcon.svg";
 import { Link } from "react-router-dom";
+import slugify from 'slugify';
 
-const Blog = ({ data }) => {
+const Blog = ({ data , baseURL }) => {
+    const slug = slugify(data.blog_title).toLowerCase();
     return (
         <div className="relative w-full group transition-all duration-300 ease-in-out ">
             {/* Card image */}
             <img
                 className="w-full h-36 sm:h-40 md:h-48 lg:h-56 rounded-lg object-cover"
-                src={Object.values(data.image)[0]}
-                alt={data.title}
+                src={`${baseURL}${data.image}`}
+                alt={data.blog_title}
             />
             {/* Date badge */}
             <div
@@ -24,21 +26,21 @@ const Blog = ({ data }) => {
                 </span>
             </div>
             {/* Card content */}
-            <Link to={`/blogs/${data.path}`} className="shadow-md absolute bottom-[-100px] left-3 right-3 bg-white p-4 sm:p-6 md:p-4 lg:p-8 rounded-b-lg transition-shadow duration-300 ease-in-out hover:transition-all group-hover:shadow-[0px_3px_0px_rgba(255,101,0)]">
+            <Link to={`/blogs/${slug}`} className="shadow-md absolute bottom-[-100px] left-3 right-3 bg-white p-4 sm:p-6 md:p-4 lg:p-8 rounded-b-lg transition-shadow duration-300 ease-in-out hover:transition-all group-hover:shadow-[0px_3px_0px_rgba(255,101,0)]">
                 <div className="flex items-center mb-2 space-x-4 text-xs sm:text-sm md:text-base lg:text-lg text-[#999999]">
                     <div className="flex items-center space-x-1">
                         <img src={personIcon} alt="Author" className="w-4 h-4" />
-                        <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] lg:leading-5 font-Poppins">{data.author}</span>
+                        <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] lg:leading-5 font-Poppins">{data.blog_author_name}</span>
                     </div>
                     <div className="flex items-center space-x-1">
                         {/*<img src={msgIcon} alt="Comments" className="w-4 h-4" />*/}
                         <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] leading-5 font-Poppins">
-                            {/*{data.comments} Comments*/}
+                            {data.comments} Comments
                         </span>
                     </div>
                 </div>
                 <h3 className="font-Poppins text-base sm:text-lg md:text-[0.75rem] md:leading-5 lg:text-[1.25rem] lg:leading-6 font-semibold text-[#0E0E0E] group-hover:text-[#FF6500] transition-colors duration-300">
-                    {data.title}
+                    {data.blog_title}
                 </h3>
                 <div className="flex items-center mt-4">
                     <span className="font-Poppins text-xs sm:text-sm md:text-[0.625rem] lg:text-[.63rem] lg:leading-5 font-semibold text-[#FF6500] group-hover:text-gray-800 transition-colors duration-300">

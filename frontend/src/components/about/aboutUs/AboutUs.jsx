@@ -74,11 +74,31 @@
 // export default AboutUs;
 
 
-import aboutus1 from "../../../assets/images/aboutus1.jpg";
-import aboutus2 from "../../../assets/images/aboutus2.jpg";
+// import aboutus1 from "../../../assets/images/aboutus1.jpg";
+// import aboutus2 from "../../../assets/images/aboutus2.jpg";
 import Card from "./Card";
+import config from '../../../config';
+import http from '../../../http';
+import {useEffect, useState} from "react";
 
 const AboutUs = () => {
+    const [aboutUsData, setAboutUsData] = useState([]);
+    const { baseURL } = config;
+
+    useEffect(() => {
+        http.get('/about-section-api')
+            .then((res) => {
+                setAboutUsData(res.data);
+            })
+            .catch((err) => {
+                console.error('Error fetching Who We Are data:', err);
+            });
+    }, []);
+
+
+    const aboutus1 = aboutUsData.about_sections && aboutUsData.about_sections.length > 0 ? `${baseURL}${aboutUsData.about_sections[0].image}` : '';
+
+    const aboutus2 = aboutUsData.about_sections && aboutUsData.about_sections.length > 0 ? `${baseURL}${aboutUsData.about_sections[0].image2}` : '';
     return (
         <div className="w-full md:py-16 pt-14 xl:px-0 px-4">
             <div
@@ -106,17 +126,13 @@ const AboutUs = () => {
                 <div className="flex flex-col items-center xl:items-start">
                     <div className="text-center xl:text-left mb-8 lg:mb-4">
                         <h4 className="font-Poppins font-semibold text-[12px] lg:text-[16px] text-[#FF6500] tracking-wide">
-                            ABOUT US
+                            {aboutUsData.about_sections && aboutUsData.about_sections.length > 0 && aboutUsData.about_sections[0].section_title}
                         </h4>
                         <h1 className="font-Poppins font-semibold text-[#232F3B] text-[22px] lg:text-[42px] leading-snug lg:leading-tight">
-                            Why Choose FAST <br className="xl:block hidden"/> NEXA?
+                            {aboutUsData.about_sections && aboutUsData.about_sections.length > 0 && aboutUsData.about_sections[0].section_heading}
                         </h1>
                         <p className="font-Poppins text-[#4C4D56] font-normal text-xs lg:text-[16px] lg:leading-[26px] mt-3">
-                            We introduced FastNexa Tech, a specialized company offering professional services in various
-                            domains
-                            including Information Systems & Security, Cybersecurity, Infrastructure, E-commerce, Project
-                            Management,
-                            Software Design & Development, Social Media Management, and Digital Marketing.
+                            {aboutUsData.about_sections && aboutUsData.about_sections.length > 0 && aboutUsData.about_sections[0].section_desc}
                         </p>
                     </div>
 

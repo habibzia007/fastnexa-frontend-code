@@ -3,15 +3,15 @@ import group from "../../../assets/images/group.png";
 import rightArrow from "../../../assets/images/rightArrow.png";
 import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
 
-const Intro = () => {
+const Intro = ({title, description}) => {
     return (
         <div className="container mx-auto p-4 max-w-[874px]  border-orange-500">
             <div className="w-full h-auto pt-[37px] pb-[37px]">
                 <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
-                    Revolutionize Your IT Backbone with FAST NEXA's Premier Network and Infrastructure Services
+                    {title}
                 </h3>
                 <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
-                    In the dynamic digital landscape, FAST NEXA's Network and Infrastructure Services deliver unparalleled efficiency, security, and scalability. Our comprehensive suite encompasses everything from the intricate design of network topologies to the seamless integration of cloud services.
+                    {description}
                 </p>
             </div>
         </div>

@@ -5,7 +5,7 @@ import {FaLongArrowAltRight} from "react-icons/fa";
 const Banner = ({text}) => {
     return (
         <div
-            className="relative h-[200px] sm:h-[354px] w-full bg-cover bg-center"
+            className="relative w-full bg-cover bg-center md:pb-32 pb-14"
             style={{backgroundImage: `url(${bg})`}}
         >
             <div className="max-w-[1185px] mx-auto ">
@@ -17,7 +17,7 @@ const Banner = ({text}) => {
                             </h2>
                         </div>
                         <div>
-                            <p className="font-outfit font-normal text-[9.6px] leading-[21.48px] sm:text-[14.6px] sm:leading-[22.48px] text-left text-[#FF6500] flex items-center gap-2">
+                            <p className="font-outfit font-normal text-[9.6px] leading-[21.48px] sm:text-[14.6px] sm:leading-[22.48px] text-left text-[#FF6500] flex flex-wrap items-center gap-2 pr-10">
                                 Home{" "}
                                 <span>
                                 <FaLongArrowAltRight className="mt-1"/>

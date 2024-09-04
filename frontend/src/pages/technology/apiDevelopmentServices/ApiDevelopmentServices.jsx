@@ -8,6 +8,7 @@ import Banner from "../../../components/technologyCards/Banner";
 import TechnologyStack from "../../../components/TechnologyStack";
 import IntroApiDevelopment from "./IntroApiDevelopment.jsx";
 import AboutUsServicesApi from "./AboutUsServicesApi.jsx";
+import AboutUsServices from "../../../components/about/services/AboutUsServices";
 
 const ApiDevelopmentServices = () => {
   return (
@@ -16,6 +17,7 @@ const ApiDevelopmentServices = () => {
       <Banner text={"API Development Services"} />
       <IntroApiDevelopment />
       <AboutUsServicesApi />
+        {/*<AboutUsServices />*/}
       <TechnologyStack />
       <Testimonial />
       <OurClients />

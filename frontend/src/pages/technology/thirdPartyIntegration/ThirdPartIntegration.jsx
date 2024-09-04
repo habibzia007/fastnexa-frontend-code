@@ -8,6 +8,7 @@ import Banner from "../../../components/technologyCards/Banner";
 import TechnologyStack from "../../../components/TechnologyStack";
 import IntroThirdParty from "./IntroThirdParty.jsx";
 import AboutUsServicesThirdParty from "./AboutUsServicesThirdParty.jsx";
+import AboutUsServices from "../../../components/about/services/AboutUsServices.jsx";
 
 const ThirdPartyIntegration = () => {
   return (
@@ -16,6 +17,7 @@ const ThirdPartyIntegration = () => {
       <Banner text={"Third Party Integration"} />
       <IntroThirdParty />
       <AboutUsServicesThirdParty />
+        {/*<AboutUsServices />*/}
       <TechnologyStack />
       <Testimonial />
       <OurClients />

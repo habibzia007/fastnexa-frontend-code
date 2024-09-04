@@ -3,19 +3,15 @@ import group from "../../../assets/images/group.png";
 import rightArrow from "../../../assets/images/rightArrow.png";
 import { WhatWeProvideData } from "../../../utils/fakedb/data.jsx";
 
-const Intro = () => {
+const Intro = ({title , description}) => {
     return (
         <div className="container mx-auto p-4 max-w-[874px]  border-orange-500">
             <div className="w-full h-auto pt-[37px] pb-[37px]">
                 <h3 className="font-Poppins font-bold text-[24px] sm:text-[36px] leading-[34px] sm:leading-[54.08px] text-[#1F1F1F] text-center">
-                    Fortify Your Future: Cutting-Edge Information Security Services with FAST NEXA
+                    {title}
                 </h3>
                 <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[30px] text-[#747474] font-normal text-center mt-[20px] sm:mt-[30px]">
-                    In an era where cyber threats evolve at a breakneck pace, ensuring the security of your
-                    organization&apos;s data and IT assets is paramount. <strong>FAST NEXA&apos;s</strong> Information
-                    Security Services provide a robust defense mechanism against unauthorized access, breaches, and a
-                    myriad of other security threats. Our comprehensive suite of services is designed to protect your
-                    sensitive information while ensuring confidentiality, integrity, and availability.
+                    {description}
                 </p>
 
             </div>

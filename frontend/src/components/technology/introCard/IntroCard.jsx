@@ -47,7 +47,7 @@
 
 // export default IntroCard;
 
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import card1 from "../../../assets/card1-tech.svg";
 import card2 from "../../../assets/card2-tech.svg";
@@ -55,7 +55,8 @@ import card3 from "../../../assets/card3-tech.svg";
 import card4 from "../../../assets/card4-tech.svg";
 import card5 from "../../../assets/card5-tech.svg";
 import card6 from "../../../assets/card6-tech.svg";
-
+import http from '../../../http';
+import config from '../../../config';
 const cardsData = [
   {
     imgSrc: card1,
@@ -90,13 +91,26 @@ const cardsData = [
 ];
 
 const IntroCard = () => {
+  const [tachCards, setData] = useState([]);
+  const { baseURL } = config;
+
+
+  useEffect(() => {
+    http.get('/tech-page-services-api')
+        .then((res) => {
+          setData(res.data.data);
+        })
+        .catch((err) => {
+          console.error('Error fetching data:', err); // Log any errors
+        });
+  }, []);
   return (
     <div className="w-full mt-[70px] mb-[90px] flex justify-center">
       <div className="max-w-[930px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
-        {cardsData.map((card, index) => (
+        {tachCards.map((item) => (
           <Link
-            key={index}
-            to={card.url}
+              key={item._id}
+              to={item.url}
             className="group relative border-t-8 border-orange-500 rounded-md overflow-hidden bg-white shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#ccc] opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
@@ -104,12 +118,12 @@ const IntroCard = () => {
               <div className="flex justify-center">
                 <img
                   className="w-[200px] h-[130px] mt-5 transform transition duration-500 group-hover:scale-110"
-                  src={card.imgSrc}
-                  alt={card.text}
+                  src={`${baseURL}${item.image}`}
+                  alt={item.section_heading}
                 />
               </div>
               <div className="font-Poppins font-bold text-[13.23px] leading-[100.59px] mb-2 text-center">
-                {card.text}
+                {item.section_heading}
               </div>
             </div>
           </Link>

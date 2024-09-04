@@ -17,6 +17,7 @@ const SoftwareProductDevelopment = () => {
       <Banner text={"Software Product Development"} />
       <IntroSoftware />
       <AboutUsServicesSoftware />
+        {/*<AboutUsServices />*/}
       <TechnologyStackSoftware />
       <Testimonial />
       <OurClients />

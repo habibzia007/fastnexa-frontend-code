@@ -7,6 +7,8 @@ import Banner from "../../../components/technologyCards/Banner";
 import TechnologyStack from "../../../components/TechnologyStack";
 import IntroCustomise from "./IntroCustomise.jsx";
 import AboutUsServicesCustomise from "./AboutUsServicesCustomise.jsx";
+import AboutUsServices from "../../../components/about/services/AboutUsServices.jsx";
+import React from "react";
 
 const CustomiseWebDevelopment = () => {
   return (
@@ -15,6 +17,7 @@ const CustomiseWebDevelopment = () => {
       <Banner text={"Customise Software Development"} />
       <IntroCustomise />
       <AboutUsServicesCustomise />
+        {/*<AboutUsServices />*/}
       <TechnologyStack />
       <Testimonial />
       <OurClients />

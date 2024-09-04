@@ -10,9 +10,27 @@ import laravel from "../assets/images/laravel.svg";
 import rectangle from "../assets/images/rectangle.png";
 import rectangle1 from "../assets/images/rectangle1.png";
 import {Link} from "react-router-dom";
+import http from '../http';
+import config from '../config';
+import {useEffect, useState} from "react";
 
 const TechnologyStack = () => {
     const logos = [nodejs, reactjs, angular, python, dotnet, laravel];
+    const [techStack, setTechStack] = useState([]);
+    const { baseURL } = config;
+    useEffect(() => {
+        http.get('/tech-stack-api')
+            .then((res) => {
+                setTechStack(res.data); // Set API response data to state
+            })
+            .catch((err) => {
+                console.error('Error fetching services data:', err);
+            });
+    }, []);
+
+
+    const rectangle = techStack.techrstack_api && techStack.techrstack_api.length > 0 ? `${baseURL}${techStack.techrstack_api[0].image}` : '';
+    const rectangle1 = techStack.techrstack_api && techStack.techrstack_api.length > 0 ? `${baseURL}${techStack.techrstack_api[0].image2}` : '';
 
     const settings = {
         dots: false,
@@ -42,25 +60,23 @@ const TechnologyStack = () => {
                 {/* Left Side */}
                 <div className="sm:col-span-6 px-2 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h2 className="font-Poppins font-semibold text-orange-400 text-sm lg:text-base tracking-wider">
-                        Technology Stack
+                        {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_title}
                     </h2>
                     <h1 className="font-Poppins font-semibold text-xl lg:text-3xl leading-tight mt-2">
-                        Need a Talent to Work for You Directly?
+                        {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_heading}
                     </h1>
                     <p className="hidden sm:block font-Poppins text-base text-gray-700 mt-6">
-                        We offer staff augmentation services to get your things done right,
-                        from right now. Hire a fully dedicated team, a talent that fits your
-                        business idea.
+                        {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_desc}
                     </p>
                     {/* Slider */}
                     <div className="w-full mt-6 md:block hidden">
                         <Slider {...settings}>
-                            {logos.map((logo, index) => (
-                                <div key={index} className="flex items-center justify-center">
+                            {techStack.techstack_logo_api && techStack.techstack_logo_api.map((logo) => (
+                                <div key={logo.id} className="flex items-center justify-center">
                                     <img
-                                        src={logo}
-                                        alt={`Logo ${index}`}
-                                        className="w-20 h-10 lg:w-20 lg:h-12"
+                                        src={`${baseURL}${logo.image}`}
+                                        alt={`Logo ${logo.id}`}
+                                        className="w-20 h-10 lg:w-20 lg:h-12 object-contain"
                                     />
                                 </div>
                             ))}
@@ -68,12 +84,12 @@ const TechnologyStack = () => {
                     </div>
                     <div className="w-full mt-6 md:hidden block">
                         <Slider {...settingsMobile}>
-                            {logos.map((logo, index) => (
-                                <div key={index} className="flex items-center justify-center">
+                            {techStack.techstack_logo_api && techStack.techstack_logo_api.map((logo) => (
+                                <div key={logo.id} className="flex items-center justify-center">
                                     <img
-                                        src={logo}
-                                        alt={`Logo ${index}`}
-                                        className="w-20 h-10 lg:w-20 lg:h-12"
+                                        src={`${baseURL}${logo.image}`}
+                                        alt={`Logo ${logo.id}`}
+                                        className="w-20 h-10 lg:w-20 lg:h-12 object-contain"
                                     />
                                 </div>
                             ))}
@@ -81,7 +97,7 @@ const TechnologyStack = () => {
                     </div>
                     <Link to="/services/human-resource"
                         className="mt-6 lg:mt-12 py-3 px-6 lg:py-4 lg:px-8 font-lato text-xs lg:text-base text-white bg-orange-600 rounded-md hover:bg-transparent hover:text-orange-600 hover:ring-1 hover:ring-orange-600 transition-colors duration-300">
-                        Discover More
+                        {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_btn_title}
                     </Link>
                 </div>
                 {/* Right Side */}
