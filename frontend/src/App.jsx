@@ -110,10 +110,10 @@ function App() {
         <Route path="/blogs/cybersecurity-in-the-digital-age:-strategies-for-protecting-your-business-from-cyber-threats" element={<CyberSecurityDigital />} />
 
         <Route path="/casestudies/CRM-solutions-to-caroyal" element={<CRMSolutionsCaroyal />} />
-        <Route path="/casestudies/clear-vision-for-a-dusty-environment" element={<ClearVisionDustyEnvironment />} />
+          <Route path="/casestudies/a-clear-vision-for-a-dusty-environment:-fast-nexa's-surveillance-solution-for-commander-stone" element={<ClearVisionDustyEnvironment />} />
         <Route path="/casestudies/CRM-solutions-to-OMNITECH" element={<CRMSolutionsOMNITECH />} />
-        <Route path="/casestudies/the-imperial-electric-company" element={<ImperialElectricCompany />} />
-        <Route path="/casestudies/streamlining-operations-and-empowering-growth" element={<StreamliningOperationsEmpoweringGrowth />} />
+        <Route path="/casestudies/the-imperial-electric-company-(pvt)-limited-(iec)" element={<ImperialElectricCompany />} />
+        <Route path="/casestudies/streamlining-operations-and-empowering-growth:-fast-nexa's-hrms-solution-for-replaste" element={<StreamliningOperationsEmpoweringGrowth />} />
         <Route component={PageNotFound} />
       </Routes>
     </Router>
