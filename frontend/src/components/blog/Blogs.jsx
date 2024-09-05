@@ -15,6 +15,7 @@ const Blogs = () => {
     http.get('/blog-api')
         .then((res) => {
           setBlogs(res.data);
+          console.log(res.data);
         })
         .catch((err) => {
           console.error('Error fetching data:', err); // Log any errors
@@ -22,7 +23,7 @@ const Blogs = () => {
 
   }, []);
   return (
-    <div className="relative w-full pb-40 mx-auto py-12">
+    <div className="relative w-full pb-40 mx-auto py-12 blog-container">
       <div className="max-w-[1184.44px] mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="font-Poppins font-semibold text-[12px] lg:text-[16px] text-[#FF6500] leading-[28.19px] tracking-wider text-center">
           {blogs.blog_api && blogs.blog_api.length > 0 && blogs.blog_api[0].section_title}
@@ -31,7 +32,7 @@ const Blogs = () => {
           {blogs.blog_api && blogs.blog_api.length > 0 && blogs.blog_api[0].section_heading}
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6 gap-y-[8.5rem]">
+        <div className="list-of-blog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6 gap-y-[8.5rem]">
           {blogs.blogitems_api && blogs.blogitems_api.map((data, index) => (
             <Blog key={index} data={data} baseURL={baseURL} />
           ))}
@@ -42,11 +43,4 @@ const Blogs = () => {
 };
 
 export default Blogs;
-
-
-
-
-
-
-
 

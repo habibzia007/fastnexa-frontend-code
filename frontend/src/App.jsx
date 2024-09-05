@@ -35,6 +35,10 @@ import StreamliningOperationsEmpoweringGrowth
   from "./components/casestudies/StreamliningOperationsEmpoweringGrowth.jsx";
 import Alliances from "./pages/about/alliances/Alliances.jsx";
 import JobRequest from "./pages/jobrequest/JobRequest.jsx";
+import BlogDetailPage from "./components/blogs/BlogDetailsPage.jsx";
+import Blogs from "./components/blog/Blogs.jsx";
+import BlogDetailsPage from "./components/blogs/BlogDetailsPage.jsx";
+import CaseStudyDetailPage from "./components/caseStudyContent/CaseStudyDetailPage.jsx";
 
 // Import other pages here
 
@@ -105,15 +109,15 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/casestudies" element={<CaseStudyPage /> } />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/blogs/navigating-the-future-of-software-development:-key-trends-and-technologies" element={<SoftwareKeyTrends />} />
-        <Route path="/blogs/harnessing-the-power-of-cloud-computing:-best-practices-for-a-seamless-transition" element={<HarnessingPower />} />
-        <Route path="/blogs/cybersecurity-in-the-digital-age:-strategies-for-protecting-your-business-from-cyber-threats" element={<CyberSecurityDigital />} />
 
-        <Route path="/casestudies/CRM-solutions-to-caroyal" element={<CRMSolutionsCaroyal />} />
-          <Route path="/casestudies/a-clear-vision-for-a-dusty-environment:-fast-nexa's-surveillance-solution-for-commander-stone" element={<ClearVisionDustyEnvironment />} />
-        <Route path="/casestudies/CRM-solutions-to-OMNITECH" element={<CRMSolutionsOMNITECH />} />
-        <Route path="/casestudies/the-imperial-electric-company-(pvt)-limited-(iec)" element={<ImperialElectricCompany />} />
-        <Route path="/casestudies/streamlining-operations-and-empowering-growth:-fast-nexa's-hrms-solution-for-replaste" element={<StreamliningOperationsEmpoweringGrowth />} />
+        <Route path="/" element={<Blogs />} />
+        {/* Dynamic route to capture slug and id */}
+        <Route path="/blogs/:slug/:id" element={<BlogDetailsPage />} />
+        {/* Other routes */}
+        {/*<Route path="/blogs/harnessing-the-power-of-cloud-computing:-best-practices-for-a-seamless-transition" element={<HarnessingPower />} />*/}
+        {/*<Route path="/blogs/cybersecurity-in-the-digital-age:-strategies-for-protecting-your-business-from-cyber-threats" element={<CyberSecurityDigital />} />*/}
+
+        <Route path="/casestudies/:slug/:id" element={<CaseStudyDetailPage />} />
         <Route component={PageNotFound} />
       </Routes>
     </Router>

@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import slugify from 'slugify';
 
 const Blog = ({ data , baseURL }) => {
-    const slug = slugify(data.blog_title).toLowerCase();
+    const slug = slugify(data.blog_title, { lower: true }); // Generate slug from blog title
+
     return (
-        <div className="relative w-full group transition-all duration-300 ease-in-out ">
+        <div className="relative w-full group transition-all duration-300 ease-in-out">
             {/* Card image */}
             <img
                 className="w-full h-36 sm:h-40 md:h-48 lg:h-56 rounded-lg object-cover"
@@ -16,8 +17,7 @@ const Blog = ({ data , baseURL }) => {
                 alt={data.blog_title}
             />
             {/* Date badge */}
-            <div
-                className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-gradient-to-b from-orange-300 to-orange-600 rounded-lg px-4 py-2 text-center text-white">
+            <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-gradient-to-b from-orange-300 to-orange-600 rounded-lg px-4 py-2 text-center text-white">
                 <span className="block text-xs sm:text-sm md:text-lg lg:text-xl font-semibold">
                     {data.date}
                 </span>
@@ -25,15 +25,14 @@ const Blog = ({ data , baseURL }) => {
                     {data.month}
                 </span>
             </div>
-            {/* Card content */}
-            <Link to={`/blogs/${slug}`} className="shadow-md absolute bottom-[-100px] left-3 right-3 bg-white p-4 sm:p-6 md:p-4 lg:p-8 rounded-b-lg transition-shadow duration-300 ease-in-out hover:transition-all group-hover:shadow-[0px_3px_0px_rgba(255,101,0)]">
+            {/* Dynamic Link with slug */}
+            <Link to={`/blogs/${slug}/${data.id}`} className="shadow-md absolute bottom-[-100px] left-3 right-3 bg-white p-4 sm:p-6 md:p-4 lg:p-8 rounded-b-lg transition-shadow duration-300 ease-in-out hover:transition-all group-hover:shadow-[0px_3px_0px_rgba(255,101,0)]">
                 <div className="flex items-center mb-2 space-x-4 text-xs sm:text-sm md:text-base lg:text-lg text-[#999999]">
                     <div className="flex items-center space-x-1">
                         <img src={personIcon} alt="Author" className="w-4 h-4" />
                         <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] lg:leading-5 font-Poppins">{data.blog_author_name}</span>
                     </div>
                     <div className="flex items-center space-x-1">
-                        {/*<img src={msgIcon} alt="Comments" className="w-4 h-4" />*/}
                         <span className="text-[.5rem] md:text-[.5rem] lg:text-[.7rem] leading-5 font-Poppins">
                             {data.comments} Comments
                         </span>

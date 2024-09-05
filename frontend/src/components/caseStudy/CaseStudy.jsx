@@ -10,7 +10,7 @@ const CaseStudy = ({ data, baseURL }) => {
     const imageUrl = data.image ? `${baseURL}${data.image}` : `${baseURL}/default-image.jpg`;
 
     return (
-        <Link to={`/casestudies/${slug}`}
+        <Link to={`/casestudies/${slug}/${data.id}`}
               className="w-full max-w-sm bg-white shadow-lg rounded-md relative h-auto group">
             <div className="overflow-hidden">
                 <img
