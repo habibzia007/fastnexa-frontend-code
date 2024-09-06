@@ -60,14 +60,14 @@ const CaseStudyDetailPage = () => {
             <Navbar />
             {/* Reuse Banner component with case study title */}
             <Banner text={caseStudy.casestudies_title || "Default Title"} />
-            <ClearVision />
+            {/*<ClearVision />*/}
 
             <div className="case-study-detail-page max-w-[1150px] mx-auto">
-                <h1 className="text-3xl font-bold mb-4">{caseStudy.casestudies_title || "Default Title"}</h1> {/* Display case study title */}
-                <p className="text-gray-700 mb-4">{caseStudy.casestudies_author || "Author Name"}</p> {/* Display author name */}
+                {/*<h1 className="text-3xl font-bold mb-4">{caseStudy.casestudies_title || "Default Title"}</h1> /!* Display case study title *!/*/}
+                {/*<p className="text-gray-700 mb-4">{caseStudy.casestudies_author || "Author Name"}</p> /!* Display author name *!/*/}
 
                 {/* Render sanitized case study content */}
-                <div className="prose prose-lg max-w-none text-justify" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+                <div className="prose prose-lg max-w-none text-justify mt-10" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
             </div>
 
             {/* Optional additional sections */}

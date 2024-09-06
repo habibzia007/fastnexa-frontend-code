@@ -59,10 +59,10 @@ const BlogDetailPage = () => {
             <Navbar />
             <Banner text={blog.blog_title || "Blog Title"} />
             <div className="blog-detail-page max-w-[1150px] mx-auto">
-                <h1 className="text-3xl font-bold mb-4">{blog.blog_title || "Blog Title"}</h1> {/* Display blog title */}
-                <p className="text-gray-700 mb-4">By {blog.blog_author_name || "Author Name"}</p> {/* Display author name */}
+                {/*<h1 className="text-3xl font-bold mb-4">{blog.blog_title || "Blog Title"}</h1> /!* Display blog title *!/*/}
+                {/*<p className="text-gray-700 mb-4">By {blog.blog_author_name || "Author Name"}</p> /!* Display author name *!/*/}
                 {/* Render sanitized blog content */}
-                <div className="prose prose-lg max-w-none text-justify" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+                <div className="prose prose-lg max-w-none text-justify mt-10" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
             </div>
             <TechnologyStack />
             <ContactUs />
