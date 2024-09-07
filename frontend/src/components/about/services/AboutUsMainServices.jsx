@@ -1,14 +1,14 @@
-import  {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import aboutusservicesbg from "../../../assets/images/aboutusservicebg.jpg";
 
-import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
+import {Accordion, AccordionItem as Item} from "@szhsin/react-accordion";
 import chevron from "../../../assets/chevron-down.svg";
 import config from '../../../config';
 import http from '../../../http';
 
 const AboutUsServices = () => {
     const [aboutFeatures, setAboutFeatures] = useState([]);
-    const { baseURL } = config;
+    const {baseURL} = config;
     useEffect(() => {
 
         http.get('/mission-vission-api')
@@ -20,93 +20,108 @@ const AboutUsServices = () => {
             });
     }, []);
 
-  const backgroundImageStyle = {
-    backgroundImage: `url(${aboutusservicesbg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
+    const backgroundImageStyle = {
+        backgroundImage: `url(${aboutusservicesbg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    };
 
-  const AccordionItem = ({ header, ...rest }) => (
-    <Item
-      {...rest}
-      header={({ state: { isEnter } }) => (
-        <>
-          {header}
-          <img
-            className={`text-left ml-auto transition-transform duration-200 ease-out ${
-              isEnter ? "rotate-90" : ""
-            }`}
-            src={chevron}
-            alt="Chevron"
-          />
-        </>
-      )}
-      className="border-b"
-      buttonProps={{
-        className: ({ isEnter }) =>
-          `flex w-full px-4 py-[5px] sm:py-5 md:py-5 text-left hover:text-[#FF6500] ${
-            isEnter ? "text-orange-600" : ""
-          }`,
-      }}
-      headingProps={{
-        className:
-          "font-Poppins text-normal text-[10px] sm:text-[16px] leading-[24px] font-bold", // Smaller text size
-      }}
-      contentProps={{
-        className:
-          "transition-height duration-200 ease-out font-Poppins text-normal text-[9px] sm:text-[16px] leading-[28px]",
-      }}
-      panelProps={{ className: "px-4" }}
-    />
-  );
+    const AccordionItem = ({header, ...rest}) => (
+        <Item
+            {...rest}
+            header={({state: {isEnter}}) => (
+                <>
+                    {header}
+                    <img
+                        className={`text-left ml-auto transition-transform duration-200 ease-out ${
+                            isEnter ? "rotate-90" : ""
+                        }`}
+                        src={chevron}
+                        alt="Chevron"
+                    />
+                </>
+            )}
+            className="border-b"
+            buttonProps={{
+                className: ({isEnter}) =>
+                    `flex w-full px-4 py-[5px] sm:py-5 md:py-5 text-left hover:text-[#FF6500] ${
+                        isEnter ? "text-orange-600" : ""
+                    }`,
+            }}
+            headingProps={{
+                className:
+                    "font-Poppins text-normal text-[10px] sm:text-[16px] leading-[24px] font-bold", // Smaller text size
+            }}
+            contentProps={{
+                className:
+                    "transition-height duration-200 ease-out font-Poppins text-normal text-[9px] sm:text-[16px] leading-[28px]",
+            }}
+            panelProps={{className: "px-4"}}
+        />
+    );
 
-  return (
-    <div
-      className="relative w-full h-auto py-10 lg:py-[60px] mb-[2rem] sm:mb-0"
-      style={backgroundImageStyle}
-    >
-      <div className="max-w-[1184px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-[50px] lg:space-y-[62px]">
-            {aboutFeatures.mission_vision && aboutFeatures.mission_vision.map((card, index) => (
-            <div
-              key={index}
-              className={`flex flex-col lg:flex-row ${
-                card.reverse ? "lg:flex-row-reverse" : ""
-              } gap-4 items-center lg:items-start`}
-            >
-              <div className="flex flex-col lg:w-1/2 space-y-4 items-center lg:items-start text-center lg:text-left">
-                <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-[#232F3B]">
-                    {card.section_heading}
-                </h2>
-                <p className="font-Poppins font-normal text-xs leading-[26px] lg:text-[16px] lg:leading-[26px] text-[#4c4d56]">
-                    {card.section_desc}
-                </p>
-              </div>
-                {card.hasAccordion ? (
-                <div className="w-[350px] sm:w-[510px] lg:w-[540px] h-full rounded-md">
-                  <Accordion transition transitionTimeout={200}>
-                      {aboutFeatures.ourvalues && aboutFeatures.ourvalues.map((feature) => (
-                    <AccordionItem key={feature.id} header={feature.section_heading}>
+    return (
+        <div
+            className="relative w-full h-auto py-10 lg:py-[60px] mb-[2rem] sm:mb-0"
+            style={backgroundImageStyle}
+        >
+            <div className="max-w-[1184px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="space-y-[50px] lg:space-y-[62px]">
+                    {aboutFeatures.mission_vision && aboutFeatures.mission_vision.map((card, index) => (
+                        <div
+                            key={index}
+                            className={`flex flex-col lg:flex-row ${
+                                card.reverse ? "lg:flex-row-reverse" : ""
+                            } gap-4 items-center lg:items-start`}
+                        >
+                            <div
+                                className="flex flex-col lg:w-1/2 space-y-4 items-center lg:items-start text-center lg:text-left">
+                                <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-[#232F3B]">
+                                    {card.section_heading}
+                                </h2>
+                                <p className="font-Poppins font-normal text-xs leading-[26px] lg:text-[16px] lg:leading-[26px] text-[#4c4d56]">
+                                    {card.section_desc}
+                                </p>
+                            </div>
+                            {/*{card.hasAccordion ? (*/}
+                            {/*) : (*/}
+                            <img
+                                className="w-[350px] h-[200px] sm:w-[510px] lg:w-[540px] lg:h-full rounded-md"
+                                src={`${baseURL}${card.image}`}
+                                alt={card.title}
+                            />
+                            {/*)}*/}
+                        </div>
+                    ))}
+                </div>
+                <div className={`flex justify-between items-start mt-14 lg:flex-nowrap flex-wrap gap-y-10`}>
+                    <div
+                        className="flex flex-col lg:w-1/2 space-y-4 items-center lg:items-start text-center lg:text-left">
+                        <h2 className="font-Poppins font-bold text-[27px] leading-[39.08px] lg:text-[42px] lg:leading-[61.08px] text-[#232F3B]">
+                            Our Values
+                        </h2>
+                        <p className="font-Poppins font-normal text-xs leading-[26px] lg:text-[16px] lg:leading-[26px] text-[#4c4d56]">
+                            At FAST NEXA, our values are the cornerstone of everything we do. They embody who we are,
+                            what we stand for, and how we strive to make a difference in the world. With these guiding
+                            principles at the heart of our operations, we remain steadfast in our commitment to
+                            delivering excellence in all that we undertake.
+                        </p>
+                    </div>
+                    <div className="w-[350px] sm:w-[510px] lg:w-[540px] h-full rounded-md mx-auto">
+                        <Accordion transition transitionTimeout={200}>
+                            {aboutFeatures.ourvalues && aboutFeatures.ourvalues.map((feature) => (
+                                <AccordionItem key={feature.id} header={feature.section_heading}>
                       <span className="font-Poppins text-[16px]">
                         {feature.section_desc}
                       </span>
-                    </AccordionItem>
-                      ))}
-                  </Accordion>
+                                </AccordionItem>
+                            ))}
+                        </Accordion>
+                    </div>
                 </div>
-              ) : (
-                <img
-                  className="w-[350px] h-[200px] sm:w-[510px] lg:w-[540px] lg:h-full rounded-md"
-                  src={`${baseURL}${card.image}`}
-                  alt={card.title}
-                />
-              )}
             </div>
-          ))}
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default AboutUsServices;

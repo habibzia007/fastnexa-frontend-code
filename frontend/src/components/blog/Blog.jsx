@@ -8,6 +8,11 @@ import slugify from 'slugify';
 const Blog = ({ data , baseURL }) => {
     const slug = slugify(data.blog_title, { lower: true }); // Generate slug from blog title
 
+    const dateObj = new Date(data.created_at);
+    const day = dateObj.toLocaleString('en-US', { day: '2-digit' });
+    const month = dateObj.toLocaleString('en-US', { month: 'short' });
+
+
     return (
         <div className="relative w-full group transition-all duration-300 ease-in-out">
             {/* Card image */}
@@ -19,10 +24,10 @@ const Blog = ({ data , baseURL }) => {
             {/* Date badge */}
             <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-gradient-to-b from-orange-300 to-orange-600 rounded-lg px-4 py-2 text-center text-white">
                 <span className="block text-xs sm:text-sm md:text-lg lg:text-xl font-semibold">
-                    {data.date}
+                    {day}
                 </span>
                 <span className="block text-[0.6em] sm:text-xs md:text-sm lg:text-base font-normal">
-                    {data.month}
+                    {month}
                 </span>
             </div>
             {/* Dynamic Link with slug */}

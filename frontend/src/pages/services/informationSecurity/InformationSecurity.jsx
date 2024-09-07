@@ -16,7 +16,7 @@ import config from "../../../config.js";
 const InformationSecurity = () => {
 
     const { baseURL } = config;
-    const id = 6;
+    const id = 12;
     const [serviceData, setServiceData] = useState({}); // Initialize as an empty object
 
     useEffect(() => {

@@ -17,7 +17,7 @@ import config from "../../../config.js";
 const NetworkInfrastructure = () => {
 
     const { baseURL } = config;
-    const id = 5;
+    const id = 11;
     const [serviceData, setServiceData] = useState({}); // Initialize as an empty object
 
     useEffect(() => {
