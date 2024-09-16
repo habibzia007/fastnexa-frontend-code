@@ -43,15 +43,15 @@ const OurClients = () => {
         infinite: true,
         arrows: false,
         speed: 500,
-        slidesToShow: 7, // Default setting
+        slidesToShow: 6, // Default setting
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 1024, // Max width of 1024px
+                breakpoint: 1025, // Max width of 1024px
                 settings: {
-                    slidesToShow: 7,
+                    slidesToShow: 6,
                 },
             },
             {

@@ -19,7 +19,7 @@ const ServicesFeatures = ({serviceFeatures,baseURL}) => {
                         </p>
                     </div>
                     <img
-                        className="w-[350px] h-[200px] sm:w-[510px] lg:w-[540px] lg:h-full rounded-md"
+                        className="w-[350px] h-[200px] sm:w-[510px] lg:w-[540px] lg:h-full rounded-md object-contain"
                         src={`${baseURL}${card.image}`}
                         alt={card.featured_item_heading}
                     />

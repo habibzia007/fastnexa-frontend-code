@@ -62,7 +62,7 @@ const CaseStudyDetailPage = () => {
             <Banner text={caseStudy.casestudies_title || "Default Title"} />
             {/*<ClearVision />*/}
 
-            <div className="case-study-detail-page max-w-[1150px] mx-auto">
+            <div className="case-study-detail-page max-w-[1150px] mx-auto px-3">
                 {/*<h1 className="text-3xl font-bold mb-4">{caseStudy.casestudies_title || "Default Title"}</h1> /!* Display case study title *!/*/}
                 {/*<p className="text-gray-700 mb-4">{caseStudy.casestudies_author || "Author Name"}</p> /!* Display author name *!/*/}
 

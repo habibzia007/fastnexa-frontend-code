@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import sanitizeHtml from 'sanitize-html';
 import http from '../../http';
@@ -58,7 +58,7 @@ const BlogDetailPage = () => {
         <div>
             <Navbar />
             <Banner text={blog.blog_title || "Blog Title"} />
-            <div className="blog-detail-page max-w-[1150px] mx-auto">
+            <div className="blog-detail-page max-w-[1150px] mx-auto px-3">
                 {/*<h1 className="text-3xl font-bold mb-4">{blog.blog_title || "Blog Title"}</h1> /!* Display blog title *!/*/}
                 {/*<p className="text-gray-700 mb-4">By {blog.blog_author_name || "Author Name"}</p> /!* Display author name *!/*/}
                 {/* Render sanitized blog content */}
