@@ -105,7 +105,7 @@ const Timeline = () => {
                                     <div
                                         className="absolute !left-0 bottom-0 w-3 h-3 bg-gray-200 rounded-full top-[6.5px] mr-[-0.5px] start-[6.5px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                                 </div>
-                                <figure className="md:flex bg-slate-100 rounded-lg max-w-3xl mx-auto px-4 py-8 md:p-0 shadow-xl">
+                                <figure className="md:flex bg-slate-100 rounded-lg max-w-3xl px-4 py-8 md:p-0 shadow-xl">
                                     <img
                                         className="w-48 h-48 md:w-48 md:h-auto md:rounded-l-lg object-cover md:rounded-none rounded-full mx-auto"
                                         src={`${baseURL}/${member.image}`} alt={member.name} width="384" height="512" />
