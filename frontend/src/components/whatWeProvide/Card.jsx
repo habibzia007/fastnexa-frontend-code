@@ -1,7 +1,7 @@
 import {FaPlus} from "react-icons/fa";
 import {Link} from "react-router-dom";
 
-const Card = ({title, link, description, image, icon = null}) => {
+const Card = ({title, link, description, image, icon, buttonTitle = null}) => {
     return (
         <div className="cursor-pointer relative w-full group">
             <div
@@ -39,7 +39,7 @@ const Card = ({title, link, description, image, icon = null}) => {
                         <div
                             className="font-Poppins font-normal text-[12.88px] leading-[27.59px] text-left text-[#232F3B]"
                         >
-                            Read More
+                            {buttonTitle}
                         </div>
                     </Link>
                 </div>

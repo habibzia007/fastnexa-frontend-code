@@ -17,14 +17,29 @@ const Timeline = () => {
             .then((res) => {
                 let teamData = res.data.data;
 
-                const reorderedTeams = [
+                // Reorder important members first
+                const importantMembers = [
                     teamData.find(member => member.name === "Maj Gen Ghulam Mustafa Kausar (R) Hilal-i-Imtiaz (M)"),
                     teamData.find(member => member.name === "Faisal Shahzad"),
                     teamData.find(member => member.name === "Abdullah Faisal"),
                     teamData.find(member => member.name === "Fatimah Faisal"),
                     teamData.find(member => member.name === "Fizzah Abdullah"),
                     teamData.find(member => member.name === "Mujtaba Bukhari")
-                ].filter(Boolean);
+                ].filter(Boolean); // Remove any undefined members if not found
+
+                // Get all other members not manually ordered
+                const otherMembers = teamData.filter(
+                    member =>
+                        !["Maj Gen Ghulam Mustafa Kausar (R) Hilal-i-Imtiaz (M)",
+                            "Faisal Shahzad",
+                            "Abdullah Faisal",
+                            "Fatimah Faisal",
+                            "Fizzah Abdullah",
+                            "Mujtaba Bukhari"].includes(member.name)
+                );
+
+                // Combine important members with additional members
+                const reorderedTeams = [...importantMembers, ...otherMembers];
 
                 setTeams(reorderedTeams);
             })
@@ -96,13 +111,14 @@ const Timeline = () => {
                                         src={`${baseURL}/${member.image}`} alt={member.name} width="384" height="512" />
                                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                                         <blockquote>
-                                            <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center">
-                                                {member.t_member_dec}
-                                            </p>
+                                            <p
+                                                className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center"
+                                                dangerouslySetInnerHTML={{__html: member.t_member_dec}}
+                                            ></p>
                                         </blockquote>
                                         <figcaption className="font-medium">
                                             <div className="text-[#FF6500]/70 font-Poppins font-semibold text-lg">
-                                                {member.name}
+                                            {member.name}
                                             </div>
                                             <div className="text-[#232F3B] font-Poppins font-semibold text-base">
                                                 {member.postion}
@@ -121,5 +137,3 @@ const Timeline = () => {
 };
 
 export default Timeline;
-
-

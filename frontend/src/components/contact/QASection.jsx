@@ -20,6 +20,7 @@ const ContactFormSection = () => {
               type="text"
               placeholder="Your Name"
               required
+              autoComplete="name"
             />
           </div>
           <div className="w-full sm:w-1/2 px-3 mb-3">
@@ -29,6 +30,7 @@ const ContactFormSection = () => {
               type="text"
               placeholder="Your Phone Number"
               required
+              autoComplete="phone"
             />
           </div>
           <div className="w-full sm:w-1/2 px-3 mb-3">
@@ -38,6 +40,7 @@ const ContactFormSection = () => {
               type="email"
               placeholder="Your Email"
               required
+              autoComplete="email"
             />
           </div>
           <div className="w-full sm:w-1/2 px-3 mb-3">
@@ -47,6 +50,7 @@ const ContactFormSection = () => {
               type="text"
               placeholder="Subject"
               required
+              autoComplete="subject"
             />
           </div>
         </div>
@@ -57,6 +61,7 @@ const ContactFormSection = () => {
             rows="5"
             placeholder="Your Message"
             required
+            autoComplete="message"
           ></textarea>
         </div>
         <div className="w-full px-3 mb-3 text-center pt-2">

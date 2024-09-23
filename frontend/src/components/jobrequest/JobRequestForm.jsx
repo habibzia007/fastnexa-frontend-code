@@ -20,6 +20,7 @@ const JobRequestForm = () => {
                   type="text"
                   placeholder="Your Name"
                   required
+                  autoComplete="name"
               />
             </div>
             <div className="w-full sm:w-1/2 px-3 mb-3">
@@ -29,6 +30,7 @@ const JobRequestForm = () => {
                   type="text"
                   placeholder="Your Phone Number"
                   required
+                  autoComplete="phone"
               />
             </div>
             <div className="w-full sm:w-1/2 px-3 mb-3">
@@ -38,6 +40,7 @@ const JobRequestForm = () => {
                   type="email"
                   placeholder="Your Email"
                   required
+                  autoComplete="email"
               />
             </div>
             <div className="w-full sm:w-1/2 px-3 mb-3">
@@ -45,6 +48,7 @@ const JobRequestForm = () => {
                   className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="position"
                   required
+                  autoComplete="position"
               >
                 <option value="" disabled selected>
                   Select Position
@@ -63,6 +67,7 @@ const JobRequestForm = () => {
                   type="file"
                   accept=".pdf,.doc,.docx"
                   required
+                  autoComplete="cv"
               />
             </div>
           </div>
@@ -73,6 +78,7 @@ const JobRequestForm = () => {
               rows="5"
               placeholder="Your Message"
               required
+              autoComplete="message"
           ></textarea>
           </div>
 

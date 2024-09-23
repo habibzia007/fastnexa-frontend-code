@@ -31,6 +31,7 @@ const WhatWeProvide = () => {
         });
   };
 
+
   const fetchServiceHeading = () => {
     http.get('/homePage-service-api')
         .then((res) => {
@@ -64,6 +65,7 @@ const WhatWeProvide = () => {
                 link={service.short_title}
                 title={service.service_name }
                 description={service.short_desc}
+                buttonTitle={service.button_title}
             />
           ))}
         </div>

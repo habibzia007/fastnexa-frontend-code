@@ -104,6 +104,7 @@ const ContactUs = () => {
                     name="name"
                     placeholder="Name *"
                     required
+                    autoComplete="name"
                   />
                 </div>
                 <div className="w-full sm:w-1/2 lg:ml-2">
@@ -114,6 +115,7 @@ const ContactUs = () => {
                     name="email"
                     placeholder="Email *"
                     required
+                    autoComplete="email"
                   />
                 </div>
               </div>
@@ -125,6 +127,7 @@ const ContactUs = () => {
                   name="subject"
                   placeholder="Subject *"
                   required
+                  autoComplete="subject"
                 />
               </div>
               <div className="mb-7">
@@ -135,6 +138,7 @@ const ContactUs = () => {
                   rows="3"
                   placeholder="Your Message"
                   required
+                  autoComplete="message"
                 ></textarea>
               </div>
               <div>
