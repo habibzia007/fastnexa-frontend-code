@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import bg from "../../assets/images/chooseusbg.jpeg";
-import rightArrow from "../../assets/images/rightArrow.svg";
 import Card from "./Card";
-import { chooseUsData } from "../../utils/fakedb/data.jsx";
 import http from '../../http';
 import config from '../../config';
 
@@ -38,16 +36,20 @@ const ChooseUs = () => {
           <h3 className="font-Poppins font-semibold text-[22px] sm:text-[32px] lg:text-[42px] leading-[33.08px] sm:leading-[43.08px] lg:leading-[61.08px] lg:pt-4 text-[#232F3B] mt-2">
             {chooseData.whychoosea_api && chooseData.whychoosea_api.length > 0 && chooseData.whychoosea_api[0].section_heading}
           </h3>
-          <p className="font-Poppins text-xs md:text-2xl leading-[20.08px] sm:leading-[20.08px] lg:leading-[30.08px] lg:pt-4 text-[#232F3B] mt-2">
-            {chooseData.whychoosea_api && chooseData.whychoosea_api.length > 0 && chooseData.whychoosea_api[0].section_desc}
-          </p>
+          <div
+              className="font-Poppins max-w-[1100px] mx-auto text-xs md:text-2xl leading-[20.08px] sm:leading-[20.08px] lg:leading-[30.08px] lg:pt-4 text-[#232F3B] mt-2"
+              dangerouslySetInnerHTML={{
+                __html: chooseData.whychoosea_api && chooseData.whychoosea_api.length > 0 ? chooseData.whychoosea_api[0].section_desc : '',
+              }}
+          />
+
         </div>
         <div className="flex flex-wrap grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
           {chooseData.reasonchoose_banner_api && chooseData.reasonchoose_banner_api.map((card) => (
-            <Card
-                key={card.id}
-                image={`${baseURL}${card.image}`}
-                title={card.section_item_heading}
+              <Card
+                  key={card.id}
+                  image={`${baseURL}${card.image}`}
+                  title={card.section_item_heading}
                 description={card.section_item_desc}
             />
           ))}

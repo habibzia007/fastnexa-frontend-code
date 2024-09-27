@@ -1,6 +1,4 @@
-import React, {useEffect, useState} from "react";
-import aboutBig from "../../assets/images/about-big.png";
-import divabout from "../../assets/images/divabout.png";
+import {useEffect, useState} from "react";
 import WhoWeAreCard from "./Card";
 import config from '../../config';
 import http from '../../http';
@@ -73,10 +71,10 @@ const WhoWeAre = () => {
                       >
                         {row.map((item, itemIndex) => (
                             <WhoWeAreCard
-                                key={item.id} // Use a unique key for each card
+                                key={item.id}
                                 title={item.section_item_heading}
                                 description={item.section_item_desc}
-                                border={itemIndex === 0} // Add border only to the first item in the row
+                                border={itemIndex === 0}
                             />
                         ))}
                       </div>

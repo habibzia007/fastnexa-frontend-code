@@ -29,7 +29,7 @@ const Hero = () => {
             });
     };
 
-    const backgroundImageUrl = data && data.length > 0 ? `${baseURL}${data[0].image}` : '';
+    // const backgroundImageUrl = data && data.length > 0 ? `${baseURL}${data[0].image}` : '';
 
 
 
@@ -83,7 +83,7 @@ const Hero = () => {
                                 {data && data.length > 0 && data[0].short_desc}
                             </p>
                             <div className="flex items-center gap-3 md:gap-5 lg:gap-7 lg:max-w-[585.7px]">
-                                {data && data.length > 0 && data.checkbox_btn1 === 1 && (
+                                {data && data.length > 0 && parseInt(data[0].checkbox_btn1) === 1 && (
                                 <Link to="/contact-us">
                                     <button
                                         className="group flex items-center justify-center w-[125px] h-[31px] md:w-[150px] md:h-[37px] lg:w-[209px] lg:h-[52px] font-Poppins font-medium text-xs lg:text-sm text-white leading-[13px] lg:leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-md md:rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-700 ease-in-out">
@@ -93,11 +93,11 @@ const Hero = () => {
                                     </button>
                                 </Link>
                                 )}
-                                {data && data.length > 0 && data.checkbox_btn2 === 1 && (
+                                {data?.length > 0 && parseInt(data[0].checkbox_btn2) === 1 && (
                                 <Link to="/about">
                                     <button
-                                        className="flex items-center justify-center w-[102px] h-[30px] md:w-[125px] md:h-[37px] lg:w-[173px] lg:h-[46px] font-Poppins font-medium text-xs lg:text-sm text-white leading-[13.2px] bg-transparent ring-1 hover:ring-0 hover:shadow-md ring-white rounded-[10px] transition duration-500 ease-in-out transform hover:bg-orange-400 ">
-                                        {data && data.length > 0 && data[0].button2_name}
+                                        className="flex items-center justify-center w-[102px] h-[31px] md:w-[125px] md:h-[37px] lg:w-[173px] lg:h-[51px] font-Poppins font-medium text-xs lg:text-sm text-white leading-[13.2px] bg-transparent ring-1 hover:ring-1 hover:shadow-md ring-white hover:ring-orange-400 rounded-[10px] transition duration-500 ease-in-out transform hover:bg-orange-400">
+                                        {data && data.length > 0 && data[0].button2_name} a
                                     </button>
                                 </Link>
                                 )}

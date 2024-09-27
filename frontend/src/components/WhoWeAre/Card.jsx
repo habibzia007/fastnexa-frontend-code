@@ -1,10 +1,10 @@
-import React from "react";
 import symbol from "../../assets/images/symbol.svg";
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ title, description, border }) => {
   return (
     <div
-      className={`w-[183px] sm:w-[258px] py-3 px-1 border-[#ECECEC] ${
+      className={`w-[151px] lg:w-[247px] md:w-[165px] py-3 px-1 border-[#ECECEC] ${
         border ? "border-r-[2px]" : ""
       }`}
     >
