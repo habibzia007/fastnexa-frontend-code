@@ -253,9 +253,8 @@
 
 
 
-
-import React, { useState, useEffect } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/FastNexa-logo.svg";
 import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
 import http from "../http";
@@ -272,7 +271,6 @@ const Navbar = () => {
     const [dropdownOpen, setDropdownOpen] = useState(null);
     const [services, setServices] = useState([]);
     const location = useLocation();
-    const { slug, id } = useParams();
 
     // Primary links definition
     const [primaryLinks, setPrimaryLinks] = useState([
@@ -383,12 +381,17 @@ const Navbar = () => {
 
     const isParentActive = (path) => location.pathname.startsWith(path);
 
+    const handleLinkClick = () => {
+        setDropdownOpen(null); // Close the dropdown after clicking a link
+        setNavOpen(false); // Optionally close the mobile nav as well
+    };
+
     return (
         <nav className={`bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}>
             <div className="container xl:w-[1184px] mx-auto xl:px-4 px-3 grid grid-cols-12">
                 <div className="col-span-12">
                     <div className="flex justify-between items-center py-1">
-                        <Link to="/">
+                        <Link to="/" onClick={handleLinkClick}>
                             <img
                                 className="w-[59px] h-[38px] xl:w-[132.19px] xl:h-[86px] lg:w-[100.19px] lg:h-[65px]"
                                 src={logo}
@@ -418,6 +421,7 @@ const Navbar = () => {
                                                         key={item.label}
                                                         to={item.path}
                                                         className={`block transition-all duration-150 w-[15rem] px-4 py-3 text-sm text-gray-700 hover:bg-orange-500 hover:text-white ${isActive(item.path) ? "bg-orange-500 text-white hover:text-black" : ""}`}
+                                                        onClick={handleLinkClick} // Close dropdown on click
                                                     >
                                                         {item.label}
                                                     </Link>
@@ -430,12 +434,13 @@ const Navbar = () => {
                                         key={link.label}
                                         to={link.path}
                                         className={`mr-2 p-2 ${isActive(link.path) ? "text-[#FF6500]" : ""}`}
+                                        onClick={handleLinkClick} // Close nav when a non-dropdown link is clicked
                                     >
                                         {link.label}
                                     </Link>
                                 )
                             )}
-                            <Link to={buttonLink.path} className="nav-button">
+                            <Link to={buttonLink.path} className="nav-button" onClick={handleLinkClick}>
                                 <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading-[2.7rem] leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
                                     {buttonLink.label}
                                 </button>
@@ -454,7 +459,7 @@ const Navbar = () => {
                             {primaryLinks.map((link) =>
                                 link.dropdown ? (
                                     <div key={link.label} className="block py-2 px-4 text-gray-700">
-                                        <Link to={link.path} className={`${isParentActive(link.path) ? "text-[#FF6500]" : ""}`}>
+                                        <Link to={link.path} className={`${isParentActive(link.path) ? "text-[#FF6500]" : ""}`} onClick={handleLinkClick}>
                                             {link.label}
                                         </Link>
                                         <FaCaretDown
@@ -468,6 +473,7 @@ const Navbar = () => {
                                                         key={item.label}
                                                         to={item.path}
                                                         className={`block px-4 py-2 text-sm hover:bg-orange-500 hover:text-white ${isActive(item.path) ? "text-[#FF6500]" : "text-gray-700"}`}
+                                                        onClick={handleLinkClick} // Close dropdown on click
                                                     >
                                                         {item.label}
                                                     </Link>
@@ -480,12 +486,13 @@ const Navbar = () => {
                                         key={link.label}
                                         to={link.path}
                                         className={`block py-2 px-4 text-gray-700 hover:bg-orange-500 hover:text-white ${isActive(link.path) ? "text-[#FF6500]" : ""}`}
+                                        onClick={handleLinkClick} // Close nav on non-dropdown link click
                                     >
                                         {link.label}
                                     </Link>
                                 )
                             )}
-                            <Link to={buttonLink.path} className="nav-button">
+                            <Link to={buttonLink.path} className="nav-button" onClick={handleLinkClick}>
                                 <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
                                     {buttonLink.label}
                                 </button>
@@ -499,6 +506,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 
 
 
