@@ -6,39 +6,40 @@ import Contact from "./pages/contact/Contact";
 import PageNotFound from "./components/PageNotFound";
 import Services from "./pages/services/Services";
 import Technology from "./pages/technology/Technology";
-import SoftwareDevelopment from "./pages/services/softwareDevelopment/SoftwareDevelopment";
-import DevOps from "./pages/services/devOps/DevOps";
-import CloudComputing from "./pages/services/cloudComputing/CloudComputing";
-import CyberSecurity from "./pages/services/cyberSecurity/CyberSecurity";
+// import SoftwareDevelopment from "./pages/services/softwareDevelopment/SoftwareDevelopment";
+// import DevOps from "./pages/services/devOps/DevOps";
+// import CloudComputing from "./pages/services/cloudComputing/CloudComputing";
+// import CyberSecurity from "./pages/services/cyberSecurity/CyberSecurity";
 import CustomiseWebDevelopment from "./pages/technology/customise/Customise";
 import Prototyping from "./pages/technology/prototyping/Prototyping";
 import ThirdPartyIntegration from "./pages/technology/thirdPartyIntegration/ThirdPartIntegration";
 import SoftwareProductDevelopment from "./pages/technology/softwareProductDevelopment/SoftwareProductDevelopment";
 import ApiDevelopmentServices from "./pages/technology/apiDevelopmentServices/ApiDevelopmentServices";
 import UpgradationMigration from "./pages/technology/upgradationMigration/UpgradationMigration";
-import NetworkInfrastructure from "./pages/services/networkInfrastructure/NetworkInfrastructure";
-import InformationSecurity from "./pages/services/informationSecurity/InformationSecurity";
-import BusinessAndDisaster from "./pages/services/businessAndDisaster/BusinessAndDisaster";
-import HumanResource from "./pages/services/humanResource/HumanResource.jsx";
+// import NetworkInfrastructure from "./pages/services/networkInfrastructure/NetworkInfrastructure";
+// import InformationSecurity from "./pages/services/informationSecurity/InformationSecurity";
+// import BusinessAndDisaster from "./pages/services/businessAndDisaster/BusinessAndDisaster";
+// import HumanResource from "./pages/services/humanResource/HumanResource.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Portfolio from "./pages/portfolio/Portfolio.jsx";
-import SoftwareKeyTrends from "./components/blogs/SoftwareKeyTrends.jsx";
-import HarnessingPower from "./components/blogs/HarnessingPower.jsx";
-import CyberSecurityDigital from "./components/blogs/CyberSecurityDigital.jsx";
+// import SoftwareKeyTrends from "./components/blogs/SoftwareKeyTrends.jsx";
+// import HarnessingPower from "./components/blogs/HarnessingPower.jsx";
+// import CyberSecurityDigital from "./components/blogs/CyberSecurityDigital.jsx";
 import Timeline from "./components/about/services/Timeline.jsx";
 import CaseStudyPage from "./pages/portfolio/casestudies/CaseStudyPage.jsx";
-import CRMSolutionsCaroyal from "./components/casestudies/CRMSolutionsCaroyal.jsx";
-import ClearVisionDustyEnvironment from "./components/casestudies/ClearVisionDustyEnvironment.jsx";
-import CRMSolutionsOMNITECH from "./components/casestudies/CRMSolutionsOMNITECH.jsx";
-import ImperialElectricCompany from "./components/casestudies/ImperialElectricCompany.jsx";
-import StreamliningOperationsEmpoweringGrowth
-  from "./components/casestudies/StreamliningOperationsEmpoweringGrowth.jsx";
+// import CRMSolutionsCaroyal from "./components/casestudies/CRMSolutionsCaroyal.jsx";
+// import ClearVisionDustyEnvironment from "./components/casestudies/ClearVisionDustyEnvironment.jsx";
+// import CRMSolutionsOMNITECH from "./components/casestudies/CRMSolutionsOMNITECH.jsx";
+// import ImperialElectricCompany from "./components/casestudies/ImperialElectricCompany.jsx";
+// import StreamliningOperationsEmpoweringGrowth
+//   from "./components/casestudies/StreamliningOperationsEmpoweringGrowth.jsx";
 import Alliances from "./pages/about/alliances/Alliances.jsx";
 import JobRequest from "./pages/jobrequest/JobRequest.jsx";
 import BlogDetailPage from "./components/blogs/BlogDetailsPage.jsx";
 import Blogs from "./components/blog/Blogs.jsx";
 import BlogDetailsPage from "./components/blogs/BlogDetailsPage.jsx";
 import CaseStudyDetailPage from "./components/caseStudyContent/CaseStudyDetailPage.jsx";
+import ServiceDetail from "./components/services/ServiceDetail.jsx";
 
 // Import other pages here
 
@@ -54,29 +55,35 @@ function App() {
         <Route path="/about/alliances" element={<Alliances />} />
         <Route path="/about/team" element={<Timeline />} />
         <Route path="/services" element={<Services />} />
-        <Route
-          path="/services/software-development"
-          element={<SoftwareDevelopment />}
-        />
-        <Route path="/services/dev-ops" element={<DevOps />} />
-        <Route path="/services/cloud-computing" element={<CloudComputing />} />
-        <Route path="/services/cyber-security" element={<CyberSecurity />} />
-        <Route
-          path="/services/network-infrastructure"
-          element={<NetworkInfrastructure />}
-        />
-        <Route
-          path="/services/information-security"
-          element={<InformationSecurity />}
-        />
-        <Route
-          path="/services/business-continuity-disaster-recovery"
-          element={<BusinessAndDisaster />}
-        />
-        <Route
-            path="/services/human-resource"
-            element={<HumanResource />}
-        />
+        {/*<Route*/}
+        {/*  path="/services/software-development"*/}
+        {/*  element={<SoftwareDevelopment />}*/}
+        {/*/>*/}
+        {/*<Route path="/services/dev-ops" element={<DevOps />} />*/}
+        {/*<Route path="/services/cloud-computing" element={<CloudComputing />} />*/}
+        {/*<Route path="/services/cyber-security" element={<CyberSecurity />} />*/}
+        {/*<Route*/}
+        {/*  path="/services/network-infrastructure"*/}
+        {/*  element={<NetworkInfrastructure />}*/}
+        {/*/>*/}
+        {/*<Route*/}
+        {/*  path="/services/information-security"*/}
+        {/*  element={<InformationSecurity />}*/}
+        {/*/>*/}
+        {/*<Route*/}
+        {/*  path="/services/business-continuity-disaster-recovery"*/}
+        {/*  element={<BusinessAndDisaster />}*/}
+        {/*/>*/}
+        {/*<Route*/}
+        {/*    path="/services/human-resource"*/}
+        {/*    element={<HumanResource />}*/}
+        {/*/>*/}
+        {/*<Route path="/services/:slug/" element={<ServiceDetail />} />*/}
+
+        <Route path="/services/:slug/:id" element={<ServiceDetail />} />
+
+
+
         <Route path="/technology" element={<Technology />} />
         <Route
           path="/technology/customise-software-development"
