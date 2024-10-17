@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
@@ -13,8 +12,7 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <main className=" w-full bg-[#FFFFFF]">
-
+    <main className=" w-full bg-[#FFFFFF] overflow-hidden">
       <Navbar />
       <Hero />
       <WhoWeAre />

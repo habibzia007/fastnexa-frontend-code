@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import http from '../../http.js';
 import slugify from 'slugify';
 import Navbar from "../Navbar.jsx";
 import Banner from "../Banner.jsx";
-
 import TechnologyStack from "../TechnologyStack.jsx";
 import Testimonial from "../testimonial/Testimonial.jsx";
 import OurClients from "../OurClients.jsx";
@@ -48,8 +48,6 @@ const ServiceDetail = () => {
             });
     }, [slug, id]);
 
-
-
     useEffect(() => {
         if (id) { // Only make the API call if id is present
             http.get(`/services-api/${id}`)
@@ -72,12 +70,22 @@ const ServiceDetail = () => {
     const description = serviceDataIntro.single_serv_desc || "Service Description";
     const serviceFeatures = serviceData.featuredpostserv || [];
 
+    // Add meta data variables
+    const { meta_title, meta_desc, meta_tags } = serviceDataIntro;
+
     return (
         <main className="w-full bg-[#FFFFFF]">
+            {/* Helmet for managing the head */}
+            <Helmet>
+                <title>{meta_title || title || 'Service Detail'}</title>
+                <meta name="description" content={meta_desc || description || 'Service description'} />
+                <meta name="keywords" content={meta_tags || 'services, solutions, business'} />
+            </Helmet>
+
             <Navbar />
             <Banner text={serviceDataIntro.service_name || "Service Name"} />
             <Intro title={title} description={description} />
-            <BusinessDisasterServics  serviceFeatures={serviceFeatures} baseURL={baseURL}/>
+            <BusinessDisasterServics serviceFeatures={serviceFeatures} baseURL={baseURL} />
             <TechnologyStack />
             <Testimonial />
             <OurClients />
@@ -88,7 +96,3 @@ const ServiceDetail = () => {
 };
 
 export default ServiceDetail;
-
-
-
-

@@ -40,6 +40,7 @@ import Blogs from "./components/blog/Blogs.jsx";
 import BlogDetailsPage from "./components/blogs/BlogDetailsPage.jsx";
 import CaseStudyDetailPage from "./components/caseStudyContent/CaseStudyDetailPage.jsx";
 import ServiceDetail from "./components/services/ServiceDetail.jsx";
+import TechnologyDetails from "./components/TechnologyDetailsPage/TechnologyDetails.jsx";
 
 // Import other pages here
 
@@ -81,6 +82,7 @@ function App() {
         {/*<Route path="/services/:slug/" element={<ServiceDetail />} />*/}
 
         <Route path="/services/:slug/:id" element={<ServiceDetail />} />
+        <Route path="/technology/:slug/:id" element={<TechnologyDetails />} />
 
 
 

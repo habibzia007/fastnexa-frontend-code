@@ -32,7 +32,7 @@ const Blogs = () => {
           {blogs.blog_api && blogs.blog_api.length > 0 && blogs.blog_api[0].section_heading}
         </h3>
 
-        <div className="list-of-blog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6 gap-y-[8.5rem]">
+        <div className="list-of-blog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6 xl:gap-y-40 lg:gap-y-40 md:gap-y-36 gap-y-40">
           {blogs.blogitems_api && blogs.blogitems_api.map((data, index) => (
             <Blog key={index} data={data} baseURL={baseURL} />
           ))}

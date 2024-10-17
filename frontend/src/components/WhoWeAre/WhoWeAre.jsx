@@ -25,6 +25,8 @@ const WhoWeAre = () => {
         });
   };
 
+  console.log("this is who we are", whoWeAreData)
+
 
   const aboutBig = whoWeAreData.whoweares_api && whoWeAreData.whoweares_api.length > 0 ? whoWeAreData.whoweares_api[0].image_port : '';
 
@@ -51,38 +53,42 @@ const WhoWeAre = () => {
           </div>
           {/* Left side bottom */}
           <div
-              className="w-[322px] mx-auto sm:w-[610px] md:w-[350px] lg:w-[526px] md:mx-0 lg:mx-0 mt-7 lg:mt-0 ">
+              className="w-[322px] mx-auto sm:w-[610px] md:w-[350px] lg:w-[526px] md:mx-0 lg:mx-0 mt-5">
             <div>
               {whoWeAreData.whoweareitems_api && whoWeAreData.whoweareitems_api.length > 0 ? (
-                  whoWeAreData.whoweareitems_api.reduce((rows, item, index) => {
-                    // Create a new row if index is even
-                    if (index % 2 === 0) {
-                      rows.push([]);
-                    }
-                    // Add item to the current row
-                    rows[rows.length - 1].push(item);
-                    return rows;
-                  }, []).map((row, rowIndex) => (
-                      <div
-                          className={`w-full border-[#ECECEC] ${
-                              rowIndex !== whoWeAreData.whoweareitems_api.length - 1 ? "border-b-[2px]" : ""
-                          } flex gap-5 lg:gap-8`}
-                          key={rowIndex}
-                      >
-                        {row.map((item, itemIndex) => (
-                            <WhoWeAreCard
-                                key={item.id}
-                                title={item.section_item_heading}
-                                description={item.section_item_desc}
-                                border={itemIndex === 0}
-                            />
-                        ))}
-                      </div>
-                  ))
+                  whoWeAreData.whoweareitems_api
+                      .reduce((rows, item, index) => {
+                        // Create a new row if index is even
+                        if (index % 2 === 0) {
+                          rows.push([]);
+                        }
+                        // Add item to the current row
+                        rows[rows.length - 1].push(item);
+                        return rows;
+                      }, [])
+                      .map((row, rowIndex, array) => (
+                          <div
+                              className={`w-full border-[#ECECEC] ${
+                                  rowIndex !== array.length - 1 ? "border-b-[2px]" : ""
+                              } flex gap-5 lg:gap-8`}
+                              key={rowIndex}
+                          >
+                            {row.map((item, itemIndex) => (
+                                <WhoWeAreCard
+                                    key={item.id}
+                                    title={item.section_item_heading}
+                                    description={item.section_item_desc}
+                                    image={`${baseURL}${item.section_item_icon}`}
+                                    border={itemIndex === 0}
+                                />
+                            ))}
+                          </div>
+                      ))
               ) : (
                   <p>No data available.</p>
               )}
             </div>
+
           </div>
         </div>
         {/* Right side */}

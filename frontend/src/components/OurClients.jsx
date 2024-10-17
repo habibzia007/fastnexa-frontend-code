@@ -45,7 +45,7 @@ const OurClients = () => {
         speed: 500,
         slidesToShow: 6, // Default setting
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         responsive: [
             {
@@ -90,7 +90,7 @@ const OurClients = () => {
                         <img
                             src={`${baseURL}${logo.clients_logo}`}
                             alt={`Logo ${logo.id}`}
-                            className="w-[64px] h-[64px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] object-contain"
+                            className="w-[64px] h-[64px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] object-contain !outline-none"
                         />
                     </div>
                 ))}

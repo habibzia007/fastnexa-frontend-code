@@ -1,16 +1,14 @@
-import React, {useEffect, useState} from "react";
-import serviceImage from "../../../assets/images/service.png";
+import {useEffect, useState} from "react";
 import bg from "../../../assets/images/contactbg.jpg";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import chevron from "../../../assets/chevron-down.svg";
 import {Link} from "react-router-dom";
 import http from '../../../http';
 
-import config from '../../../config';
-
 /**
- * @type {React.ExoticComponent<import('@szhsin/react-accordion').AccordionItemProps>}
+ * @type {function({header: *, [p: string]: *}): *}
  */
+// eslint-disable-next-line react/prop-types
 const AccordionItem = ({ header, ...rest }) => (
   <Item
     {...rest}
@@ -53,7 +51,6 @@ const backgroundImageStyle = {
 
 const FullServiceWebsite = () => {
   const [serviceFeature, setServiceFeature] = useState([]);
-  const { baseURL } = config;
   useEffect(() => {
 
     http.get('/fullsite-api')
@@ -106,7 +103,7 @@ const FullServiceWebsite = () => {
           </div>
           <div className="flex items-center justify-center lg:justify-start">
             <Link to="/technology"
-                  className="font-Poppins text-[16px] w-[271px] h-[54px] my-[10px] flex items-center justify-center ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500">
+                  className="font-Poppins text-[16px] px-8 py-4 my-[10px] flex items-center justify-center ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500">
               {serviceFeature.fullsite_api && serviceFeature.fullsite_api.length > 0 && serviceFeature.fullsite_api[0].btn_text}
             </Link>
           </div>

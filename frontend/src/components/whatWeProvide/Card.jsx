@@ -2,8 +2,20 @@ import { FaPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import slugify from 'slugify';
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ id, title, description, image, icon, buttonTitle = null }) => {
     const slug = slugify(title, { lower: true }); // Generate slug from title
+
+    // Function to truncate the description to a maxLength (e.g., 50 characters)
+    const truncateDescription = (text, maxLength) => {
+        if (text.length > maxLength) {
+            return text.substring(0, maxLength);
+        }
+        return text;
+    };
+
+    const maxLength = 200;
+    const truncatedDescription = truncateDescription(description, maxLength);
 
     return (
         <div className="cursor-pointer relative w-full group">
@@ -21,7 +33,7 @@ const Card = ({ id, title, description, image, icon, buttonTitle = null }) => {
                             {title}
                         </h3>
                         <p className="font-Poppins font-normal text-xs lg:text-[12.88px] text-left text-[#444444] line-clamp-4 leading-[15.59px] lg:leading-[27.59px]">
-                            {description}
+                            {truncatedDescription}
                         </p>
                     </div>
                 </div>

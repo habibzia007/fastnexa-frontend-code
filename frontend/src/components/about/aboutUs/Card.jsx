@@ -1,17 +1,19 @@
 import React from "react";
 import symbol from "../../../assets/images/symbol.svg";
+import config from "../../../config.js";
 
-const Card = ({ title, description, border }) => {
+const Card = ({ title, description, border, image }) => {
+  const { baseURL } = config;
   return (
     <div
-      className={`xl:w-[258px] w-full py-3 px-2 border-[#ECECEC]  ${
+      className={`w-[151px] lg:w-[247px] md:w-[165px] py-3 px-2 border-[#ECECEC]  ${
         border ? "border-r-[2px]" : ""
       }`}
     >
       <div className="flex items-center gap-1 lg:gap-2">
         <img
-          className="w-[14.78px] h-[13.78px] lg:w-[20.78px] lg:h-[20.78px] object-contain "
-          src={symbol}
+          className="w-[14.78px] h-[13.78px] lg:w-[20.78px] lg:h-[20.78px] object-contain"
+          src={image ? `${baseURL}/${image}` : symbol}
           alt=""
         />
         <h3 className="font-barlow font-bold text-[13.78px] leading-[23.63px] lg:text-[20.78px] lg:leading-[34.63px] text-left">

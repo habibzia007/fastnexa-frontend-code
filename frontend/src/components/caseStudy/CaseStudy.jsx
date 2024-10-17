@@ -18,8 +18,8 @@ const CaseStudy = ({ data, baseURL }) => {
                     src={imageUrl}
                     alt={title} />
             </div>
-            <div className="px-5 pb-5">
-                <h3 className="mt-3 text-xl font-semibold text-gray-900 group-hover:text-orange-500 transition-colors duration-300">
+            <div className="px-5 pb-5 flex flex-col justify-between h-[160px]">
+                <h3 className="mt-3 text-xl font-semibold text-gray-900 group-hover:text-orange-500 transition-colors duration-300 line-clamp-3">
                     {title}
                 </h3>
 

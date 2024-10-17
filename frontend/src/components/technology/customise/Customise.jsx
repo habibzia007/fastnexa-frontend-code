@@ -3,6 +3,7 @@ import serviceImage from "../../../assets/images/service.png";
 import bg from "../../../assets/images/contactbg.jpg";
 import config from '../../../config';
 import http from '../../../http';
+import {Link} from "react-router-dom";
 const backgroundImageStyle = {
   backgroundImage: `url(${bg})`,
   backgroundSize: "cover",
@@ -36,7 +37,7 @@ const Customise = () => {
           {/* Left side (IMAGE) */}
           <div className="w-full lg:w-1/2 justify-center lg:justify-start">
             <img
-                className="w-full sm:w-[600px] lg:w-[537px] lg:h-[480px] mt-4 lg:mt-0 mx-auto"
+                className="w-full sm:w-[600px] lg:w-[537px] lg:h-[480px] mt-4 lg:mt-0 mx-auto object-cover rounded-sm"
                 src={serviceImage}
                 alt=""
             />
@@ -49,9 +50,9 @@ const Customise = () => {
                   __html: data && data.length > 0 ? data[0].section_desc : '',
                 }}
             />
-            <button className="font-Poppins text-[14px] sm:text-[16px] w-full max-w-[347px] h-[50px] mt-4 ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500">
+            <Link to={data && data.length > 0 && data[0].btn_url} className=" flex justify-center items-center font-Poppins text-[14px] sm:text-[16px] w-full max-w-[347px] h-[50px] mt-4 ring-2 text-orange-500 rounded-md ring-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-500">
               {data && data.length > 0 && data[0].btn_text}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

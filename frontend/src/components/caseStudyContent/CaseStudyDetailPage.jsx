@@ -67,7 +67,7 @@ const CaseStudyDetailPage = () => {
                 {/*<p className="text-gray-700 mb-4">{caseStudy.casestudies_author || "Author Name"}</p> /!* Display author name *!/*/}
 
                 {/* Render sanitized case study content */}
-                <div className="prose prose-lg max-w-none text-justify mt-10" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+                <div className="prose prose-lg max-w-none text-justify mt-10" dangerouslySetInnerHTML={{ __html: caseStudy.casestudies_content }} />
             </div>
 
             {/* Optional additional sections */}

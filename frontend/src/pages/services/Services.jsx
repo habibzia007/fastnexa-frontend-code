@@ -1,6 +1,4 @@
-import React from "react";
 import Navbar from "../../components/Navbar";
-// import OfferedServices from "../../components/services/whatWeProvide/WhatWeProvide"
 import ContactExpertTeam from "../../components/services/contactExpertTeam/ContactExpertTeam";
 import FullServiceWebsite from "../../components/services/fullServiceWebsite/FullServiceWebsite";
 import Testimonial from "../../components/testimonial/Testimonial";

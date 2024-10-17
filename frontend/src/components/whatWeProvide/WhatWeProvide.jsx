@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import bg from "../../assets/images/whatweprovidebg.svg";
 import rightArrow from "../../assets/images/rightArrow.svg";
 import WhatWeProvideCard from "./Card";
@@ -68,15 +68,15 @@ const WhatWeProvide = () => {
                     ))}
                 </div>
                 <div className="flex items-center justify-center py-6 sm:py-10">
-                    <Link to="/services" className="flex items-center justify-center">
+                    <Link to="/services" className="flex items-center justify-center group">
                         <h3 className="font-Poppins text-sm sm:text-base text-center text-[#232F3B]">
                             {serviceHeading.homepage_serv_api?.section_footer || "" }&nbsp;
                             <span className="font-Poppins font-semibold text-[#FF6500]">
-                                More Services
+                                {serviceHeading.homepage_serv_api?.section_footer_url || "" }
                             </span>
                         </h3>
                         <img
-                            className="object-contain ml-2"
+                            className="object-contain w-[19px] h-[10px] ml-2 group-hover:translate-x-2 transition-all duration-500"
                             src={rightArrow}
                             alt="Right Arrow"
                         />

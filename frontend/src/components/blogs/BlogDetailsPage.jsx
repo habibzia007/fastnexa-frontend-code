@@ -1,28 +1,27 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import sanitizeHtml from 'sanitize-html';
+import { Helmet } from 'react-helmet';
 import http from '../../http';
 import Navbar from "../Navbar.jsx";
 import Footer from "../Footer.jsx";
 import ContactUs from "../ContactUs.jsx";
 import TechnologyStack from "../TechnologyStack.jsx";
-import Banner from "../blog/Banner.jsx";  // Your HTTP client
+import Banner from "../blog/Banner.jsx";
 
 const BlogDetailPage = () => {
-    const { id } = useParams(); // Get the blog ID from the URL params
-    const [blog, setBlog] = useState({}); // Initialize with an empty object
-    const [error, setError] = useState(null); // State to handle errors
+    const { id } = useParams();
+    const [blog, setBlog] = useState({});
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        // Fetch the blog post by id from the blogitems_api array
         http.get(`/blog-api`)
             .then(response => {
-                const blogItems = response.data.blogitems_api; // Access blogitems_api array
-                const selectedBlog = blogItems.find((item) => item.id === parseInt(id)); // Find the blog by ID
+                const blogItems = response.data.blogitems_api;
+                const selectedBlog = blogItems.find((item) => item.id === parseInt(id));
                 if (selectedBlog) {
-                    setBlog(selectedBlog); // Set the selected blog
+                    setBlog(selectedBlog);
                 } else {
-                    setError("Blog not found"); // Set an error if no blog matches the id
+                    setError("Blog not found");
                 }
             })
             .catch(error => {
@@ -31,18 +30,10 @@ const BlogDetailPage = () => {
             });
     }, [id]);
 
-    if (error) return <div className="text-red-500">{error}</div>; // Display error if blog is not found
+    if (error) return <div className="text-red-500">{error}</div>;
 
-    // Sanitize blog content
-    const sanitizedContent = sanitizeHtml(blog.blog_content || "", {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h1', 'h2', 'img', 'span', 'ol', 'ul', 'li', 'strong']),
-        allowedAttributes: {
-            '*': ['style'],
-            'img': ['src', 'alt']
-        }
-    });
+    console.log(blog.blog_content);
 
-    // Add inline style for strong inside headings
     const customStyles = `
         .prose h1 strong,
         .prose h2 strong,
@@ -54,20 +45,28 @@ const BlogDetailPage = () => {
         }
     `;
 
+    console.log("this is all blog", blog)
+
+    const { blog_title, blog_content, meta_title, meta_desc, meta_tags } = blog;
+
     return (
         <div>
+            {/* Helmet for managing the head */}
+            <Helmet>
+                <title>{meta_title || blog_title || 'Blog Detail'}</title>
+                <meta name="description" content={meta_desc || 'Read our latest blog post on various topics.'} />
+                <meta name="keywords" content={meta_tags || 'blog, articles, technology'} />
+            </Helmet>
+
             <Navbar />
-            <Banner text={blog.blog_title || "Blog Title"} />
+            <Banner text={blog_title || "Blog Title"} />
             <div className="blog-detail-page max-w-[1150px] mx-auto px-3">
-                {/*<h1 className="text-3xl font-bold mb-4">{blog.blog_title || "Blog Title"}</h1> /!* Display blog title *!/*/}
-                {/*<p className="text-gray-700 mb-4">By {blog.blog_author_name || "Author Name"}</p> /!* Display author name *!/*/}
-                {/* Render sanitized blog content */}
-                <div className="prose prose-lg max-w-none text-justify mt-10" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+                <div className="prose prose-lg max-w-none text-justify mt-10"
+                     dangerouslySetInnerHTML={{__html: blog_content}}/>
             </div>
             <TechnologyStack />
             <ContactUs />
             <Footer />
-            {/* Inline styles for custom strong tag inside headings */}
             <style>{customStyles}</style>
         </div>
     );

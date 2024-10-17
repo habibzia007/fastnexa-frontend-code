@@ -9,25 +9,42 @@ import dotnet from "../assets/images/aspnet.svg";
 import laravel from "../assets/images/laravel.svg";
 import rectangle from "../assets/images/rectangle.png";
 import rectangle1 from "../assets/images/rectangle1.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import http from '../http';
 import config from '../config';
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import slugify from "slugify";
 
 const TechnologyStack = () => {
     const logos = [nodejs, reactjs, angular, python, dotnet, laravel];
     const [techStack, setTechStack] = useState([]);
+    const [services, setServices] = useState([]); // Added state for services
     const { baseURL } = config;
+
+    // Fetch tech stack API
     useEffect(() => {
         http.get('/tech-stack-api')
             .then((res) => {
                 setTechStack(res.data); // Set API response data to state
             })
             .catch((err) => {
-                console.error('Error fetching services data:', err);
+                console.error('Error fetching tech stack data:', err);
             });
     }, []);
 
+    // Fetch services API
+    useEffect(() => {
+        const fetchServices = async () => {
+            try {
+                const response = await http.get('/services-api/');
+                const fetchedServices = response.data.services_sections || []; // Extract services_sections
+                setServices(fetchedServices); // Set services to state
+            } catch (error) {
+                console.error('Error fetching services:', error);
+            }
+        };
+        fetchServices();
+    }, []);
 
     const rectangle = techStack.techrstack_api && techStack.techrstack_api.length > 0 ? `${baseURL}${techStack.techrstack_api[0].image}` : '';
     const rectangle1 = techStack.techrstack_api && techStack.techrstack_api.length > 0 ? `${baseURL}${techStack.techrstack_api[0].image2}` : '';
@@ -53,6 +70,11 @@ const TechnologyStack = () => {
         autoplaySpeed: 2000,
     };
 
+    // Find the service with the name "human-resource-augmentation"
+    const humanResourceService = services.find(service =>
+        slugify(service.service_name, { lower: true }) === "human-resource-augmentation"
+    );
+
     return (
         <div className="container mx-auto xl:max-w-[1110px] py-8">
             {/* Wrapper */}
@@ -65,9 +87,12 @@ const TechnologyStack = () => {
                     <h1 className="font-Poppins font-semibold text-xl lg:text-3xl leading-tight mt-2">
                         {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_heading}
                     </h1>
-                    <p className="hidden sm:block font-Poppins text-base text-gray-700 mt-6">
-                        {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_desc}
-                    </p>
+                    <p
+                        className="hidden sm:block font-Poppins text-base text-gray-700 mt-6 !line-clamp-4"
+                        dangerouslySetInnerHTML={{
+                            __html: techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_desc
+                        }}
+                    ></p>
                     {/* Slider */}
                     <div className="w-full mt-6 md:block hidden">
                         <Slider {...settings}>
@@ -76,7 +101,7 @@ const TechnologyStack = () => {
                                     <img
                                         src={`${baseURL}${logo.image}`}
                                         alt={`Logo ${logo.id}`}
-                                        className="w-20 h-10 lg:w-20 lg:h-12 object-contain"
+                                        className="w-20 h-10 lg:w-20 lg:h-12 object-contain !outline-none focus:!outline-none focus-visible:!outline-none !outline-offset-0 focus-visible:!outline-offset-0"
                                     />
                                 </div>
                             ))}
@@ -89,21 +114,28 @@ const TechnologyStack = () => {
                                     <img
                                         src={`${baseURL}${logo.image}`}
                                         alt={`Logo ${logo.id}`}
-                                        className="w-20 h-10 lg:w-20 lg:h-12 object-contain"
+                                        className="w-20 h-10 lg:w-20 lg:h-12 object-contain !outline-none focus:!outline-none focus-visible:!outline-none !outline-offset-0"
                                     />
                                 </div>
                             ))}
                         </Slider>
                     </div>
-                    <Link to="/services/human-resource"
-                        className="mt-6 lg:mt-12 py-3 px-6 lg:py-4 lg:px-8 font-lato text-xs lg:text-base text-white bg-orange-600 rounded-md hover:bg-transparent hover:text-orange-600 hover:ring-1 hover:ring-orange-600 transition-colors duration-300">
-                        {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_btn_title}
-                    </Link>
+
+                    {/* Check if humanResourceService is found and display dynamic link */}
+                    {humanResourceService && (
+                        <Link
+                            // to={`/services/${slugify(humanResourceService.service_name, {lower: true})}/${humanResourceService.id}`}
+                            to={techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_btn_url}
+                            className="mt-6 lg:mt-12 py-3 px-6 lg:py-4 lg:px-8 font-lato text-xs lg:text-base text-white bg-orange-600 rounded-md hover:bg-transparent hover:text-orange-600 hover:ring-1 hover:ring-orange-600 transition-colors duration-300"
+                        >
+                            {techStack.techrstack_api && techStack.techrstack_api.length > 0 && techStack.techrstack_api[0].section_btn_title}
+                        </Link>
+                    )}
                 </div>
                 {/* Right Side */}
                 <div className="sm:col-span-6 flex justify-center sm:justify-end items-center relative mt-8 sm:mt-0">
                     <div className="relative w-[260px] h-[198px] sm:w-[261px] sm:h-[207px] lg:w-[350px] lg:h-[276px]">
-                        <img
+                    <img
                             className="absolute w-[210px] h-[158px] sm:w-[214px] sm:h-[177px] lg:w-[273px] lg:h-[236px]"
                             src={rectangle1}
                             alt="Rectangle Background"

@@ -70,7 +70,7 @@ const Timeline = () => {
                                     src={`${baseURL}/${member.image}`} alt={member.name} width="384" height="512" />
                                 <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                                     <blockquote>
-                                        <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center">
+                                        <p className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal md:text-left text-center">
                                             {member.t_member_dec}
                                         </p>
                                     </blockquote>
@@ -112,7 +112,7 @@ const Timeline = () => {
                                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                                         <blockquote>
                                             <p
-                                                className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal lg:text-left text-center"
+                                                className="font-Poppins text-xs sm:text-[16px] leading-[22px] sm:leading-[28px] text-[#747474] font-normal md:text-left text-center"
                                                 dangerouslySetInnerHTML={{__html: member.t_member_dec}}
                                             ></p>
                                         </blockquote>

@@ -8,6 +8,7 @@ import {Link} from "react-router-dom";
 import {MdOutlineKeyboardArrowRight} from "react-icons/md";
 import config from '../config';
 import http from '../http';
+import {Helmet} from "react-helmet";
 
 const Hero = () => {
     const [data, setData] = useState({});
@@ -42,6 +43,7 @@ const Hero = () => {
             clearInterval(intervalId); // Clean up the interval on component unmount
         };
     }, [images.length]);
+    console.log("this is meta testing", data)
 
     const backgroundImageStyle = {
         backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(250.49deg, rgba(0, 0, 0, 0) 43.25%, rgba(0, 0, 0, 0.4) 71.49%), url(${images[currentImageIndex]})`,
@@ -55,6 +57,12 @@ const Hero = () => {
             className="relative transition-all lg:pb-60 lg:pt-64 py-40"
             style={backgroundImageStyle}
         >
+            <Helmet>
+                <title>{data.length > 0 ? data[0].meta_title : "Default Meta Title"}</title>
+                <meta name="description" content={data.length > 0 ? data[0].meta_desc : "Default Meta Description"} />
+                <meta name="keywords" content={data.length > 0 ? data[0].meta_tags : "default, meta, tags"} />
+            </Helmet>
+
             {/* wrapper */}
             <div className="container lg:w-[1184px] mx-auto !px-4 lg:px-6 grid grid-cols-12">
                 <div className="col-span-12  lg:col-span-12">
@@ -85,18 +93,19 @@ const Hero = () => {
                             <div className="flex items-center gap-3 md:gap-5 lg:gap-7 lg:max-w-[585.7px]">
                                 {data && data.length > 0 && parseInt(data[0].checkbox_btn1) === 1 && (
                                 <Link to="/contact-us">
+                                    {/*w-[125px] h-[31px] md:w-[150px] md:h-[37px] lg:w-[209px] lg:h-[52px]*/}
                                     <button
-                                        className="group flex items-center justify-center w-[125px] h-[31px] md:w-[150px] md:h-[37px] lg:w-[209px] lg:h-[52px] font-Poppins font-medium text-xs lg:text-sm text-white leading-[13px] lg:leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-md md:rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-700 ease-in-out">
+                                        className="md:px-6 md:py-[16px] px-5 py-2.5 group flex items-center justify-center  font-Poppins font-medium text-xs lg:text-sm text-white leading-[13px] lg:leading-[23.2px] bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-200 rounded-md md:rounded-[10px] hover:from-white hover:to-white hover:text-[#FF751A] hover:shadow-md transition-all duration-100 ease-in-out">
                                         {data[0].button1_name}
                                         <MdOutlineKeyboardArrowRight
-                                            className="w-3 h-3 lg:w-6 lg:h-6 transition-transform duration-700 ease-in-out group-hover:ml-1 group-hover:scale-105"/>
+                                            className="w-3 h-3 lg:w-6 lg:h-6 group-hover:translate-x-2 transition-all duration-500"/>
                                     </button>
                                 </Link>
                                 )}
                                 {data?.length > 0 && parseInt(data[0].checkbox_btn2) === 1 && (
                                 <Link to="/about">
                                     <button
-                                        className="flex items-center justify-center w-[102px] h-[31px] md:w-[125px] md:h-[37px] lg:w-[173px] lg:h-[51px] font-Poppins font-medium text-xs lg:text-sm text-white leading-[13.2px] bg-transparent ring-1 hover:ring-1 hover:shadow-md ring-white hover:ring-orange-400 rounded-[10px] transition duration-500 ease-in-out transform hover:bg-orange-400">
+                                        className="flex items-center justify-center md:px-6 md:py-[16px] px-5 py-2.5 font-Poppins font-medium text-xs lg:text-sm text-white leading-[13.2px] bg-transparent ring-1 hover:ring-1 hover:shadow-md ring-white hover:ring-orange-400 rounded-[10px] transition duration-500 ease-in-out transform hover:bg-orange-400">
                                         {data && data.length > 0 && data[0].button2_name} a
                                     </button>
                                 </Link>
