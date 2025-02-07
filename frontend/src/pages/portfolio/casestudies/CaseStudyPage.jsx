@@ -1,4 +1,3 @@
-import React from 'react';
 import CaseStudies from "../../../components/caseStudy/CaseStudies.jsx";
 import Navbar from "../../../components/Navbar.jsx";
 import Footer from "../../../components/Footer.jsx";

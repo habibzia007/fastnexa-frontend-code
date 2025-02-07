@@ -37,6 +37,8 @@ const Testimonial = () => {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "0px",
         autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
@@ -54,7 +56,7 @@ const Testimonial = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 2,
+                    initialSlide: 1,
                 },
             },
         ],
@@ -81,7 +83,7 @@ const Testimonial = () => {
                     {testminialData.testi_review_api && testminialData.testi_review_api.map((card, index) => (
                         <div key={index} className="pt-[40px] xl:pt-[60px] pl-1 xl:pl-6 mb-5">
                             <div
-                                className="w-[330.86px] mx-auto pb-5 xl:h-[220px] md:h-[167px] h-[155px] xl:w-[448.82px] bg-white rounded-md shadow-md relative">
+                                className="md:w-[330.86px] w-[86%] mx-auto pb-5 xl:h-[220px] md:h-[167px] h-[155px] xl:w-[448.82px] bg-white rounded-md shadow-md relative">
                                 <div
                                     className="absolute rounded-md w-[78px] xl:w-[106px] xl:h-[106px] left-[-19px] xl:-left-[2.25rem] top-0 bottom-0 my-auto h-[78px] bg-[#DDDDDD]">
                                     <img

@@ -141,7 +141,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`bg-white shadow-md shadow-[#00000026] z-50 sticky top-0 ${opacity} w-full`}>
+        <nav className={`bg-white shadow-md shadow-[#00000026] z-[60] sticky top-0 ${opacity} w-full`}>
             <div className="container xl:w-[1184px] mx-auto xl:px-4 px-3 grid grid-cols-12">
                 <div className="col-span-12">
                     <div className="flex justify-between items-center py-1">
@@ -166,10 +166,12 @@ const Navbar = () => {
                                             >
                                                 {link.label}
                                             </Link>
-                                            <FaCaretDown className={`${isParentActive(link.path) ? "text-[#FF6500]" : ""}`} />
+                                            <FaCaretDown
+                                                className={`${isParentActive(link.path) ? "text-[#FF6500]" : ""}`}/>
                                         </div>
                                         {dropdownOpen === link.label && (
-                                            <div className="absolute bg-white shadow-md mt-1 z-10" onMouseLeave={(e) => toggleDropdown(null, e)}>
+                                            <div className="absolute bg-white shadow-md mt-1 z-10"
+                                                 onMouseLeave={(e) => toggleDropdown(null, e)}>
                                                 {link.dropdown.map((item) => (
                                                     <Link
                                                         key={item.label}
@@ -195,16 +197,17 @@ const Navbar = () => {
                                 )
                             )}
                             <Link to={buttonLink.path} className="nav-button" onClick={handleLinkClick}>
-                                <button className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading-[2.7rem] leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
+                                <button
+                                    className="bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading-[2.7rem] leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
                                     {buttonLink.label}
                                 </button>
                             </Link>
                         </div>
                         <div className="lg:hidden">
                             {navOpen ? (
-                                <FaTimes onClick={toggleNav} size={25} className="cursor-pointer" />
+                                <FaTimes onClick={toggleNav} size={25} className="cursor-pointer"/>
                             ) : (
-                                <FaBars onClick={toggleNav} size={25} className="cursor-pointer" />
+                                <FaBars onClick={toggleNav} size={25} className="cursor-pointer"/>
                             )}
                         </div>
                     </div>
@@ -213,7 +216,9 @@ const Navbar = () => {
                             {primaryLinks.map((link) =>
                                 link.dropdown ? (
                                     <div key={link.label} className="block py-2 px-4 text-gray-700">
-                                        <Link to={link.path} className={`${isParentActive(link.path) ? "text-[#FF6500]" : ""}`} onClick={handleLinkClick}>
+                                        <Link to={link.path}
+                                              className={`${isParentActive(link.path) ? "text-[#FF6500]" : ""}`}
+                                              onClick={handleLinkClick}>
                                             {link.label}
                                         </Link>
                                         <FaCaretDown
@@ -247,7 +252,8 @@ const Navbar = () => {
                                 )
                             )}
                             <Link to={buttonLink.path} className="nav-button" onClick={handleLinkClick}>
-                                <button className="ml-3 mt-2 bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
+                                <button
+                                    className="ml-3 mt-2 bg-[#FF6500] text-white font-poppins font-bold px-4 text-xs lg:text-[16px] xl:leading leading-8 rounded-[6px] lg:rounded-[10px] hover:bg-slate-900 transition-all duration-500 focus:outline-none focus:bg-blue-600 xl:py-0 py-2">
                                     {buttonLink.label}
                                 </button>
                             </Link>

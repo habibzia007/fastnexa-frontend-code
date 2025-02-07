@@ -4,13 +4,13 @@ import symbol from "../../assets/images/symbol.svg";
 const Card = ({ title, description, border, image }) => {
 
   const truncateDescription = (text, maxLength) => {
-    if (text.length > maxLength) {
+    if (text?.length > maxLength) {
       return text.substring(0, maxLength);
     }
     return text;
   };
 
-  const truncatedDescription = truncateDescription(description, 67);
+  const truncatedDescription = truncateDescription(description, 100);
 
   return (
     <div

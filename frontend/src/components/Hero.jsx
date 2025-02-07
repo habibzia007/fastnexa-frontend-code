@@ -46,11 +46,15 @@ const Hero = () => {
     console.log("this is meta testing", data)
 
     const backgroundImageStyle = {
-        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(250.49deg, rgba(0, 0, 0, 0) 43.25%, rgba(0, 0, 0, 0.4) 71.49%), url(${images[currentImageIndex]})`,
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 105%), 
+                      linear-gradient(250.49deg, rgba(0, 0, 0, 0.3) 48.25%, rgba(0, 0, 0, 0.3) 76.49%), 
+                      url(${images[currentImageIndex]})`,
         backgroundSize: "cover",
         backgroundPosition: "center top",
         transition: "background-image 1s ease-in-out",
     };
+
+
 
     return (
         <div

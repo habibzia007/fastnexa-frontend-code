@@ -8,7 +8,7 @@ const Card = ({ id, title, description, image, icon, buttonTitle = null }) => {
 
     // Function to truncate the description to a maxLength (e.g., 50 characters)
     const truncateDescription = (text, maxLength) => {
-        if (text.length > maxLength) {
+        if (text?.length > maxLength) {
             return text.substring(0, maxLength);
         }
         return text;
