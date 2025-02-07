@@ -11,21 +11,23 @@ import ContactUs from "../../components/ContactUs";
 import Footer from "../../components/Footer";
 
 const Home = () => {
-  return (
-    <main className=" w-full bg-[#FFFFFF] overflow-hidden">
-      <Navbar />
-      <Hero />
-      <WhoWeAre />
-      <WhatWeProvide />
-      <OurClients />
-      <ChooseUs />
-      <TechnologyStack />
-      <Testimonial />
-      <Blog />
-      <ContactUs />
-      <Footer />
-    </main>
-  );
+    return (
+        <main className=" w-full bg-[#FFFFFF]">
+            <Navbar/>
+            <div className="overflow-hidden">
+                <Hero/>
+                <WhoWeAre/>
+                <WhatWeProvide/>
+                <OurClients/>
+                <ChooseUs/>
+                <TechnologyStack/>
+                <Testimonial/>
+                <Blog/>
+                <ContactUs/>
+                <Footer/>
+            </div>
+        </main>
+    );
 };
 
 export default Home;

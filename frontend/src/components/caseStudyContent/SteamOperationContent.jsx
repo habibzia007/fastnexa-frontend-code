@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import img from "../../assets/images/Hamza.png";
 
 function SteamOperationContent() {

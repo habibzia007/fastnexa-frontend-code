@@ -3,11 +3,6 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ctoImg from "../../../assets/images/abdulla.jpg";
-import ceoImg from "./faisalShehzad.jpg";
-import cooImg from "../../../assets/images/fatima.jpg";
-import cioImg from "./fizzaAbdulla.png";
-import csoImg from "../../../assets/images/Murtaza.jpg"
 import config from '../../../config';
 import http from '../../../http';
 import {useEffect, useState} from "react";
@@ -43,17 +38,7 @@ const Team = () => {
         });
   };
 
-  const teamMembers = [
-    {
-      imgSrc: ceoImg,
-      name: "Faisal Shahzad",
-      position: "Fractional CEO & vCISO FAST NEXA",
-    },
-    { imgSrc: ctoImg, name: "Abdullah Faisal", position: "CTO, FAST NEXA" },
-    { imgSrc: cooImg, name: "Fatimah Faisal", position: "COO, FAST NEXA" },
-    { imgSrc: cioImg, name: "Fizzah Abdullah", position: "CIO, FAST NEXA" },
-    { imgSrc: csoImg, name: "Mujtaba Bukhari", position: "CSO, FAST NEXA" },
-  ];
+  console.log( "ourTeams ",teams);
 
   const settings = {
     dots: true,

@@ -22,17 +22,14 @@ const ServiceDetail = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        // Fetch all services to find selected service based on ID
         http.get('/services-api')
             .then(response => {
                 const services = response.data.services_sections;
-                console.log("this is my all services", services);
-
                 const selectedService = services.find(service => service.id === parseInt(id));
 
                 if (selectedService) {
-                    // Adjust slug generation to match the URL format
-                    const generatedSlug = `${slugify(selectedService.service_name, { lower: true })}`;
-
+                    const generatedSlug = slugify(selectedService.service_name, { lower: true });
                     if (generatedSlug !== slug) {
                         setError('Service not found or URL mismatch.');
                     } else {
@@ -49,14 +46,15 @@ const ServiceDetail = () => {
     }, [slug, id]);
 
     useEffect(() => {
-        if (id) { // Only make the API call if id is present
+        if (id) {
+            // Fetch service details based on ID
             http.get(`/services-api/${id}`)
                 .then((res) => {
-                    setServiceData(res.data); // Set API response data to state
+                    setServiceData(res.data);
                 })
                 .catch((err) => {
-                    console.error('Error fetching services data:', err);
-                    setServiceData({}); // Reset serviceData on error
+                    console.error('Error fetching detailed service data:', err);
+                    setServiceData({});
                 });
         }
     }, [id]);
@@ -65,17 +63,16 @@ const ServiceDetail = () => {
         return <div className="text-red-500">{error}</div>;
     }
 
-    // Access the correct fields from serviceData
     const title = serviceDataIntro.single_serv_heading || "Service Title";
     const description = serviceDataIntro.single_serv_desc || "Service Description";
     const serviceFeatures = serviceData.featuredpostserv || [];
 
-    // Add meta data variables
+    // Metadata variables for SEO
     const { meta_title, meta_desc, meta_tags } = serviceDataIntro;
 
     return (
         <main className="w-full bg-[#FFFFFF]">
-            {/* Helmet for managing the head */}
+            {/* Helmet for SEO */}
             <Helmet>
                 <title>{meta_title || title || 'Service Detail'}</title>
                 <meta name="description" content={meta_desc || description || 'Service description'} />
